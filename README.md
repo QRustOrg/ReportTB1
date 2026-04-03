@@ -27,7 +27,7 @@
 
 **Profesor:** Eduardo Martin Reyes Rodriguez 
 
-<br><br>
+<br>
 
 **INFORME DE TRABAJO TB1**
 
@@ -45,7 +45,7 @@
 
 <div align="center">
 
-## **Relación de Integrantes**
+**Relación de Integrantes**
 
 <br>
 
@@ -57,17 +57,13 @@
 | Alejandro Manuel, Galindo Montero| U202321264 |
 
 
-</div>
-
-><br><br>
-
-<div align="center">
+<br><br>
 
 **Abril - 2026**
 
 </div>
 
-><br><br>
+<br><br>
 
 # Registro de Versiones del Informe
 <br>
