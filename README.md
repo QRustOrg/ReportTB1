@@ -29,7 +29,7 @@
 
 <br><br>
 
-# **INFORME DE TRABAJO TB1**
+**INFORME DE TRABAJO TB1**
 
 <br>
 
