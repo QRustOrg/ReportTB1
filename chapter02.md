@@ -5,118 +5,123 @@ Capítulo II: Requirements Elicitation & Analysis
 ### 2.1.1. Análisis competitivo.
 <table>
     <tr>
-      <th colspan="22">Competitive Analysis Landscape</th>
+      <th colspan="6">Competitive Analysis Landscape — Plataformas de ofertas, cupones y descuentos</th>
     </tr>
     <tr>
       <td colspan="1">¿Por qué llevar a cabo el análisis?</td>
-      <td colspan="17">El análisis competitivo es esencial para entender el mercado, identificar oportunidades que nos diferencien y anticipar amenazas. Permite ajustar la estrategia para ganar ventaja sobre la competencia y asegurar el éxito del producto.</td>
+      <td colspan="5">Permite ubicar a <strong>OnTimeRide</strong> frente a modelos de descuentos masivos, marketplaces y agregadores, identificar brechas (fraude, prueba social, trazabilidad por campaña) y definir tácticas de diferenciación coherentes con el MVP.</td>
     </tr>
     <tr>
       <td colspan="2"></td>
-      <td>WeRide<br><img src="assets/chapter02/WeRide.png" alt="WeRide"></td>
-      <td>Lime<br><img src="assets/chapter02/lime.png" alt="Lime"></td>
-      <td>CityBikeLima<br><img src="assets/chapter02/CityBikeLima.png" alt="CityBikeLima"></td>
-      <td>Whoosh<br><img src="assets/chapter02/Whoosh.svg" alt="Whoosh"></td>
-  </tr>
+      <td><strong>Groupon</strong><br><em>(referencia de mercado)</em></td>
+      <td><strong>Rappi</strong><br><em>(superapp + promos)</em></td>
+      <td><strong>PedidosYa</strong><br><em>(delivery + descuentos)</em></td>
+      <td><strong>Cuponatic</strong><br><em>(cupones y ofertas digitales)</em></td>
+    </tr>
     <tr>
       <td rowspan="2">Perfil</td>
       <td>Overview</td>
-      <td>Plataforma diseñada para optimizar la  micromovilidad eléctrica enfocada en motos, scooters y bicis inteligentes con IoT, mejorando la experiencia de usuarios y solucionando problemas como la alta tasa de tránsito vehícular.</td>
-      <td>Multinacional líder en scooters y bicicletas eléctricas compartidas, presente en múltiples ciudades globales.</td>
-      <td>Programa público de bicicletas compartidas en Lima, operado con soporte municipa</td>
-      <td>Plataforma internacional de scooters eléctricos compartidos con foco en Europa y Latinoamérica</td>
-  </tr>
+      <td>Marketplace de ofertas y experiencias con amplia oferta y compra anticipada del cupón/descuento.</td>
+      <td>App de delivery y servicios con secciones de promociones, clubes y campañas según ciudad y marca.</td>
+      <td>Plataforma de pedidos en línea donde restaurantes y retail publican descuentos ligados a compras por la app.</td>
+      <td>Sitio/app orientada a cupones y promociones con enfoque editorial y descuentos por categoría.</td>
+    </tr>
     <tr>
-    <td>Ventaja competitiva ¿Qué valor ofrece a los clientes?</td>
-      <td>Enfoque local: integra pagos peruanos (Yape/Plin), tarifas accesibles y flotas adaptadas al contexto nacional.</td>
-      <td>Amplia cobertura internacional, marca reconocida y gran inversión en tecnología.</td>
-      <td>Accesibilidad y precios bajos, integración con transporte público.</td>
-      <td>Experiencia de usuario optimizada, flota moderna y rápida expansión.</td>
-      </tr>
-  <tr>
+      <td>Ventaja competitiva ¿Qué valor ofrece a los clientes?</td>
+      <td>Gran inventario de ofertas, reconocimiento de marca y descuentos agresivos en rubros variados.</td>
+      <td>Alcance regional, hábito de uso recurrente y bundling con otros servicios (envío, pagos, etc.).</td>
+      <td>Conveniencia inmediata: descuentos dentro del flujo de compra de comida y retail express.</td>
+      <td>Curación de ofertas y búsqueda por categoría; foco en “encontrar cupones” rápidamente.</td>
+    </tr>
+    <tr>
       <td rowspan="2">Perfil de Marketing</td>
       <td>Mercado Objetivo</td>
-      <td>Jóvenes, estudiantes, profesionales urbanos, turistas en Lima y otras ciudades peruanas.</td>
-      <td>Usuarios urbanos globales que buscan movilidad rápida y sostenible.</td>
-      <td>Ciudadanos limeños que necesitan transporte económico y ecológico en zonas céntricas.</td>
-      <td>Usuarios de centros urbanos en expansión que buscan transporte práctico.</td>
+      <td>Usuarios masivos que buscan ofertas puntuales y compras con descuento en múltiples verticales.</td>
+      <td>Usuarios urbanos que ya consumen delivery y activan promociones por push o secciones de beneficios.</td>
+      <td>Clientes de delivery y quick-commerce en distritos con cobertura de reparto.</td>
+      <td>Usuarios price-sensitive que comparan cupones antes de comprar online o en retail asociado.</td>
     </tr>
     <tr>
-    <td>Estrategias de Marketing</td>
-      <td>Campañas digitales locales, alianzas con universidades y municipalidades, enfoque en sostenibilidad.</td>
-      <td>Publicidad global, branding fuerte, promociones en apps y eventos verdes.</td>
-      <td>Marketing institucional con apoyo municipal, señalética en estaciones.</td>
-      <td>Marketing digital, descuentos por uso recurrente, gamificación en la app.</td>
-      </tr>
-  <tr>
+      <td>Estrategias de Marketing</td>
+      <td>Email marketing, campañas por temporada, partnerships con marcas y presencia SEO fuerte.</td>
+      <td>Notificaciones, banners in-app, alianzas con marcas y mecánicas de fidelización.</td>
+      <td>Promociones flash, combos, cupones first-order y programas por restaurante.</td>
+      <td>Tráfico web, redes sociales y newsletters con ofertas destacadas del día.</td>
+    </tr>
+    <tr>
       <td rowspan="3">Perfil de Producto</td>
       <td>Productos y Servicios</td>
-      <td>Scooters, motos eléctricas y bicicletas compartidas con IoT, app para reserva y pago.</td>
-      <td>Scooters y bicicletas eléctricas compartidas con geolocalización.</td>
-      <td>Bicicletas mecánicas y eléctricas en estaciones físicas.</td>
-      <td>Scooters eléctricos con desbloqueo vía app.</td>
+      <td>Compra de vouchers/ofertas; redención según reglas de cada campaña y comercio afiliado.</td>
+      <td>Descuentos y beneficios dentro de un ecosistema amplio (no exclusivamente “cuponera”).</td>
+      <td>Descuentos asociados a pedidos; foco en canales digitales de restaurantes/tiendas adheridas.</td>
+      <td>Catálogo de cupones/códigos; experiencia centrada en descubrimiento y compra del beneficio.</td>
     </tr>
     <tr>
-    <td>Precios y Costos</td>
-      <td>Planes de suscripción escalonados según el número de usuarios y servicios adicionales.</td>
-      <td>Tarifas más altas, variables según ciudad; paquetes promocionales.</td>
-      <td>Bajos costos de alquiler por tiempo (subvencionados)</td>
-      <td>Planes semanales con opciones de servicios premium.</td>
-      </tr>
-  <td>Canales de distribución (Web y/o Móvil)</td>
-      <td>Sitio Web</td>
-      <td>Sitio Web</td>
-      <td>Sitio Web</td>
-      <td>Sitio Web y móvil.</td>
-  <tr>
+      <td>Precios y Costos</td>
+      <td>Modelo comercial por comisión/participación en la oferta; precio final variable por categoría.</td>
+      <td>Descuentos financiados por marcas/plataforma; costos ligados a suscripción o dinámica de marketplace.</td>
+      <td>Promos como palanca de adquisición; estructura de comisiones al comercio.</td>
+      <td>Ofertas con precios promocionales; mix de modelos por afiliación y publicidad.</td>
+    </tr>
+    <tr>
+      <td>Canales de distribución (Web y/o Móvil)</td>
+      <td>Web y app móvil.</td>
+      <td>App móvil y web.</td>
+      <td>App móvil y web.</td>
+      <td>Web y presencia móvil (según mercado).</td>
+    </tr>
+    <tr>
       <td rowspan="4">Análisis SWOT</td>
       <td>Fortalezas</td>
-      <td>Conocimiento local, integración con pagos peruanos, tarifas accesibles.</td>
-      <td>Escala internacional, financiamiento robusto, marca reconocida.</td>
-      <td>Respaldo municipal, precios muy bajos, simpleza.</td>
-      <td>Flota moderna, app fácil de usar, expansión ágil.</td>
+      <td>Marca reconocida, volumen de ofertas, procesos maduros de compra.</td>
+      <td>Tráfico alto, datos de uso y cross-selling entre categorías.</td>
+      <td>Alta frecuencia de compra y descuentos contextualizados al pedido.</td>
+      <td>Claridad para usuarios que buscan cupones; SEO y comunidad de ofertas.</td>
     </tr>
     <tr>
-    <td>Debilidades</td>
-      <td>Escala inicial limitada, menor financiamiento comparado a multinacionales.</td>
-      <td>Altos precios en algunos mercados, críticas por sostenibilidad real.</td>
-      <td>Limitada cobertura, infraestructura básica, tecnología rezagada.</td>
-      <td>Menor reconocimiento global que Lime, cobertura desigual.</td>
-      </tr>
+      <td>Debilidades</td>
+      <td>Menor control granular por comercio local sobre fraude/reuso; experiencia a veces genérica.</td>
+      <td>Promos compiten con muchos objetivos de producto; no siempre hay “QR único” anti-fraude por campaña PYME.</td>
+      <td>Descuentos acotados al canal delivery; menos foco en canje físico genérico con trazabilidad completa.</td>
+      <td>Códigos compartibles y dinámicas tradicionales de cupón; limitada capa social integrada al canje.</td>
+    </tr>
     <tr>
-  <td>Oportunidades</td>
-      <td>Expandir a más ciudades peruanas, integrar con transporte público y turismo.</td>
-      <td>Crecer en mercados emergentes, integrar más tipos de vehículos.</td>
-      <td>Modernizar flota con bicicletas eléctricas, mejorar app.</td>
-      <td>Expandirse en LATAM con asociaciones estratégicas.</td>
-  </tr>
+      <td>Oportunidades</td>
+      <td>Partnerships B2B2C y expansión vertical (gastronomía, belleza, servicios).</td>
+      <td>Profundizar beneficios hyperlocal y programas de lealtad.</td>
+      <td>Retail y dark stores; bundles con marcas.</td>
+      <td>Personalización y alertas por intereses del usuario.</td>
+    </tr>
     <tr>
-  <td>Amenazas</td>
-      <td>Competencia internacional (Lime, Whoosh), trabas regulatorias locales.</td>
-      <td>Regulaciones urbanas, vandalismo y saturación de mercado.
-  </td>
-      <td>Dependencia de apoyo municipal y presupuesto público.</td>
-      <td>Competencia fuerte (Lime, WeRide), regulaciones urbanas.</td>
-  </tr>
+      <td>Amenazas</td>
+      <td>Competencia de marketplaces, fatiga promocional y presión sobre márgenes.</td>
+      <td>Regulación laboral/logística y competencia entre superapps.</td>
+      <td>Comisiones y costos logísticos; sensibilidad al churn promocional.</td>
+      <td>Agregadores competidores y canales alternativos (redes sociales, grupos de ofertas).</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Diferenciación OnTimeRide (MVP)</strong></td>
+      <td colspan="4"><strong>QR único</strong> por usuario/oferta, <strong>bloqueo post-canje</strong>, <strong>comunidad</strong> (reseñas, ratings, likes/comentarios) integrada al flujo, <strong>analítica por campaña</strong> y <strong>autogestión</strong> para PYMEs, con <strong>panel admin</strong> para verificación y fraude.</td>
+    </tr>
   </table>
 
   ---
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 
-Para fortalecer nuestra posición en el mercado peruano de micromovilidad eléctrica, WeRide priorizará una estrategia basada en el aprovechamiento de sus principales ventajas competitivas. Nuestra propuesta se centra en la integración de pagos locales (Yape y Plin), tarifas accesibles y un ecosistema integral de micromovilidad compuesto por scooters, bicicletas y motos eléctricas con tecnología IoT. Estas capacidades nos permiten diferenciarnos de competidores globales como Lime o Whoosh, cuya oferta no está adaptada al comportamiento, necesidades y hábitos de movilidad del usuario urbano peruano. Al ofrecer una experiencia más local, flexible y alineada a la realidad nacional, WeRide se posicionará como la alternativa más conveniente, cercana y sostenible.
+**InnovaTech** posicionará **OnTimeRide** explotando las diferencias del MVP frente a marketplaces tradicionales y cuponeras: **unicidad del código (QR personal e irrepetible)**, **anti-fraude con bloqueo automático post-canje**, **comunidad integrada** (reseñas, ratings, likes y comentarios) y **analítica por campaña** con autogestión para el comercio. Frente a actores con gran inventario pero poca trazabilidad fina para PYMEs, el producto apuesta por **confianza** (prueba social + validación en tiempo real en tienda) y por **operación simple** para negocios sin implementaciones costosas.
 
-En relación con nuestras debilidades, como la disponibilidad inicial limitada de flota y recursos, implementaremos una estrategia gradual de despliegue. Comenzaremos con pilotos focalizados en zonas de alto flujo, como áreas universitarias y polos empresariales, lo que permitirá validar hipótesis de uso, optimizar la operación y construir confianza en el servicio. Esta fase inicial reducirá riesgos, facilitará una asignación eficiente del capital y generará tracción para escalamiento posterior.
+Las debilidades típicas de una etapa inicial (menor marca, menor volumen de ofertas vs. incumbentes) se abordarán con **pilotos verticales** (por ejemplo, gastronomía o retail de proximidad), acuerdos con **cámaras de comercio**, asociaciones de **centros comerciales** o **hubs** universitarios, y un plan de contenidos que enseñe el flujo **publicar → generar QR → canjear → reseñar**. El objetivo es construir densidad local y casos de éxito medibles antes de escalar geográficamente.
 
-Para mitigar amenazas como la competencia emergente en el ámbito nacional, el ingreso potencial de actores internacionales y las barreras regulatorias de los gobiernos locales, adoptaremos un enfoque proactivo mediante alianzas estratégicas con municipalidades y empresas privadas. Estas alianzas no solo facilitarán la operación y el acceso al espacio público, sino que reforzarán la percepción de WeRide como un aliado en la movilidad urbana sostenible. Asimismo, complementaremos esta línea de acción con campañas educativas enfocadas en el uso responsable de vehículos eléctricos y en los beneficios medioambientales, fortaleciendo nuestro posicionamiento y diferenciación frente a alternativas ya existentes.
+Para mitigar amenazas como la competencia de **superapps** con módulos promocionales o la **fatiga** de descuentos en redes sociales, se priorizará: (1) **verificación de empresas** y moderación; (2) **UX de canje** con validación rápida y alternativa manual; (3) **métricas claras** para el comercio (vistas, canjes, satisfacción); (4) comunicación del valor **anti-fraude** como beneficio económico directo, no solo “más marketing”.
 
 ### 2.2. Entrevistas.
 
 ### 2.2.1. Diseño de entrevistas.
 
-# Guía de Entrevistas – WeRide (Micromovilidad Eléctrica e IoT)
+# Guía de Entrevistas – OnTimeRide (Descuentos con QR y comunidad)
 
 ## Objetivo
-Obtener información cualitativa que permita validar supuestos, mapear necesidades reales, priorizar funcionalidades y construir arquetipos (personas) para WeRide.
+Obtener información cualitativa que permita validar supuestos del MVP, mapear fricciones reales en **descubrimiento**, **canje en tienda** y **reseñas**, priorizar funcionalidades y construir arquetipos (personas) para **OnTimeRide** (usuarios consumidores y empresas afiliadas).
 
 ---
 
@@ -138,9 +143,9 @@ Obtener información cualitativa que permita validar supuestos, mapear necesidad
 
 ## Estructura de cada entrevista
 1. **Introducción (3–5 minutos):** presentación, objetivo, consentimiento.  
-2. **Contexto del usuario (5–8 minutos):** rutina, desplazamientos, dispositivos.  
-3. **Experiencia actual con movilidad (10–15 minutos):** rutas, problemas y soluciones actuales.  
-4. **Reacción a la propuesta (10–12 minutos):** interés en WeRide, disposición a pagar y condiciones.  
+2. **Contexto (5–8 minutos):** hábitos de compra, uso de apps de ofertas/delivery, dispositivos y notificaciones.  
+3. **Experiencia con descuentos (10–15 minutos):** cómo descubre promos, qué confianza le da una oferta, fricciones al canjear (colas, códigos compartidos, letra pequeña).  
+4. **Reacción al flujo propuesto (10–12 minutos):** feed + filtros, QR único, validación en tienda, reseña post-canje; para B2B: creación de campaña, límites de canje, dashboard y moderación.  
 5. **Cierre (3–5 minutos):** resumen, agradecimiento y preguntas finales.
 
 ---
@@ -154,7 +159,7 @@ Obtener información cualitativa que permita validar supuestos, mapear necesidad
 - Ocupación / Institución / Rol dentro de la empresa (para B2B)  
 - Teléfono o correo electrónico (opcional)  
 - Uso de smartphone (sí/no) y modelo  
-- Aplicaciones utilizadas (transporte, pagos)  
+- Aplicaciones utilizadas (delivery, cupones, pagos, mapas)  
 - Notas principales / Insights / Comentarios textuales relevantes  
 - Enlace o archivo de la grabación  
 - Nivel de interés (escala 1–5)  

@@ -3,16 +3,16 @@
 
 ## 1.1. Startup Profile
 
-Somos InnovaTech, interesados en el desarrollo de soluciones de micromovilidad eléctrica compartida, integrando tecnología de vanguardia en transporte urbano. 
+Somos InnovaTech, interesados en el desarrollo de una plataforma móvil que conecta empresas y consumidores mediante descuentos digitales únicos, seguros y verificables, potenciada por una comunidad social que genera confianza orgánica.
 
-Buscamos transformar la movilidad urbana en Lima  ofreciendo un transporte rápido, económico, sostenible y adaptado a la realidad peruana.
+Buscamos cerrar la brecha entre la experiencia física de compra y la conveniencia digital, con campañas medibles para negocios y canjes simples para usuarios, priorizando anti-fraude.
 
 ### 1.1.1. Descripción de la Startup
 
 <div style="display:flex; justify-content:center; margin-top:18px;">
   <table style="width:95%; max-width:900px; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;">
     <caption style="caption-side:top; text-align:left; font-weight:bold; margin-bottom:8px;">
-      Misión, Visión y Valores — **Producto:** OnTimeRide  
+      Misión, Visión y Valores — **Producto:** OnTimeRide (sistema móvil de gestión de descuentos con comunidad social)
     </caption>
     <thead>
       <tr>
@@ -25,23 +25,22 @@ Buscamos transformar la movilidad urbana en Lima  ofreciendo un transporte rápi
       <tr>
         <td style="padding:12px; border:1px solid #ddd; vertical-align:top;">
           <ul style="margin:0; padding-left:18px;">
-            <li>Impulsar la transición hacia una movilidad urbana sostenible en el Perú.</li>
-            <li>Ofrecer alternativas de transporte compartido que reduzcan el tráfico y las emisiones.</li>
-            <li>Mejorar la calidad de vida de nuestros usuarios mediante servicios accesibles y seguros.</li>
+            <li>Reducir fraude y reutilización de promociones con códigos QR únicos y bloqueo automático post-canje.</li>
+            <li>Aumentar la confianza del consumidor con reseñas, calificaciones y recomendaciones en tiempo real.</li>
+            <li>Entregar trazabilidad y analítica por campaña para que las empresas optimicen inversión y resultados.</li>
           </ul>
         </td>
         <td style="padding:12px; border:1px solid #ddd; vertical-align:top;">
           <ul style="margin:0; padding-left:18px;">
-            <li>Ser la opción principal en micromovilidad eléctrica en Lima y otras ciudades del Perú.</li>
-            <li>Ser reconocidos por la innovación, el impacto social y por contribuir a ciudades más limpias y conectadas.</li>
+            <li>Ser un ecosistema de confianza digital entre negocios y consumidores, donde seguridad, comunidad y datos trabajen juntos en cada transacción.</li>
           </ul>
         </td>
         <td style="padding:12px; border:1px solid #ddd; vertical-align:top;">
           <ul style="margin:0; padding-left:18px;">
-            <li><strong>Confidencialidad:</strong> Protección de vehículos y datos de clientes.</li>
-            <li><strong>Innovación:</strong> Mejora continua del servicio y la plataforma.</li>
-            <li><strong>Sostenibilidad:</strong> Compromiso con soluciones que reduzcan el impacto ambiental.</li>
-            <li><strong>Accesibilidad:</strong> Servicios diseñados para ser económicos y fáciles de usar.</li>
+            <li><strong>Integridad y anti-fraude:</strong> unicidad del código, validación en tiempo real e invalidación tras uso.</li>
+            <li><strong>Transparencia:</strong> condiciones claras, historial y métricas visibles para usuarios y empresas.</li>
+            <li><strong>Comunidad:</strong> feedback de pares como motor de descubrimiento y marketing orgánico.</li>
+            <li><strong>Simplicidad:</strong> flujo corto: publicar, generar QR, canjear, reseñar, sin fricción innecesaria.</li>
           </ul>
         </td>
       </tr>
@@ -69,7 +68,7 @@ Buscamos transformar la movilidad urbana en Lima  ofreciendo un transporte rápi
       <td align="center">
         <img src="assets/Integrantes/Samuel.png" width="150">
       </td>
-      <td>Estudiante de Ing.Software. Experiencia desarrollando aplicaciones móviles con Kotlin & Dart. Apasionado por AI Tooling, Prompt Engineering y Desarrollo de Workflows/Automatizaciones.</td>
+      <td>Estudiante de Ing.Software. Experiencia desarrollando aplicaciones móviles con Kotlin & Dart. Apasionado por AI Tooling, Prompt Engineering y Desarrollo de Workflows/Automatizaciones con Claude.</td>
     </tr>
     <tr>
       <td>Castro Pariona, Jefferson Ernesto<br>(U201822823)</td>
@@ -99,78 +98,72 @@ Buscamos transformar la movilidad urbana en Lima  ofreciendo un transporte rápi
 
 ### 1.2.1. Antecedentes y problemática
 
-En los últimos años, la ciudad de Lima ha experimentado un incremento significativo en el tráfico vehicular, la congestión urbana y los niveles de contaminación ambiental. Paralelamente, la tendencia global hacia la micromovilidad eléctrica ha demostrado ser una alternativa eficiente, sostenible y económica para los desplazamientos de corta distancia en entornos urbanos densos.
+El comercio digital en América Latina ha crecido de forma sostenida, lo que aumenta la demanda de herramientas que conecten la experiencia física de compra con la conveniencia digital. Aun así, muchas soluciones de cupones y promociones siguen presentando fallas estructurales: **códigos compartidos en redes sociales**, **impresiones o duplicados** y **poca retroalimentación real** del consumidor.
 
-En este contexto surge **WeTech**, una startup enfocada en desarrollar soluciones de **micromovilidad eléctrica compartida** mediante bicicletas y scooters inteligentes equipados con tecnología **IoT**. Esta tecnología permite el monitoreo en tiempo real, la geolocalización, la detección de incidentes, el control operativo y la seguridad del sistema.
+En este contexto, **InnovaTech** plantea **OnTimeRide** como un sistema móvil donde las empresas publican promociones y descuentos, los usuarios los redimen con un **código QR único e irrepetible** y la **comunidad** valida y amplifica las mejores ofertas mediante reseñas, calificaciones y recomendaciones en tiempo real. 
 
-La propuesta combina **hardware IoT**, una **plataforma backend escalable** y **aplicaciones web/móviles**, con el objetivo de ofrecer un servicio accesible, confiable y sostenible que contribuya a **reducir el tráfico y mejorar la calidad de vida en Lima**.
+**Problema central:** el mercado de promociones sufre tres fricciones: (1) **fraude y reutilización** de cupones físicos o códigos compartibles; (2) **falta de confianza** ante ofertas sin respaldo de experiencias reales; (3) **escasa trazabilidad** para saber qué campañas funcionan y cuántos canjes ocurren. La propuesta aborda esas tres brechas con un enfoque **digital, social y seguro**.
 
 # Problemática — Análisis 5W2H
 
 ## Who — ¿Quiénes están involucrados?
-- Usuarios urbanos que buscan movilizarse rápida y económicamente.
-- Estudiantes, trabajadores y turistas que realizan trayectos cortos diarios.
-- La ciudad de Lima, afectada por congestión, contaminación y falta de alternativas eficientes.
-- **WeTech**, responsable de la operación, mantenimiento y gestión IoT de la flota.
+- **Usuario consumidor** (18–45 años) que busca descuentos en restaurantes, tiendas, servicios y entretenimiento desde el smartphone.
+- **Empresa / negocio afiliado** (PYMEs, retail, servicios locales) que necesita campañas medibles y protección frente a canjes no controlados.
+- **Administrador de plataforma** que verifica negocios, vigila abusos y configura el ecosistema.
+- **InnovaTech** como responsable del producto, operación y evolución del MVP.
 
 ---
 
 ## What — ¿Qué problema se busca resolver?
 
-Lima carece de un sistema de micromovilidad eléctrica compartida que integre accesibilidad, sostenibilidad, seguridad y monitoreo en tiempo real. Esto genera:
+Se busca superar la fragmentación entre **promoción**, **canje seguro** y **prueba social**. Sin una solución integrada aparecen:
 
-- Escasez de opciones eficientes para distancias cortas.
-- Tiempos de viaje elevados y congestión persistente.
-- Baja adopción de soluciones de transporte basadas en IoT.
-- Gestión ineficiente de flotas por falta de datos actualizados.
+- Pérdida de margen por **canjes fraudulentos** o duplicados.
+- **Baja confianza** del consumidor cuando no hay evidencia de experiencias de pares.
+- **Campañas “ciegas”** para la empresa: poca visibilidad de vistas, conversiones y satisfacción.
 
 ---
 
 ## Where — ¿Dónde ocurre?
 
-El problema se presenta en **Lima Metropolitana**, especialmente en zonas con:
-
-- Congestión vehicular recurrente.
-- Alta afluencia peatonal.
-- Necesidad de alternativas de movilidad de “última milla”.
+- Canales digitales y físicos donde hoy circulan cupones (redes sociales, impresos, mensajes).
+- **Puntos de venta** donde el usuario debe mostrar un beneficio y la empresa debe validarlo rápidamente.
+- Regiones con alta adopción móvil y crecimiento del comercio digital en **América Latina** (enfoque inicial alineado al MVP).
 
 ---
 
 ## When — ¿Cuándo ocurre?
 
-- Actualmente, debido al crecimiento poblacional y la dependencia del vehículo particular.
-- Se intensifica en **horas punta**, donde existe mayor demanda de alternativas sostenibles.
+- De forma continua en campañas estacionales, lanzamientos y “días de promoción”.
+- Se acentúa cuando los códigos se **viralizan sin control** o cuando el negocio no puede **auditar** canjes en tiempo real.
 
 ---
 
 ## Why — ¿Por qué ocurre?
 
-- Infraestructura insuficiente para transporte urbano sostenible.
-- Alta dependencia de autos particulares y taxis.
-- Ausencia de soluciones IoT que optimicen monitoreo y gestión operativa.
-- Brecha tecnológica en el sistema de transporte peruano.
+- Los modelos tradicionales suelen basarse en **códigos reutilizables o físicos** difíciles de auditar.
+- Hay **poco anti-fraude** sistemático frente a duplicidad y reuso.
+- Muchas apps son **monederos de descuentos** sin una **comunidad** integrada que genere confianza.
+- La **digitalización de PYMEs** requiere herramientas **accesibles** y de **rápida implementación** (autogestión desde la app).
 
 ---
 
 ## How — ¿Cómo se manifiesta el problema?
 
-- Mayor tiempo de desplazamiento y pérdida de productividad.
-- Incremento de emisiones contaminantes.
-- Dificultad para localizar vehículos, prevenir robos o detectar fallas sin IoT.
-- Operaciones manuales costosas y lentas para gestionar la flota.
+- El consumidor desconfía o abandona la oferta si el proceso es confuso o parece “demasiado bueno para ser verdad”.
+- La empresa no distingue entre **interés real** y **canje válido**, ni relaciona resultados con **feedback** cualitativo.
+- Operaciones manuales (listas, sellos, hojas) elevan errores y tiempos de validación.
 
 ---
 
 ## How Much — ¿Cuánto impacta?
 
-- Pérdidas económicas significativas por horas-hombre perdidas en tráfico.
-- El transporte genera **más del 30% de las emisiones urbanas**.
-- Los usuarios pagan entre **30% y 40% más** por trayectos cortos al no existir alternativas.
-- La falta de monitoreo IoT incrementa los costos operativos entre **25% y 50%**.
+- El impacto económico se expresa en **márgenes erosionados** por canjes no controlados y en **costo de adquisición** alto cuando la promoción no genera confianza.
+- El MVP documenta como referencia de éxito social que las promociones con **reseñas positivas** pueden generar **hasta 3× más canjes** que las que no cuentan con retroalimentación (indicador orientador para priorizar el módulo social).
 
 ---
 
-La ausencia de un sistema de micromovilidad eléctrica inteligente afecta directamente la eficiencia del transporte urbano en Lima, generando impactos económicos, ambientales y sociales. **WeTech** plantea una solución integral basada en vehículos eléctricos compartidos, tecnología IoT y una plataforma robusta que responde a una necesidad **urgente y creciente** en la ciudad.
+La ausencia de una plataforma que combine **gestión de descuentos seguros**, **QR único anti-fraude** y **comunidad** dificulta escalar promociones con confianza y métricas. **InnovaTech**, a través de **OnTimeRide**, propone un MVP funcional que cierra el ciclo de valor con validación en punto de venta, historial y analítica para empresas y administración.
 
 ### 1.2.2. Lean UX Process
 
@@ -181,13 +174,13 @@ Se presenta: **Problem Statement**, **Assumptions**, **Hypothesis Statements** y
 ##### 1.2.2.1. Lean UX Problem Statements
 
 **Context (Contexto)**  
-En Lima existe alta congestión urbana, emisiones elevadas y carencia de alternativas de transporte económico y sostenible para recorridos de corta distancia. La operación de flotas (bicicletas y scooters eléctricos) requiere herramientas de monitoreo en tiempo real y gestión eficiente para reducir pérdidas, mejorar disponibilidad y aumentar seguridad.
+En América Latina crece la demanda de herramientas que conecten compra física y conveniencia digital. Las soluciones de cupones suelen sufrir **códigos compartidos**, **duplicidad** y **poca retroalimentación real**, lo que erosiona márgenes y confianza.
 
 **Problem (Problema)**  
-No hay una solución integrada que combine micromovilidad compartida + IoT + plataforma digital que ofrezca: geolocalización fiable, estado de batería y vehículo en tiempo real, reservas y desbloqueo sencillos, y métricas operativas que permitan una operación escalable y segura en Lima.
+No hay una solución integrada, simple para PYMEs y robusta para usuarios que combine: **publicación de campañas**, **QR único por usuario/oferta**, **validación en tiempo real**, **bloqueo post-canje**, **reseñas y comunidad**, y **analítica por campaña** en un mismo producto.
 
 **Impact (Impacto esperado)**  
-Sin una solución integrada: pérdidas operativas por robos/fallas, baja tasa de uso por falta de confianza/visibilidad, y altos costos de mantenimiento. Con la solución (WeTech) se espera aumentar la utilización de la flota, reducir tiempos de búsqueda/disponibilidad y disminuir costos operativos.
+Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Con **OnTimeRide** se espera aumentar canjes exitosos, mejorar confianza mediante prueba social y dar visibilidad operativa (canjes, vistas, ratings) a empresas y administración.
 
 **Measure of success (Criterios de éxito)**  
 - Disponibilidad media de la flota ≥ 85% en zonas objetivo.  
@@ -202,24 +195,24 @@ Sin una solución integrada: pérdidas operativas por robos/fallas, baja tasa de
 > Las assumptions se agrupan en: Business, User, Value, Feature.
 
 **a) Business Assumptions**  
-- Existe demanda suficiente en Lima para un servicio de micromovilidad eléctrica compartida rentable.  
-- Un modelo de ingreso mixto (tarifa por uso + suscripción para usuarios frecuentes + acuerdos B2B con empresas/municipalidades) es viable.  
-- Reducción de costos operativos mediante telemetría IoT permitirá escalabilidad del negocio.
+- PYMEs y negocios locales adoptarán el canal si pueden **autogestionar** campañas desde la app con costo de implementación bajo.  
+- Un modelo basado en volumen de canjes y visibilidad (y expansiones futuras como suscripción premium) puede sostener el negocio.  
+- El **anti-fraude** (QR + bloqueo) reduce pérdidas y hace atractiva la migración desde cupones informales.
 
 **b) User Assumptions**  
-- Usuarios urbanos (estudiantes, trabajadores, turistas) adoptarán el servicio si es más rápido y económico que sus opciones actuales.  
-- Los usuarios valoran la visibilidad en tiempo real (ubicación y estado del vehículo) y procesos de desbloqueo sencillos.  
-- La percepción de seguridad influye decisivamente en la intención de uso.
+- Personas de **18–45 años** usarán la app si el feed + filtros + geolocalización les permiten **descubrir** ofertas relevantes rápidamente.  
+- Mostrar **rating promedio** y reseñas antes de activar aumenta intención de canje.  
+- La experiencia post-canje (invitar a reseñar) es aceptable si el flujo es corto y claro.
 
 **c) Value Assumptions**  
-- Proveer datos en tiempo real (batería, ubicación, disponibilidad) aumentará la confianza del usuario y la retención.  
-- La optimización de rutas y redistribución basada en datos reducirá costos operativos y mejorará la experiencia.  
-- Integración de IoT permitirá diagnósticos preventivos y reducción de fallas.
+- Un **QR único** vinculado a cuenta y promoción aumenta confianza frente a códigos genéricos.  
+- Las promociones con **reseñas positivas** pueden multiplicar canjes respecto a ofertas sin retroalimentación (hipótesis de diseño a validar con datos).  
+- **Notificaciones push** de ofertas relevantes aumentan retorno al feed sin percibirse como spam (segmentación y preferencias).
 
 **d) Feature Assumptions**  
-- Un mapa con disponibilidad en tiempo real y reserva rápida aumentará conversiones de uso.  
-- Alertas de batería y mantenimiento automático reducirán tiempos de inactividad.  
-- Simulación de backend (JSON Server) es suficiente en fases tempranas para validar flujos UX del frontend.
+- **Feed con filtros** (categoría, ubicación, empresa, %, vigencia) + **detalle con reseñas** aumenta activación de descuentos.  
+- **Escanear QR** + **ingreso manual** cubren la variabilidad de puntos de venta.  
+- **Panel admin** + verificación de empresas es necesario para escalar con bajo riesgo de abuso.
 
 ---
 
@@ -228,106 +221,97 @@ Sin una solución integrada: pérdidas operativas por robos/fallas, baja tasa de
 > Cada hipótesis sigue el patrón: *We believe... / We will know this is true when...*
 
 **a) Business Hypothesis**  
-We believe that WeTech will achieve a sustainable unit economics if IoT-driven operations reduce downtime and maintenance costs by ≥25%.  
-**We will know this is true when:** acuerdos piloto con al menos 1 operador/empresa, costo operativo por vehículo disminuye ≥25% en 3 meses y el ingreso promedio por vehículo aumenta ≥15%.
+We believe that **InnovaTech** logrará retención de negocios si las campañas muestran analítica accionable (canjes, vistas, ratings) y reducen fraude vs. cupones tradicionales.  
+**We will know this is true when:** empresas activas publican **≥ 2** campañas en promedio en las primeras semanas y reportan **menos disputas** por reuso vs. métodos previos (entrevista + datos).
 
 **b) User Hypothesis**  
-We believe that urban users (initial segment: commuters 18–45 años) will choose WeTech if they can reliably find and unlock vehicles in <60s and see battery/estado en tiempo real.  
-**We will know this is true when:** tasa de conversión de vista→reserva ≥10%, tiempo medio de desbloqueo <60s y retención semanal positiva tras 4 semanas.
+We believe that users will complete redemption if **QR validation** feels instant and the “Mis descuentos” section is trustworthy.  
+**We will know this is true when:** **más del 95%** de canjes exitosos, tiempo de validación **menor a 3 segundos** en condiciones de prueba, y tasa de abandono post-activación QR baja semana a semana.
 
 **c) Value Hypothesis**  
-We believe that combinar IoT con notificaciones y un UX simple disminuirá la fricción de uso y aumentará la utilización por vehículo.  
-**We will know this is true when:** utilización por vehículo aumenta ≥20% en 8–12 semanas y encuestas de satisfacción muestran mejora significativa.
+We believe that social proof (reviews + comments + likes) increases conversion from view → “Obtener descuento”.  
+**We will know this is true when:** ofertas con reseñas muestran mayor tasa de generación de QR vs. ofertas sin reseñas, manteniendo vigencia comparable.
 
 **d) Feature Hypothesis**  
-We believe that implementar: (1) mapa en tiempo real, (2) reservas rápidas y (3) alertas de estado, incrementará logs de uso y reducirá incidencias operativas.  
-**We will know this is true when:** número de sesiones activas aumenta semanalmente, tickets/averías por vehículo disminuyen ≥30% y el uso del mapa/reserva representa ≥50% de sesiones.
+We believe that building the **core loop** (publicar → generar QR → escanear/validar → bloquear → reseñar) + **dashboard empresa/admin** is sufficient for a 12-week MVP.  
+**We will know this is true when:** usuarios y empresas completan el flujo extremo a extremo en pruebas beta sin pasos alternativos “fuera de la app” críticos.
 
 ---
 
 ##### 1.2.2.4. Lean UX Canvas
 
 **Resumen:**  
-El Lean UX Canvas integra la visión de negocio, las necesidades del usuario, las hipótesis clave y los experimentos necesarios para validar el modelo de micromovilidad inteligente de **WeTech**. Este enfoque prioriza aprendizaje rápido con usuarios reales, minimiza riesgos y utiliza IoT y datos operativos para diferenciarse frente a competidores tradicionales en el contexto urbano de Lima.
+El Lean UX Canvas integra negocio, usuario, hipótesis y experimentos para validar **OnTimeRide** como plataforma de descuentos con **QR anti-fraude** y **comunidad**. El roadmap de referencia del MVP propone **12 semanas** en fases: fundación, core de descuentos, módulo social, dashboards/analytics y QA/lanzamiento.
 
 ---
 
 #### 1. Business Problem
-Lima enfrenta congestión vehicular, largos tiempos de traslado y aumento de la contaminación. Las operaciones de micromovilidad existentes son ineficientes por falta de telemetría, baja disponibilidad de flota y escasa adaptación a la realidad local. No existe una solución de micromovilidad eléctrica, económica y confiable, optimizada con IoT para las necesidades de la ciudad.
+Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **control post-canje** y **prueba social integrada**. Las empresas necesitan campañas **medibles**; los usuarios necesitan **confianza** y canje **rápido** en tienda.
 
 ---
 
 #### 2. Users / Customers (Initial Segment)
-- **Usuarios finales (B2C):** Personas de 18–45 años (estudiantes, profesionales, trabajadores) que realizan desplazamientos cortos diarios en Lima.  
-- **Clientes institucionales (B2B/B2G):** Universidades, empresas, parques industriales y municipalidades que requieren movilidad interna o gestión de flota.  
-- Ambos segmentos priorizan disponibilidad, seguridad y costos accesibles.
+- **B2C — Usuario consumidor:** 18–45 años, uso intensivo de smartphone, interés en restaurantes, retail, servicios y entretenimiento.  
+- **B2B — Empresa afiliada:** PYMEs y negocios locales (incl. retail y servicios) que buscan atraer clientes con campañas trazables.  
+- **Admin de plataforma:** verificación, categorías, reportes de abuso/fraude y parámetros globales.
 
 ---
 
 #### 3. User Needs / Pain Points
-- Dificultad para encontrar vehículos cercanos y operativos.  
-- Incertidumbre sobre nivel de batería y estado técnico.  
-- Procesos de desbloqueo lentos o poco fiables.  
-- Falta de transparencia en costos y tiempos de viaje.  
-- Riesgo de robos y vandalismo en zonas inseguras.  
-- Escasez de opciones ecológicas y económicas para trayectos cortos.
+- Desconfianza por códigos compartidos o poco claros.  
+- Fricción al canjear (colas, validación lenta, ambigüedad de condiciones).  
+- Falta de evidencia de experiencias recientes (reviews, rating visible).  
+- Para negocios: poca visibilidad de **vistas vs. canjes**, horarios pico y satisfacción.
 
 ---
 
 #### 4. Value Proposition / Solution Ideas
-- **Flota inteligente con IoT** (GPS, telemetría, bloqueo remoto, alertas).  
-- **Aplicación móvil**: registro ágil, mapa en tiempo real, reserva y desbloqueo.  
-- **Backend de operaciones** con algoritmos para optimización de rutas y mantenimiento predictivo.  
-- **Dashboard administrativo** para monitoreo, gestión de zonas y KPIs.  
-- Modelos de tarifa: pago por uso, suscripciones y alianzas corporativas.
+- **QR único** por usuario/oferta + **bloqueo automático** tras canje.  
+- **Feed** con filtros, **geolocalización** y **búsqueda** (empresa, categoría, %, vigencia).  
+- **Módulo social:** reseñas (1–5), comentarios, likes, notificaciones de actividad; empresa **responde** reseñas.  
+- **Dashboard empresa** y **panel admin** con métricas y moderación.
 
 ---
 
 #### 5. Assumptions (Negocio, Usuario, Tecnología)
-- Los usuarios adoptarán micromovilidad si la experiencia es simple, económica y confiable.  
-- Existe demanda suficiente en distritos con alta congestión.  
-- Telemetría IoT reducirá costos operativos (downtime, pérdidas, mantenimiento).  
-- Clientes B2B valorarán soporte local y personalización.  
-- La infraestructura urbana permite operar rutas de última milla.
+- La autogestión desde la app reduce barrera de adopción para PYMEs.  
+- La verificación de empresas y categorías administradas mejoran calidad del marketplace.  
+- Un backend con estados de código (**pendiente → utilizado**) y reglas anti-doble-canje es central para credibilidad.
 
 ---
 
 #### 6. Hypothesis Statements
-- **Usuario:** Si ofrecemos vehículos visibles en un mapa y reservas rápidas, los usuarios usarán la app para viajes cortos.  
-- **Valor:** Si implementamos telemetría IoT, la disponibilidad aumentará y las fallas disminuirán, mejorando la confiabilidad percibida.  
-- **Negocio:** Si validamos demanda en zonas piloto, el modelo freemium/suscripción será sostenible.  
-- **Feature:** Si mostramos batería y estado del vehículo, reduciremos cancelaciones y fricción.
+- **Usuario:** Si el detalle de oferta muestra condiciones + rating + reseñas, aumentará la activación del descuento.  
+- **Valor:** Si el canje es validado en **menos de 3 segundos** y el QR queda bloqueado, sube la confianza percibida.  
+- **Negocio:** Si el dashboard muestra canjes/vistas/ratings, las empresas repetirán campañas.  
+- **Feature:** Priorizar el **ciclo completo** publicar → QR → canjear → reseñar antes de expansiones (compartir en redes, premium, API POS, gamificación, BI avanzado, chat).
 
 ---
 
 #### 7. Experiments / MVP Plan
-- Construir un **MVP**: Landing page + App mínima (mapa básico, registro, reserva, simulación IoT) + Dashboard inicial.  
-- Simular IoT con **JSON Server / MQTT mock / simuladores** para validar flujos sin hardware físico.  
-- Ejecutar un **piloto cerrado** (campus, empresa o zona acotada) para recopilar datos reales.  
-- Medir con analytics propio y métricas clave; realizar entrevistas y tests de usabilidad.  
-- Iterar priorizando features que reduzcan fricción y mejoren conversión.
+- Construir MVP con **18 funcionalidades core** del documento (registro/login, perfiles, feed, promoción, QR, escaneo/manual, bloqueo, historial, dashboard, reseñas, likes/comentarios, push, geo, filtros, panel admin, respuesta a reseñas).  
+- Dejar expansiones explícitas para versiones posteriores (p. ej., compartir oferta, premium, API pública, gamificación, analytics avanzado, chat).  
+- Beta con primeros usuarios y negocios; entrevistas + pruebas de usabilidad en punto de venta simulado.
 
 ---
 
 #### 8. Success Metrics (Métricas de Éxito)
-- **Disponibilidad de flota ≥ 85%**.  
-- **Tasa de utilización (trips/vehículo/día) +20%** durante semanas iniciales.  
-- **Reducción de incidentes/fallas ≥ 30%** por uso de IoT.  
-- **Retención semanal** y usuarios activos recurrentes.  
-- **Tiempo de desbloqueo ≤ 5 segundos**.  
-- **NPS ≥ 40** en fase piloto.
+- Empresas activas, usuarios activos, canjes, reseñas (objetivos del MVP mes 1–3).  
+- Tasa de canje exitoso **superior al 95%**.  
+- Tiempo de validación QR **menor a 3 segundos** (mejorar hacia **menor a 1 segundo** en escala).  
+- Rating app **≥ 4.0** estrellas en etapa inicial.
 
 ---
 
 #### 9. Risks & Mitigations
-- **Riesgo:** Vandalismo o robos.  
-  **Mitigación:** Geofencing, alarmas, bloqueo remoto, sensores de movimiento y zonas seguras.  
-- **Riesgo:** Baja adopción inicial.  
-  **Mitigación:** Promociones, acuerdos B2B, hubs en hotspots y UX simplificada.  
-- **Riesgo:** Fallas técnicas de IoT.  
-  **Mitigación:** Tests progresivos, redundancia de datos y actualizaciones de firmware seguras.  
-- **Riesgo:** Fricciones regulatorias.  
-  **Mitigación:** Coordinación con municipalidades, cumplimiento normativo y pilotos conjuntos.
+- **Riesgo:** intentos de reuso o suplantación de códigos.  
+  **Mitigación:** UUID + firma HMAC server-side, rechazo de doble uso, alertas a admin, expiración configurable del QR.  
+- **Riesgo:** reseñas falsas / abuso.  
+  **Mitigación:** reseña ligada a canje completado, reportes, moderación admin.  
+- **Riesgo:** baja oferta inicial (poco inventario de promociones).  
+  **Mitigación:** pilotos focalizados por vertical (p. ej., restaurantes) y onboarding asistido.  
+- **Riesgo:** dependencia de permisos de cámara/GPS/notificaciones.  
+  **Mitigación:** alternativas UX claras (manual, búsqueda sin GPS si aplica) y explicación de valor por permiso.
 
 ---
 
@@ -335,68 +319,68 @@ Lima enfrenta congestión vehicular, largos tiempos de traslado y aumento de la 
   <thead>
     <tr>
       <th style="border:1px solid #ddd; padding:12px; background:#f6f6f6; text-align:center; width:28%;">Bloque del Lean UX Canvas</th>
-      <th style="border:1px solid #ddd; padding:12px; background:#f6f6f6; text-align:center; width:72%;">Contenido Mejorado (WeTech)</th>
+      <th style="border:1px solid #ddd; padding:12px; background:#f6f6f6; text-align:center; width:72%;">Contenido (OnTimeRide — MVP descuentos)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>1. Business Problem</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        Lima enfrenta congestión, altos tiempos de traslado y mayor contaminación. Las empresas actuales de micromovilidad operan sin telemetría, con baja disponibilidad y adaptación local. No existe una solución eléctrica, accesible y optimizada por IoT para la realidad peruana.
+        Cupones y promociones se comparten sin control, se duplican y generan poca señal de confianza. Falta una solución integrada con QR único, bloqueo post-canje, comunidad (reseñas/ratings) y analítica por campaña para PYMEs y usuarios móviles.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>2. Users / Customers (Initial Segment)</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
         <ul style="margin:0; padding-left:16px;">
-          <li><strong>B2C:</strong> Personas 18–45 años (estudiantes, profesionales) con trayectos cortos.</li>
-          <li><strong>B2B/B2G:</strong> Universidades, empresas y municipalidades que requieren movilidad y gestión de flota.</li>
+          <li><strong>B2C:</strong> Personas 18–45 años que consumen ofertas en restaurantes, retail, servicios y entretenimiento.</li>
+          <li><strong>B2B:</strong> PYMEs y negocios locales que publican campañas medibles y requieren validación en punto de venta.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>3. User Needs / Pain Points</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        Dificultad para ubicar vehículos, incertidumbre sobre batería/estado, desbloqueos lentos, falta de transparencia en costos, inseguridad y escasez de alternativas ecológicas.
+        Desconfianza por códigos genéricos, fricción al canjear, poca evidencia social previa al uso, y para negocios: poca trazabilidad de vistas, canjes y satisfacción por campaña.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>4. Value Proposition / Solution Ideas</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        Flota IoT (GPS, telemetría, bloqueo remoto), app móvil con mapa y reserva, backend con optimización y mantenimiento predictivo, dashboard administrativo y modelos de tarifa flexibles.
+        Feed con filtros y geolocalización, generación de QR único, escaneo o código manual en tienda, bloqueo automático, historial, reseñas/likes/comentarios, push, dashboards de empresa y panel admin.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>5. Assumptions</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        Adopción si la experiencia es simple y económica; demanda en distritos congestionados; IoT reduce costos; B2B valora soporte local; infraestructura permite rutas de última milla.
+        Autogestión atractiva para PYMEs; prueba social aumenta conversión; anti-fraude reduce pérdidas; verificación y moderación habilitan crecimiento con calidad.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>6. Hypothesis Statements</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        Hipótesis sobre uso si hay visibilidad en mapa y reservas rápidas; telemetría mejora disponibilidad; pilotos validan modelo freemium; mostrar batería reduce cancelaciones.
+        Hipótesis sobre descubrimiento con feed+filtros+rating; validación rápida aumenta confianza; pilotos por vertical validan oferta; reseñas post-canje alimentan descubrimiento social.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>7. Experiments / MVP Plan</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        MVP (landing, app mínima, dashboard). Simulación IoT (JSON Server / MQTT mock). Piloto cerrado en zona controlada. Analytics y tests de usabilidad para iterar.
+        MVP en 12 semanas (fundación, core QR, social, dashboards, QA). Beta con usuarios/negocios reales; métricas de canje, reseñas y tiempos de validación; entrevistas y pruebas en flujo de tienda.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>8. Success Metrics</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        Disponibilidad ≥85%, utilización +20%, reducción de fallas ≥30%, retención semanal, desbloqueo ≤5s, NPS ≥40 en piloto.
+        Empresas activas, usuarios activos, canjes y reseñas según metas del MVP; canjes exitosos superior al 95%; validación QR menor a 3 segundos; rating app al menos 4.0.
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;"><strong>9. Risks & Mitigations</strong></td>
       <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
-        <strong>Vandalismo:</strong> geofencing, alarmas y bloqueo remoto.<br>
-        <strong>Baja adopción:</strong> promociones, alianzas B2B y hubs en hotspots.<br>
-        <strong>Fallos IoT:</strong> pruebas progresivas y redundancia.<br>
-        <strong>Regulación:</strong> coordinación con autoridades y pilotos conjuntos.
+        <strong>Fraude/reuso:</strong> UUID + HMAC, estados de código, alertas admin, expiración configurable.<br>
+        <strong>Abuso en reseñas:</strong> canje previo, reportes y moderación.<br>
+        <strong>Baja oferta/demanda:</strong> pilotos verticales y onboarding asistido.<br>
+        <strong>Permisos móviles:</strong> alternativas (manual, búsqueda) y mensajes de valor por permiso.
       </td>
     </tr>
   </tbody>
@@ -407,55 +391,52 @@ Lima enfrenta congestión vehicular, largos tiempos de traslado y aumento de la 
 
 ### Segmentación de Usuarios — InnovaTech 
 
-El sistema integral de micromovilidad eléctrica compartida propuesto por **WeTech** se enfocará inicialmente en dos segmentos estratégicos, seleccionados según criterios demográficos, comportamentales, tecnológicos y de adopción potencial. Estos segmentos representan los grupos con mayor probabilidad de uso recurrente y sostenible del servicio, permitiendo validar el modelo operativo y escalar posteriormente hacia otros mercados.
+El MVP de **OnTimeRide** se enfoca en dos segmentos complementarios del documento de producto: **usuarios finales** que descubren y canjean descuentos desde el móvil, y **empresas afiliadas** que publican campañas con condiciones y límites de canje. Esta segmentación permite validar el ciclo **publicar → generar QR → canjear → reseñar** y priorizar confianza (anti-fraude + comunidad).
 
 ---
 
-### 1. Jóvenes Universitarios
+### 1. Usuario consumidor (B2C)
 
-Este segmento está conformado por estudiantes de educación superior —universidades, institutos y centros tecnológicos— cuyas edades oscilan entre **17 y 27 años**. Se concentran principalmente en zonas urbanas con alta congestión vehicular, como **Lima Metropolitana, Arequipa, Trujillo y Cusco**, ciudades donde los tiempos de traslado representan un problema creciente.
+Conformado por **personas de 18 a 45 años** que buscan **aprovechar descuentos** en **restaurantes, tiendas, servicios y entretenimiento** desde su **smartphone**, con alta probabilidad de uso de apps, notificaciones y geolocalización para descubrir ofertas cercanas.
 
 ### **Características demográficas y tecnológicas**
-- Edad: **17–27 años**, con predominancia de jóvenes que combinan transporte público con tramos cortos.
-- Alta familiaridad con **aplicaciones móviles**, pagos digitales y soluciones bajo demanda.
-- Acceso constante a **smartphones y conectividad móvil**.
-- Alta **sensibilidad al costo** y al tiempo de transporte.
+- Edad objetivo **18–45 años**, con foco en adopción móvil y hábitos de consumo omnicanal.
+- Alta familiaridad con **feed**, **filtros**, **reseñas** y **pagos/descuentos** digitales.
+- Smartphone como canal principal de descubrimiento y de **presentación del QR** en tienda.
 
 ### **Necesidades y comportamientos**
-- Necesitan cubrir trayectos cortos y medios (1–5 km) entre vivienda, campus, paraderos y centros de recreación.
-- Buscan alternativas más económicas que taxis y más rápidas que transporte público saturado.
-- Valoran opciones sostenibles, accesibles y con disponibilidad inmediata.
-- Su adopción tecnológica es alta: pagos rápidos (Yape / Plin), geolocalización y desbloqueo simple.
+- Explorar ofertas por **categoría**, **ubicación** o **empresa**, y entender **condiciones** antes de activar.
+- Obtener un **QR único** por promoción, con claridad de vigencia y estado (pendiente / utilizado).
+- Después del canje, participar del **módulo social** (calificación 1–5, texto, likes/comentarios) y recibir **notificaciones** de actividad relevante.
 
-### **Sustento**
-- Más del **45% de los viajes diarios en Lima** corresponden a distancias cortas, ideales para micromovilidad.  
-- Los jóvenes entre **18 y 29 años** son el grupo con mayor adopción de apps de movilidad y pagos digitales.  
-- La congestión en horas punta eleva los tiempos de viaje hasta **70–90 minutos**, incentivando alternativas eficientes.
+### **Sustento (según el MVP)**
+- El comercio digital en **América Latina** impulsa la expectativa de experiencias físicas conectadas a apps.  
+- La **prueba social** (reseñas y ratings visibles) es un diferenciador frente a cupones “no verificados” por la comunidad.  
+- El MVP define **KPIs** orientadores (usuarios activos, canjes, reseñas, tasa de éxito de canje, tiempo de validación).
 
-Este segmento representa la base ideal para validar el producto por su uso intensivo, su capacidad de viralización y su apertura natural a nuevas tecnologías.
+Este segmento permite validar descubrimiento, generación de QR, canje en punto de venta y retroalimentación comunitaria.
 
 ---
 
-### 2. Empresas y Organizaciones (Segmento B2B)
+### 2. Empresas afiliadas (B2B)
 
-El segundo segmento está compuesto por **empresas privadas, instituciones educativas, entidades administrativas y parques empresariales** que buscan soluciones de movilidad sostenible para optimizar el desplazamiento interno de sus trabajadores, estudiantes o colaboradores.
+Compuesto por **PYMEs, restaurantes, cadenas retail, servicios locales y negocios** que desean **atraer clientes** con **campañas medibles** y **menor riesgo de fraude**, publicando promociones con **porcentaje o monto**, **fechas**, **condiciones** y **límite de canjes**.
 
-### **Características institucionales**
-- Organizaciones medianas y grandes con más de **200 trabajadores** o comunidades estudiantiles extensas.
-- Entornos con trayectos internos frecuentes (campus, parques industriales, oficinas corporativas).
-- Interés creciente en iniciativas **ESG y sostenibilidad**.
+### **Características del negocio**
+- Operación con **punto de venta** donde se validará el beneficio mediante **escaneo de QR** o **ingreso manual** de código.
+- Necesidad de **dashboard** con campañas activas, **analítica** (canjes, vistas, calificaciones) y capacidad de **pausar/editar** campañas.
+- Interacción con reputación: **responder reseñas** de forma pública.
 
 ### **Necesidades y comportamientos**
-- Requieren alternativas rápidas para movimientos internos o cercanos (campus y sedes conectadas).
-- Necesitan **seguridad, trazabilidad y control** de flota.
-- Buscan reducir costos de transporte interno y tiempos muertos.
-- Demandan **planes de suscripción**, panel administrativo, métricas de uso y vehículos con telemetría IoT.
+- Verificación/registro de empresa y **perfil** con **logo**, **categoría** y datos que habiliten confianza (incluye flujo de **aprobación por administrador** en el MVP).
+- Creación de campañas con reglas claras para el usuario y trazabilidad para la empresa.
+- Uso del **panel de validación** en tienda como parte operativa del día a día.
 
 ### **Sustento**
-- El **35% de empresas peruanas** reporta proyectos activos relacionados con sostenibilidad.  
-- Las instituciones educativas gestionan campus con **10,000–30,000 usuarios diarios**, generando alta demanda de movilidad interna.  
-- Los modelos corporativos de suscripción brindan **ingresos recurrentes** y menor rotación estacional.
+- Motivación explícita del MVP: **pérdida de márgenes** por canjes no controlados y **falta de retroalimentación** real del consumidor en soluciones tradicionales.  
+- La propuesta de valor incluye **trazabilidad total** del canje y **simplicidad de adopción** (autogestión desde la app).  
+- Las empresas con múltiples promociones simultáneas se benefician de un **repositorio único** de métricas por campaña.
 
-Este segmento es clave para establecer relaciones comerciales estables, mejorar la predictibilidad financiera y posicionar a WeTech como un aliado estratégico en movilidad sostenible.
+Este segmento es clave para asegurar inventario de ofertas, calidad del marketplace y aprendizaje continuo sobre qué campañas funcionan.
 
 ---
