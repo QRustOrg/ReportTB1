@@ -243,6 +243,15 @@ We believe that building the **core loop** (publicar → generar QR → escanear
 **Resumen:**  
 El Lean UX Canvas integra negocio, usuario, hipótesis y experimentos para validar **OnTimeRide** como plataforma de descuentos con **QR anti-fraude** y **comunidad**. El roadmap de referencia del MVP propone **12 semanas** en fases: fundación, core de descuentos, módulo social, dashboards/analytics y QA/lanzamiento.
 
+<figure style="page-break-inside: avoid; text-align: center;">
+  <img src="assets/chapter01/lean-ux-canvas.png"
+       alt="Lean UX Canvas:"
+       style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
+  <figcaption style="font-size: 0.9em; color: #555;">
+    <strong>Figura 1:</strong> Lean UX Canvas.
+  </figcaption>
+</figure>
+
 ---
 
 #### 1. Business Problem

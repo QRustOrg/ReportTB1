@@ -167,3 +167,23 @@ Obtener información cualitativa que permita validar supuestos del MVP, mapear f
 
 ---
 
+### 2.3. Needfinding
+
+### 2.3.1. User Personas
+
+En esta sección se presentan las fichas de User Personas construidas a partir de los datos recolectados del análisis de entrevistas a nuestros segmentos objetivos. Estas fichas permiten representar de forma clara y estratégica los perfiles de cada segmento objetivo, considerando sus metas, habilidades, motivaciones y dificultades. De esta manera se integra la perspectiva del usuario y tendencias del sector para identificar oportunidades en el mercado y ofrecer una solución alineada a lo que el usuario necesita.
+
+## Segmento Objetivo 1: Usuario consumidor (B2C)
+
+![UserPersona-Segmento1](assets/chapter02/UserPersona-Segmento1.png)
+
+### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los User Journey Maps de los dos segmentos objetivo: 
+
+<br>
+
+**Segmento Objetivo 1: Usuario consumidor (B2C)**
+
+![UserJourneyMapping-Segmento1](assets/chapter02/UserJourneyMapping-Segmento1.png)
+
