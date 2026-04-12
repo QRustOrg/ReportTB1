@@ -177,6 +177,10 @@ En esta sección se presentan las fichas de User Personas construidas a partir d
 
 ![UserPersona-Segmento1](assets/chapter02/UserPersona-Segmento1.png)
 
+## Segmento Objetivo 2: Empresas afiliadas (B2B)
+
+![UserPersona-Segmento2](assets/chapter02/UserPersona-Segmento2.png)
+
 ### 2.3.3. User Journey Mapping
 
 En esta sección se presentan los User Journey Maps de los dos segmentos objetivo: 
