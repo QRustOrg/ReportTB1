@@ -27,9 +27,9 @@
 
 **Profesor:** Eduardo Martin Reyes Rodriguez 
 
-<br><br>
+<br>
 
-# **INFORME DE TRABAJO TB1**
+**INFORME DE TRABAJO TB1**
 
 <br>
 
@@ -45,7 +45,7 @@
 
 <div align="center">
 
-## **Relación de Integrantes**
+**Relación de Integrantes**
 
 <br>
 
@@ -57,17 +57,13 @@
 | Alejandro Manuel, Galindo Montero| U202321264 |
 
 
-</div>
-
-><br><br>
-
-<div align="center">
+<br><br>
 
 **Abril - 2026**
 
 </div>
 
-><br><br>
+<br><br>
 
 # Registro de Versiones del Informe
 <br>
@@ -159,13 +155,13 @@
 # Project Report Collaboration Insights
 
 
-URL del repositorio para el proyecto: https://github.com/Apps-Web-Grupo-4-FruTech/ReportFinalProject
+URL del repositorio para el proyecto: https://github.com/OnTimeRide/ReportTB1.git
 
-URL del repositorio de Landing Page: https://github.com/Apps-Web-Grupo-4-FruTech/Landing-Page
+URL del repositorio de Landing Page: 
 
-URL del repositorio del Frontend: https://github.com/Apps-Web-Grupo-4-FruTech/Frontend-FruTech
+URL del repositorio del Frontend: 
 
-URL del repositorio del Backend: https://github.com/Apps-Web-Grupo-4-FruTech/Backend-AgriApp
+URL del repositorio del Backend: 
 
 #
 
@@ -418,3 +414,41 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
 9. [Bibliografía](#bibliografía)<br>
 
 10. [Anexos](#anexos)<br>
+
+<br>
+
+# Student Outcome
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterio específico</th>
+      <th>Acciones realizadas</th>
+      <th>Conclusión general</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software</b></td>
+      <td>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Alejandro Manuel Galindo Montero</b>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software</b></td>
+      <td>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Alejandro Manuel Galindo Montero</b>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
