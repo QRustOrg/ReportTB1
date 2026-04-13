@@ -190,10 +190,6 @@ En esta sección se presenta el **User Task Matrix**, construido a partir de los
 
 Las tareas fueron identificadas a partir del análisis del comportamiento esperado de ambos perfiles dentro de la aplicación, considerando sus necesidades, objetivos y puntos de interacción con la plataforma. Cada tarea fue evaluada según su frecuencia de uso y nivel de importancia, con el fin de priorizar funcionalidades clave para el desarrollo del MVP y mejorar la experiencia general del sistema.
 
----
-
-<h3>User Task Matrix</h3>
-
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
     <tr>
