@@ -181,6 +181,121 @@ En esta sección se presentan las fichas de User Personas construidas a partir d
 
 ![UserPersona-Segmento2](assets/chapter02/UserPersona-Segmento2.png)
 
+### 2.3.2. User Task Matrix
+
+En esta sección se presenta el **User Task Matrix**, construido a partir de los User Persona que representan a los dos segmentos clave identificados en la plataforma.
+
+**Segmento 1:** Usuarios consumidores (representado por Lizbeth Sánchez).
+**Segmento 2:** Negocios afiliados (representado por Alexander Gálvez).
+
+Las tareas fueron identificadas a partir del análisis del comportamiento esperado de ambos perfiles dentro de la aplicación, considerando sus necesidades, objetivos y puntos de interacción con la plataforma. Cada tarea fue evaluada según su frecuencia de uso y nivel de importancia, con el fin de priorizar funcionalidades clave para el desarrollo del MVP y mejorar la experiencia general del sistema.
+
+---
+
+<h3>User Task Matrix</h3>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th rowspan="2">Tarea / Task</th>
+      <th colspan="2">Lizbeth Sánchez</th>
+      <th colspan="2">Alexander Gálvez</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Explorar promociones disponibles</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Media</td>
+      <td>Media</td>
+    </tr>
+    <tr>
+      <td>Buscar promociones por categoría/ubicación</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Baja</td>
+      <td>Media</td>
+    </tr>
+    <tr>
+      <td>Revisar detalles de promociones</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Ver reseñas y calificaciones</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Media</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Generar código QR para canje</td>
+      <td>Media</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Canjear promociones en punto de venta</td>
+      <td>Media</td>
+      <td>Alta</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Calificar y dejar reseñas</td>
+      <td>Media</td>
+      <td>Media</td>
+      <td>Media</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Consultar historial de promociones</td>
+      <td>Baja</td>
+      <td>Media</td>
+      <td>Media</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Crear y publicar promociones</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Monitorear rendimiento de promociones</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Validar códigos QR de clientes</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Gestionar promociones activas/inactivas</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Media</td>
+      <td>Alta</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2.3.3. User Journey Mapping
 
 En esta sección se presentan los User Journey Maps de los dos segmentos objetivo: 
@@ -190,4 +305,5 @@ En esta sección se presentan los User Journey Maps de los dos segmentos objetiv
 **Segmento Objetivo 1: Usuario consumidor (B2C)**
 
 ![UserJourneyMapping-Segmento1](assets/chapter02/UserJourneyMapping-Segmento1.png)
+
 
