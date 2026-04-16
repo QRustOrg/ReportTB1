@@ -294,4 +294,18 @@ En esta sección se presentan los User Journey Maps de los dos segmentos objetiv
 
 ![UserJourneyMapping-Segmento1](assets/chapter02/UserJourneyMapping-Segmento1.png)
 
+**Segmento Objetivo 2: Empresas afiliadas (B2B)**
 
+![UserJourney-Segmento2](assets/chapter02/UserJourney-Segmento2.png)
+
+### 2.3.4. Empathy Mapping
+
+En esta sección se presentan los Empathy Maps. Estos nos ayudarán a comprender las experiencias, emociones y pensamientos que expresan los usuarios de cada segmento objetivo.
+
+**Segmento Objetivo 1: Usuario consumidor (B2C)**
+
+![EmpathyMapping-Segmento1](assets/chapter02/EmpathyMapping-Segmento1.png)
+
+**Segmento Objetivo 2: Empresas afiliadas (B2B)**
+
+![EmpathyMapping-Segmento2](assets/chapter02/EmpathyMapping-Segmento2.png)
