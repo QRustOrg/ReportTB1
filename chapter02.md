@@ -1,5 +1,5 @@
 
-Capítulo II: Requirements Elicitation & Analysis
+# Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores.
 ### 2.1.1. Análisis competitivo.
@@ -9,7 +9,7 @@ Capítulo II: Requirements Elicitation & Analysis
     </tr>
     <tr>
       <td colspan="1">¿Por qué llevar a cabo el análisis?</td>
-      <td colspan="5">Permite ubicar a <strong>OnTimeRide</strong> frente a modelos de descuentos masivos, marketplaces y agregadores, identificar brechas (fraude, prueba social, trazabilidad por campaña) y definir tácticas de diferenciación coherentes con el MVP.</td>
+      <td colspan="5">Permite ubicar a <strong>Klippr</strong> frente a modelos de descuentos masivos, marketplaces y agregadores, identificar brechas (fraude, prueba social, trazabilidad por campaña) y definir tácticas de diferenciación coherentes con el MVP.</td>
     </tr>
     <tr>
       <td colspan="2"></td>
@@ -100,7 +100,7 @@ Capítulo II: Requirements Elicitation & Analysis
       <td>Agregadores competidores y canales alternativos (redes sociales, grupos de ofertas).</td>
     </tr>
     <tr>
-      <td colspan="2"><strong>Diferenciación OnTimeRide (MVP)</strong></td>
+      <td colspan="2"><strong>Diferenciación Klippr (MVP)</strong></td>
       <td colspan="4"><strong>QR único</strong> por usuario/oferta, <strong>bloqueo post-canje</strong>, <strong>comunidad</strong> (reseñas, ratings, likes/comentarios) integrada al flujo, <strong>analítica por campaña</strong> y <strong>autogestión</strong> para PYMEs, con <strong>panel admin</strong> para verificación y fraude.</td>
     </tr>
   </table>
@@ -108,13 +108,13 @@ Capítulo II: Requirements Elicitation & Analysis
   ---
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 
-**InnovaTech** posicionará **OnTimeRide** explotando las diferencias del MVP frente a marketplaces tradicionales y cuponeras: **unicidad del código (QR personal e irrepetible)**, **anti-fraude con bloqueo automático post-canje**, **comunidad integrada** (reseñas, ratings, likes y comentarios) y **analítica por campaña** con autogestión para el comercio. Frente a actores con gran inventario pero poca trazabilidad fina para PYMEs, el producto apuesta por **confianza** (prueba social + validación en tiempo real en tienda) y por **operación simple** para negocios sin implementaciones costosas.
+**QRust** posicionará a **Klippr** explotando las diferencias del MVP frente a marketplaces tradicionales y cuponeras: **unicidad del código (QR personal e irrepetible)**, **anti-fraude con bloqueo automático post-canje**, **comunidad integrada** (reseñas, ratings, likes y comentarios) y **analítica por campaña** con autogestión para el comercio. Frente a actores con gran inventario pero poca trazabilidad fina para PYMEs, el producto apuesta por **confianza** (prueba social + validación en tiempo real en tienda) y por **operación simple** para negocios sin implementaciones costosas.
 
-Las debilidades típicas de una etapa inicial (menor marca, menor volumen de ofertas vs. incumbentes) se abordarán con **pilotos verticales** (por ejemplo, gastronomía o retail de proximidad), acuerdos con **cámaras de comercio**, asociaciones de **centros comerciales** o **hubs** universitarios, y un plan de contenidos que enseñe el flujo **publicar → generar QR → canjear → reseñar**. El objetivo es construir densidad local y casos de éxito medibles antes de escalar geográficamente.
+Las debilidades típicas de una etapa inicial (menor marca, menor volumen de ofertas vs. incumbentes) se abordarán con **pilotos verticales** (por ejemplo, gastronomía o retail de proximidad), acuerdos con **cámaras de comercio**, asociaciones de **centros comerciales** o **hubs** universitarios, y un plan de contenidos que enseñe el flujo **publicar, generar QR, canjear y reseñar**. El objetivo es construir densidad local y casos de éxito medibles antes de escalar geográficamente.
 
 Para mitigar amenazas como la competencia de **superapps** con módulos promocionales o la **fatiga** de descuentos en redes sociales, se priorizará: (1) **verificación de empresas** y moderación; (2) **UX de canje** con validación rápida y alternativa manual; (3) **métricas claras** para el comercio (vistas, canjes, satisfacción); (4) comunicación del valor **anti-fraude** como beneficio económico directo, no solo “más marketing”.
 
-### 2.2. Entrevistas.
+## 2.2. Entrevistas.
 
 ### 2.2.1. Diseño de entrevistas.
 

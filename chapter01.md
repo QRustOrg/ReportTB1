@@ -3,7 +3,7 @@
 
 ## 1.1. Startup Profile
 
-Somos InnovaTech, interesados en el desarrollo de una plataforma móvil que conecta empresas y consumidores mediante descuentos digitales únicos, seguros y verificables, potenciada por una comunidad social que genera confianza orgánica.
+Somos QRust, interesados en el desarrollo de una plataforma móvil que conecta empresas y consumidores mediante descuentos digitales únicos, seguros y verificables, potenciada por una comunidad social que genera confianza orgánica.
 
 Buscamos cerrar la brecha entre la experiencia física de compra y la conveniencia digital, con campañas medibles para negocios y canjes simples para usuarios, priorizando anti-fraude.
 
@@ -12,7 +12,7 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
 <div style="display:flex; justify-content:center; margin-top:18px;">
   <table style="width:95%; max-width:900px; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;">
     <caption style="caption-side:top; text-align:left; font-weight:bold; margin-bottom:8px;">
-      Misión, Visión y Valores — **Producto:** OnTimeRide (sistema móvil de gestión de descuentos con comunidad social)
+      Misión, Visión y Valores — **Producto:** Klippr (sistema móvil de gestión de descuentos con comunidad social)
     </caption>
     <thead>
       <tr>
@@ -100,7 +100,7 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
 
 El comercio digital en América Latina ha crecido de forma sostenida, lo que aumenta la demanda de herramientas que conecten la experiencia física de compra con la conveniencia digital. Aun así, muchas soluciones de cupones y promociones siguen presentando fallas estructurales: **códigos compartidos en redes sociales**, **impresiones o duplicados** y **poca retroalimentación real** del consumidor.
 
-En este contexto, **InnovaTech** plantea **OnTimeRide** como un sistema móvil donde las empresas publican promociones y descuentos, los usuarios los redimen con un **código QR único e irrepetible** y la **comunidad** valida y amplifica las mejores ofertas mediante reseñas, calificaciones y recomendaciones en tiempo real. 
+En este contexto, **QRust** plantea **Klippr** como un sistema móvil donde las empresas publican promociones y descuentos, los usuarios los redimen con un **código QR único e irrepetible** y la **comunidad** valida y amplifica las mejores ofertas mediante reseñas, calificaciones y recomendaciones en tiempo real. 
 
 **Problema central:** el mercado de promociones sufre tres fricciones: (1) **fraude y reutilización** de cupones físicos o códigos compartibles; (2) **falta de confianza** ante ofertas sin respaldo de experiencias reales; (3) **escasa trazabilidad** para saber qué campañas funcionan y cuántos canjes ocurren. La propuesta aborda esas tres brechas con un enfoque **digital, social y seguro**.
 
@@ -110,7 +110,7 @@ En este contexto, **InnovaTech** plantea **OnTimeRide** como un sistema móvil d
 - **Usuario consumidor** (18–45 años) que busca descuentos en restaurantes, tiendas, servicios y entretenimiento desde el smartphone.
 - **Empresa / negocio afiliado** (PYMEs, retail, servicios locales) que necesita campañas medibles y protección frente a canjes no controlados.
 - **Administrador de plataforma** que verifica negocios, vigila abusos y configura el ecosistema.
-- **InnovaTech** como responsable del producto, operación y evolución del MVP.
+- **QRust** como responsable del producto, operación y evolución del MVP.
 
 ---
 
@@ -163,15 +163,15 @@ Se busca superar la fragmentación entre **promoción**, **canje seguro** y **pr
 
 ---
 
-La ausencia de una plataforma que combine **gestión de descuentos seguros**, **QR único anti-fraude** y **comunidad** dificulta escalar promociones con confianza y métricas. **InnovaTech**, a través de **OnTimeRide**, propone un MVP funcional que cierra el ciclo de valor con validación en punto de venta, historial y analítica para empresas y administración.
+La ausencia de una plataforma que combine **gestión de descuentos seguros**, **QR único anti-fraude** y **comunidad** dificulta escalar promociones con confianza y métricas. **QRust**, a través de **Klippr**, propone un MVP funcional que cierra el ciclo de valor con validación en punto de venta, historial y analítica para empresas y administración.
 
-### 1.2.2. Lean UX Process
+## 1.2.2. Lean UX Process
 
 En esta sección aplicamos el **Lean UX Process** (Gothelf & Seiden, 3rd Edition).  
 Se presenta: **Problem Statement**, **Assumptions**, **Hypothesis Statements** y el **Lean UX Canvas**, adaptados al proyecto **WeTech** (micromovilidad eléctrica compartida + IoT).
 
 ---
-##### 1.2.2.1. Lean UX Problem Statements
+### 1.2.2.1. Lean UX Problem Statements
 
 **Context (Contexto)**  
 En América Latina crece la demanda de herramientas que conecten compra física y conveniencia digital. Las soluciones de cupones suelen sufrir **códigos compartidos**, **duplicidad** y **poca retroalimentación real**, lo que erosiona márgenes y confianza.
@@ -180,7 +180,7 @@ En América Latina crece la demanda de herramientas que conecten compra física 
 No hay una solución integrada, simple para PYMEs y robusta para usuarios que combine: **publicación de campañas**, **QR único por usuario/oferta**, **validación en tiempo real**, **bloqueo post-canje**, **reseñas y comunidad**, y **analítica por campaña** en un mismo producto.
 
 **Impact (Impacto esperado)**  
-Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Con **OnTimeRide** se espera aumentar canjes exitosos, mejorar confianza mediante prueba social y dar visibilidad operativa (canjes, vistas, ratings) a empresas y administración.
+Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Con **Klippr** se espera aumentar canjes exitosos, mejorar confianza mediante prueba social y dar visibilidad operativa (canjes, vistas, ratings) a empresas y administración.
 
 **Measure of success (Criterios de éxito)**  
 - Disponibilidad media de la flota ≥ 85% en zonas objetivo.  
@@ -190,7 +190,7 @@ Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Co
 
 ---
 
-##### 1.2.2.2. Lean UX Assumptions
+### 1.2.2.2. Lean UX Assumptions
 
 > Las assumptions se agrupan en: Business, User, Value, Feature.
 
@@ -216,12 +216,12 @@ Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Co
 
 ---
 
-##### 1.2.2.3. Lean UX Hypothesis Statements
+### 1.2.2.3. Lean UX Hypothesis Statements
 
 > Cada hipótesis sigue el patrón: *We believe... / We will know this is true when...*
 
 **a) Business Hypothesis**  
-We believe that **InnovaTech** logrará retención de negocios si las campañas muestran analítica accionable (canjes, vistas, ratings) y reducen fraude vs. cupones tradicionales.  
+We believe that **QRust** logrará retención de negocios si las campañas muestran analítica accionable (canjes, vistas, ratings) y reducen fraude vs. cupones tradicionales.  
 **We will know this is true when:** empresas activas publican **≥ 2** campañas en promedio en las primeras semanas y reportan **menos disputas** por reuso vs. métodos previos (entrevista + datos).
 
 **b) User Hypothesis**  
@@ -229,19 +229,19 @@ We believe that users will complete redemption if **QR validation** feels instan
 **We will know this is true when:** **más del 95%** de canjes exitosos, tiempo de validación **menor a 3 segundos** en condiciones de prueba, y tasa de abandono post-activación QR baja semana a semana.
 
 **c) Value Hypothesis**  
-We believe that social proof (reviews + comments + likes) increases conversion from view → “Obtener descuento”.  
+We believe that social proof (reviews + comments + likes) increases conversion from view “Obtener descuento”.  
 **We will know this is true when:** ofertas con reseñas muestran mayor tasa de generación de QR vs. ofertas sin reseñas, manteniendo vigencia comparable.
 
 **d) Feature Hypothesis**  
-We believe that building the **core loop** (publicar → generar QR → escanear/validar → bloquear → reseñar) + **dashboard empresa/admin** is sufficient for a 12-week MVP.  
+We believe that building the **core loop** (publicar, generar QR, escanear/validar, bloquear y reseñar) + **dashboard empresa/admin** is sufficient for a 12-week MVP.  
 **We will know this is true when:** usuarios y empresas completan el flujo extremo a extremo en pruebas beta sin pasos alternativos “fuera de la app” críticos.
 
 ---
 
-##### 1.2.2.4. Lean UX Canvas
+### 1.2.2.4. Lean UX Canvas
 
 **Resumen:**  
-El Lean UX Canvas integra negocio, usuario, hipótesis y experimentos para validar **OnTimeRide** como plataforma de descuentos con **QR anti-fraude** y **comunidad**. El roadmap de referencia del MVP propone **12 semanas** en fases: fundación, core de descuentos, módulo social, dashboards/analytics y QA/lanzamiento.
+El Lean UX Canvas integra negocio, usuario, hipótesis y experimentos para validar **Klippr** como plataforma de descuentos con **QR anti-fraude** y **comunidad**. El roadmap de referencia del MVP propone **12 semanas** en fases: fundación, core de descuentos, módulo social, dashboards/analytics y QA/lanzamiento.
 
 <figure style="page-break-inside: avoid; text-align: center;">
   <img src="assets/chapter01/leanux-canvas.png"
@@ -285,7 +285,7 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 #### 5. Assumptions (Negocio, Usuario, Tecnología)
 - La autogestión desde la app reduce barrera de adopción para PYMEs.  
 - La verificación de empresas y categorías administradas mejoran calidad del marketplace.  
-- Un backend con estados de código (**pendiente → utilizado**) y reglas anti-doble-canje es central para credibilidad.
+- Un backend con estados de código (**pendiente,utilizado**) y reglas anti-doble-canje es central para credibilidad.
 
 ---
 
@@ -293,7 +293,7 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 - **Usuario:** Si el detalle de oferta muestra condiciones + rating + reseñas, aumentará la activación del descuento.  
 - **Valor:** Si el canje es validado en **menos de 3 segundos** y el QR queda bloqueado, sube la confianza percibida.  
 - **Negocio:** Si el dashboard muestra canjes/vistas/ratings, las empresas repetirán campañas.  
-- **Feature:** Priorizar el **ciclo completo** publicar → QR → canjear → reseñar antes de expansiones (compartir en redes, premium, API POS, gamificación, BI avanzado, chat).
+- **Feature:** Priorizar el **ciclo completo** (compartir en redes, premium, API POS, gamificación, BI avanzado, chat).
 
 ---
 
@@ -327,8 +327,8 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 <table style="border-collapse:collapse; width:100%; max-width:1200px; margin:24px auto; font-family:Arial, Helvetica, sans-serif; font-size:13px;">
   <thead>
     <tr>
-      <th style="border:1px solid #ddd; padding:12px; background:#f6f6f6; text-align:center; width:28%;">Bloque del Lean UX Canvas</th>
-      <th style="border:1px solid #ddd; padding:12px; background:#f6f6f6; text-align:center; width:72%;">Contenido (OnTimeRide — MVP descuentos)</th>
+      <th style="border:1px solid #ddd; padding:12px; text-align:center; width:28%;">Bloque del Lean UX Canvas</th>
+      <th style="border:1px solid #ddd; padding:12px; text-align:center; width:72%;">Contenido (Klippr — MVP descuentos)</th>
     </tr>
   </thead>
   <tbody>
@@ -398,13 +398,13 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 
 ## 1.3. Segmentos objetivo.
 
-### Segmentación de Usuarios — InnovaTech 
+### Segmentación de Usuarios — QRust 
 
-El MVP de **OnTimeRide** se enfoca en dos segmentos complementarios del documento de producto: **usuarios finales** que descubren y canjean descuentos desde el móvil, y **empresas afiliadas** que publican campañas con condiciones y límites de canje. Esta segmentación permite validar el ciclo **publicar → generar QR → canjear → reseñar** y priorizar confianza (anti-fraude + comunidad).
+El MVP de **Klippr** se enfoca en dos segmentos complementarios del documento de producto: **usuarios finales** que descubren y canjean descuentos desde el móvil, y **empresas afiliadas** que publican campañas con condiciones y límites de canje. Esta segmentación permite validar el ciclo **publicar, generar QR, canjear y reseñar** y priorizar confianza (anti-fraude + comunidad).
 
 ---
 
-### 1. Usuario consumidor (B2C)
+### 1. Jóvenes y adultos
 
 Conformado por **personas de 18 a 45 años** que buscan **aprovechar descuentos** en **restaurantes, tiendas, servicios y entretenimiento** desde su **smartphone**, con alta probabilidad de uso de apps, notificaciones y geolocalización para descubrir ofertas cercanas.
 
@@ -427,7 +427,7 @@ Este segmento permite validar descubrimiento, generación de QR, canje en punto 
 
 ---
 
-### 2. Empresas afiliadas (B2B)
+### 2. Empresas afiliadas 
 
 Compuesto por **PYMEs, restaurantes, cadenas retail, servicios locales y negocios** que desean **atraer clientes** con **campañas medibles** y **menor riesgo de fraude**, publicando promociones con **porcentaje o monto**, **fechas**, **condiciones** y **límite de canjes**.
 
