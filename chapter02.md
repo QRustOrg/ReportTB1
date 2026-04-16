@@ -118,54 +118,46 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
 ### 2.2.1. Diseño de entrevistas.
 
-# Guía de Entrevistas – OnTimeRide (Descuentos con QR y comunidad)
+En esta parte se hicieron varias preguntas a nuestro público objetivo para recopilar información importante, como sus opiniones y descripciones. Estos datos serán clave para desarrollar nuestra solución.
 
-## Objetivo
-Obtener información cualitativa que permita validar supuestos del MVP, mapear fricciones reales en **descubrimiento**, **canje en tienda** y **reseñas**, priorizar funcionalidades y construir arquetipos (personas) para **OnTimeRide** (usuarios consumidores y empresas afiliadas).
+**Preguntas para el Segmento Objetivo 1 - Usuario consumidor:**
 
----
+- ¿Qué edad tienes y en qué distrito vives?
+- ¿A qué te dedicas?
+- ¿Con qué frecuencia sales a comer, comprar o hacer actividades de entretenimiento?
+- ¿Sueles usar descuentos o promociones? ¿Dónde los encuentras?
+- ¿Alguna vez has tenido problemas con promociones?
+- ¿Qué tan importante es para ti leer reseñas antes de usar una promoción?
+- ¿Te ha pasado que un descuento no funcionó al momento de pagar?
+- ¿Confías en los cupones que ves en redes sociales? ¿Por qué?
+- ¿Qué es lo que más te molesta al usar promociones?
+- ¿Qué opinas de una app donde cada descuento tiene un QR único que solo puedes usar una vez?
+- ¿Te daría más confianza ver reseñas reales antes de usar una promoción?
+- ¿Qué tan importante sería para ti que la promoción sea “verificada”?
+- ¿Te gustaría recibir notificaciones de descuentos cerca de ti?
+- Después de usar un descuento, ¿estarías dispuesto a dejar una reseña?
+- ¿Qué haría que uses esta app constantemente?
+- ¿Qué te haría dejar de usar una app de descuentos?
 
-## Buenas prácticas para entrevistas
-- Realizar entrevistas semiestructuradas (guía de preguntas flexible).
-- Duración recomendada: 30 a 45 minutos (máximo 1 hora).
-- Iniciar con consentimiento informado: explicar propósito, uso de datos y pedir permiso para grabar.
-- Evitar preguntas cerradas al inicio; priorizar preguntas abiertas.
-- Utilizar preguntas de seguimiento (*probes*):  
-  - “¿Puedes contarme más?”  
-  - “¿Qué pasó luego?”  
-  - “¿Por qué fue importante?”
-- No inducir respuestas ni sugerir soluciones.
-- Tomar notas durante la entrevista y, de ser posible, grabar y transcribir.
-- Seleccionar entrevistados diversos (edad, distrito, uso de tecnología).
-- Validar hipótesis al final mediante preguntas cerradas.
+**Preguntas para el Segmento Objetivo 2 - Empresas afiliadas:**
 
----
-
-## Estructura de cada entrevista
-1. **Introducción (3–5 minutos):** presentación, objetivo, consentimiento.  
-2. **Contexto (5–8 minutos):** hábitos de compra, uso de apps de ofertas/delivery, dispositivos y notificaciones.  
-3. **Experiencia con descuentos (10–15 minutos):** cómo descubre promos, qué confianza le da una oferta, fricciones al canjear (colas, códigos compartidos, letra pequeña).  
-4. **Reacción al flujo propuesto (10–12 minutos):** feed + filtros, QR único, validación en tienda, reseña post-canje; para B2B: creación de campaña, límites de canje, dashboard y moderación.  
-5. **Cierre (3–5 minutos):** resumen, agradecimiento y preguntas finales.
-
----
-
-## Campos a registrar por entrevista (plantilla mínima)
-- ID de la entrevista / Fecha / Entrevistador  
-- Segmento (B2C o B2B)  
-- Nombre (opcional) o alias  
-- Edad / Género  
-- Distrito de residencia, trabajo o estudio  
-- Ocupación / Institución / Rol dentro de la empresa (para B2B)  
-- Teléfono o correo electrónico (opcional)  
-- Uso de smartphone (sí/no) y modelo  
-- Aplicaciones utilizadas (delivery, cupones, pagos, mapas)  
-- Notas principales / Insights / Comentarios textuales relevantes  
-- Enlace o archivo de la grabación  
-- Nivel de interés (escala 1–5)  
-- Comentarios finales  
-
----
+- ¿Qué edad tienes y en qué distrito vives?
+- ¿Cuál es tu rol dentro del negocio?
+- ¿Cuántos clientes recibes aproximadamente al día?
+- ¿Utilizas actualmente promociones o descuentos?
+- ¿Qué tipo de promociones te funcionan mejor?
+- ¿Has tenido problemas con clientes que reutilizan promociones o hacen fraude?
+- ¿Cómo controlas actualmente los descuentos?
+- ¿Te resulta difícil medir si una promoción realmente funcionó?
+- ¿Qué opinas de usar QR únicos para validar descuentos?
+- ¿Te sería útil ver cuántos clientes canjearon cada promoción?
+- ¿Qué tan importante es evitar pérdidas por mal uso de promociones?
+- ¿Tu equipo podría adaptarse a escanear un QR al momento de cobrar?
+- ¿Qué tan importante es que la herramienta sea rápida y fácil?
+- ¿Te interesaría que los clientes dejen reseñas públicas?
+- ¿Te gustaría responder esas reseñas?
+- ¿Estarías dispuesto a pagar por una solución así?
+- ¿Qué te haría dejar de usar una herramienta de este tipo?
 
 ### 2.3. Needfinding
 
