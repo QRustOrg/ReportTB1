@@ -78,6 +78,13 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
       <td>Soy estudiante de Ingeniería de Software. Me caracterizo por ser una persona motivadora dentro de los equipos y por tener una fuerte orientación al trabajo colaborativo.</td>
     </tr>
     <tr>
+      <td>Ponce Perales, Alberto Alejandro<br>(U202320684)</td>
+      <td align="center">
+        <img src="assets/Integrantes/FotoAlberto.jpg" width="150">
+      </td>
+      <td>Actualmente estudiante de la carrera profesional de Ingeniería de Software y explorando el mundo de la programación con Java, C++ y C#. Estoy iniciando mi camino en el desarrollo de apps móviles y me entusiasma encontrar formas de hacer los flujos de trabajo más eficientes. Con ganas de aprender y aportar en proyectos de software.</td>
+    </tr>
+    <tr>
       <td>Guillen Galindo, Julio Adolfo<br>(U20241A352)</td>
       <td align="center">
         <img src="assets/Integrantes/julio.png" width="150">
