@@ -309,3 +309,53 @@ En esta sección se presentan los Empathy Maps. Estos nos ayudarán a comprender
 **Segmento Objetivo 2: Empresas afiliadas (B2B)**
 
 ![EmpathyMapping-Segmento2](assets/chapter02/EmpathyMapping-Segmento2.png)
+
+### 2.3.5. Big Picture EventStorming
+
+En esta sección se presenta el trabajo realizado durante la sesión de Big Picture Event Storming, enfocada en comprender el dominio general del negocio de promociones digitales. Para ello se utilizaron post-its en Miro para mapear los eventos significativos que ocurren en el flujo operativo actual, desde la creación y publicación de promociones hasta su redención mediante códigos QR y la posterior evaluación por parte de los usuarios.
+
+Este proceso permitió identificar los eventos clave, los actores involucrados, las interacciones dentro del sistema y las principales oportunidades de mejora, lo cual resulta fundamental para el diseño y desarrollo de la solución propuesta.
+
+![BigPictureEventStorming-Klippr](assets/chapter02/BigPictureEventStorming-Klippr.jpg)
+
+### 2.3.6. Ubiquitous Language
+
+**User Profile (Perfil de Usuario):** Perfil del usuario dentro de la plataforma, donde se almacena su actividad, historial y preferencias.
+
+**Smart Dashboard (Panel Inteligente):** Interfaz principal donde los negocios monitorean el rendimiento de sus promociones y los usuarios visualizan ofertas relevantes.
+
+**Performance Report (Reporte de Rendimiento):** Informe con métricas como número de visualizaciones, canjes, conversiones y efectividad de promociones.
+
+**Campaign Schedule (Agenda de Campañas):** Calendario para programar la duración, activación y expiración de promociones.
+
+**Fraud Alert (Alerta de Fraude):** Notificación automática cuando se detecta un intento de uso indebido o duplicado de un código QR.
+
+**Promotion Catalog (Catálogo de Promociones):** Lista de promociones disponibles organizadas por categoría, ubicación o popularidad.
+
+**Merchant (Negocio):** Empresa o establecimiento que publica promociones y descuentos dentro de la plataforma.
+
+**Review System (Sistema de Reseñas):** Espacio donde los usuarios califican y comentan sobre promociones y experiencias.
+
+**Redemption History (Historial de Canjes):** Registro de todas las promociones utilizadas por un usuario.
+
+**QR Code (Código QR):** Código único, dinámico e irrepetible utilizado para canjear promociones.
+
+**Redemption Validation (Validación de Canje):** Proceso de verificación del código QR para asegurar que sea válido y no reutilizado.
+
+**Campaign Management (Gestión de Campañas):** Proceso mediante el cual los negocios crean, editan y administran sus promociones.
+
+**Automatic Report Generation (Generación Automática de Reportes):** Función que genera informes de rendimiento de campañas sin intervención manual.
+
+**Real-Time Analytics (Analítica en Tiempo Real):** Seguimiento en vivo del desempeño de promociones y comportamiento de usuarios.
+
+**User Recommendation (Recomendación de Usuario):** Sugerencias de promociones basadas en preferencias, historial y ubicación.
+
+**Promotion (Promoción):** Oferta o descuento publicado por un negocio.
+
+**Redemption (Canje):** Acción de utilizar una promoción mediante un código QR.
+
+**Unique Code System (Sistema de Código Único):** Mecanismo que garantiza que cada promoción tenga un código QR no reutilizable.
+
+**Engagement (Interacción):** Nivel de participación del usuario (visualizaciones, canjes, reseñas).
+
+**Notification (Notificación):** Mensajes enviados para informar sobre nuevas promociones, canjes o actividad relevante.
