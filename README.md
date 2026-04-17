@@ -33,11 +33,11 @@
 
 <br>
 
-**Startup:** InnovaTech  
+**Startup:** QRust  
 
 <br>
 
-**Producto:** OnTimeRide  
+**Producto:** Klippr  
 
 </div>
 
@@ -85,10 +85,10 @@
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1.0</td>
+      <td>17 de abril</td>
+      <td>Samuel Bonifacio</td>
+      <td>Desarrollo de los capitulos I,II,III,IV e V.</td>
     </tr>
     <tr>
       <td></td>
@@ -182,7 +182,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
   <tbody>
     <tr>
       <th> Bonifacio Jaramillo, Samuel Jesus</th>
-      <th> </th>
+      <th> Capitulos I,II,V. Despliegue de Landing Page y desarrollo de mockups </th>
     </tr>
     <tr>
       <th> Castro Pariona, Jefferson Ernesto</th>
