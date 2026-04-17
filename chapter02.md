@@ -159,7 +159,7 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 - ¿Estarías dispuesto a pagar por una solución así?
 - ¿Qué te haría dejar de usar una herramienta de este tipo?
 
-### 2.3. Needfinding
+## 2.3. Needfinding
 
 ### 2.3.1. User Personas
 
