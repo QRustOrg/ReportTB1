@@ -55,7 +55,7 @@
 | Castro Pariona, Jefferson Ernesto | U201822823 |
 | Guillen Galindo, Julio Adolfo  | U20241A352 |
 | Alejandro Manuel, Galindo Montero| U202321264 |
-| 
+| Ponce Perales Alberto Alejandro | U2023206804 |
 
 
 <br><br>
@@ -193,6 +193,10 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
       <th> </th>
     </tr>
     <tr>
+      <th> Ponce Perales, Alberto Alejandro</th>
+      <th> </th>
+    </tr>
+    <tr>
       <th> Alejandro Manuel, Galindo Montero</th>
       <th> </th>
     </tr>
@@ -227,6 +231,10 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
+      <th> </th>
+    </tr>
+    <tr>
+      <th> Ponce Perales, Alberto Alejandro</th>
       <th> </th>
     </tr>
     <tr>
@@ -266,6 +274,10 @@ Para el desarrollo del informe perteneciente a la entrega del TB2, se dividió l
       <th> </th>
     </tr>
     <tr>
+      <th> Ponce Perales, Alberto Alejandro</th>
+      <th> </th>
+    </tr>
+    <tr>
       <th> Alejandro Manuel, Galindo Montero</th>
       <th> </th>
     </tr>
@@ -298,6 +310,10 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
+      <th> </th>
+    </tr>
+    <tr>
+      <th> Ponce Perales, Alberto Alejandro</th>
       <th> </th>
     </tr>
     <tr>
@@ -435,6 +451,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
         <b>Castro Pariona, Jefferson Ernesto</b><br><br>
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br><br>
         <b>Alejandro Manuel Galindo Montero</b>
       </td>
       <td></td>
@@ -445,6 +462,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
         <b>Castro Pariona, Jefferson Ernesto</b><br><br>
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br><br>
         <b>Alejandro Manuel Galindo Montero</b>
       </td>
       <td></td>

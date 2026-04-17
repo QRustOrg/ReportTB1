@@ -309,3 +309,374 @@ En esta sección se presentan los Empathy Maps. Estos nos ayudarán a comprender
 **Segmento Objetivo 2: Empresas afiliadas (B2B)**
 
 ![EmpathyMapping-Segmento2](assets/chapter02/EmpathyMapping-Segmento2.png)
+
+## 2.4. Requirements specification
+
+### 2.4.1. User Stories 
+
+<table border="1">
+<tr><td>Story ID</td><td>US01</td><td>User</td><td>Visitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP01</td></tr>
+<tr><td>Title</td><td colspan="5">Ver información general del sistema</td></tr>
+<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer el propósito del sistema para entender su valor.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado que el visitante accede al sitio,<br/>
+Cuando consulta la información disponible,<br/>
+Entonces comprende el propósito del sistema.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<td>Story ID</td><td>US02</td><td>User</td><td>Visitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP01</td></tr>
+<tr><td>Title</td><td colspan="5">Conocer al equipo</td></tr>
+<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer al equipo responsable para generar confianza.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado que el visitante consulta información institucional,<br/>
+Cuando revisa el contenido,<br/>
+Entonces identifica al equipo y su propósito.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US03</td><td>User</td><td>Visitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP01</td></tr>
+<tr><td>Title</td><td colspan="5">Entender funcionamiento del sistema</td></tr>
+<tr><td>Description</td><td colspan="5">Como visitante, quiere entender el flujo del sistema para evaluar su utilidad.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado que el visitante accede a la explicación del sistema,<br/>
+Cuando revisa la información,<br/>
+Entonces comprende el flujo operativo.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US04</td><td>User</td><td>Visitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP01</td></tr>
+<tr><td>Title</td><td colspan="5">Consultar preguntas frecuentes</td></tr>
+<tr><td>Description</td><td colspan="5">Como visitante, quiere resolver dudas comunes rápidamente.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado que el visitante accede a preguntas frecuentes,<br/>
+Cuando revisa la información,<br/>
+Entonces encuentra respuestas relevantes.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US05</td><td>User</td><td>Visitante</td><td>Priority</td><td>Baja</td><td>Epic</td><td>EP01</td></tr>
+<tr><td>Title</td><td colspan="5">Visualizar beneficios</td></tr>
+<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer beneficios para evaluar la adopción.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado que el visitante revisa beneficios,<br/>
+Cuando analiza la información,<br/>
+Entonces identifica ventajas del sistema.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US06</td><td>User</td><td>Visitante</td><td>Priority</td><td>Baja</td><td>Epic</td><td>EP01</td></tr>
+<tr><td>Title</td><td colspan="5">Consultar planes</td></tr>
+<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer planes disponibles para evaluar opciones.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado que el visitante consulta planes,<br/>
+Cuando revisa opciones,<br/>
+Entonces comprende diferencias entre planes.
+</td></tr>
+</table>
+<br/>
+
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US07</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP02</td></tr>
+<tr><td>Title</td><td colspan="5">Registrar pedido</td></tr>
+<tr><td>Description</td><td colspan="5">Como solicitante, quiere registrar pedidos para solicitar combustible.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado datos válidos,<br/>
+Cuando registra pedido,<br/>
+Entonces se almacena correctamente.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US08</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP02</td></tr>
+<tr><td>Title</td><td colspan="5">Consultar estado</td></tr>
+<tr><td>Description</td><td colspan="5">Como solicitante, quiere consultar estado para seguimiento.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pedidos existentes,<br/>
+Cuando consulta estado,<br/>
+Entonces visualiza estado actualizado.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US09</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP02</td></tr>
+<tr><td>Title</td><td colspan="5">Confirmar recepción</td></tr>
+<tr><td>Description</td><td colspan="5">Como solicitante, quiere confirmar entrega para cerrar proceso.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pedido entregado,<br/>
+Cuando confirma recepción,<br/>
+Entonces cambia a finalizado.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US10</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP02</td></tr>
+<tr><td>Title</td><td colspan="5">Ver historial</td></tr>
+<tr><td>Description</td><td colspan="5">Como solicitante, quiere revisar pedidos anteriores.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado historial disponible,<br/>
+Cuando consulta,<br/>
+Entonces obtiene registros.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US11</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP03</td></tr>
+<tr><td>Title</td><td colspan="5">Aprobar pedido</td></tr>
+<tr><td>Description</td><td colspan="5">Como proveedor, quiere aprobar pedidos válidos.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pago validado,<br/>
+Cuando aprueba pedido,<br/>
+Entonces cambia estado.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US12</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP03</td></tr>
+<tr><td>Title</td><td colspan="5">Despachar pedido</td></tr>
+<tr><td>Description</td><td colspan="5">Como proveedor, quiere despachar pedidos aprobados.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pedido aprobado,<br/>
+Cuando despacha,<br/>
+Entonces cambia estado.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US13</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP03</td></tr>
+<tr><td>Title</td><td colspan="5">Cerrar pedido</td></tr>
+<tr><td>Description</td><td colspan="5">Como proveedor, quiere cerrar pedidos finalizados.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado confirmación del cliente,<br/>
+Cuando cierra pedido,<br/>
+Entonces queda finalizado.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US14</td><td>User</td><td>Usuario</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP04</td></tr>
+<tr><td>Title</td><td colspan="5">Iniciar sesión</td></tr>
+<tr><td>Description</td><td colspan="5">Como usuario, quiere autenticarse.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado credenciales válidas,<br/>
+Cuando inicia sesión,<br/>
+Entonces accede al sistema.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US15</td><td>User</td><td>Usuario</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP04</td></tr>
+<tr><td>Title</td><td colspan="5">Recuperar contraseña</td></tr>
+<tr><td>Description</td><td colspan="5">Como usuario, quiere recuperar acceso.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado correo válido,<br/>
+Cuando solicita recuperación,<br/>
+Entonces recibe enlace.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US16</td><td>User</td><td>Usuario</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP04</td></tr>
+<tr><td>Title</td><td colspan="5">Cerrar sesión</td></tr>
+<tr><td>Description</td><td colspan="5">Como usuario, quiere cerrar sesión.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado sesión activa,<br/>
+Cuando cierra sesión,<br/>
+Entonces se invalida.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US17</td><td>User</td><td>Developer</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP06</td></tr>
+<tr><td>Title</td><td colspan="5">API Login</td></tr>
+<tr><td>Description</td><td colspan="5">Como developer, quiere endpoint de autenticación.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado request válido,<br/>
+Cuando procesa,<br/>
+Entonces retorna token.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US18</td><td>User</td><td>Developer</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP06</td></tr>
+<tr><td>Title</td><td colspan="5">API Logout</td></tr>
+<tr><td>Description</td><td colspan="5">Como developer, quiere invalidar sesión.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado token válido,<br/>
+Cuando procesa,<br/>
+Entonces invalida sesión.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US19</td><td>User</td><td>Developer</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP07</td></tr>
+<tr><td>Title</td><td colspan="5">API Crear pedido</td></tr>
+<tr><td>Description</td><td colspan="5">Como developer, quiere registrar pedidos.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado datos válidos,<br/>
+Cuando procesa,<br/>
+Entonces crea registro.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US20</td><td>User</td><td>Developer</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP07</td></tr>
+<tr><td>Title</td><td colspan="5">API Consultar pedidos</td></tr>
+<tr><td>Description</td><td colspan="5">Como developer, quiere listar pedidos.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado usuario válido,<br/>
+Cuando consulta,<br/>
+Entonces retorna lista.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US21</td><td>User</td><td>Developer</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP07</td></tr>
+<tr><td>Title</td><td colspan="5">API Actualizar estado</td></tr>
+<tr><td>Description</td><td colspan="5">Como developer, quiere actualizar estado.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pedido existente,<br/>
+Cuando actualiza,<br/>
+Entonces cambia estado.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US22</td><td>User</td><td>Developer</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP07</td></tr>
+<tr><td>Title</td><td colspan="5">API Reportes</td></tr>
+<tr><td>Description</td><td colspan="5">Como developer, quiere generar reportes.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado parámetros válidos,<br/>
+Cuando procesa,<br/>
+Entonces retorna resultados.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US23</td><td>User</td><td>Equipo</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP08</td></tr>
+<tr><td>Title</td><td colspan="5">Spike integración pagos</td></tr>
+<tr><td>Description</td><td colspan="5">Como equipo, quiere investigar integración de pagos.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado necesidad de pagos,<br/>
+Cuando investiga,<br/>
+Entonces documenta resultados.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US24</td><td>User</td><td>Equipo</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP08</td></tr>
+<tr><td>Title</td><td colspan="5">Spike rendimiento</td></tr>
+<tr><td>Description</td><td colspan="5">Como equipo, quiere analizar rendimiento del sistema.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pruebas realizadas,<br/>
+Cuando evalúa resultados,<br/>
+Entonces documenta conclusiones.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US25</td><td>User</td><td>Equipo</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP08</td></tr>
+<tr><td>Title</td><td colspan="5">Spike seguridad</td></tr>
+<tr><td>Description</td><td colspan="5">Como equipo, quiere evaluar seguridad.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado análisis realizado,<br/>
+Cuando evalúa riesgos,<br/>
+Entonces documenta mitigaciones.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US26</td><td>User</td><td>Equipo</td><td>Priority</td><td>Baja</td><td>Epic</td><td>EP08</td></tr>
+<tr><td>Title</td><td colspan="5">Spike tecnología frontend</td></tr>
+<tr><td>Description</td><td colspan="5">Como equipo, quiere evaluar tecnologías frontend.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado evaluación técnica,<br/>
+Cuando compara opciones,<br/>
+Entonces documenta decisión.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US27</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP02</td></tr>
+<tr><td>Title</td><td colspan="5">Filtrar pedidos</td></tr>
+<tr><td>Description</td><td colspan="5">Como solicitante, quiere filtrar pedidos.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado criterios,<br/>
+Cuando filtra,<br/>
+Entonces obtiene resultados.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US28</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP03</td></tr>
+<tr><td>Title</td><td colspan="5">Ver pedidos pendientes</td></tr>
+<tr><td>Description</td><td colspan="5">Como proveedor, quiere ver pedidos pendientes.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado pedidos existentes,<br/>
+Cuando consulta,<br/>
+Entonces obtiene lista.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US29</td><td>User</td><td>Usuario</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP09</td></tr>
+<tr><td>Title</td><td colspan="5">Ver perfil</td></tr>
+<tr><td>Description</td><td colspan="5">Como usuario, quiere ver su información.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado sesión activa,<br/>
+Cuando consulta,<br/>
+Entonces obtiene datos.
+</td></tr>
+</table>
+<br/>
+
+<table border="1" width="100%"><tr>
+<tr><td>Story ID</td><td>US30</td><td>User</td><td>Usuario</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP09</td></tr>
+<tr><td>Title</td><td colspan="5">Editar perfil</td></tr>
+<tr><td>Description</td><td colspan="5">Como usuario, quiere actualizar datos.</td></tr>
+<tr><td>Acceptance Criteria</td><td colspan="5">
+Dado datos válidos,<br/>
+Cuando actualiza,<br/>
+Entonces guarda cambios.
+</td></tr>
+</table>
+<br/>
+
+### 2.4.2. Impact Mapping
+
+### 2.4.3. Product Backlog
+
+
