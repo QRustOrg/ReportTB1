@@ -140,30 +140,30 @@ En el dashboard del negocio, las etiquetas de metricas guardan relacion directa 
 
 #### 5.1.2.4 Searching Systems
 
-Klippr implementa un sistema de busqueda multicapa que permite al usuario consumidor encontrar promociones relevantes por distintos criterios sin necesidad de navegar por el feed completo.
+Sistema de búsqueda implementado en:
 
-El primer nivel de busqueda es la **busqueda por texto libre**, que opera sobre el nombre del negocio, la categoria y el titulo de la promocion. La busqueda se ejecuta con debounce de 300ms para evitar peticiones innecesarias y devuelve resultados ordenados por relevancia combinada (coincidencia en nombre de negocio tiene mayor peso que coincidencia en descripcion de campana).
+**Busqueda por texto libre**:
+* Opera sobre el nombre del negocio, la categoría y el título de la promoción.
+* Devuelve resultados por relevancia combinada; el nombre del negocio tiene mayor peso que la descripción de la campaña.
 
-El segundo nivel es el **filtrado por facetas**, que permite al usuario refinar resultados por categoria de negocio (restaurantes, retail, servicios, entretenimiento), por rango de porcentaje de descuento, por proximidad geografica (requiere permiso de ubicacion; si no se otorga, el filtro por proximidad se desactiva sin bloquear el resto de la experiencia) y por estado de vigencia (activa, por vencer en menos de 24 horas).
+**Filtrado por facetas**:
+* Permite refinar por categoría de negocio, rango de descuento y estado de vigencia.
+* El filtro de proximidad geográfica requiere permiso de ubicación; si no se otorga, se desactiva sin bloquear el resto de la experiencia.
 
-El tercer nivel es el **ordenamiento**, que permite al usuario reordenar los resultados por mayor porcentaje de descuento, por rating promedio de resenas o por distancia al punto de venta (si la ubicacion esta disponible).
+**Ordenamiento**:
+* Permite reordenar resultados por mayor porcentaje de descuento, rating promedio de reseñas o distancia al punto de venta.
 
-En el contexto del negocio afiliado, el sistema de busqueda dentro del dashboard permite filtrar campanas propias por estado (activa, pausada, finalizada) y por rango de fechas de publicacion. La busqueda en el panel de validacion de QR soporta ingreso manual del codigo alfanumerico como alternativa al escaneo por camara, cubriendo la variabilidad de condiciones de los puntos de venta.
 
 #### 5.1.2.5 Navigation Systems
 
-**Landing Page**
+**Landing Page**:
+* Navegacion de una sola pagina con barra superior fija que contiene el logotipo, enlace "Para negocios" y boton "Descarga la app".
+* En resolucion movil, el enlace "Para negocios" colapsa en un menu hamburguesa; el boton de descarga redirige al store segun el sistema operativo detectado.
 
-La landing aplica navegacion de una sola pagina (single-page) con scroll vertical continuo. La barra de navegacion superior es fija (sticky) y visible en todo momento. Contiene el logotipo de Klippr (ancla al inicio de la pagina) y, en su extremo derecho, dos elementos de navegacion: un enlace de texto "Para negocios" que ejecuta scroll suave hacia la seccion de beneficios con el tab B2B preseleccionado, y el boton primario "Descarga la app" que dirige al store correspondiente segun el sistema operativo del dispositivo detectado. En resolucion movil, el boton "Para negocios" colapsa dentro de un menu hamburguesa.
+**Aplicacion Movil (Consumidor)**:
+* Barra inferior fija de cinco elementos: feed de descuentos, busqueda, generador de QR (boton central flotante), historial de canjes y perfil.
+* Acciones secundarias (filtros, detalles, contextuales) operan mediante bottom sheets; las acciones de alta consecuencia requieren confirmacion por dialogo modal.
 
-Los dots de progreso de scroll (indicadores de seccion) son opcionales y se evaluan segun el feedback de usabilidad del MVP. Si se implementan, aparecen como una barra lateral derecha discreta en desktop.
-
-**Aplicacion Movil (Consumidor)**
-
-La navegacion principal utiliza una barra inferior fija de cinco elementos: feed de descuentos, busqueda, generador de QR (elemento central con mayor jerarquia visual, representado por un boton flotante con radio de 28px sobre la barra), historial de canjes y perfil de usuario. Esta estructura de navegacion plana permite acceder a cualquier modulo principal en un solo tap desde cualquier pantalla del flujo.
-
-La navegacion secundaria opera mediante hojas deslizables desde la parte inferior (bottom sheets) para filtros, detalles de promocion y acciones contextuales, preservando el contexto del feed sin romper el flujo de navegacion. Las acciones destructivas o de alta consecuencia (como cancelar un QR activo) se confirman mediante un dialogo modal antes de ejecutarse.
-
-**Aplicacion Movil (Negocio)**
-
-El negocio afiliado accede a una navegacion diferenciada que reemplaza el feed de descuentos por el dashboard de campanas y el historial de canjes por el panel de validacion de QR. La estructura de barra inferior mantiene el mismo patron de cinco elementos para coherencia de la plataforma, pero con iconografia y etiquetas especificas al rol del negocio. La pantalla de validacion de QR (escaneo o ingreso manual) se accede desde el elemento central de la barra, con el mismo patron de jerarquia visual que el generador de QR del consumidor, subrayando la simetria funcional entre ambos roles en el momento del canje.
+**Aplicacion Movil (Negocio)**:
+* Barra inferior de cinco elementos con la misma estructura del consumidor, reemplazando el feed por el dashboard de campanas y el historial por el panel de validacion de QR.
+* La pantalla de validacion de QR ocupa el elemento central de la barra, manteniendo la misma jerarquia visual que el generador de QR del consumidor.
