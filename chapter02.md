@@ -13,10 +13,10 @@
     </tr>
     <tr>
       <td colspan="2"></td>
-      <td><strong>Groupon</strong><br><em>(referencia de mercado)</em></td>
-      <td><strong>Rappi</strong><br><em>(superapp + promos)</em></td>
-      <td><strong>PedidosYa</strong><br><em>(delivery + descuentos)</em></td>
-      <td><strong>Cuponatic</strong><br><em>(cupones y ofertas digitales)</em></td>
+      <td align="center"><img src="assets/chapter02/groupon.jpg" width="80" alt="Groupon"><br><strong>Groupon</strong><br><em>(referencia de mercado)</em></td>
+      <td align="center"><img src="assets/chapter02/rappi.png" width="80" alt="Rappi"><br><strong>Rappi</strong><br><em>(delivery + promos)</em></td>
+      <td align="center"><img src="assets/chapter02/pedidosya.png" width="80" alt="PedidosYa"><br><strong>PedidosYa</strong><br><em>(delivery + descuentos)</em></td>
+      <td align="center"><img src="assets/chapter02/cuponatic.png" width="80" alt="Cuponatic"><br><strong>Cuponatic</strong><br><em>(cupones y ofertas digitales)</em></td>
     </tr>
     <tr>
       <td rowspan="2">Perfil</td>
@@ -679,4 +679,42 @@ Entonces guarda cambios.
 
 ### 2.4.3. Product Backlog
 
+## 2.5. Strategic-Level Domain-Driven Design
 
+### 2.5.1. EventStorming
+
+#### 2.5.1.1. Candidate Context Discovery
+
+#### 2.5.1.2. Domain Message Flows Modeling
+
+#### 2.5.1.3. Bounded Context Canvases
+
+### 2.5.2. Context Mapping
+
+### 2.5.3. Software Architecture
+
+#### 2.5.3.1. Software Architecture Context Level Diagrams
+
+#### 2.5.3.2. Software Architecture Container Level Diagrams
+
+#### 2.5.3.3. Software Architecture Deployment Diagrams
+
+## 2.6. Tactical-Level Domain-Driven Design
+
+### 2.6.x. Bounded Context: <Bounded Context Name>
+
+#### 2.6.x.1. Domain Layer
+
+#### 2.6.x.2. Interface Layer
+
+#### 2.6.x.3. Application Layer
+
+#### 2.6.x.4. Infrastructure Layer
+
+#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 2.6.x.6.2. Bounded Context Database Design Diagram
