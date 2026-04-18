@@ -685,6 +685,18 @@ Entonces guarda cambios.
 
 #### 2.5.1.1. Candidate Context Discovery
 
+En esta sección se aplica la técnica de Candidate Context Discovery para identificar y separar los posibles Bounded Contexts del sistema. Se utilizó la técnica look-for-pivotal-events para analizar los eventos que marcan un cambio de estado relevante dentro del modelo de negocio de Klippr. Al identificar eventos como **UsuarioRegistrado**, **PromocionPublicada**, **QRGenerado**, **QRCanjeado** y **ReseñaPublicada**, se detectó que cada uno implicaba responsabilidades y reglas de negocio distintas, lo que llevó a definir los siguientes Bounded Contexts:
+
+| Bounded Context | Descripción | Eventos clave |
+|---|---|---|
+| **IAM** | Maneja la autenticación y autorización de los tres tipos de usuario: consumidor, negocio afiliado y administrador de plataforma. | `UsuarioRegistrado`, `UsuarioAutenticado`, `NegocioRegistrado` |
+| **Profile** | Administra la información de perfil de usuarios consumidores y negocios afiliados, incluyendo el flujo de verificación y aprobación de negocios por el administrador. | `PerfilCreado`, `PerfilActualizado`, `NegocioVerificado`, `NegocioRechazado` |
+| **Promotions** | Gestiona el ciclo de vida completo de las campañas de descuento: publicación, edición, pausa y finalización por parte del negocio afiliado. | `PromocionPublicada`, `PromocionPausada`, `PromocionEditada`, `PromocionFinalizada` |
+| **Redemption** | Controla la generación del QR único por usuario/oferta, la validación en punto de venta (escaneo o código manual), el bloqueo automático post-canje y la gestión de expiración. | `QRGenerado`, `QRCanjeado`, `QRBloqueado`, `QRExpirado` |
+| **Community** | Administra el módulo social: reseñas ligadas a canje completado, calificaciones (1-5), likes, comentarios y respuestas de negocios a reseñas. | `ReseñaPublicada`, `CalificacionRegistrada`, `LikeRegistrado`, `RespuestaPublicada` |
+| **Analytics** | Provee métricas por campaña para negocios (vistas, canjes, ratings) y datos de moderación y abuso para el administrador de plataforma. | `MetricaActualizada`, `DashboardConsultado`, `ReporteDeAbusoRegistrado` |
+
+
 #### 2.5.1.2. Domain Message Flows Modeling
 
 #### 2.5.1.3. Bounded Context Canvases
@@ -701,20 +713,150 @@ Entonces guarda cambios.
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-### 2.6.x. Bounded Context: <Bounded Context Name>
+### 2.6.1. Bounded Context: IAM
 
-#### 2.6.x.1. Domain Layer
+Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM de Klippr gestiona la autenticación y autorización de los tres tipos de cuenta de la plataforma: usuario consumidor, negocio afiliado y administrador. A continuación se detallan las capas del Bounded Context.
 
-#### 2.6.x.2. Interface Layer
+#### 2.6.1.1. Domain Layer
 
-#### 2.6.x.3. Application Layer
+**Sub-capa Model - Aggregates:**
 
-#### 2.6.x.4. Infrastructure Layer
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Aggregate | User | Clase que representa a cualquier cuenta registrada en Klippr, independientemente de su rol. | Ser el punto de entrada para crear y mantener la integridad de la entidad de identidad, incluyendo validación de credenciales y asignación de rol. | Relacionado con los bounded contexts Profile, Promotions y Community, que requieren la identidad del usuario para operar. |
 
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+**Sub-capa Model - Commands:**
 
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Command | SignInCommand | Comando para el inicio de sesión de cualquier tipo de cuenta. | Representar la intención de autenticar a un usuario y retornar un token de acceso válido. | Usado en la implementación del servicio de autenticación. |
+| Command | SignUpConsumerCommand | Comando para el registro de un usuario consumidor. | Representar la intención de crear una cuenta de tipo consumidor con los datos mínimos requeridos. | Usado en la implementación del servicio de autenticación. |
+| Command | SignUpBusinessCommand | Comando para el registro de un negocio afiliado. | Representar la intención de crear una cuenta de tipo negocio, sujeta a aprobación por el administrador. | Usado en el servicio de autenticación y desencadena evento hacia el bounded context Profile para iniciar el flujo de verificación. |
 
-##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+**Sub-capa Model - Queries:**
 
-##### 2.6.x.6.2. Bounded Context Database Design Diagram
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Query | GetAllUsersQuery | Consulta para obtener todos los usuarios registrados. | Representar la intención de obtener la lista completa de cuentas, usada por el administrador de plataforma. | Usado en la implementación del servicio de consultas. |
+| Query | GetUserByEmailQuery | Consulta para obtener un usuario por dirección de email. | Representar la intención de buscar una cuenta específica por su email, utilizada en el flujo de autenticación. | Usado en la implementación del servicio de consultas. |
+| Query | GetUserByIdQuery | Consulta para obtener un usuario por su identificador único. | Representar la intención de recuperar una cuenta por su ID, usada inter-contexto para validar identidad. | Usado en la implementación del servicio de consultas. |
+| Query | GetUsersByRoleQuery | Consulta para obtener usuarios filtrados por rol. | Representar la intención de listar cuentas de un tipo específico (CONSUMER, BUSINESS, ADMIN). | Usado en el panel de administración para gestión de cuentas. |
+
+**Sub-capa Model - Value Objects:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Value Object | Role | Rol de la cuenta dentro de la plataforma. | Representar los tres roles posibles: CONSUMER, BUSINESS y ADMIN, determinando las pantallas y funciones accesibles. | Usado en el Aggregate User y evaluado en el middleware de autorización. |
+| Value Object | Email | Dirección de correo electrónico de la cuenta. | Encapsular la validación de formato y unicidad del email como identificador de acceso. | Usado en el Aggregate User y en los comandos de registro. |
+
+**Sub-capa Services:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Interface | IUserCommandService | Interfaz del servicio de comandos de autenticación. | Estipular los contratos para operaciones de registro e inicio de sesión. | Implementado en la capa Application; consumido desde la capa Interface. |
+| Interface | IUserQueryService | Interfaz del servicio de consultas de usuarios. | Estipular los contratos para operaciones de búsqueda y listado de cuentas. | Implementado en la capa Infrastructure; consumido desde la capa Interface. |
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Interface | IUserRepository | Repositorio para operaciones de persistencia del modelo User. | Definir contratos para operaciones CRUD de cuentas de usuario. | Implementado en la capa Infrastructure. |
+
+---
+
+#### 2.6.1.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Resource | AuthenticatedUserResource | Estructura de respuesta para usuario autenticado. | Representar los datos de la cuenta autenticada (id, email, rol, token) de forma estructurada para el cliente móvil. | Usado en AuthenticationController para respuestas de autenticación exitosa. |
+| Resource | SignInResource | Estructura de una petición para iniciar sesión. | Representar y exponer los campos requeridos para autenticación (email, contraseña) de forma predeterminada. | Usado en AuthenticationController para recibir peticiones de login. |
+| Resource | SignUpConsumerResource | Estructura de una petición para registrar un usuario consumidor. | Representar los campos requeridos para crear una cuenta de tipo consumidor. | Usado en AuthenticationController para el flujo de registro B2C. |
+| Resource | SignUpBusinessResource | Estructura de una petición para registrar un negocio afiliado. | Representar los campos requeridos para crear una cuenta de tipo negocio (incluye nombre comercial, categoría y RUC/identificador fiscal). | Usado en AuthenticationController para el flujo de registro B2B, que inicia el proceso de verificación. |
+| Resource | UserResource | Estructura de datos de una cuenta de usuario. | Representar y exponer los datos de perfil de identidad de forma estructurada para operaciones de consulta. | Usado en UsersController para emitir datos de cuentas. |
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Assembler | AuthenticatedUserResourceFromEntityAssembler | Transforma la entidad User a AuthenticatedUserResource. | Convertir la entidad del dominio a su representación REST incluyendo el token JWT y el rol para que el cliente móvil determine la navegación inicial. | Usado en AuthenticationController para transformar respuestas de login. |
+| Assembler | SignInCommandFromResourceAssembler | Transforma SignInResource a SignInCommand. | Convertir la petición REST al comando del dominio correspondiente. | Usado en AuthenticationController para procesar peticiones de inicio de sesión. |
+| Assembler | SignUpConsumerCommandFromResourceAssembler | Transforma SignUpConsumerResource a SignUpConsumerCommand. | Convertir la petición REST al comando de registro de consumidor. | Usado en AuthenticationController para el flujo de registro B2C. |
+| Assembler | SignUpBusinessCommandFromResourceAssembler | Transforma SignUpBusinessResource a SignUpBusinessCommand. | Convertir la petición REST al comando de registro de negocio. | Usado en AuthenticationController para el flujo de registro B2B. |
+| Assembler | UserResourceFromEntityAssembler | Transforma la entidad User a UserResource. | Convertir la entidad del dominio a su representación REST para operaciones de consulta. | Usado en UsersController para transformar respuestas. |
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Controller | AuthenticationController | Controlador para operaciones de autenticación y registro. | Manejar las peticiones HTTP de inicio de sesión y registro de todos los tipos de cuenta. | Usa los command services de la capa Application y los assemblers para procesar peticiones. |
+| Controller | UsersController | Controlador para operaciones de gestión de cuentas. | Manejar las peticiones HTTP de consulta y administración de usuarios, accesibles principalmente desde el panel de administración. | Usa los query services y assemblers para procesar peticiones. |
+
+**Sub-capa ACL:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Service | IamContextFacade | Servicio de fachada para el contexto IAM. | Proporcionar una interfaz simplificada para que otros bounded contexts (Profile, Promotions, Redemption, Community, Analytics) verifiquen identidad y rol de una cuenta sin acceder directamente al dominio IAM. | Relacionado con todos los bounded contexts que requieren validación de identidad. |
+
+---
+
+#### 2.6.1.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| CommandHandler | UserCommandService | Implementación de los comandos de autenticación y registro. | Implementar los métodos de SignIn, SignUpConsumer y SignUpBusiness, coordinando hashing de contraseñas, generación de token y asignación de rol. | Implementa los métodos de IUserCommandService definidos en la capa Domain. |
+
+**Sub-capa Internal - OutboundServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Service | IHashingService | Interfaz para el servicio de hashing de contraseñas. | Definir contratos para operaciones de hash y verificación de contraseñas antes de persistir o validar credenciales. | Implementado en la capa Infrastructure (BCrypt). |
+| Service | ITokenService | Interfaz para el servicio de gestión de tokens JWT. | Definir contratos para generación, validación y decodificación de tokens de acceso. El token incluye el claim de rol para que el cliente móvil determine la navegación inicial (feed B2C o dashboard B2B). | Implementado en la capa Infrastructure (JWT). |
+
+**Sub-capa Internal - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| QueryHandler | UserQueryService | Implementación de las consultas de cuentas de usuario. | Implementar los métodos de búsqueda por email, ID y rol, coordinando la recuperación desde el repositorio. | Implementa los métodos de IUserQueryService definidos en la capa Domain. |
+
+---
+
+#### 2.6.1.4. Infrastructure Layer
+
+**Sub-capa Hashing (BCrypt):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Service | HashingService | Servicio para el hash de contraseñas usando BCrypt. | Proporcionar métodos para hashear contraseñas en el registro y verificarlas en el inicio de sesión de forma segura. | Relacionado con UserCommandService en la capa Application. |
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Repository | UserRepository | Repositorio concreto para el modelo User. | Acceder y manipular datos de cuentas persistidos en la base de datos, implementando los contratos de IUserRepository. | Usado en la capa Application para registro, autenticación y consulta de usuarios. |
+
+**Sub-capa Pipeline (Middleware):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Attribute | AllowAnonymousAttribute | Atributo para permitir acceso anónimo. | Marcar los endpoints de registro e inicio de sesión que no requieren token de autenticación. | Usado en AuthenticationController para los endpoints públicos. |
+| Attribute | AuthorizeAttribute | Atributo para requerir autorización. | Marcar los endpoints que requieren token válido y, opcionalmente, un rol específico (CONSUMER, BUSINESS, ADMIN). | Usado en UsersController y en los controladores de otros bounded contexts para proteger operaciones sensibles. |
+| Component | RequestAuthorizationMiddleware | Middleware para autorización de peticiones. | Interceptar cada petición HTTP, validar el token JWT y extraer el claim de rol para autorizar o rechazar el acceso. | Relacionado con el pipeline de la aplicación móvil y con el servicio ITokenService. |
+
+**Sub-capa Tokens (JWT):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Config | TokenSettings | Configuración de tokens JWT. | Almacenar los parámetros de generación y validación de tokens: clave secreta, emisor, audiencia y tiempo de expiración. | Usado por TokenService para configurar la generación de JWT. |
+| Service | TokenService | Servicio para el manejo de tokens JWT. | Encapsular toda la lógica de generación, validación y decodificación de tokens, incluyendo la inserción del claim de rol (CONSUMER, BUSINESS, ADMIN) que determina la experiencia de navegación en la app móvil. | Implementa ITokenService de la capa Application; relacionado con UserCommandService. |
+
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 2.6.1.6.2. Bounded Context Database Design Diagram
