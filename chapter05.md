@@ -167,3 +167,21 @@ Sistema de búsqueda implementado en:
 **Aplicacion Movil (Negocio)**:
 * Barra inferior de cinco elementos con la misma estructura del consumidor, reemplazando el feed por el dashboard de campanas y el historial por el panel de validacion de QR.
 * La pantalla de validacion de QR ocupa el elemento central de la barra, manteniendo la misma jerarquia visual que el generador de QR del consumidor.
+
+### 5.1.3. Landing Page UI Design
+
+#### 5.1.3.1. Landing Page Wireframe
+
+#### 5.1.3.2. Landing Page Mock-up
+
+### 5.1.4. Mobile Applications UX/UI Design
+
+#### 5.1.4.1. Mobile Applications Wireframes
+
+#### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+#### 5.1.4.3. Mobile Applications Mock-ups
+
+#### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+#### 5.1.4.5. Mobile Applications Prototyping
