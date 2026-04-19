@@ -701,6 +701,24 @@ En esta sección se aplica la técnica de Candidate Context Discovery para ident
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
+Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilustra cómo fluyen los mensajes de dominio, como comandos, eventos y consultas, entre los distintos contextos delimitados del sistema. Esto permite clarificar las interacciones y responsabilidades de cada contexto.
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-1" alt="dmfm1"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-2" alt="dmfm2"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-3" alt="dmfm3"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-4" alt="dmfm4"/> 
+</p>
+
 #### 2.5.1.3. Bounded Context Canvases
 
 ### 2.5.2. Context Mapping
