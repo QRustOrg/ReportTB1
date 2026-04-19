@@ -687,15 +687,14 @@ Entonces guarda cambios.
 
 En esta sección se aplica la técnica de Candidate Context Discovery para identificar y separar los posibles Bounded Contexts del sistema. Se utilizó la técnica look-for-pivotal-events para analizar los eventos que marcan un cambio de estado relevante dentro del modelo de negocio de Klippr. Al identificar eventos como **UsuarioRegistrado**, **PromocionPublicada**, **QRGenerado**, **QRCanjeado** y **ReseñaPublicada**, se detectó que cada uno implicaba responsabilidades y reglas de negocio distintas, lo que llevó a definir los siguientes Bounded Contexts:
 
-| Bounded Context | Descripción | Eventos clave |
-|---|---|---|
-| **IAM** | Maneja la autenticación y autorización de los tres tipos de usuario: consumidor, negocio afiliado y administrador de plataforma. | `UsuarioRegistrado`, `UsuarioAutenticado`, `NegocioRegistrado` |
-| **Profile** | Administra la información de perfil de usuarios consumidores y negocios afiliados, incluyendo el flujo de verificación y aprobación de negocios por el administrador. | `PerfilCreado`, `PerfilActualizado`, `NegocioVerificado`, `NegocioRechazado` |
-| **Promotions** | Gestiona el ciclo de vida completo de las campañas de descuento: publicación, edición, pausa y finalización por parte del negocio afiliado. | `PromocionPublicada`, `PromocionPausada`, `PromocionEditada`, `PromocionFinalizada` |
-| **Redemption** | Controla la generación del QR único por usuario/oferta, la validación en punto de venta (escaneo o código manual), el bloqueo automático post-canje y la gestión de expiración. | `QRGenerado`, `QRCanjeado`, `QRBloqueado`, `QRExpirado` |
-| **Community** | Administra el módulo social: reseñas ligadas a canje completado, calificaciones (1-5), likes, comentarios y respuestas de negocios a reseñas. | `ReseñaPublicada`, `CalificacionRegistrada`, `LikeRegistrado`, `RespuestaPublicada` |
-| **Analytics** | Provee métricas por campaña para negocios (vistas, canjes, ratings) y datos de moderación y abuso para el administrador de plataforma. | `MetricaActualizada`, `DashboardConsultado`, `ReporteDeAbusoRegistrado` |
-
+| Bounded Context | Descripción                                                                                                                                                                     | Eventos clave                                                                            |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+|     **IAM**     | Maneja la autenticación y autorización de los tres tipos de usuario: consumidor, negocio afiliado y administrador de plataforma.                                                | `UsuarioRegistrado`, `UsuarioAutenticado`, `NegocioRegistrado`                        |
+| **Profile** | Administra la información de perfil de usuarios consumidores y negocios afiliados, incluyendo el flujo de verificación y aprobación de negocios por el administrador.               | `PerfilCreado`, `PerfilActualizado`, `NegocioVerificado`, `NegocioRechazado`     |
+| **Promotions**  | Gestiona el ciclo de vida completo de las campañas de descuento: publicación, edición, pausa y finalización por parte del negocio afiliado.                                     | `PromocionPublicada`, `PromocionPausada`, `PromocionEditada`, `PromocionFinalizada`    |
+| **Redemption**  | Controla la generación del QR único por usuario/oferta, la validación en punto de venta (escaneo o código manual), el bloqueo automático post-canje y la gestión de expiración. | `QRGenerado`, `QRCanjeado`, `QRBloqueado`, `QRExpirado`                        |
+| **Community**   | Administra el módulo social: reseñas ligadas a canje completado, calificaciones (1-5), likes, comentarios y respuestas de negocios a reseñas.                                   | `ReseñaPublicada`, `CalificacionRegistrada`, `LikeRegistrado`, `RespuestaPublicada` |
+| **Analytics**   | Provee métricas por campaña para negocios (vistas, canjes, ratings) y datos de moderación y abuso para el administrador de plataforma.                                          | `MetricaActualizada`, `DashboardConsultado`, `ReporteDeAbusoRegistrado`                |
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
