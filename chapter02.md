@@ -704,43 +704,16 @@ En esta sección se aplica la técnica de Candidate Context Discovery para ident
 Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilustra cómo fluyen los mensajes de dominio, como comandos, eventos y consultas, entre los distintos contextos delimitados del sistema. Esto permite clarificar las interacciones y responsabilidades de cada contexto.
 
 <p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-1" alt="dmfm1"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-2" alt="dmfm2"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-3" alt="dmfm3"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-4" alt="dmfm4"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-5" alt="dmfm5"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-6" alt="dmfm6"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-7" alt="dmfm7"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-8" alt="dmfm8"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-9" alt="dmfm9"/> 
-</p>
-
-<p align="center">
-    <img src="assets/chapter02/domain-message-flows-modeling-10" alt="dmfm10"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-1.jpg" alt="dmfm1"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-2.jpg" alt="dmfm2"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-3.jpg" alt="dmfm3"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-4.jpg" alt="dmfm4"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-5.jpg" alt="dmfm5"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-6.jpg" alt="dmfm6"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-7.jpg" alt="dmfm7"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-8.jpg" alt="dmfm8"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-9.jpg" alt="dmfm9"/> 
+    <img src="assets/chapter02/domain-message-flows-modeling-10.jpg" alt="dmfm10"/> 
 </p>
 
 #### 2.5.1.3. Bounded Context Canvases
