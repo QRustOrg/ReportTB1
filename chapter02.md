@@ -719,6 +719,30 @@ Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilus
     <img src="assets/chapter02/domain-message-flows-modeling-4" alt="dmfm4"/> 
 </p>
 
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-5" alt="dmfm5"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-6" alt="dmfm6"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-7" alt="dmfm7"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-8" alt="dmfm8"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-9" alt="dmfm9"/> 
+</p>
+
+<p align="center">
+    <img src="assets/chapter02/domain-message-flows-modeling-10" alt="dmfm10"/> 
+</p>
+
 #### 2.5.1.3. Bounded Context Canvases
 
 ### 2.5.2. Context Mapping
