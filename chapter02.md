@@ -683,6 +683,10 @@ Entonces guarda cambios.
 
 ### 2.5.1. EventStorming
 
+Para llevar a cabo los Bounded Context, se deben reconocer los eventos y organizarlos. Asimismo, se utilizan notas adhesivas de colores para representar dichos events/commands/querys.
+
+Para llevar a cabo el proceso de EventStorming empleamos la herramienta **Miro**.
+
 #### 2.5.1.1. Candidate Context Discovery
 
 En esta sección se aplica la técnica de Candidate Context Discovery para identificar y separar los posibles Bounded Contexts del sistema. Se utilizó la técnica look-for-pivotal-events para analizar los eventos que marcan un cambio de estado relevante dentro del modelo de negocio de Klippr. Al identificar eventos como **UsuarioRegistrado**, **PromocionPublicada**, **QRGenerado**, **QRCanjeado** y **ReseñaPublicada**, se detectó que cada uno implicaba responsabilidades y reglas de negocio distintas, lo que llevó a definir los siguientes Bounded Contexts:
@@ -717,6 +721,20 @@ Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilus
 </p>
 
 #### 2.5.1.3. Bounded Context Canvases
+
+En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a desarrollar. Permitiendo identificar con claridad qué responsabilidad tiene cada Bounded Context en cómo se relaciona con otros y qué elementos lo conforman, como entidades, agregados y las reglas del negocio.
+
+<p align="center">
+    <img src="assets/chapter02/bounded-context-canvases-1.jpg" alt="bcc1"/>
+    <img src="assets/chapter02/bounded-context-canvases-2.jpg" alt="bcc2"/> 
+    <img src="assets/chapter02/bounded-context-canvases-3.jpg" alt="bcc3"/> 
+    <img src="assets/chapter02/bounded-context-canvases-4.jpg" alt="bcc4"/> 
+    <img src="assets/chapter02/bounded-context-canvases-5.jpg" alt="bcc5"/> 
+    <img src="assets/chapter02/bounded-context-canvases-6.jpg" alt="bcc6"/> 
+    <img src="assets/chapter02/bounded-context-canvases-7.jpg" alt="bcc7"/> 
+    <img src="assets/chapter02/bounded-context-canvases-8.jpg" alt="bcc8"/> 
+    <img src="assets/chapter02/bounded-context-canvases-9.jpg" alt="bcc9"/>
+</p>
 
 ### 2.5.2. Context Mapping
 
