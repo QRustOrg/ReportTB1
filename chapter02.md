@@ -733,7 +733,6 @@ En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a des
     <img src="assets/chapter02/bounded-context-canvases-6.jpg" alt="bcc6"/> 
     <img src="assets/chapter02/bounded-context-canvases-7.jpg" alt="bcc7"/> 
     <img src="assets/chapter02/bounded-context-canvases-8.jpg" alt="bcc8"/> 
-    <img src="assets/chapter02/bounded-context-canvases-9.jpg" alt="bcc9"/>
 </p>
 
 ### 2.5.2. Context Mapping
