@@ -687,6 +687,18 @@ Para llevar a cabo los Bounded Context, se deben reconocer los eventos y organiz
 
 Para llevar a cabo el proceso de EventStorming empleamos la herramienta **Miro**.
 
+<p align="center">
+    <img src="assets/chapter02/eventstorming-1.jpg" alt="es1"/>
+    <img src="assets/chapter02/eventstorming-2.jpg" alt="es2"/>
+    <img src="assets/chapter02/eventstorming-3.jpg" alt="es3"/>
+    <img src="assets/chapter02/eventstorming-4.jpg" alt="es4"/>
+    <img src="assets/chapter02/eventstorming-5.jpg" alt="es5"/>
+    <img src="assets/chapter02/eventstorming-6.jpg" alt="es6"/>
+    <img src="assets/chapter02/eventstorming-7.jpg" alt="es7"/>
+    <img src="assets/chapter02/eventstorming-8.jpg" alt="es8"/>
+    <img src="assets/chapter02/eventstorming-9.jpg" alt="es9"/>
+</p>
+
 #### 2.5.1.1. Candidate Context Discovery
 
 En esta sección se aplica la técnica de Candidate Context Discovery para identificar y separar los posibles Bounded Contexts del sistema. Se utilizó la técnica look-for-pivotal-events para analizar los eventos que marcan un cambio de estado relevante dentro del modelo de negocio de Klippr. Al identificar eventos como **UsuarioRegistrado**, **PromocionPublicada**, **QRGenerado**, **QRCanjeado** y **ReseñaPublicada**, se detectó que cada uno implicaba responsabilidades y reglas de negocio distintas, lo que llevó a definir los siguientes Bounded Contexts:
