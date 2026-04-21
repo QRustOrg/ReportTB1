@@ -359,3 +359,16 @@ Este proceso permitió identificar los eventos clave, los actores involucrados, 
 **Engagement (Interacción):** Nivel de participación del usuario (visualizaciones, canjes, reseñas).
 
 **Notification (Notificación):** Mensajes enviados para informar sobre nuevas promociones, canjes o actividad relevante.
+
+### 2.5.3. Software Architecture 
+
+### 2.5.3.1. Software Architecture Context Level Diagrams
+
+![KlipprContextDiagram](assets/chapter02/KlipprContextDiagram.png)
+
+### 2.5.3.1. Software Architecture Container Level Diagrams
+
+![KlipprContainerDiagram](assets/chapter02/KlipprContainerDiagram.png)
+
+### 2.5.3.1. Software Architecture Deployment Level Diagrams
+
