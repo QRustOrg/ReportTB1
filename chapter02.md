@@ -159,6 +159,294 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 - ¿Estarías dispuesto a pagar por una solución así?
 - ¿Qué te haría dejar de usar una herramienta de este tipo?
 
+### 2.2.2. Registro de entrevistas
+
+#### Segmento 1: Usuarios
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td>Andrés Rodríguez</td>
+  </tr>
+  <tr>
+    <td><strong>Edad:</strong></td>
+    <td>22 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito:</strong></td>
+    <td>Callao, Callao</td>
+  </tr>
+  <tr>
+    <td><strong>URL del video:</strong></td>
+    <td>
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u201822823_upc_edu_pe/IQDo0KBION1VTKoQ1GzKLBVaAcmioWPwcySPB48GvheC0bE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kHPOAq <br>
+      Timing: 02:00 <br>
+      Duración: 04:26 minutos
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td><img src="assets/chapter02/seg-1.png"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Andrés Rodríguez es un usuario activo en búsqueda de oportunidades para optimizar sus gastos en actividades cotidianas como compras y entretenimiento. Durante la entrevista, expresó su interés específico en una aplicación que le permitiera acceder a cupones de descuento en tiendas de manera confiable y verificada. Asimismo, mencionó que ha tenido experiencias negativas con cupones inválidos, lo que afecta su confianza en este tipo de plataformas. También considera importante que los descuentos sean fáciles de usar y que la experiencia dentro de la aplicación sea rápida y sencilla.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista 2</th>
+  </tr>
+
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Edad:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Distrito:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>URL del video:</strong></td>
+    <td>
+      [Pegar URL aquí] <br>
+      Timing: <br>
+      Duración:
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td>
+      <img src="">
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <!-- Escribe aquí el resumen -->
+    </td>
+  </tr>
+
+</table>
+
+<br>
+
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista 3</th>
+  </tr>
+
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Edad:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Distrito:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>URL del video:</strong></td>
+    <td>
+      [Pegar URL aquí] <br>
+      Timing: <br>
+      Duración:
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td>
+      <img src="">
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <!-- Escribe aquí el resumen -->
+    </td>
+  </tr>
+
+</table>
+
+#### Segmento 2: Empresas afiliadas
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista 1 - Segmento 2: Empresa Afiliada</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td>Camila Huamani</td>
+  </tr>
+  <tr>
+    <td><strong>Edad:</strong></td>
+    <td>30 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito:</strong></td>
+    <td>Chorrillos, Lima</td>
+  </tr>
+  <tr>
+    <td><strong>URL del video:</strong></td>
+    <td>
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u201822823_upc_edu_pe/IQAAeVdzNRpwTq4OztwDUXrFAQfCBzQqiU8uFd6vvLevTW8 <br>
+      Timing: 01:00 <br>
+      Duración: 05:11 minutos
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td><img src="assets/chapter02/seg-2.png"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Camila Huamani es una empresaria con experiencia en gestión comercial, enfocada en estrategias para aumentar la lealtad de su base de clientes. Durante la entrevista, expresó la necesidad de contar con herramientas tecnológicas que faciliten la creación y administración de promociones, destacando que actualmente tiene dificultades para medir el impacto real de estas en su negocio. Asimismo, manifestó preocupación por el fraude y la reutilización de cupones, lo que genera pérdidas económicas, y señaló la importancia de contar con un mayor control sobre las promociones, como saber quién las utiliza, cuándo y cuántas veces pueden ser canjeadas. Además, indicó que busca una solución fácil de implementar, que no requiera cambios complejos en sus procesos operativos, y valoró la posibilidad de recibir retroalimentación de los clientes mediante reseñas, ya que esto fortalece la relación comercial.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista 2</th>
+  </tr>
+
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Edad:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Distrito:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>URL del video:</strong></td>
+    <td>
+      [Pegar URL aquí] <br>
+      Timing: <br>
+      Duración:
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td>
+      <img src="">
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <!-- Escribe aquí el resumen -->
+    </td>
+  </tr>
+
+</table>
+
+<br>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista 3</th>
+  </tr>
+
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Edad:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>Distrito:</strong></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><strong>URL del video:</strong></td>
+    <td>
+      [Pegar URL aquí] <br>
+      Timing: <br>
+      Duración:
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td>
+      <img src="">
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <!-- Escribe aquí el resumen -->
+    </td>
+  </tr>
+
+</table>
+
+<br>
+
+### 2.2.3. Análisis de entrevistas
+
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
