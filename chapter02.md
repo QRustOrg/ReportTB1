@@ -159,6 +159,110 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 - ¿Estarías dispuesto a pagar por una solución así?
 - ¿Qué te haría dejar de usar una herramienta de este tipo?
 
+### 2.2.2. Registro de Entrevistas
+
+#### Segmento 1: Usuarios
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista </th>
+  </tr>
+
+  <tr>
+    <td><strong>Nombre:</strong></td>
+    <td> Lewis Alexis Rengifo Pizango</td>
+  </tr>
+
+  <tr>
+    <td><strong>Edad: </strong></td>
+    <td>24 años</td>
+  </tr>
+
+  <tr>
+    <td><strong>Distrito: </strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+
+  <tr>
+    <td><strong>URL del video: </strong></td>
+    <td>
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320684_upc_edu_pe/IQCt1PO3Zi7MR6Dtlk5fNIGKAcYEEpFAIyMnVLLxpVX88fE?e=CKJ9yt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+      Timing:  <br>
+      Duración: 06:46 
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td>
+      <img src="assets/chapter02/Entrevista-Segmento1A.png">
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      Se trata de un joven de 24 años que busca descuentos en redes sociales para sus salidas frecuentes. Su principal molestia es la falta de claridad en las condiciones y los fallos al pagar. Valora mucho las reseñas reales y las promociones "verificadas" para evitar engaños. Considera que una app con QR único sería ideal por su orden y seguridad, siempre que sea rápida, fácil de usar y le garantice un ahorro real sin complicaciones.
+    </td>
+  </tr>
+
+</table>
+
+<br>
+
+#### Segmento 2: Empresas Afiliadas
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th colspan="2">Entrevista</th>
+  </tr>
+
+  <tr>
+    <td><strong>Nombre: </strong></td>
+    <td>Jesus Alexander Ponce</td>
+  </tr>
+
+  <tr>
+    <td><strong>Edad: </strong></td>
+    <td>29 años</td>
+  </tr>
+
+  <tr>
+    <td><strong>Distrito: </strong></td>
+    <td>Tarapoto</td>
+  </tr>
+
+  <tr>
+    <td><strong>URL del video: </strong></td>
+    <td>
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320684_upc_edu_pe/IQC50yyoAtsNQJIGy88Y31PoARAnXFRfKTvA-nBtH2_LRls?e=4PnqIu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+      Timing: <br>
+      Duración: 09:57
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Screenshot del video:</strong></td>
+    <td>
+      <img src="assets/chapter02/Entrevista-Segmento2A.png">
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      Es un dueño de negocio que maneja un alto flujo de clientes y utiliza promociones manuales para competir. Sus problemas actuales son la falta de métricas de éxito y el riesgo de fraude por clientes que reutilizan cupones. Busca una herramienta ágil con validación QR que evite pérdidas y le permita ver estadísticas de canje. Está interesado en gestionar reseñas para generar confianza, siempre que el sistema no retrase la atención en caja.
+    </td>
+  </tr>
+
+</table>
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
@@ -314,369 +418,356 @@ En esta sección se presentan los Empathy Maps. Estos nos ayudarán a comprender
 
 ### 2.4.1. User Stories 
 
-<table border="1">
-<tr><td>Story ID</td><td>US01</td><td>User</td><td>Visitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP01</td></tr>
-<tr><td>Title</td><td colspan="5">Ver información general del sistema</td></tr>
-<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer el propósito del sistema para entender su valor.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado que el visitante accede al sitio,<br/>
-Cuando consulta la información disponible,<br/>
-Entonces comprende el propósito del sistema.
+<table border="1" width="100%" cellspacing="0" cellpadding="6">
+
+<tr><td colspan="4"><b>EP01 — Landing / Exploración</b></td></tr>
+
+<tr><td><b>Story ID</b></td><td><b>User</b></td><td><b>Priority</b></td><td><b>Epic</b></td></tr>
+
+<tr><td>US-01</td><td>Usuario</td><td>Alta</td><td>EP01</td></tr>
+<tr><td colspan="4"><b>Title:</b> Explorar descuentos</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere visualizar descuentos disponibles para encontrar promociones.</td></tr>
+<tr><td colspan="4">
+Dado que el usuario accede a la aplicación,<br/>
+Cuando visualiza la lista de descuentos,<br/>
+Entonces observa promociones disponibles.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<td>Story ID</td><td>US02</td><td>User</td><td>Visitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP01</td></tr>
-<tr><td>Title</td><td colspan="5">Conocer al equipo</td></tr>
-<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer al equipo responsable para generar confianza.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado que el visitante consulta información institucional,<br/>
-Cuando revisa el contenido,<br/>
-Entonces identifica al equipo y su propósito.
+<tr><td>US-02</td><td>Usuario</td><td>Alta</td><td>EP01</td></tr>
+<tr><td colspan="4"><b>Title:</b> Filtrar descuentos</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere filtrar descuentos por categoría o ubicación.</td></tr>
+<tr><td colspan="4">
+Dado que existen filtros disponibles,<br/>
+Cuando el usuario selecciona un criterio,<br/>
+Entonces se muestran descuentos filtrados.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US03</td><td>User</td><td>Visitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP01</td></tr>
-<tr><td>Title</td><td colspan="5">Entender funcionamiento del sistema</td></tr>
-<tr><td>Description</td><td colspan="5">Como visitante, quiere entender el flujo del sistema para evaluar su utilidad.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado que el visitante accede a la explicación del sistema,<br/>
-Cuando revisa la información,<br/>
-Entonces comprende el flujo operativo.
+<tr><td>US-03</td><td>Usuario</td><td>Alta</td><td>EP01</td></tr>
+<tr><td colspan="4"><b>Title:</b> Ver detalle de promoción</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere ver condiciones de una promoción.</td></tr>
+<tr><td colspan="4">
+Dado que selecciona una promoción,<br/>
+Cuando accede al detalle,<br/>
+Entonces visualiza condiciones y vigencia.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US04</td><td>User</td><td>Visitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP01</td></tr>
-<tr><td>Title</td><td colspan="5">Consultar preguntas frecuentes</td></tr>
-<tr><td>Description</td><td colspan="5">Como visitante, quiere resolver dudas comunes rápidamente.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado que el visitante accede a preguntas frecuentes,<br/>
-Cuando revisa la información,<br/>
-Entonces encuentra respuestas relevantes.
+<tr><td colspan="4"><b>EP02 — Gestión de Descuentos (Usuario)</b></td></tr>
+
+<tr><td>US-04</td><td>Usuario</td><td>Alta</td><td>EP02</td></tr>
+<tr><td colspan="4"><b>Title:</b> Generar código QR</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere generar un código QR único.</td></tr>
+<tr><td colspan="4">
+Dado que selecciona un descuento,<br/>
+Cuando genera el código,<br/>
+Entonces el sistema crea un QR único.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US05</td><td>User</td><td>Visitante</td><td>Priority</td><td>Baja</td><td>Epic</td><td>EP01</td></tr>
-<tr><td>Title</td><td colspan="5">Visualizar beneficios</td></tr>
-<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer beneficios para evaluar la adopción.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado que el visitante revisa beneficios,<br/>
-Cuando analiza la información,<br/>
-Entonces identifica ventajas del sistema.
+<tr><td>US-05</td><td>Usuario</td><td>Media</td><td>EP02</td></tr>
+<tr><td colspan="4"><b>Title:</b> Ver códigos generados</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere visualizar sus códigos.</td></tr>
+<tr><td colspan="4">
+Dado que existen códigos generados,<br/>
+Cuando accede a la sección,<br/>
+Entonces visualiza sus códigos.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US06</td><td>User</td><td>Visitante</td><td>Priority</td><td>Baja</td><td>Epic</td><td>EP01</td></tr>
-<tr><td>Title</td><td colspan="5">Consultar planes</td></tr>
-<tr><td>Description</td><td colspan="5">Como visitante, quiere conocer planes disponibles para evaluar opciones.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado que el visitante consulta planes,<br/>
-Cuando revisa opciones,<br/>
-Entonces comprende diferencias entre planes.
+<tr><td>US-06</td><td>Usuario</td><td>Media</td><td>EP02</td></tr>
+<tr><td colspan="4"><b>Title:</b> Ver historial</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere ver historial de descuentos usados.</td></tr>
+<tr><td colspan="4">
+Dado que existen descuentos usados,<br/>
+Cuando accede al historial,<br/>
+Entonces visualiza registros.
 </td></tr>
-</table>
-<br/>
 
+<tr><td colspan="4"><b>EP03 — Validación (Empresa)</b></td></tr>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US07</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP02</td></tr>
-<tr><td>Title</td><td colspan="5">Registrar pedido</td></tr>
-<tr><td>Description</td><td colspan="5">Como solicitante, quiere registrar pedidos para solicitar combustible.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
+<tr><td>US-07</td><td>Empresa</td><td>Alta</td><td>EP03</td></tr>
+<tr><td colspan="4"><b>Title:</b> Escanear QR</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere escanear QR para validar descuentos.</td></tr>
+<tr><td colspan="4">
+Dado un código QR válido,<br/>
+Cuando la empresa lo escanea,<br/>
+Entonces el sistema valida el descuento.
+</td></tr>
+
+<tr><td>US-08</td><td>Empresa</td><td>Alta</td><td>EP03</td></tr>
+<tr><td colspan="4"><b>Title:</b> Validación manual</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere ingresar código manual.</td></tr>
+<tr><td colspan="4">
+Dado un código válido,<br/>
+Cuando lo ingresa manualmente,<br/>
+Entonces el sistema valida.
+</td></tr>
+
+<tr><td>US-09</td><td>Empresa</td><td>Alta</td><td>EP03</td></tr>
+<tr><td colspan="4"><b>Title:</b> Bloquear código</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere evitar reutilización.</td></tr>
+<tr><td colspan="4">
+Dado un código validado,<br/>
+Cuando se confirma uso,<br/>
+Entonces el sistema lo bloquea.
+</td></tr>
+
+<tr><td colspan="4"><b>EP04 — Gestión de Promociones</b></td></tr>
+
+<tr><td>US-10</td><td>Empresa</td><td>Alta</td><td>EP04</td></tr>
+<tr><td colspan="4"><b>Title:</b> Crear promoción</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere crear promociones.</td></tr>
+<tr><td colspan="4">
 Dado datos válidos,<br/>
-Cuando registra pedido,<br/>
-Entonces se almacena correctamente.
+Cuando crea promoción,<br/>
+Entonces el sistema la registra.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US08</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP02</td></tr>
-<tr><td>Title</td><td colspan="5">Consultar estado</td></tr>
-<tr><td>Description</td><td colspan="5">Como solicitante, quiere consultar estado para seguimiento.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pedidos existentes,<br/>
-Cuando consulta estado,<br/>
-Entonces visualiza estado actualizado.
+<tr><td>US-11</td><td>Empresa</td><td>Media</td><td>EP04</td></tr>
+<tr><td colspan="4"><b>Title:</b> Definir condiciones</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere establecer condiciones.</td></tr>
+<tr><td colspan="4">
+Dado una promoción,<br/>
+Cuando define condiciones,<br/>
+Entonces se guardan.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US09</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP02</td></tr>
-<tr><td>Title</td><td colspan="5">Confirmar recepción</td></tr>
-<tr><td>Description</td><td colspan="5">Como solicitante, quiere confirmar entrega para cerrar proceso.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pedido entregado,<br/>
-Cuando confirma recepción,<br/>
-Entonces cambia a finalizado.
+<tr><td>US-12</td><td>Empresa</td><td>Media</td><td>EP04</td></tr>
+<tr><td colspan="4"><b>Title:</b> Limitar canjes</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere limitar cantidad.</td></tr>
+<tr><td colspan="4">
+Dado una promoción,<br/>
+Cuando define límite,<br/>
+Entonces el sistema lo respeta.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US10</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP02</td></tr>
-<tr><td>Title</td><td colspan="5">Ver historial</td></tr>
-<tr><td>Description</td><td colspan="5">Como solicitante, quiere revisar pedidos anteriores.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado historial disponible,<br/>
-Cuando consulta,<br/>
-Entonces obtiene registros.
+<tr><td colspan="4"><b>EP05 — Módulo Social</b></td></tr>
+
+<tr><td>US-13</td><td>Usuario</td><td>Media</td><td>EP05</td></tr>
+<tr><td colspan="4"><b>Title:</b> Publicar reseña</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere compartir experiencia.</td></tr>
+<tr><td colspan="4">
+Dado una promoción usada,<br/>
+Cuando publica reseña,<br/>
+Entonces se registra.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US11</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP03</td></tr>
-<tr><td>Title</td><td colspan="5">Aprobar pedido</td></tr>
-<tr><td>Description</td><td colspan="5">Como proveedor, quiere aprobar pedidos válidos.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pago validado,<br/>
-Cuando aprueba pedido,<br/>
-Entonces cambia estado.
+<tr><td>US-14</td><td>Usuario</td><td>Media</td><td>EP05</td></tr>
+<tr><td colspan="4"><b>Title:</b> Calificar promoción</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere calificar.</td></tr>
+<tr><td colspan="4">
+Dado una promoción,<br/>
+Cuando califica,<br/>
+Entonces se guarda puntuación.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US12</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP03</td></tr>
-<tr><td>Title</td><td colspan="5">Despachar pedido</td></tr>
-<tr><td>Description</td><td colspan="5">Como proveedor, quiere despachar pedidos aprobados.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pedido aprobado,<br/>
-Cuando despacha,<br/>
-Entonces cambia estado.
+<tr><td>US-15</td><td>Usuario</td><td>Baja</td><td>EP05</td></tr>
+<tr><td colspan="4"><b>Title:</b> Comentar</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere comentar.</td></tr>
+<tr><td colspan="4">
+Dado una publicación,<br/>
+Cuando comenta,<br/>
+Entonces se registra.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US13</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP03</td></tr>
-<tr><td>Title</td><td colspan="5">Cerrar pedido</td></tr>
-<tr><td>Description</td><td colspan="5">Como proveedor, quiere cerrar pedidos finalizados.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado confirmación del cliente,<br/>
-Cuando cierra pedido,<br/>
-Entonces queda finalizado.
+<tr><td>US-16</td><td>Usuario</td><td>Baja</td><td>EP05</td></tr>
+<tr><td colspan="4"><b>Title:</b> Reaccionar</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere reaccionar.</td></tr>
+<tr><td colspan="4">
+Dado una publicación,<br/>
+Cuando reacciona,<br/>
+Entonces se registra.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US14</td><td>User</td><td>Usuario</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP04</td></tr>
-<tr><td>Title</td><td colspan="5">Iniciar sesión</td></tr>
-<tr><td>Description</td><td colspan="5">Como usuario, quiere autenticarse.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
+<tr><td colspan="4"><b>EP06 — Autenticación</b></td></tr>
+
+<tr><td>US-17</td><td>Usuario</td><td>Media</td><td>EP06</td></tr>
+<tr><td colspan="4"><b>Title:</b> Registro</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere registrarse.</td></tr>
+<tr><td colspan="4">
+Dado datos válidos,<br/>
+Cuando se registra,<br/>
+Entonces crea cuenta.
+</td></tr>
+
+<tr><td>US-18</td><td>Usuario</td><td>Media</td><td>EP06</td></tr>
+<tr><td colspan="4"><b>Title:</b> Login</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere iniciar sesión.</td></tr>
+<tr><td colspan="4">
 Dado credenciales válidas,<br/>
-Cuando inicia sesión,<br/>
-Entonces accede al sistema.
+Cuando inicia,<br/>
+Entonces accede.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US15</td><td>User</td><td>Usuario</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP04</td></tr>
-<tr><td>Title</td><td colspan="5">Recuperar contraseña</td></tr>
-<tr><td>Description</td><td colspan="5">Como usuario, quiere recuperar acceso.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
+<tr><td>US-19</td><td>Usuario</td><td>Baja</td><td>EP06</td></tr>
+<tr><td colspan="4"><b>Title:</b> Recuperar contraseña</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere recuperar acceso.</td></tr>
+<tr><td colspan="4">
 Dado correo válido,<br/>
-Cuando solicita recuperación,<br/>
+Cuando solicita,<br/>
 Entonces recibe enlace.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US16</td><td>User</td><td>Usuario</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP04</td></tr>
-<tr><td>Title</td><td colspan="5">Cerrar sesión</td></tr>
-<tr><td>Description</td><td colspan="5">Como usuario, quiere cerrar sesión.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado sesión activa,<br/>
-Cuando cierra sesión,<br/>
-Entonces se invalida.
+<tr><td>US-20</td><td>Usuario</td><td>Media</td><td>EP02</td></tr>
+<tr><td colspan="4"><b>Title:</b> Guardar promociones</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere guardar promociones para revisarlas después.</td></tr>
+<tr><td colspan="4">
+Dado una promoción disponible,<br/>
+Cuando el usuario la guarda,<br/>
+Entonces el sistema la registra en favoritos.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US17</td><td>User</td><td>Developer</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP06</td></tr>
-<tr><td>Title</td><td colspan="5">API Login</td></tr>
-<tr><td>Description</td><td colspan="5">Como developer, quiere endpoint de autenticación.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
+<tr><td>US-21</td><td>Usuario</td><td>Media</td><td>EP01</td></tr>
+<tr><td colspan="4"><b>Title:</b> Buscar promociones</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere buscar promociones por nombre.</td></tr>
+<tr><td colspan="4">
+Dado un término de búsqueda,<br/>
+Cuando el usuario lo ingresa,<br/>
+Entonces el sistema muestra resultados relacionados.
+</td></tr>
+
+<tr><td>US-22</td><td>Empresa</td><td>Alta</td><td>EP04</td></tr>
+<tr><td colspan="4"><b>Title:</b> Editar promoción</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere modificar promociones.</td></tr>
+<tr><td colspan="4">
+Dado una promoción existente,<br/>
+Cuando edita datos,<br/>
+Entonces el sistema actualiza la información.
+</td></tr>
+
+<tr><td>US-23</td><td>Empresa</td><td>Media</td><td>EP04</td></tr>
+<tr><td colspan="4"><b>Title:</b> Desactivar promoción</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como empresa, quiere desactivar promociones.</td></tr>
+<tr><td colspan="4">
+Dado una promoción activa,<br/>
+Cuando la desactiva,<br/>
+Entonces deja de estar disponible.
+</td></tr>
+
+<tr><td>US-24</td><td>Usuario</td><td>Media</td><td>EP05</td></tr>
+<tr><td colspan="4"><b>Title:</b> Compartir promoción</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como usuario, quiere compartir promociones para recomendarlas a otros.</td></tr>
+<tr><td colspan="4">
+Dado una promoción disponible,<br/>
+Cuando el usuario la comparte,<br/>
+Entonces el sistema genera un medio para compartirla.
+</td></tr>
+
+<tr><td colspan="4"><b>EP07 — Technical Stories</b></td></tr>
+
+<tr><td>TS-01</td><td>Developer</td><td>Alta</td><td>EP07</td></tr>
+<tr><td colspan="4"><b>Title:</b> API generación QR</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como developer, quiere generar QR.</td></tr>
+<tr><td colspan="4">
 Dado request válido,<br/>
-Cuando procesa,<br/>
-Entonces retorna token.
+Cuando ejecuta,<br/>
+Entonces retorna código QR.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US18</td><td>User</td><td>Developer</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP06</td></tr>
-<tr><td>Title</td><td colspan="5">API Logout</td></tr>
-<tr><td>Description</td><td colspan="5">Como developer, quiere invalidar sesión.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado token válido,<br/>
-Cuando procesa,<br/>
-Entonces invalida sesión.
+<tr><td>TS-02</td><td>Developer</td><td>Alta</td><td>EP07</td></tr>
+<tr><td colspan="4"><b>Title:</b> API validación QR</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como developer, quiere validar QR.</td></tr>
+<tr><td colspan="4">
+Dado request válido,<br/>
+Cuando ejecuta,<br/>
+Entonces retorna validación.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US19</td><td>User</td><td>Developer</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP07</td></tr>
-<tr><td>Title</td><td colspan="5">API Crear pedido</td></tr>
-<tr><td>Description</td><td colspan="5">Como developer, quiere registrar pedidos.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado datos válidos,<br/>
-Cuando procesa,<br/>
-Entonces crea registro.
+<tr><td>TS-03</td><td>Developer</td><td>Alta</td><td>EP07</td></tr>
+<tr><td colspan="4"><b>Title:</b> API historial de uso</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como developer, quiere obtener historial.</td></tr>
+<tr><td colspan="4">
+Dado request válido,<br/>
+Cuando ejecuta,<br/>
+Entonces retorna historial.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US20</td><td>User</td><td>Developer</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP07</td></tr>
-<tr><td>Title</td><td colspan="5">API Consultar pedidos</td></tr>
-<tr><td>Description</td><td colspan="5">Como developer, quiere listar pedidos.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado usuario válido,<br/>
-Cuando consulta,<br/>
-Entonces retorna lista.
-</td></tr>
-</table>
-<br/>
+<tr><td colspan="4"><b>EP08 — Spike Stories</b></td></tr>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US21</td><td>User</td><td>Developer</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP07</td></tr>
-<tr><td>Title</td><td colspan="5">API Actualizar estado</td></tr>
-<tr><td>Description</td><td colspan="5">Como developer, quiere actualizar estado.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pedido existente,<br/>
-Cuando actualiza,<br/>
-Entonces cambia estado.
-</td></tr>
-</table>
-<br/>
-
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US22</td><td>User</td><td>Developer</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP07</td></tr>
-<tr><td>Title</td><td colspan="5">API Reportes</td></tr>
-<tr><td>Description</td><td colspan="5">Como developer, quiere generar reportes.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado parámetros válidos,<br/>
-Cuando procesa,<br/>
-Entonces retorna resultados.
-</td></tr>
-</table>
-<br/>
-
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US23</td><td>User</td><td>Equipo</td><td>Priority</td><td>Alta</td><td>Epic</td><td>EP08</td></tr>
-<tr><td>Title</td><td colspan="5">Spike integración pagos</td></tr>
-<tr><td>Description</td><td colspan="5">Como equipo, quiere investigar integración de pagos.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado necesidad de pagos,<br/>
-Cuando investiga,<br/>
+<tr><td>SP-01</td><td>Developer</td><td>Media</td><td>EP08</td></tr>
+<tr><td colspan="4"><b>Title:</b> Investigar librerías QR</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como developer, quiere evaluar generación QR.</td></tr>
+<tr><td colspan="4">
+Dado investigación,<br/>
+Cuando analiza opciones,<br/>
 Entonces documenta resultados.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US24</td><td>User</td><td>Equipo</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP08</td></tr>
-<tr><td>Title</td><td colspan="5">Spike rendimiento</td></tr>
-<tr><td>Description</td><td colspan="5">Como equipo, quiere analizar rendimiento del sistema.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pruebas realizadas,<br/>
-Cuando evalúa resultados,<br/>
+<tr><td>SP-02</td><td>Developer</td><td>Media</td><td>EP08</td></tr>
+<tr><td colspan="4"><b>Title:</b> Evaluar seguridad QR</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como developer, quiere analizar seguridad.</td></tr>
+<tr><td colspan="4">
+Dado análisis,<br/>
+Cuando evalúa riesgos,<br/>
 Entonces documenta conclusiones.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US25</td><td>User</td><td>Equipo</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP08</td></tr>
-<tr><td>Title</td><td colspan="5">Spike seguridad</td></tr>
-<tr><td>Description</td><td colspan="5">Como equipo, quiere evaluar seguridad.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado análisis realizado,<br/>
-Cuando evalúa riesgos,<br/>
-Entonces documenta mitigaciones.
+<tr><td>SP-03</td><td>Developer</td><td>Media</td><td>EP08</td></tr>
+<tr><td colspan="4"><b>Title:</b> Evaluar escalabilidad</td></tr>
+<tr><td colspan="4"><b>Description:</b> Como developer, quiere analizar rendimiento del sistema.</td></tr>
+<tr><td colspan="4">
+Dado pruebas de carga,<br/>
+Cuando analiza resultados,<br/>
+Entonces documenta conclusiones.
 </td></tr>
-</table>
-<br/>
 
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US26</td><td>User</td><td>Equipo</td><td>Priority</td><td>Baja</td><td>Epic</td><td>EP08</td></tr>
-<tr><td>Title</td><td colspan="5">Spike tecnología frontend</td></tr>
-<tr><td>Description</td><td colspan="5">Como equipo, quiere evaluar tecnologías frontend.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado evaluación técnica,<br/>
-Cuando compara opciones,<br/>
-Entonces documenta decisión.
-</td></tr>
 </table>
-<br/>
-
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US27</td><td>User</td><td>Solicitante</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP02</td></tr>
-<tr><td>Title</td><td colspan="5">Filtrar pedidos</td></tr>
-<tr><td>Description</td><td colspan="5">Como solicitante, quiere filtrar pedidos.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado criterios,<br/>
-Cuando filtra,<br/>
-Entonces obtiene resultados.
-</td></tr>
-</table>
-<br/>
-
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US28</td><td>User</td><td>Proveedor</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP03</td></tr>
-<tr><td>Title</td><td colspan="5">Ver pedidos pendientes</td></tr>
-<tr><td>Description</td><td colspan="5">Como proveedor, quiere ver pedidos pendientes.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado pedidos existentes,<br/>
-Cuando consulta,<br/>
-Entonces obtiene lista.
-</td></tr>
-</table>
-<br/>
-
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US29</td><td>User</td><td>Usuario</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP09</td></tr>
-<tr><td>Title</td><td colspan="5">Ver perfil</td></tr>
-<tr><td>Description</td><td colspan="5">Como usuario, quiere ver su información.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado sesión activa,<br/>
-Cuando consulta,<br/>
-Entonces obtiene datos.
-</td></tr>
-</table>
-<br/>
-
-<table border="1" width="100%"><tr>
-<tr><td>Story ID</td><td>US30</td><td>User</td><td>Usuario</td><td>Priority</td><td>Media</td><td>Epic</td><td>EP09</td></tr>
-<tr><td>Title</td><td colspan="5">Editar perfil</td></tr>
-<tr><td>Description</td><td colspan="5">Como usuario, quiere actualizar datos.</td></tr>
-<tr><td>Acceptance Criteria</td><td colspan="5">
-Dado datos válidos,<br/>
-Cuando actualiza,<br/>
-Entonces guarda cambios.
-</td></tr>
-</table>
-<br/>
 
 ### 2.4.2. Impact Mapping
 
+![Impact-Mapping](assets/chapter02/Impact-Mapping.png)
+
 ### 2.4.3. Product Backlog
 
+<table border="1" cellspacing="0" cellpadding="6">
+<thead>
+<tr>
+<th>#Orden</th>
+<th>ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Story Points</th>
+</tr>
+</thead>
 
+<tbody>
+
+<tr><td>01</td><td>US-01</td><td>Explorar descuentos</td><td>Como usuario, quiere visualizar descuentos disponibles para encontrar promociones</td><td>3</td></tr>
+<tr><td>02</td><td>US-02</td><td>Filtrar descuentos</td><td>Como usuario, quiere filtrar descuentos por categoría o ubicación</td><td>3</td></tr>
+<tr><td>03</td><td>US-03</td><td>Ver detalle de promoción</td><td>Como usuario, quiere ver condiciones de uso</td><td>2</td></tr>
+<tr><td>04</td><td>US-21</td><td>Buscar promociones</td><td>Como usuario, quiere buscar promociones por nombre</td><td>3</td></tr>
+
+<tr><td>05</td><td>US-04</td><td>Generar código QR</td><td>Como usuario, quiere generar un código QR único</td><td>5</td></tr>
+<tr><td>06</td><td>US-07</td><td>Escanear QR</td><td>Como empresa, quiere validar códigos QR</td><td>5</td></tr>
+<tr><td>07</td><td>US-08</td><td>Validación manual</td><td>Como empresa, quiere validar códigos manualmente</td><td>3</td></tr>
+<tr><td>08</td><td>US-09</td><td>Bloquear código</td><td>Como empresa, quiere evitar reutilización</td><td>3</td></tr>
+
+<tr><td>09</td><td>US-05</td><td>Ver códigos generados</td><td>Como usuario, quiere visualizar sus códigos</td><td>2</td></tr>
+<tr><td>10</td><td>US-06</td><td>Ver historial</td><td>Como usuario, quiere ver historial de descuentos</td><td>3</td></tr>
+<tr><td>11</td><td>US-20</td><td>Guardar promociones</td><td>Como usuario, quiere guardar promociones favoritas</td><td>3</td></tr>
+
+<tr><td>12</td><td>US-10</td><td>Crear promoción</td><td>Como empresa, quiere crear promociones</td><td>5</td></tr>
+<tr><td>13</td><td>US-22</td><td>Editar promoción</td><td>Como empresa, quiere modificar promociones</td><td>3</td></tr>
+<tr><td>14</td><td>US-23</td><td>Desactivar promoción</td><td>Como empresa, quiere desactivar promociones</td><td>2</td></tr>
+<tr><td>15</td><td>US-11</td><td>Definir condiciones</td><td>Como empresa, quiere establecer condiciones</td><td>3</td></tr>
+<tr><td>16</td><td>US-12</td><td>Limitar canjes</td><td>Como empresa, quiere limitar uso</td><td>3</td></tr>
+
+<tr><td>17</td><td>US-13</td><td>Publicar reseña</td><td>Como usuario, quiere compartir experiencia</td><td>3</td></tr>
+<tr><td>18</td><td>US-14</td><td>Calificar promoción</td><td>Como usuario, quiere calificar promociones</td><td>2</td></tr>
+<tr><td>19</td><td>US-15</td><td>Comentar</td><td>Como usuario, quiere comentar publicaciones</td><td>2</td></tr>
+<tr><td>20</td><td>US-16</td><td>Reaccionar</td><td>Como usuario, quiere reaccionar</td><td>2</td></tr>
+<tr><td>21</td><td>US-24</td><td>Compartir promoción</td><td>Como usuario, quiere compartir promociones con otros usuarios</td><td>3</td></tr>
+
+<tr><td>21</td><td>US-17</td><td>Registro</td><td>Como usuario, quiere registrarse</td><td>3</td></tr>
+<tr><td>22</td><td>US-18</td><td>Login</td><td>Como usuario, quiere iniciar sesión</td><td>3</td></tr>
+<tr><td>23</td><td>US-19</td><td>Recuperar contraseña</td><td>Como usuario, quiere recuperar acceso</td><td>3</td></tr>
+
+<tr><td>24</td><td>TS-01</td><td>API generación QR</td><td>Como developer, quiere generar QR</td><td>5</td></tr>
+<tr><td>25</td><td>TS-02</td><td>API validación QR</td><td>Como developer, quiere validar QR</td><td>5</td></tr>
+<tr><td>26</td><td>TS-03</td><td>API historial</td><td>Como developer, quiere obtener historial</td><td>3</td></tr>
+
+<tr><td>27</td><td>SP-01</td><td>Investigar QR</td><td>Como developer, quiere evaluar librerías QR</td><td>3</td></tr>
+<tr><td>28</td><td>SP-02</td><td>Seguridad QR</td><td>Como developer, quiere analizar seguridad</td><td>3</td></tr>
+<tr><td>29</td><td>SP-03</td><td>Escalabilidad</td><td>Como developer, quiere evaluar rendimiento</td><td>5</td></tr>
+
+<tr><td>30</td><td>US-21</td><td>Buscar promociones (refuerzo)</td><td>Como usuario, quiere encontrar promociones fácilmente</td><td>2</td></tr>
+
+</tbody>
+</table>
