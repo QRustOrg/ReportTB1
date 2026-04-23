@@ -118,7 +118,7 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
 ### 2.2.1. Diseño de entrevistas.
 
-En esta parte se hicieron varias preguntas a nuestro público objetivo para recopilar información importante, como sus opiniones y descripciones. Estos datos serán clave para desarrollar nuestra solución.
+**En esta sección se distribuye el diseño de las preguntas a nuestro público objetivo para recopilar información importante, como sus opiniones y descripciones. Estos datos serán clave para desarrollar nuestra solución.**
 
 **Preguntas para el Segmento Objetivo 1 - Usuario consumidor:**
 
@@ -189,7 +189,7 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
   </tr>
   <tr>
     <td><strong>Screenshot del video:</strong></td>
-    <td><img src="assets/chapter02/seg-1.png"></td>
+    <td><img src="assets/chapter02/entrevistas/seg-1.png"></td>
   </tr>
   <tr>
     <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
@@ -210,32 +210,32 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 
   <tr>
     <td><strong>Nombre:</strong></td>
-    <td></td>
+    <td> Lewis Alexis Rengifo Pizango</td>
   </tr>
 
   <tr>
-    <td><strong>Edad:</strong></td>
-    <td></td>
+    <td><strong>Edad: </strong></td>
+    <td>24 años</td>
   </tr>
 
   <tr>
-    <td><strong>Distrito:</strong></td>
-    <td></td>
+    <td><strong>Distrito: </strong></td>
+    <td>Pueblo Libre</td>
   </tr>
 
   <tr>
-    <td><strong>URL del video:</strong></td>
+    <td><strong>URL del video: </strong></td>
     <td>
-      [Pegar URL aquí] <br>
-      Timing: <br>
-      Duración:
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320684_upc_edu_pe/IQCt1PO3Zi7MR6Dtlk5fNIGKAcYEEpFAIyMnVLLxpVX88fE?e=CKJ9yt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+      Timing: 02:59 <br>
+      Duración: 06:46 minutos
     </td>
   </tr>
 
   <tr>
     <td><strong>Screenshot del video:</strong></td>
     <td>
-      <img src="">
+      <img src="assets/chapter02/entrevistas/Entrevista-Segmento1A.png">
     </td>
   </tr>
 
@@ -245,7 +245,7 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 
   <tr>
     <td colspan="2">
-      <!-- Escribe aquí el resumen -->
+      Se trata de un joven de 24 años que busca descuentos en redes sociales para sus salidas frecuentes. Su principal molestia es la falta de claridad en las condiciones y los fallos al pagar. Valora mucho las reseñas reales y las promociones "verificadas" para evitar engaños. Considera que una app con QR único sería ideal por su orden y seguridad, siempre que sea rápida, fácil de usar y le garantice un ahorro real sin complicaciones.
     </td>
   </tr>
 
@@ -330,7 +330,7 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
   </tr>
   <tr>
     <td><strong>Screenshot del video:</strong></td>
-    <td><img src="assets/chapter02/seg-2.png"></td>
+    <td><img src="assets/chapter02/entrevistas/seg-2.png"></td>
   </tr>
   <tr>
     <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
@@ -350,33 +350,33 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
   </tr>
 
   <tr>
-    <td><strong>Nombre:</strong></td>
-    <td></td>
+    <td><strong>Nombre: </strong></td>
+    <td>Jesus Alexander Ponce</td>
   </tr>
 
   <tr>
-    <td><strong>Edad:</strong></td>
-    <td></td>
+    <td><strong>Edad: </strong></td>
+    <td>29 años</td>
   </tr>
 
   <tr>
-    <td><strong>Distrito:</strong></td>
-    <td></td>
+    <td><strong>Distrito: </strong></td>
+    <td>Tarapoto</td>
   </tr>
 
   <tr>
-    <td><strong>URL del video:</strong></td>
+    <td><strong>URL del video: </strong></td>
     <td>
-      [Pegar URL aquí] <br>
-      Timing: <br>
-      Duración:
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320684_upc_edu_pe/IQC50yyoAtsNQJIGy88Y31PoARAnXFRfKTvA-nBtH2_LRls?e=4PnqIu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+      Timing: 4:34<br>
+      Duración: 09:57 minutos
     </td>
   </tr>
 
   <tr>
     <td><strong>Screenshot del video:</strong></td>
     <td>
-      <img src="">
+      <img src="assets/chapter02/entrevistas/Entrevista-Segmento2A.png">
     </td>
   </tr>
 
@@ -386,7 +386,7 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 
   <tr>
     <td colspan="2">
-      <!-- Escribe aquí el resumen -->
+      Es un dueño de negocio que maneja un alto flujo de clientes y utiliza promociones manuales para competir. Sus problemas actuales son la falta de métricas de éxito y el riesgo de fraude por clientes que reutilizan cupones. Busca una herramienta ágil con validación QR que evite pérdidas y le permita ver estadísticas de canje. Está interesado en gestionar reseñas para generar confianza, siempre que el sistema no retrase la atención en caja.
     </td>
   </tr>
 
@@ -451,7 +451,7 @@ En esta parte se hicieron varias preguntas a nuestro público objetivo para reco
 
 ### 2.3.1. User Personas
 
-En esta sección se presentan las fichas de User Personas construidas a partir de los datos recolectados del análisis de entrevistas a nuestros segmentos objetivos. Estas fichas permiten representar de forma clara y estratégica los perfiles de cada segmento objetivo, considerando sus metas, habilidades, motivaciones y dificultades. De esta manera se integra la perspectiva del usuario y tendencias del sector para identificar oportunidades en el mercado y ofrecer una solución alineada a lo que el usuario necesita.
+En esta sección se presentan las fichas de **User Personas** construidas a partir de los datos recolectados del análisis de entrevistas a nuestros segmentos objetivos. **Estas fichas permiten representar de forma clara y estratégica los perfiles de cada segmento objetivo, considerando sus metas, habilidades, motivaciones y dificultades.** De esta manera se integra la perspectiva del usuario y tendencias del sector para identificar oportunidades en el mercado y ofrecer una solución alineada a lo que el usuario necesita.
 
 ## Segmento Objetivo 1: Usuario consumidor (B2C)
 
@@ -597,6 +597,56 @@ En esta sección se presentan los Empathy Maps. Estos nos ayudarán a comprender
 **Segmento Objetivo 2: Empresas afiliadas (B2B)**
 
 ![EmpathyMapping-Segmento2](assets/chapter02/EmpathyMapping-Segmento2.png)
+
+### 2.3.5. Big Picture EventStorming
+
+En esta sección se presenta el trabajo realizado durante la sesión de Big Picture Event Storming, enfocada en comprender el dominio general del negocio de promociones digitales. Para ello se utilizaron post-its en Miro para mapear los eventos significativos que ocurren en el flujo operativo actual, desde la creación y publicación de promociones hasta su redención mediante códigos QR y la posterior evaluación por parte de los usuarios.
+
+Este proceso permitió identificar los eventos clave, los actores involucrados, las interacciones dentro del sistema y las principales oportunidades de mejora, lo cual resulta fundamental para el diseño y desarrollo de la solución propuesta.
+
+![BigPictureEventStorming-Klippr](assets/chapter02/BigPictureEventStorming-Klippr.jpg)
+
+### 2.3.6. Ubiquitous Language
+
+**User Profile (Perfil de Usuario):** Perfil del usuario dentro de la plataforma, donde se almacena su actividad, historial y preferencias.
+
+**Smart Dashboard (Panel Inteligente):** Interfaz principal donde los negocios monitorean el rendimiento de sus promociones y los usuarios visualizan ofertas relevantes.
+
+**Performance Report (Reporte de Rendimiento):** Informe con métricas como número de visualizaciones, canjes, conversiones y efectividad de promociones.
+
+**Campaign Schedule (Agenda de Campañas):** Calendario para programar la duración, activación y expiración de promociones.
+
+**Fraud Alert (Alerta de Fraude):** Notificación automática cuando se detecta un intento de uso indebido o duplicado de un código QR.
+
+**Promotion Catalog (Catálogo de Promociones):** Lista de promociones disponibles organizadas por categoría, ubicación o popularidad.
+
+**Merchant (Negocio):** Empresa o establecimiento que publica promociones y descuentos dentro de la plataforma.
+
+**Review System (Sistema de Reseñas):** Espacio donde los usuarios califican y comentan sobre promociones y experiencias.
+
+**Redemption History (Historial de Canjes):** Registro de todas las promociones utilizadas por un usuario.
+
+**QR Code (Código QR):** Código único, dinámico e irrepetible utilizado para canjear promociones.
+
+**Redemption Validation (Validación de Canje):** Proceso de verificación del código QR para asegurar que sea válido y no reutilizado.
+
+**Campaign Management (Gestión de Campañas):** Proceso mediante el cual los negocios crean, editan y administran sus promociones.
+
+**Automatic Report Generation (Generación Automática de Reportes):** Función que genera informes de rendimiento de campañas sin intervención manual.
+
+**Real-Time Analytics (Analítica en Tiempo Real):** Seguimiento en vivo del desempeño de promociones y comportamiento de usuarios.
+
+**User Recommendation (Recomendación de Usuario):** Sugerencias de promociones basadas en preferencias, historial y ubicación.
+
+**Promotion (Promoción):** Oferta o descuento publicado por un negocio.
+
+**Redemption (Canje):** Acción de utilizar una promoción mediante un código QR.
+
+**Unique Code System (Sistema de Código Único):** Mecanismo que garantiza que cada promoción tenga un código QR no reutilizable.
+
+**Engagement (Interacción):** Nivel de participación del usuario (visualizaciones, canjes, reseñas).
+
+**Notification (Notificación):** Mensajes enviados para informar sobre nuevas promociones, canjes o actividad relevante.
 
 ## 2.4. Requirements specification
 
@@ -971,6 +1021,22 @@ Entonces guarda cambios.
 
 ### 2.5.1. EventStorming
 
+Para llevar a cabo los Bounded Context, se deben reconocer los eventos y organizarlos. Asimismo, se utilizan notas adhesivas de colores para representar dichos events/commands/querys.
+
+Para llevar a cabo el proceso de EventStorming empleamos la herramienta **Miro**.
+
+<p align="center">
+    <img src="assets/chapter02/eventStorming/eventstorming-1.jpg" alt="es1"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-2.jpg" alt="es2"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-3.jpg" alt="es3"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-4.jpg" alt="es4"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-5.jpg" alt="es5"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-6.jpg" alt="es6"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-7.jpg" alt="es7"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-8.jpg" alt="es8"/>
+    <img src="assets/chapter02/eventStorming/eventstorming-9.jpg" alt="es9"/>
+</p>
+
 #### 2.5.1.1. Candidate Context Discovery
 
 En esta sección se aplica la técnica de Candidate Context Discovery para identificar y separar los posibles Bounded Contexts del sistema. Se utilizó la técnica look-for-pivotal-events para analizar los eventos que marcan un cambio de estado relevante dentro del modelo de negocio de Klippr. Al identificar eventos como **UsuarioRegistrado**, **PromocionPublicada**, **QRGenerado**, **QRCanjeado** y **ReseñaPublicada**, se detectó que cada uno implicaba responsabilidades y reglas de negocio distintas, lo que llevó a definir los siguientes Bounded Contexts:
@@ -987,7 +1053,35 @@ En esta sección se aplica la técnica de Candidate Context Discovery para ident
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
+Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilustra cómo fluyen los mensajes de dominio, como comandos, eventos y consultas, entre los distintos contextos delimitados del sistema. Esto permite clarificar las interacciones y responsabilidades de cada contexto.
+
+<p align="center">
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-1.jpg" alt="dmfm1"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-2.jpg" alt="dmfm2"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-3.jpg" alt="dmfm3"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-4.jpg" alt="dmfm4"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-5.jpg" alt="dmfm5"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-6.jpg" alt="dmfm6"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-7.jpg" alt="dmfm7"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-8.jpg" alt="dmfm8"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-9.jpg" alt="dmfm9"/> 
+    <img src="assets/chapter02/DMFM/domain-message-flows-modeling-10.jpg" alt="dmfm10"/> 
+</p>
+
 #### 2.5.1.3. Bounded Context Canvases
+
+En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a desarrollar. Permitiendo identificar con claridad qué responsabilidad tiene cada Bounded Context en cómo se relaciona con otros y qué elementos lo conforman, como entidades, agregados y las reglas del negocio.
+
+<p align="center">
+    <img src="assets/chapter02/BCC/bounded-context-canvases-1.jpg" alt="bcc1"/>
+    <img src="assets/chapter02/BCC/bounded-context-canvases-2.jpg" alt="bcc2"/> 
+    <img src="assets/chapter02/BCC/bounded-context-canvases-3.jpg" alt="bcc3"/> 
+    <img src="assets/chapter02/BCC/bounded-context-canvases-4.jpg" alt="bcc4"/> 
+    <img src="assets/chapter02/BCC/bounded-context-canvases-5.jpg" alt="bcc5"/> 
+    <img src="assets/chapter02/BCC/bounded-context-canvases-6.jpg" alt="bcc6"/> 
+    <img src="assets/chapter02/BCC/bounded-context-canvases-7.jpg" alt="bcc7"/> 
+    <img src="assets/chapter02/BCC/bounded-context-canvases-8.jpg" alt="bcc8"/> 
+</p>
 
 ### 2.5.2. Context Mapping
 
@@ -995,7 +1089,11 @@ En esta sección se aplica la técnica de Candidate Context Discovery para ident
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
+![KlipprContextDiagram](assets/chapter02/diagramas/KlipprContextDiagram.png)
+
 #### 2.5.3.2. Software Architecture Container Level Diagrams
+
+![KlipprContainerDiagram](assets/chapter02/diagramas/KlipprContainerDiagram.png)
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
