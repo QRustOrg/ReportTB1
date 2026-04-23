@@ -466,3 +466,13 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
 </table>
 
 <br>
+
+# Conclusiones
+
+### Conclusiones y recomendaciones.
+### Video App Validation
+### Video About the product
+### Video About the team
+### Glosario
+### Bibliografía
+### Anexos
