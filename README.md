@@ -64,12 +64,9 @@
 
 </div>
 
-<br><br>
-
-# Registro de Versiones del Informe
 <br>
 
-### Registro de Versiones del Informe
+# Registro de Versiones del Informe
 
 <br>
 
@@ -155,16 +152,32 @@
 
 # Project Report Collaboration Insights
 
+Analiza cómo la colaboración y la gestión de tareas influyeron en los resultados del proyecto, destacando fortalezas y áreas de mejora para optimizar futuras estrategias.
 
-URL del repositorio para el proyecto: https://github.com/QRustOrg/ReportTB1.git
+URL del Repositorio del Informe: https://github.com/QRustOrg/ReportTB1.git <br>
+URL del Repositorio de Landing Page: https://github.com/QRustOrg/LandingPage.git <br>
+URL del Repositorio del Frontend:  <br>
+URL del Repositorio del Backend:  <br>
 
-URL del repositorio de Landing Page: https://github.com/QRustOrg/LandingPage.git
+### Reporte de Colaboración Entrega TB1
 
-URL del repositorio del Frontend: 
+En esta entrega se redactó el informe abarcando la **definición inicial del producto, el modelado UX y hasta la sección de Tactical Level Domain-Driven Design de la Arquitectura de Software**. Las tareas más relevantes fueron el desarrollo del **Event Storming**, los diseños de **historias de usuario, perfiles de usuario** y el modelado de experiencia. Además, se definieron el **Diagrama de Componentes, Diagrama de Clases y Diagrama de Base de Datos** para cada **Bounded Context** identificado mediante el **Event Storming**.
 
-URL del repositorio del Backend: 
+Para evidenciar nuestros avances y demostrar que todos los miembros del equipo participaron en la redacción del informe, se presentan a continuación las capturas obtenidas de los analíticos de colaboración en el repositorio de GitHub del Informe:
 
-#
+**Contributors**
+
+*En el analítico de Contributors se evidencian las contribuciones que hizo cada integrante del equipo para la redacción del informe durante el periodo de esta primera entrega. Se puede observar la cantidad de commits que realizó cada integrante, así como la cantidad de adiciones y eliminaciones que se realizaron en el repositorio.
+
+*(captura contributors)*
+
+**Pulse**
+
+En el analítico de Pulse se evidencian los commits que realizó cada integrante del equipo durante el periodo definido para esta primera entrega.
+
+*(captura pulse)*
+
+---
 
 **TB1**
 
@@ -182,23 +195,23 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
   <tbody>
     <tr>
       <th> Bonifacio Jaramillo, Samuel Jesus</th>
-      <th> Capitulos I,II y Bibliografías </th>
+      <th> Diseño de arquitectura y Bounded Contexts, diagramas de base de datos, Event Storming y estructuración general (Capítulos 1 y 2).</th>
     </tr>
     <tr>
       <th> Castro Pariona, Jefferson Ernesto</th>
-      <th> Capitulos I,II y Bibliografías</th>
+      <th> Definición de perfiles de la startup, análisis competitivo e inicialización del documento (Capítulo 1).</th>
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
-      <th> Capitulos I,II y Bibliografías</th>
+      <th> Redacción de estrategias de marketing, análisis comparativo y estructuración de la visión del producto.</th>
     </tr>
     <tr>
       <th> Ponce Perales, Alberto Alejandro</th>
-      <th> Capitulos I,II y Bibliografías</th>
+      <th> Elaboración de User Stories, Technical Stories, Landing Stories, Spike Stories y criterios de aceptación (Capítulo 2).</th>
     </tr>
     <tr>
       <th> Galindo Montero, Alejandro Manuel</th>
-      <th> Capitulos I,II y Bibliografías</th>
+      <th> Elaboración del Lean UX Canvas, User Personas, User Task Matrix, Empathy Mapping y User Journey (Capítulos 1 y 2).</th>
     </tr>
   </tbody>
 </table>
