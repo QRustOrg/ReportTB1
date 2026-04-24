@@ -787,11 +787,11 @@ En esta sección se presentan las fichas de **User Personas** construidas a part
 
 ## Segmento Objetivo 1: Usuario consumidor (B2C)
 
-![UserPersona-Segmento1](assets/chapter02/UserPersona-Segmento1.png)
+![UserPersona-Segmento1](assets/chapter02/user-alexander.png)
 
 ## Segmento Objetivo 2: Empresas afiliadas (B2B)
 
-![UserPersona-Segmento2](assets/chapter02/UserPersona-Segmento2.png)
+![UserPersona-Segmento2](assets/chapter02/user-lizbeth.png)
 
 ### 2.3.2. User Task Matrix
 
@@ -2361,4 +2361,18 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context **Ana
 
 <p align="center">
     <img src="assets/chapter02/comps-diagr/comp-Analytics.jpeg">
+</p>
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.3.6.1 Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCAnalytics/analytics-class-diagram.png">
+</p>
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCAnalytics/analytics-database-diagram.png">
 </p>
