@@ -539,3 +539,158 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context Analy
 <p align="center">
     <img src="assets/chapter02/BCAnalytics/analytics-database-diagram.png">
 </p>
+
+### 2.6.5. Bounded Context: Settings
+
+---
+
+#### 2.6.5.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Aggregate | UserSettings | Representa la configuración personalizada de un usuario. | Gestionar preferencias como notificaciones, tema, idioma y privacidad, asegurando consistencia. | Relacionado con IAM mediante UserId. |
+
+---
+
+**Sub-capa Model - Value Objects:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Value Object | NotificationPreferences | Preferencias de notificaciones del usuario. | Encapsular configuraciones de notificaciones (email, push, sms). | Usado dentro de UserSettings. |
+| Value Object | PrivacySettings | Configuración de privacidad del usuario. | Definir visibilidad del perfil y consentimiento de datos. | Usado dentro de UserSettings. |
+| Value Object | ThemePreference | Preferencia de tema visual. | Representar si el usuario usa modo oscuro o claro. | Usado dentro de UserSettings. |
+| Value Object | LanguagePreference | Preferencia de idioma. | Encapsular el idioma seleccionado por el usuario. | Usado dentro de UserSettings. |
+| Value Object | TimezonePreference | Zona horaria del usuario. | Encapsular la configuración regional del usuario. | Usado dentro de UserSettings. |
+
+---
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Command | UpdateNotificationSettingsCommand | Comando para actualizar preferencias de notificación. | Representar la intención de modificar configuraciones de notificaciones. | Usado en Application Layer. |
+| Command | UpdatePrivacySettingsCommand | Comando para actualizar configuraciones de privacidad. | Representar la intención de modificar privacidad del usuario. | Usado en Application Layer. |
+| Command | UpdateThemeCommand | Comando para cambiar el tema visual. | Representar la intención de cambiar entre modo oscuro o claro. | Usado en Application Layer. |
+| Command | UpdateLanguageCommand | Comando para cambiar idioma. | Representar la intención de actualizar idioma del usuario. | Usado en Application Layer. |
+| Command | UpdateTimezoneCommand | Comando para cambiar zona horaria. | Representar la intención de actualizar configuración regional. | Usado en Application Layer. |
+
+---
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Query | GetUserSettingsQuery | Consulta para obtener configuración del usuario. | Recuperar todas las preferencias de un usuario. | Usado en Interface Layer. |
+
+---
+
+**Sub-capa Services:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Interface | IUserSettingsCommandService | Interfaz del servicio de comandos. | Definir operaciones para actualización de configuraciones. | Implementado en Application Layer. |
+| Interface | IUserSettingsQueryService | Interfaz del servicio de consultas. | Definir operaciones para obtener configuraciones. | Implementado en Application Layer. |
+
+---
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Interface | IUserSettingsRepository | Repositorio de configuraciones. | Definir operaciones de persistencia de UserSettings. | Implementado en Infrastructure Layer. |
+
+---
+
+#### 2.6.5.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Resource | UserSettingsResource | Representación de configuración del usuario. | Exponer preferencias al cliente. | Usado en SettingsController. |
+| Resource | UpdateSettingsResource | Estructura de petición para actualizar configuraciones. | Representar datos enviados por el cliente. | Usado en SettingsController. |
+
+---
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Assembler | UserSettingsResourceFromEntityAssembler | Convierte UserSettings a recurso REST. | Transformar dominio a respuesta API. | Usado en SettingsController. |
+| Assembler | UpdateSettingsCommandFromResourceAssembler | Convierte request a comando. | Transformar petición REST a comando de dominio. | Usado en SettingsController. |
+
+---
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Controller | SettingsController | Controlador de configuraciones. | Manejar peticiones de consulta y actualización de settings. | Usa command y query services. |
+
+---
+
+**Sub-capa ACL:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Service | SettingsContextFacade | Fachada del contexto Settings. | Permitir acceso a configuraciones desde otros bounded contexts. | Relacionado con IAM y Profile. |
+
+---
+
+#### 2.6.5.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| CommandHandler | UserSettingsCommandService | Implementación de comandos. | Procesar actualización de configuraciones. | Implementa IUserSettingsCommandService. |
+
+---
+
+**Sub-capa Internal - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| QueryHandler | UserSettingsQueryService | Implementación de consultas. | Recuperar configuraciones del usuario. | Implementa IUserSettingsQueryService. |
+
+---
+
+#### 2.6.5.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Repository | UserSettingsRepository | Implementación del repositorio. | Persistir configuraciones del usuario. | Usado en Application Layer. |
+
+---
+
+**Sub-capa Pipeline (Middleware):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Attribute | AuthorizeAttribute | Control de acceso. | Restringir acceso a endpoints de settings. | Usado en SettingsController. |
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-Settings.jpeg">
+</p>
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.3.5.1 Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCSettings/settings-class-diagram.png">
+</p>
+
+##### 2.6.3.5.2. Bounded Context Database Design Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCSettings/settings-database-diagram.png">
+</p>
+
+
