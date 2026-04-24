@@ -759,14 +759,6 @@ Entonces documenta conclusiones.
 <tr><td>22</td><td>US-18</td><td>Login</td><td>Como usuario, quiere iniciar sesión</td><td>3</td></tr>
 <tr><td>23</td><td>US-19</td><td>Recuperar contraseña</td><td>Como usuario, quiere recuperar acceso</td><td>3</td></tr>
 
-<tr><td>24</td><td>TS-01</td><td>API generación QR</td><td>Como developer, quiere generar QR</td><td>5</td></tr>
-<tr><td>25</td><td>TS-02</td><td>API validación QR</td><td>Como developer, quiere validar QR</td><td>5</td></tr>
-<tr><td>26</td><td>TS-03</td><td>API historial</td><td>Como developer, quiere obtener historial</td><td>3</td></tr>
-
-<tr><td>27</td><td>SP-01</td><td>Investigar QR</td><td>Como developer, quiere evaluar librerías QR</td><td>3</td></tr>
-<tr><td>28</td><td>SP-02</td><td>Seguridad QR</td><td>Como developer, quiere analizar seguridad</td><td>3</td></tr>
-<tr><td>29</td><td>SP-03</td><td>Escalabilidad</td><td>Como developer, quiere evaluar rendimiento</td><td>5</td></tr>
-
 <tr><td>30</td><td>US-21</td><td>Buscar promociones (refuerzo)</td><td>Como usuario, quiere encontrar promociones fácilmente</td><td>2</td></tr>
 
 </tbody>
