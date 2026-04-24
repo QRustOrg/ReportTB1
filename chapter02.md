@@ -13,7 +13,7 @@
     </tr>
     <tr>
       <td colspan="2"></td>
-      <td align="center"><img src="assets/chapter02/groupon.jpg" width="80" alt="Groupon"><br><strong>Groupon</strong><br><em>(referencia de mercado)</em></td>
+      <td align="center"><img src="assets/chapter02/klippr.png" width="80" alt="Klippr"><br><strong>Klippr</strong><br><em>(nuestra startup)</em></td>
       <td align="center"><img src="assets/chapter02/rappi.png" width="80" alt="Rappi"><br><strong>Rappi</strong><br><em>(delivery + promos)</em></td>
       <td align="center"><img src="assets/chapter02/pedidosya.png" width="80" alt="PedidosYa"><br><strong>PedidosYa</strong><br><em>(delivery + descuentos)</em></td>
       <td align="center"><img src="assets/chapter02/cuponatic.png" width="80" alt="Cuponatic"><br><strong>Cuponatic</strong><br><em>(cupones y ofertas digitales)</em></td>
@@ -21,14 +21,14 @@
     <tr>
       <td rowspan="2">Perfil</td>
       <td>Overview</td>
-      <td>Marketplace de ofertas y experiencias con amplia oferta y compra anticipada del cupón/descuento.</td>
+      <td>Plataforma móvil de cupones y descuentos con QR único por usuario/oferta, comunidad integrada (reseñas, ratings) y panel de autogestión para PYMEs.</td>
       <td>App de delivery y servicios con secciones de promociones, clubes y campañas según ciudad y marca.</td>
       <td>Plataforma de pedidos en línea donde restaurantes y retail publican descuentos ligados a compras por la app.</td>
       <td>Sitio/app orientada a cupones y promociones con enfoque editorial y descuentos por categoría.</td>
     </tr>
     <tr>
       <td>Ventaja competitiva ¿Qué valor ofrece a los clientes?</td>
-      <td>Gran inventario de ofertas, reconocimiento de marca y descuentos agresivos en rubros variados.</td>
+      <td>QR único e irrepetible por canje, bloqueo post-canje anti-fraude, prueba social integrada al flujo y analítica en tiempo real para el comercio.</td>
       <td>Alcance regional, hábito de uso recurrente y bundling con otros servicios (envío, pagos, etc.).</td>
       <td>Conveniencia inmediata: descuentos dentro del flujo de compra de comida y retail express.</td>
       <td>Curación de ofertas y búsqueda por categoría; foco en “encontrar cupones” rápidamente.</td>
@@ -36,14 +36,14 @@
     <tr>
       <td rowspan="2">Perfil de Marketing</td>
       <td>Mercado Objetivo</td>
-      <td>Usuarios masivos que buscan ofertas puntuales y compras con descuento en múltiples verticales.</td>
+      <td>Consumidores que buscan descuentos verificados y PYMEs que necesitan control anti-fraude y métricas de campaña.</td>
       <td>Usuarios urbanos que ya consumen delivery y activan promociones por push o secciones de beneficios.</td>
       <td>Clientes de delivery y quick-commerce en distritos con cobertura de reparto.</td>
       <td>Usuarios price-sensitive que comparan cupones antes de comprar online o en retail asociado.</td>
     </tr>
     <tr>
       <td>Estrategias de Marketing</td>
-      <td>Email marketing, campañas por temporada, partnerships con marcas y presencia SEO fuerte.</td>
+      <td>Alianzas con cámaras de comercio, contenido educativo sobre el flujo "publicar–QR–canjear–reseñar" y referidos entre comercios.</td>
       <td>Notificaciones, banners in-app, alianzas con marcas y mecánicas de fidelización.</td>
       <td>Promociones flash, combos, cupones first-order y programas por restaurante.</td>
       <td>Tráfico web, redes sociales y newsletters con ofertas destacadas del día.</td>
@@ -51,21 +51,21 @@
     <tr>
       <td rowspan="3">Perfil de Producto</td>
       <td>Productos y Servicios</td>
-      <td>Compra de vouchers/ofertas; redención según reglas de cada campaña y comercio afiliado.</td>
+      <td>App móvil con creación de campañas, generación de QR único por usuario, canje con validación en tiempo real, comunidad de reseñas y dashboard para el comercio.</td>
       <td>Descuentos y beneficios dentro de un ecosistema amplio (no exclusivamente “cuponera”).</td>
       <td>Descuentos asociados a pedidos; foco en canales digitales de restaurantes/tiendas adheridas.</td>
       <td>Catálogo de cupones/códigos; experiencia centrada en descubrimiento y compra del beneficio.</td>
     </tr>
     <tr>
       <td>Precios y Costos</td>
-      <td>Modelo comercial por comisión/participación en la oferta; precio final variable por categoría.</td>
+      <td>Modelo freemium para PYMEs (plan básico gratuito) con suscripción por analítica avanzada y comisión opcional.</td>
       <td>Descuentos financiados por marcas/plataforma; costos ligados a suscripción o dinámica de marketplace.</td>
       <td>Promos como palanca de adquisición; estructura de comisiones al comercio.</td>
       <td>Ofertas con precios promocionales; mix de modelos por afiliación y publicidad.</td>
     </tr>
     <tr>
       <td>Canales de distribución (Web y/o Móvil)</td>
-      <td>Web y app móvil.</td>
+      <td>App móvil (iOS y Android) y panel web de administración para comercios.</td>
       <td>App móvil y web.</td>
       <td>App móvil y web.</td>
       <td>Web y presencia móvil (según mercado).</td>
@@ -73,28 +73,28 @@
     <tr>
       <td rowspan="4">Análisis SWOT</td>
       <td>Fortalezas</td>
-      <td>Marca reconocida, volumen de ofertas, procesos maduros de compra.</td>
+      <td>QR único, comunidad integrada al canje, analítica por campaña.</td>
       <td>Tráfico alto, datos de uso y cross-selling entre categorías.</td>
       <td>Alta frecuencia de compra y descuentos contextualizados al pedido.</td>
       <td>Claridad para usuarios que buscan cupones; SEO y comunidad de ofertas.</td>
     </tr>
     <tr>
       <td>Debilidades</td>
-      <td>Menor control granular por comercio local sobre fraude/reuso; experiencia a veces genérica.</td>
+      <td>Marca nueva sin reconocimiento masivo.</td>
       <td>Promos compiten con muchos objetivos de producto; no siempre hay “QR único” anti-fraude por campaña PYME.</td>
       <td>Descuentos acotados al canal delivery; menos foco en canje físico genérico con trazabilidad completa.</td>
       <td>Códigos compartibles y dinámicas tradicionales de cupón; limitada capa social integrada al canje.</td>
     </tr>
     <tr>
       <td>Oportunidades</td>
-      <td>Partnerships B2B2C y expansión vertical (gastronomía, belleza, servicios).</td>
+      <td>Mercado local de PYMEs sin solución anti-fraude adecuada; creciente demanda de prueba social.</td>
       <td>Profundizar beneficios hyperlocal y programas de lealtad.</td>
       <td>Retail y dark stores; bundles con marcas.</td>
       <td>Personalización y alertas por intereses del usuario.</td>
     </tr>
     <tr>
       <td>Amenazas</td>
-      <td>Competencia de marketplaces, fatiga promocional y presión sobre márgenes.</td>
+      <td>Superapps con módulos promocionales integrados; fatiga de descuentos en usuarios.</td>
       <td>Regulación laboral/logística y competencia entre superapps.</td>
       <td>Comisiones y costos logísticos; sensibilidad al churn promocional.</td>
       <td>Agregadores competidores y canales alternativos (redes sociales, grupos de ofertas).</td>
