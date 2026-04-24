@@ -277,9 +277,8 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
   <tr>
     <td><strong>URL del video:</strong></td>
     <td>
-      [Pegar URL aquí] <br>
-      Timing: <br>
-      Duración:
+       <br>
+       <br>
     </td>
   </tr>
 
@@ -296,17 +295,14 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td colspan="2">
-      <!-- Escribe aquí el resumen -->
-    </td>
-  </tr>
-
+      
 </table>
 
 #### Segmento 2: Empresas afiliadas
 
 <table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
   <tr>
-    <th colspan="2">Entrevista 1 - Segmento 2: Empresa Afiliada</th>
+    <th colspan="2">Entrevista 1</th>
   </tr>
   <tr>
     <td><strong>Nombre:</strong></td>
@@ -356,7 +352,7 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td><strong>Edad: </strong></td>
-    <td>29 años</td>
+    <td>30 años</td>
   </tr>
 
   <tr>
@@ -401,32 +397,32 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td><strong>Nombre:</strong></td>
-    <td></td>
+    <td>Sonia Galindo</td>
   </tr>
 
   <tr>
     <td><strong>Edad:</strong></td>
-    <td></td>
+    <td>58 años</td>
   </tr>
 
   <tr>
     <td><strong>Distrito:</strong></td>
-    <td></td>
+    <td>Jesus Maria</td>
   </tr>
 
   <tr>
     <td><strong>URL del video:</strong></td>
     <td>
-      [Pegar URL aquí] <br>
-      Timing: <br>
-      Duración:
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u201822823_upc_edu_pe/IQCyNoWHm-rmRIhlqX64BFGGAYzS70GNYrlMcyYnh344q-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GVZ2FI <br>
+      Timing: 01:30 <br>
+      Duración: 03:24
     </td>
   </tr>
 
   <tr>
     <td><strong>Screenshot del video:</strong></td>
     <td>
-      <img src="">
+      <img src="assets/chapter02/entrevistas/Entrevista-seg2.png">
     </td>
   </tr>
 
@@ -436,16 +432,346 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td colspan="2">
-      <!-- Escribe aquí el resumen -->
+      Sonia Galindo quien es dueña de la tienda y responsable de la gestión operativa, explicó que se encarga de planificar, implementar y supervisar las estrategias de descuentos y cupones con el objetivo de atraer clientes y aumentar las ventas. Señaló que estas promociones se definen según temporadas, niveles de inventario y comportamiento del cliente, y que actualmente su control se realiza de forma manual o con herramientas básicas, lo que dificulta el seguimiento y la medición de resultados. Además, destacó la importancia de equilibrar las ofertas para no afectar la rentabilidad del negocio y manifestó interés en implementar soluciones tecnológicas que permitan automatizar la gestión y mejorar la toma de decisiones mediante análisis en tiempo real.
     </td>
   </tr>
 
 </table>
 
-<br>
-
 ### 2.2.3. Análisis de entrevistas
 
+En esta sección se presentan los hallazgos de las entrevistas realizadas a ambos segmentos objetivo, basados en evidencia empírica. Se ha realizado un análisis de características objetivas (demográficas, operacionales) y subjetivas (necesidades, comportamientos, expectativas) identificadas en las entrevistas, respaldadas con datos cuantitativos que sustentan los arquetipos de usuario.
+
+#### **Análisis Segmento 1: Usuarios Consumidores (B2C)**
+
+**Perfil Demográfico:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Datos</th>
+  </tr>
+  <tr>
+    <td>Número de entrevistados</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Edad promedio</td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td>Rango de edad</td>
+    <td>22 - 24 años</td>
+  </tr>
+  <tr>
+    <td>Distritos representados</td>
+    <td>Callao (50%), Pueblo Libre (50%)</td>
+  </tr>
+  <tr>
+    <td>Género</td>
+    <td>Mixto</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Entrevista 1 (Andrés Rodríguez, 22 años) y Entrevista 2 (Lewis Alexis Rengifo, 24 años).
+
+---
+
+**Características Objetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Frecuencia</th>
+    <th>Porcentaje</th>
+    <th>Evidencia en Entrevistas</th>
+  </tr>
+  <tr>
+    <td>Busca activamente descuentos en redes sociales</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "Busca descuentos en redes sociales"</td>
+  </tr>
+  <tr>
+    <td>Realiza compras/entretenimiento con alta frecuencia</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Ambos mencionan salidas frecuentes para compras y entretenimiento</td>
+  </tr>
+  <tr>
+    <td>Ha experimentado problemas con cupones inválidos</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Andrés: "experiencias negativas con cupones inválidos"; Lewis: "fallos al pagar"</td>
+  </tr>
+  <tr>
+    <td>Valora facilidad y rapidez de uso</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Andrés: "rápida y sencilla"; Lewis: "rápida, fácil de usar"</td>
+  </tr>
+  <tr>
+    <td>Utiliza reseñas como criterio de confianza</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "Valora mucho las reseñas reales"; Ambos consideran importante leer reseñas</td>
+  </tr>
+  <tr>
+    <td>Demanda transparencia en condiciones de promociones</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "falta de claridad en las condiciones"</td>
+  </tr>
+  <tr>
+    <td>Prioriza seguridad y verificación</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "promociones verificadas"; Andrés valora "confiabilidad"</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Análisis de resúmenes de Entrevista 1 y 2, Segmento 1.
+
+---
+
+**Características Subjetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Necesidad/Comportamiento</th>
+    <th>Descripción</th>
+    <th>Evidencia</th>
+    <th>Impacto en Requisitos</th>
+  </tr>
+  <tr>
+    <td><strong>Confianza en la plataforma</strong></td>
+    <td>Necesidad crítica de validar la autenticidad de descuentos antes de aplicarlos. Desconfianza derivada de experiencias negativas previas</td>
+    <td>Andrés: "experiencias negativas"; Lewis: "confía en promociones verificadas"</td>
+    <td>Requerimiento: Sistema de verificación de empresas, badges de validación, historial de ratings</td>
+  </tr>
+  <tr>
+    <td><strong>Experiencia sin fricción</strong></td>
+    <td>Expectativa de que el proceso de búsqueda, canje e integración sea inmediato y sin pasos innecesarios</td>
+    <td>Andrés: "experiencia rápida"; Lewis: "fácil de usar"</td>
+    <td>Requerimiento: UX optimizada, canje con QR de un clic, confirmación inmediata</td>
+  </tr>
+  <tr>
+    <td><strong>Prueba social como validador</strong></td>
+    <td>Los usuarios consultan reseñas y ratings de otros usuarios antes de canjear promociones; esto reduce incertidumbre</td>
+    <td>Lewis: "reseñas reales y promociones verificadas"; Ambos valoran reseñas</td>
+    <td>Requerimiento: Sistema de comentarios integrado, ratings visibles previo al canje</td>
+  </tr>
+  <tr>
+    <td><strong>Optimización de gasto</strong></td>
+    <td>Motivación principal: ahorrar dinero en actividades cotidianas de entretenimiento y alimentación</td>
+    <td>Ambos buscan activamente descuentos</td>
+    <td>Requerimiento: Recomendaciones personalizadas, notificaciones de ofertas cercanas</td>
+  </tr>
+  <tr>
+    <td><strong>Transparencia operacional</strong></td>
+    <td>Demanda de claridad en términos, condiciones y aplicación de descuentos al momento de pago</td>
+    <td>Lewis: "falta de claridad en condiciones"; Andrés menciona "fallos al pagar"</td>
+    <td>Requerimiento: Visualización clara de términos, comparación de precios aplicados, confirmación pre-canje</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Síntesis de resúmenes de entrevistas, Segmento 1.
+
+---
+
+#### **Análisis Segmento 2: Empresas Afiliadas (B2B)**
+
+**Perfil Operacional:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Datos</th>
+  </tr>
+  <tr>
+    <td>Número de entrevistados</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Edad promedio</td>
+    <td>39 años</td>
+  </tr>
+  <tr>
+    <td>Rango de edad</td>
+    <td>29 - 58 años</td>
+  </tr>
+  <tr>
+    <td>Distritos representados</td>
+    <td>Chorrillos (33%), Tarapoto (33%), Jesús María (33%)</td>
+  </tr>
+  <tr>
+    <td>Rol predominante</td>
+    <td>Dueños/gestores operacionales</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Entrevista 1 (Camila Huamani, 30 años), Entrevista 2 (Jesus Alexander Ponce, 29 años), Entrevista 3 (Sonia Galindo, 58 años).
+
+---
+
+**Características Objetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Frecuencia</th>
+    <th>Porcentaje</th>
+    <th>Evidencia en Entrevistas</th>
+  </tr>
+  <tr>
+    <td>Utiliza promociones como herramienta de marketing/competencia</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Todos mencionan uso activo: Camila (estrategias de lealtad), Jesus (competencia), Sonia (atraer clientes)</td>
+  </tr>
+  <tr>
+    <td>Enfrenta problemas significativos de fraude/reutilización de cupones</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Camila: "fraude y reutilización"; Jesus: "riesgo de fraude"; Sonia (implícito en control manual)</td>
+  </tr>
+  <tr>
+    <td>Carece de métricas claras de ROI/éxito de promociones</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Camila: "dificultades para medir impacto real"; Jesus: "falta de métricas"; Sonia: "dificulta seguimiento"</td>
+  </tr>
+  <tr>
+    <td>Realiza control manual/básico de descuentos</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Camila/Sonia: "herramientas básicas"; Jesus: interés en "validación QR" implica esto</td>
+  </tr>
+  <tr>
+    <td>Gestiona alto volumen de clientes</td>
+    <td>2 de 3</td>
+    <td>67%</td>
+    <td>Jesus: "alto flujo"; Implícito en Sonia (tienda física); Camila (empresaria con cartera)</td>
+  </tr>
+  <tr>
+    <td>Demanda soluciones de fácil integración operativa</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Sonia: "no retrase la atención"; Camila: "fácil de implementar"; Jesus: "ágil"</td>
+  </tr>
+  <tr>
+    <td>Valora retroalimentación de clientes (reseñas)</td>
+    <td>2 de 3</td>
+    <td>67%</td>
+    <td>Camila: "retroalimentación de clientes mediante reseñas"; Jesus: "generar confianza"</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Análisis de resúmenes de Entrevistas 1-3, Segmento 2.
+
+---
+
+**Características Subjetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Necesidad/Comportamiento</th>
+    <th>Descripción</th>
+    <th>Evidencia</th>
+    <th>Impacto en Requisitos</th>
+  </tr>
+  <tr>
+    <td><strong>Control contra fraude</strong></td>
+    <td>Preocupación crítica sobre pérdidas económicas por mal uso de cupones; ausencia de mecanismos robustos de validación</td>
+    <td>Camila: "pérdidas económicas", "mayor control"; Jesus: "evitar pérdidas"</td>
+    <td>Requerimiento: QR único irrepetible, bloqueo post-canje automático, auditoría de canjes</td>
+  </tr>
+  <tr>
+    <td><strong>Visibilidad analítica en tiempo real</strong></td>
+    <td>Necesidad de datos accionables sobre desempeño de campañas: número de canjes, perfil de usuario, ROI por promoción</td>
+    <td>Camila: "medir impacto real"; Jesus: "estadísticas de canje"; Sonia: "análisis en tiempo real"</td>
+    <td>Requerimiento: Dashboard con métricas (vistas, canjes, tasa de conversión), reportes exportables</td>
+  </tr>
+  <tr>
+    <td><strong>Automatización operativa</strong></td>
+    <td>Reduce carga manual de gestión; acelera procesos de validación sin ralentizar atención</td>
+    <td>Sonia: "automatizar la gestión"; Todos enfatizan facilidad</td>
+    <td>Requerimiento: Escaneo QR rápido (&lt;2s), integración POS/caja, sincronización automática</td>
+  </tr>
+  <tr>
+    <td><strong>Construación de relación con cliente</strong></td>
+    <td>Interés en recopilar feedback y reseñas para mejorar percepción y fidelización; generación de prueba social</td>
+    <td>Camila: "relación comercial"; Jesus: "generar confianza"</td>
+    <td>Requerimiento: Sistema de reseñas asociado a promociones, respuesta empresarial integrada</td>
+  </tr>
+  <tr>
+    <td><strong>Adaptabilidad sin complejidad técnica</strong></td>
+    <td>Soluciones que no requieran capacitación técnica pesada ni cambios radicales en flujos operacionales</td>
+    <td>Sonia: "cambios complejos en procesos"; Jesus: "ágil"; Camila: "fácil de implementar"</td>
+    <td>Requerimiento: UX intuitiva para backend empresarial, onboarding guiado, soporte integrado</td>
+  </tr>
+  <tr>
+    <td><strong>Pago por valor entregado</strong></td>
+    <td>Disposición a pagar solo si la solución demuestra ROI claro y prevención de fraude mensurable</td>
+    <td>Implícito en Camila: "busca soluciones tecnológicas"; Jesus y Sonia aceptarían si es ágil</td>
+    <td>Requerimiento: Modelo freemium con auditoría, o comisión por canje validado</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Síntesis de resúmenes de entrevistas, Segmento 2.
+
+---
+
+#### **Síntesis Transversal: Arquetipos y Requisitos Clave**
+
+**Patrón 1: Crisis de Confianza (100% transversal)**
+- Ambos segmentos mencionan desconfianza/fraude como problema central.
+- En B2C: desconfianza en validez de cupones (problemas previos).
+- En B2B: pérdidas económicas por reutilización de códigos.
+- **Requisito impulsor:** Mecanismo anti-fraude robusto (QR único, bloqueo post-canje, trazabilidad).
+
+**Patrón 2: Demanda de Transparencia Operacional (100% en B2B, 100% en B2C)**
+- B2C: necesidad de claridad en términos y confirmación pre-canje.
+- B2B: necesidad de visibilidad de métricas y control de canjes.
+- **Requisito impulsor:** Auditoría y reportería detallada; UX de confirmación clara.
+
+**Patrón 3: Proof of Trust mediante Social Signals (100% en B2C, 67% en B2B)**
+- Ambos segmentos valoran reseñas y ratings como validadores de credibilidad.
+- En B2C: consultan antes de canjear.
+- En B2B: buscan generar confianza en clientes.
+- **Requisito impulsor:** Sistema de comentarios/ratings integrado, moderación, respuestas empresariales.
+
+**Patrón 4: Fricción vs. Performance (100% en ambos)**
+- B2C: experiencia rápida, sin pasos innecesarios.
+- B2B: no ralentizar caja; integración ágil; automatización manual.
+- **Requisito impulsor:** Latencia <2s para escaneo, UX minimalista, batch-processing en backend.
+
+**Patrón 5: Segmentación Geográfica y Escala Local**
+- Usuarios activos en distritos metropolitanos (Callao, Pueblo Libre, Chorrillos, Jesús María) y regional (Tarapoto).
+- Implica: necesidad de geolocalización, recomendaciones locales, soporte multi-zona.
+- **Requisito impulsor:** API de geolocalización, filtros por proximidad, backend distribuido.
+
+**Hallazgo de Ingeniería de Software:**
+El análisis revela que Klippr debe priorizar en su arquitectura y MVP:
+1. **Core anti-fraude:** QR único por usuario/oferta con bloqueo inmediato post-canje y auditoría inmutable.
+2. **Analytics layer:** Dashboard en tiempo real para B2B (vistas, canjes, tasa de fraude detectado).
+3. **Social layer:** Comentarios/ratings con moderación y respuesta empresarial integrada.
+4. **Performance:** Latencia crítica <2s para validación de QR en punto de canje (requisito no-funcional crítico).
+5. **Escalabilidad geográfica:** Soporte para múltiples zonas y modelos de integración (POS, manual, API).
+
+---
 
 ## 2.3. Needfinding
 
@@ -1015,7 +1341,97 @@ Entonces guarda cambios.
 
 ### 2.4.2. Impact Mapping
 
+El Impact Map de Klippr alinea objetivos de negocio (reducir fraude, construir densidad local verificada) con dos segmentos clave: usuarios consumidores (que requieren confianza mediante QR único y reseñas) y empresas afiliadas (que necesitan analítica clara y anti-fraude robusto). A partir de estos impactos deseados, derivamos entregables de producto (validación QR <2s, dashboard de métricas, sistema de reseñas) y user stories que garantizan alineación entre desarrollo y valor de negocio.
+
+#### Segmento 1: Usuarios
+<br>
+
+<p align="center">
+    <img src="assets/chapter02/impact-map/Segmento 1_ Usuarios.png" width="300" alt="Users">
+</p>
+
+<br>
+
+#### Segmento 2: Empresas afiliadas(B2B)
+
+<p align="center">
+    <img src="assets/chapter02/impact-map/Segmento 2_ Empresas afiliadas (1).png" width="300" alt="Companies">
+</p>
+
 ### 2.4.3. Product Backlog
+
+El Product Backlog es **la misma lista de User Stories de 2.4.1**, pero **ordenadas por complejidad técnica y prioridad de negocio**. Esta ordenación asegura desarrollo incremental del MVP comenzando con funcionalidades de mayor impacto y complejidad.
+
+<br>
+
+<table border="1" cellspacing="0" cellpadding="6">
+<thead>
+<tr>
+<th>#Orden</th>
+<th>ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Story Points</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td>01</td><td>US-01</td><td>Explorar descuentos</td><td>Como usuario, quiere visualizar descuentos disponibles para encontrar promociones</td><td>3</td></tr>
+<tr><td>02</td><td>US-02</td><td>Filtrar descuentos</td><td>Como usuario, quiere filtrar descuentos por categoría o ubicación</td><td>3</td></tr>
+<tr><td>03</td><td>US-03</td><td>Ver detalle de promoción</td><td>Como usuario, quiere ver condiciones de uso</td><td>2</td></tr>
+<tr><td>04</td><td>US-21</td><td>Buscar promociones</td><td>Como usuario, quiere buscar promociones por nombre</td><td>3</td></tr>
+
+<tr><td>05</td><td>US-04</td><td>Generar código QR</td><td>Como usuario, quiere generar un código QR único</td><td>5</td></tr>
+<tr><td>06</td><td>US-07</td><td>Escanear QR</td><td>Como empresa, quiere validar códigos QR</td><td>5</td></tr>
+<tr><td>07</td><td>US-08</td><td>Validación manual</td><td>Como empresa, quiere validar códigos manualmente</td><td>3</td></tr>
+<tr><td>08</td><td>US-09</td><td>Bloquear código</td><td>Como empresa, quiere evitar reutilización</td><td>3</td></tr>
+
+<tr><td>09</td><td>US-05</td><td>Ver códigos generados</td><td>Como usuario, quiere visualizar sus códigos</td><td>2</td></tr>
+<tr><td>10</td><td>US-06</td><td>Ver historial</td><td>Como usuario, quiere ver historial de descuentos</td><td>3</td></tr>
+<tr><td>11</td><td>US-20</td><td>Guardar promociones</td><td>Como usuario, quiere guardar promociones favoritas</td><td>3</td></tr>
+
+<tr><td>12</td><td>US-10</td><td>Crear promoción</td><td>Como empresa, quiere crear promociones</td><td>5</td></tr>
+<tr><td>13</td><td>US-22</td><td>Editar promoción</td><td>Como empresa, quiere modificar promociones</td><td>3</td></tr>
+<tr><td>14</td><td>US-23</td><td>Desactivar promoción</td><td>Como empresa, quiere desactivar promociones</td><td>2</td></tr>
+<tr><td>15</td><td>US-11</td><td>Definir condiciones</td><td>Como empresa, quiere establecer condiciones</td><td>3</td></tr>
+<tr><td>16</td><td>US-12</td><td>Limitar canjes</td><td>Como empresa, quiere limitar uso</td><td>3</td></tr>
+
+<tr><td>17</td><td>US-13</td><td>Publicar reseña</td><td>Como usuario, quiere compartir experiencia</td><td>3</td></tr>
+<tr><td>18</td><td>US-14</td><td>Calificar promoción</td><td>Como usuario, quiere calificar promociones</td><td>2</td></tr>
+<tr><td>19</td><td>US-15</td><td>Comentar</td><td>Como usuario, quiere comentar publicaciones</td><td>2</td></tr>
+<tr><td>20</td><td>US-16</td><td>Reaccionar</td><td>Como usuario, quiere reaccionar</td><td>2</td></tr>
+<tr><td>21</td><td>US-24</td><td>Compartir promoción</td><td>Como usuario, quiere compartir promociones con otros usuarios</td><td>3</td></tr>
+
+<tr><td>21</td><td>US-17</td><td>Registro</td><td>Como usuario, quiere registrarse</td><td>3</td></tr>
+<tr><td>22</td><td>US-18</td><td>Login</td><td>Como usuario, quiere iniciar sesión</td><td>3</td></tr>
+<tr><td>23</td><td>US-19</td><td>Recuperar contraseña</td><td>Como usuario, quiere recuperar acceso</td><td>3</td></tr>
+
+<tr><td>24</td><td>TS-01</td><td>API generación QR</td><td>Como developer, quiere generar QR</td><td>5</td></tr>
+<tr><td>25</td><td>TS-02</td><td>API validación QR</td><td>Como developer, quiere validar QR</td><td>5</td></tr>
+<tr><td>26</td><td>TS-03</td><td>API historial</td><td>Como developer, quiere obtener historial</td><td>3</td></tr>
+
+<tr><td>27</td><td>SP-01</td><td>Investigar QR</td><td>Como developer, quiere evaluar librerías QR</td><td>3</td></tr>
+<tr><td>28</td><td>SP-02</td><td>Seguridad QR</td><td>Como developer, quiere analizar seguridad</td><td>3</td></tr>
+<tr><td>29</td><td>SP-03</td><td>Escalabilidad</td><td>Como developer, quiere evaluar rendimiento</td><td>5</td></tr>
+
+<tr><td>30</td><td>US-21</td><td>Buscar promociones (refuerzo)</td><td>Como usuario, quiere encontrar promociones fácilmente</td><td>2</td></tr>
+
+</tbody>
+</table>
+
+<br>
+
+**Resumen:**
+- **Total de User Stories:** 30 (US01-US30)
+- **Total Story Points:** 119
+- **MVP Crítico (Órdenes 1-15):** 76 story points — APIs, Flujos de negocio, Autenticación
+- **Complejidad Alta (8 SP):** 7 US — APIs, Spikes de infraestructura
+- **Complejidad Media (5 SP):** 9 US — Lógica de negocio, consultas, procesos
+- **Complejidad Baja (2-3 SP):** 14 US — UI simples, landing page, perfiles
+- **Herramienta recomendada:** Jira, Azure DevOps, Trello
+
+---
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
@@ -1085,6 +1501,10 @@ En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a des
 
 ### 2.5.2. Context Mapping
 
+<p align="center">
+    <img src="assets/chapter02/CM/KlipprLandscape.png" width="300" alt="Companies">
+</p>
+
 ### 2.5.3. Software Architecture
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
@@ -1097,6 +1517,8 @@ En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a des
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
+![KlipprContainerDiagram](assets/chapter02/diagramas/KlipprDeploymentDiagram.png)
+
 ## 2.6. Tactical-Level Domain-Driven Design
 
 ### 2.6.1. Bounded Context: IAM
@@ -1107,46 +1529,166 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 **Sub-capa Model - Aggregates:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Aggregate | User | Clase que representa a cualquier cuenta registrada en Klippr, independientemente de su rol. | Ser el punto de entrada para crear y mantener la integridad de la entidad de identidad, incluyendo validación de credenciales y asignación de rol. | Relacionado con los bounded contexts Profile, Promotions y Community, que requieren la identidad del usuario para operar. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>User</td>
+    <td>Clase que representa a cualquier cuenta registrada en Klippr, independientemente de su rol.</td>
+    <td>Ser el punto de entrada para crear y mantener la integridad de la entidad de identidad, incluyendo validación de credenciales y asignación de rol.</td>
+    <td>Relacionado con los bounded contexts Profile, Promotions y Community, que requieren la identidad del usuario para operar.</td>
+  </tr>
+</table>
 
 **Sub-capa Model - Commands:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Command | SignInCommand | Comando para el inicio de sesión de cualquier tipo de cuenta. | Representar la intención de autenticar a un usuario y retornar un token de acceso válido. | Usado en la implementación del servicio de autenticación. |
-| Command | SignUpConsumerCommand | Comando para el registro de un usuario consumidor. | Representar la intención de crear una cuenta de tipo consumidor con los datos mínimos requeridos. | Usado en la implementación del servicio de autenticación. |
-| Command | SignUpBusinessCommand | Comando para el registro de un negocio afiliado. | Representar la intención de crear una cuenta de tipo negocio, sujeta a aprobación por el administrador. | Usado en el servicio de autenticación y desencadena evento hacia el bounded context Profile para iniciar el flujo de verificación. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>SignInCommand</td>
+    <td>Comando para el inicio de sesión de cualquier tipo de cuenta.</td>
+    <td>Representar la intención de autenticar a un usuario y retornar un token de acceso válido.</td>
+    <td>Usado en la implementación del servicio de autenticación.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>SignUpConsumerCommand</td>
+    <td>Comando para el registro de un usuario consumidor.</td>
+    <td>Representar la intención de crear una cuenta de tipo consumidor con los datos mínimos requeridos.</td>
+    <td>Usado en la implementación del servicio de autenticación.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>SignUpBusinessCommand</td>
+    <td>Comando para el registro de un negocio afiliado.</td>
+    <td>Representar la intención de crear una cuenta de tipo negocio, sujeta a aprobación por el administrador.</td>
+    <td>Usado en el servicio de autenticación y desencadena evento hacia el bounded context Profile para iniciar el flujo de verificación.</td>
+  </tr>
+</table>
 
 **Sub-capa Model - Queries:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Query | GetAllUsersQuery | Consulta para obtener todos los usuarios registrados. | Representar la intención de obtener la lista completa de cuentas, usada por el administrador de plataforma. | Usado en la implementación del servicio de consultas. |
-| Query | GetUserByEmailQuery | Consulta para obtener un usuario por dirección de email. | Representar la intención de buscar una cuenta específica por su email, utilizada en el flujo de autenticación. | Usado en la implementación del servicio de consultas. |
-| Query | GetUserByIdQuery | Consulta para obtener un usuario por su identificador único. | Representar la intención de recuperar una cuenta por su ID, usada inter-contexto para validar identidad. | Usado en la implementación del servicio de consultas. |
-| Query | GetUsersByRoleQuery | Consulta para obtener usuarios filtrados por rol. | Representar la intención de listar cuentas de un tipo específico (CONSUMER, BUSINESS, ADMIN). | Usado en el panel de administración para gestión de cuentas. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetAllUsersQuery</td>
+    <td>Consulta para obtener todos los usuarios registrados.</td>
+    <td>Representar la intención de obtener la lista completa de cuentas, usada por el administrador de plataforma.</td>
+    <td>Usado en la implementación del servicio de consultas.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetUserByEmailQuery</td>
+    <td>Consulta para obtener un usuario por dirección de email.</td>
+    <td>Representar la intención de buscar una cuenta específica por su email, utilizada en el flujo de autenticación.</td>
+    <td>Usado en la implementación del servicio de consultas.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetUserByIdQuery</td>
+    <td>Consulta para obtener un usuario por su identificador único.</td>
+    <td>Representar la intención de recuperar una cuenta por su ID, usada inter-contexto para validar identidad.</td>
+    <td>Usado en la implementación del servicio de consultas.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetUsersByRoleQuery</td>
+    <td>Consulta para obtener usuarios filtrados por rol.</td>
+    <td>Representar la intención de listar cuentas de un tipo específico (CONSUMER, BUSINESS, ADMIN).</td>
+    <td>Usado en el panel de administración para gestión de cuentas.</td>
+  </tr>
+</table>
 
 **Sub-capa Model - Value Objects:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Value Object | Role | Rol de la cuenta dentro de la plataforma. | Representar los tres roles posibles: CONSUMER, BUSINESS y ADMIN, determinando las pantallas y funciones accesibles. | Usado en el Aggregate User y evaluado en el middleware de autorización. |
-| Value Object | Email | Dirección de correo electrónico de la cuenta. | Encapsular la validación de formato y unicidad del email como identificador de acceso. | Usado en el Aggregate User y en los comandos de registro. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Role</td>
+    <td>Rol de la cuenta dentro de la plataforma.</td>
+    <td>Representar los tres roles posibles: CONSUMER, BUSINESS y ADMIN, determinando las pantallas y funciones accesibles.</td>
+    <td>Usado en el Aggregate User y evaluado en el middleware de autorización.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Email</td>
+    <td>Dirección de correo electrónico de la cuenta.</td>
+    <td>Encapsular la validación de formato y unicidad del email como identificador de acceso.</td>
+    <td>Usado en el Aggregate User y en los comandos de registro.</td>
+  </tr>
+</table>
 
 **Sub-capa Services:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Interface | IUserCommandService | Interfaz del servicio de comandos de autenticación. | Estipular los contratos para operaciones de registro e inicio de sesión. | Implementado en la capa Application; consumido desde la capa Interface. |
-| Interface | IUserQueryService | Interfaz del servicio de consultas de usuarios. | Estipular los contratos para operaciones de búsqueda y listado de cuentas. | Implementado en la capa Infrastructure; consumido desde la capa Interface. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IUserCommandService</td>
+    <td>Interfaz del servicio de comandos de autenticación.</td>
+    <td>Estipular los contratos para operaciones de registro e inicio de sesión.</td>
+    <td>Implementado en la capa Application; consumido desde la capa Interface.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IUserQueryService</td>
+    <td>Interfaz del servicio de consultas de usuarios.</td>
+    <td>Estipular los contratos para operaciones de búsqueda y listado de cuentas.</td>
+    <td>Implementado en la capa Infrastructure; consumido desde la capa Interface.</td>
+  </tr>
+</table>
 
 **Sub-capa Repositories:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Interface | IUserRepository | Repositorio para operaciones de persistencia del modelo User. | Definir contratos para operaciones CRUD de cuentas de usuario. | Implementado en la capa Infrastructure. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IUserRepository</td>
+    <td>Repositorio para operaciones de persistencia del modelo User.</td>
+    <td>Definir contratos para operaciones CRUD de cuentas de usuario.</td>
+    <td>Implementado en la capa Infrastructure.</td>
+  </tr>
+</table>
 
 ---
 
@@ -1154,36 +1696,142 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 **Sub-capa REST - Resources:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Resource | AuthenticatedUserResource | Estructura de respuesta para usuario autenticado. | Representar los datos de la cuenta autenticada (id, email, rol, token) de forma estructurada para el cliente móvil. | Usado en AuthenticationController para respuestas de autenticación exitosa. |
-| Resource | SignInResource | Estructura de una petición para iniciar sesión. | Representar y exponer los campos requeridos para autenticación (email, contraseña) de forma predeterminada. | Usado en AuthenticationController para recibir peticiones de login. |
-| Resource | SignUpConsumerResource | Estructura de una petición para registrar un usuario consumidor. | Representar los campos requeridos para crear una cuenta de tipo consumidor. | Usado en AuthenticationController para el flujo de registro B2C. |
-| Resource | SignUpBusinessResource | Estructura de una petición para registrar un negocio afiliado. | Representar los campos requeridos para crear una cuenta de tipo negocio (incluye nombre comercial, categoría y RUC/identificador fiscal). | Usado en AuthenticationController para el flujo de registro B2B, que inicia el proceso de verificación. |
-| Resource | UserResource | Estructura de datos de una cuenta de usuario. | Representar y exponer los datos de perfil de identidad de forma estructurada para operaciones de consulta. | Usado en UsersController para emitir datos de cuentas. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>AuthenticatedUserResource</td>
+    <td>Estructura de respuesta para usuario autenticado.</td>
+    <td>Representar los datos de la cuenta autenticada (id, email, rol, token) de forma estructurada para el cliente móvil.</td>
+    <td>Usado en AuthenticationController para respuestas de autenticación exitosa.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>SignInResource</td>
+    <td>Estructura de una petición para iniciar sesión.</td>
+    <td>Representar y exponer los campos requeridos para autenticación (email, contraseña) de forma predeterminada.</td>
+    <td>Usado en AuthenticationController para recibir peticiones de login.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>SignUpConsumerResource</td>
+    <td>Estructura de una petición para registrar un usuario consumidor.</td>
+    <td>Representar los campos requeridos para crear una cuenta de tipo consumidor.</td>
+    <td>Usado en AuthenticationController para el flujo de registro B2C.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>SignUpBusinessResource</td>
+    <td>Estructura de una petición para registrar un negocio afiliado.</td>
+    <td>Representar los campos requeridos para crear una cuenta de tipo negocio (incluye nombre comercial, categoría y RUC/identificador fiscal).</td>
+    <td>Usado en AuthenticationController para el flujo de registro B2B, que inicia el proceso de verificación.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>UserResource</td>
+    <td>Estructura de datos de una cuenta de usuario.</td>
+    <td>Representar y exponer los datos de perfil de identidad de forma estructurada para operaciones de consulta.</td>
+    <td>Usado en UsersController para emitir datos de cuentas.</td>
+  </tr>
+</table>
 
 **Sub-capa REST - Transform:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Assembler | AuthenticatedUserResourceFromEntityAssembler | Transforma la entidad User a AuthenticatedUserResource. | Convertir la entidad del dominio a su representación REST incluyendo el token JWT y el rol para que el cliente móvil determine la navegación inicial. | Usado en AuthenticationController para transformar respuestas de login. |
-| Assembler | SignInCommandFromResourceAssembler | Transforma SignInResource a SignInCommand. | Convertir la petición REST al comando del dominio correspondiente. | Usado en AuthenticationController para procesar peticiones de inicio de sesión. |
-| Assembler | SignUpConsumerCommandFromResourceAssembler | Transforma SignUpConsumerResource a SignUpConsumerCommand. | Convertir la petición REST al comando de registro de consumidor. | Usado en AuthenticationController para el flujo de registro B2C. |
-| Assembler | SignUpBusinessCommandFromResourceAssembler | Transforma SignUpBusinessResource a SignUpBusinessCommand. | Convertir la petición REST al comando de registro de negocio. | Usado en AuthenticationController para el flujo de registro B2B. |
-| Assembler | UserResourceFromEntityAssembler | Transforma la entidad User a UserResource. | Convertir la entidad del dominio a su representación REST para operaciones de consulta. | Usado en UsersController para transformar respuestas. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>AuthenticatedUserResourceFromEntityAssembler</td>
+    <td>Transforma la entidad User a AuthenticatedUserResource.</td>
+    <td>Convertir la entidad del dominio a su representación REST incluyendo el token JWT y el rol para que el cliente móvil determine la navegación inicial.</td>
+    <td>Usado en AuthenticationController para transformar respuestas de login.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>SignInCommandFromResourceAssembler</td>
+    <td>Transforma SignInResource a SignInCommand.</td>
+    <td>Convertir la petición REST al comando del dominio correspondiente.</td>
+    <td>Usado en AuthenticationController para procesar peticiones de inicio de sesión.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>SignUpConsumerCommandFromResourceAssembler</td>
+    <td>Transforma SignUpConsumerResource a SignUpConsumerCommand.</td>
+    <td>Convertir la petición REST al comando de registro de consumidor.</td>
+    <td>Usado en AuthenticationController para el flujo de registro B2C.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>SignUpBusinessCommandFromResourceAssembler</td>
+    <td>Transforma SignUpBusinessResource a SignUpBusinessCommand.</td>
+    <td>Convertir la petición REST al comando de registro de negocio.</td>
+    <td>Usado en AuthenticationController para el flujo de registro B2B.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>UserResourceFromEntityAssembler</td>
+    <td>Transforma la entidad User a UserResource.</td>
+    <td>Convertir la entidad del dominio a su representación REST para operaciones de consulta.</td>
+    <td>Usado en UsersController para transformar respuestas.</td>
+  </tr>
+</table>
 
 **Sub-capa REST - Controllers:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Controller | AuthenticationController | Controlador para operaciones de autenticación y registro. | Manejar las peticiones HTTP de inicio de sesión y registro de todos los tipos de cuenta. | Usa los command services de la capa Application y los assemblers para procesar peticiones. |
-| Controller | UsersController | Controlador para operaciones de gestión de cuentas. | Manejar las peticiones HTTP de consulta y administración de usuarios, accesibles principalmente desde el panel de administración. | Usa los query services y assemblers para procesar peticiones. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>AuthenticationController</td>
+    <td>Controlador para operaciones de autenticación y registro.</td>
+    <td>Manejar las peticiones HTTP de inicio de sesión y registro de todos los tipos de cuenta.</td>
+    <td>Usa los command services de la capa Application y los assemblers para procesar peticiones.</td>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>UsersController</td>
+    <td>Controlador para operaciones de gestión de cuentas.</td>
+    <td>Manejar las peticiones HTTP de consulta y administración de usuarios, accesibles principalmente desde el panel de administración.</td>
+    <td>Usa los query services y assemblers para procesar peticiones.</td>
+  </tr>
+</table>
 
 **Sub-capa ACL:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Service | IamContextFacade | Servicio de fachada para el contexto IAM. | Proporcionar una interfaz simplificada para que otros bounded contexts (Profile, Promotions, Redemption, Community, Analytics) verifiquen identidad y rol de una cuenta sin acceder directamente al dominio IAM. | Relacionado con todos los bounded contexts que requieren validación de identidad. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>IamContextFacade</td>
+    <td>Servicio de fachada para el contexto IAM.</td>
+    <td>Proporcionar una interfaz simplificada para que otros bounded contexts (Profile, Promotions, Redemption, Community, Analytics) verifiquen identidad y rol de una cuenta sin acceder directamente al dominio IAM.</td>
+    <td>Relacionado con todos los bounded contexts que requieren validación de identidad.</td>
+  </tr>
+</table>
 
 ---
 
@@ -1191,22 +1839,67 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 **Sub-capa Internal - CommandServices:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| CommandHandler | UserCommandService | Implementación de los comandos de autenticación y registro. | Implementar los métodos de SignIn, SignUpConsumer y SignUpBusiness, coordinando hashing de contraseñas, generación de token y asignación de rol. | Implementa los métodos de IUserCommandService definidos en la capa Domain. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>UserCommandService</td>
+    <td>Implementación de los comandos de autenticación y registro.</td>
+    <td>Implementar los métodos de SignIn, SignUpConsumer y SignUpBusiness, coordinando hashing de contraseñas, generación de token y asignación de rol.</td>
+    <td>Implementa los métodos de IUserCommandService definidos en la capa Domain.</td>
+  </tr>
+</table>
 
 **Sub-capa Internal - OutboundServices:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Service | IHashingService | Interfaz para el servicio de hashing de contraseñas. | Definir contratos para operaciones de hash y verificación de contraseñas antes de persistir o validar credenciales. | Implementado en la capa Infrastructure (BCrypt). |
-| Service | ITokenService | Interfaz para el servicio de gestión de tokens JWT. | Definir contratos para generación, validación y decodificación de tokens de acceso. El token incluye el claim de rol para que el cliente móvil determine la navegación inicial (feed B2C o dashboard B2B). | Implementado en la capa Infrastructure (JWT). |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>IHashingService</td>
+    <td>Interfaz para el servicio de hashing de contraseñas.</td>
+    <td>Definir contratos para operaciones de hash y verificación de contraseñas antes de persistir o validar credenciales.</td>
+    <td>Implementado en la capa Infrastructure (BCrypt).</td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>ITokenService</td>
+    <td>Interfaz para el servicio de gestión de tokens JWT.</td>
+    <td>Definir contratos para generación, validación y decodificación de tokens de acceso. El token incluye el claim de rol para que el cliente móvil determine la navegación inicial (feed B2C o dashboard B2B).</td>
+    <td>Implementado en la capa Infrastructure (JWT).</td>
+  </tr>
+</table>
 
 **Sub-capa Internal - QueryServices:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| QueryHandler | UserQueryService | Implementación de las consultas de cuentas de usuario. | Implementar los métodos de búsqueda por email, ID y rol, coordinando la recuperación desde el repositorio. | Implementa los métodos de IUserQueryService definidos en la capa Domain. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>UserQueryService</td>
+    <td>Implementación de las consultas de cuentas de usuario.</td>
+    <td>Implementar los métodos de búsqueda por email, ID y rol, coordinando la recuperación desde el repositorio.</td>
+    <td>Implementa los métodos de IUserQueryService definidos en la capa Domain.</td>
+  </tr>
+</table>
 
 ---
 
@@ -1214,35 +1907,119 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 **Sub-capa Hashing (BCrypt):**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Service | HashingService | Servicio para el hash de contraseñas usando BCrypt. | Proporcionar métodos para hashear contraseñas en el registro y verificarlas en el inicio de sesión de forma segura. | Relacionado con UserCommandService en la capa Application. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>HashingService</td>
+    <td>Servicio para el hash de contraseñas usando BCrypt.</td>
+    <td>Proporcionar métodos para hashear contraseñas en el registro y verificarlas en el inicio de sesión de forma segura.</td>
+    <td>Relacionado con UserCommandService en la capa Application.</td>
+  </tr>
+</table>
 
 **Sub-capa Persistence:**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Repository | UserRepository | Repositorio concreto para el modelo User. | Acceder y manipular datos de cuentas persistidos en la base de datos, implementando los contratos de IUserRepository. | Usado en la capa Application para registro, autenticación y consulta de usuarios. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>UserRepository</td>
+    <td>Repositorio concreto para el modelo User.</td>
+    <td>Acceder y manipular datos de cuentas persistidos en la base de datos, implementando los contratos de IUserRepository.</td>
+    <td>Usado en la capa Application para registro, autenticación y consulta de usuarios.</td>
+  </tr>
+</table>
 
 **Sub-capa Pipeline (Middleware):**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Attribute | AllowAnonymousAttribute | Atributo para permitir acceso anónimo. | Marcar los endpoints de registro e inicio de sesión que no requieren token de autenticación. | Usado en AuthenticationController para los endpoints públicos. |
-| Attribute | AuthorizeAttribute | Atributo para requerir autorización. | Marcar los endpoints que requieren token válido y, opcionalmente, un rol específico (CONSUMER, BUSINESS, ADMIN). | Usado en UsersController y en los controladores de otros bounded contexts para proteger operaciones sensibles. |
-| Component | RequestAuthorizationMiddleware | Middleware para autorización de peticiones. | Interceptar cada petición HTTP, validar el token JWT y extraer el claim de rol para autorizar o rechazar el acceso. | Relacionado con el pipeline de la aplicación móvil y con el servicio ITokenService. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Attribute</td>
+    <td>AllowAnonymousAttribute</td>
+    <td>Atributo para permitir acceso anónimo.</td>
+    <td>Marcar los endpoints de registro e inicio de sesión que no requieren token de autenticación.</td>
+    <td>Usado en AuthenticationController para los endpoints públicos.</td>
+  </tr>
+  <tr>
+    <td>Attribute</td>
+    <td>AuthorizeAttribute</td>
+    <td>Atributo para requerir autorización.</td>
+    <td>Marcar los endpoints que requieren token válido y, opcionalmente, un rol específico (CONSUMER, BUSINESS, ADMIN).</td>
+    <td>Usado en UsersController y en los controladores de otros bounded contexts para proteger operaciones sensibles.</td>
+  </tr>
+  <tr>
+    <td>Component</td>
+    <td>RequestAuthorizationMiddleware</td>
+    <td>Middleware para autorización de peticiones.</td>
+    <td>Interceptar cada petición HTTP, validar el token JWT y extraer el claim de rol para autorizar o rechazar el acceso.</td>
+    <td>Relacionado con el pipeline de la aplicación móvil y con el servicio ITokenService.</td>
+  </tr>
+</table>
 
 **Sub-capa Tokens (JWT):**
 
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Config | TokenSettings | Configuración de tokens JWT. | Almacenar los parámetros de generación y validación de tokens: clave secreta, emisor, audiencia y tiempo de expiración. | Usado por TokenService para configurar la generación de JWT. |
-| Service | TokenService | Servicio para el manejo de tokens JWT. | Encapsular toda la lógica de generación, validación y decodificación de tokens, incluyendo la inserción del claim de rol (CONSUMER, BUSINESS, ADMIN) que determina la experiencia de navegación en la app móvil. | Implementa ITokenService de la capa Application; relacionado con UserCommandService. |
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Config</td>
+    <td>TokenSettings</td>
+    <td>Configuración de tokens JWT.</td>
+    <td>Almacenar los parámetros de generación y validación de tokens: clave secreta, emisor, audiencia y tiempo de expiración.</td>
+    <td>Usado por TokenService para configurar la generación de JWT.</td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>TokenService</td>
+    <td>Servicio para el manejo de tokens JWT.</td>
+    <td>Encapsular toda la lógica de generación, validación y decodificación de tokens, incluyendo la inserción del claim de rol (CONSUMER, BUSINESS, ADMIN) que determina la experiencia de navegación en la app móvil.</td>
+    <td>Implementa ITokenService de la capa Application; relacionado con UserCommandService.</td>
+  </tr>
+</table>
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-IAM.jpeg">
+</p>
+
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+<p align="center">
+    <img src="assets/chapter02/BCIAM/codeDiag-iam.png">
+</p>
+
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+    <img src="assets/chapter02/BCIAM/diagbd-iam.png">
+</p>
+
