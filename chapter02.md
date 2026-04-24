@@ -763,3 +763,269 @@ Entonces documenta conclusiones.
 
 </tbody>
 </table>
+
+### 2.6.8. Bounded Context: Favorites
+
+<p>
+El Bounded Context <b>Favorites</b> permite a los usuarios guardar promociones de interés para consultarlas posteriormente,
+facilitando el seguimiento de ofertas relevantes y mejorando la experiencia de descubrimiento.
+</p>
+
+<p><b>Eventos clave:</b> PromocionGuardada, PromocionEliminadaFavoritos, FavoritosConsultados</p>
+
+
+#### 2.6.8.1. Domain Layer
+
+<h4>Sub-capa Model - Aggregates</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th><th>Responsabilidad Principal</th><th>Relación</th>
+</tr>
+<tr>
+<td>Aggregate</td>
+<td>Favorite</td>
+<td>Representa una promoción guardada por un usuario</td>
+<td>Gestionar el ciclo de vida de favoritos</td>
+<td>Relacionado con Promotions y Profile</td>
+</tr>
+</table>
+
+<h4>Sub-capa Model - Commands</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th><th>Responsabilidad</th>
+</tr>
+<tr>
+<td>Command</td>
+<td>SaveFavoriteCommand</td>
+<td>Guardar promoción en favoritos</td>
+<td>Representar intención de guardar</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>RemoveFavoriteCommand</td>
+<td>Eliminar promoción de favoritos</td>
+<td>Representar intención de eliminar</td>
+</tr>
+</table>
+
+<h4>Sub-capa Model - Queries</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th><th>Responsabilidad</th>
+</tr>
+<tr>
+<td>Query</td>
+<td>GetUserFavoritesQuery</td>
+<td>Obtener favoritos de un usuario</td>
+<td>Recuperar lista de promociones guardadas</td>
+</tr>
+</table>
+
+<h4>Sub-capa Model - Events</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th><th>Responsabilidad</th>
+</tr>
+<tr>
+<td>Domain Event</td>
+<td>PromocionGuardada</td>
+<td>Evento al guardar una promoción</td>
+<td>Notificar almacenamiento exitoso</td>
+</tr>
+<tr>
+<td>Domain Event</td>
+<td>PromocionEliminadaFavoritos</td>
+<td>Evento al eliminar favorito</td>
+<td>Notificar eliminación</td>
+</tr>
+<tr>
+<td>Domain Event</td>
+<td>FavoritosConsultados</td>
+<td>Evento al consultar favoritos</td>
+<td>Registrar acceso</td>
+</tr>
+</table>
+
+<h4>Sub-capa Model - Value Objects</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th><th>Responsabilidad</th>
+</tr>
+<tr>
+<td>Value Object</td>
+<td>FavoriteId</td>
+<td>Identificador único</td>
+<td>Identificar favorito</td>
+</tr>
+<tr>
+<td>Value Object</td>
+<td>UserId</td>
+<td>Identificador de usuario</td>
+<td>Referencia a Profile</td>
+</tr>
+<tr>
+<td>Value Object</td>
+<td>PromotionId</td>
+<td>Identificador de promoción</td>
+<td>Referencia a Promotions</td>
+</tr>
+</table>
+
+<h4>Sub-capa Services</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Interface</td>
+<td>IFavoriteCommandService</td>
+<td>Define operaciones de escritura</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>IFavoriteQueryService</td>
+<td>Define operaciones de consulta</td>
+</tr>
+</table>
+
+<h4>Sub-capa Repositories</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Interface</td>
+<td>IFavoriteRepository</td>
+<td>Persistencia de favoritos</td>
+</tr>
+</table>
+
+#### 2.6.8.2. Interface Layer
+
+<h4>Sub-capa REST - Resources</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Resource</td>
+<td>FavoriteResource</td>
+<td>Representación de un favorito</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>FavoriteListResource</td>
+<td>Lista de favoritos</td>
+</tr>
+</table>
+
+<h4>Sub-capa REST - Transform</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Assembler</td>
+<td>FavoriteResourceFromEntityAssembler</td>
+<td>Convierte entidad a recurso REST</td>
+</tr>
+</table>
+
+<h4>Sub-capa REST - Controllers</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Controller</td>
+<td>FavoriteController</td>
+<td>Gestiona operaciones de favoritos</td>
+</tr>
+</table>
+
+<h4>Sub-capa ACL</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Service</td>
+<td>FavoritesContextFacade</td>
+<td>Permite interacción con otros contextos</td>
+</tr>
+</table>
+
+#### 2.6.8.3. Application Layer
+
+<h4>Sub-capa Internal - CommandServices</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>CommandHandler</td>
+<td>FavoriteCommandService</td>
+<td>Procesa guardar y eliminar favoritos</td>
+</tr>
+</table>
+
+<h4>Sub-capa Internal - QueryServices</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>QueryHandler</td>
+<td>FavoriteQueryService</td>
+<td>Recupera favoritos del usuario</td>
+</tr>
+</table>
+
+#### 2.6.8.4. Infrastructure Layer
+
+<h4>Sub-capa Persistence</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th><th>Responsabilidad</th>
+</tr>
+<tr>
+<td>Repository</td>
+<td>FavoriteRepository</td>
+<td>Implementación del repositorio</td>
+<td>Persistir y recuperar favoritos</td>
+</tr>
+<tr>
+<td>Repository</td>
+<td>MySQLFavoriteRepository</td>
+<td>Implementación concreta en base de datos</td>
+<td>Mapear entidad a tabla</td>
+</tr>
+</table>
+
+<h4>Sub-capa Pipeline (Middleware)</h4>
+<table border="1" cellpadding="6">
+<tr>
+<th>Tipo</th><th>Nombre</th><th>Descripción</th>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>AuthorizeAttribute</td>
+<td>Control de acceso de usuarios</td>
+</tr>
+</table>
+
+#### 2.6.8.5. Bounded Context Software Architecture Component Level Diagrams
+
+![FavoritesBCCComponentDiagram](assets/chapter02/FavoritesBCComponentDiagram.png)
+
+#### 2.6.8.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.8.6.1. Bounded Context Domain Layer Class Diagrams
+
+![DomainLayerClassDiagrams](assets/chapter02/DomainClassLayerDiagramsFavorites.png)
+
+##### 2.6.8.6.2. Bounded Context Database Design Diagram
+
+![DatabaseDesignDiagram](assets/chapter02/DatabaseDesignDiagram.png)
+
