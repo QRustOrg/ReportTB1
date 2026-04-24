@@ -54,7 +54,7 @@
 | Bonifacio Jaramillo, Samuel Jesus | U202317269 |
 | Castro Pariona, Jefferson Ernesto | U201822823 |
 | Guillen Galindo, Julio Adolfo  | U20241A352 |
-| Alejandro Manuel, Galindo Montero| U202321264 |
+| Galindo Montero, Alejandro Manuel| U202321264 |
 | Ponce Perales Alberto Alejandro | U2023206804 |
 
 
@@ -64,12 +64,9 @@
 
 </div>
 
-<br><br>
-
-# Registro de Versiones del Informe
 <br>
 
-### Registro de Versiones del Informe
+# Registro de Versiones del Informe
 
 <br>
 
@@ -87,8 +84,8 @@
     <tr>
       <td>1.0</td>
       <td>17 de abril</td>
-      <td>Samuel Bonifacio</td>
-      <td>Desarrollo de los capitulos I e II</td>
+      <td>QRust</td>
+      <td>Desarrollo de los capitulos I,II & Anexos</td>
     </tr>
     <tr>
       <td></td>
@@ -155,16 +152,32 @@
 
 # Project Report Collaboration Insights
 
+Analiza cómo la colaboración y la gestión de tareas influyeron en los resultados del proyecto, destacando fortalezas y áreas de mejora para optimizar futuras estrategias.
 
-URL del repositorio para el proyecto: https://github.com/OnTimeRide/ReportTB1.git
+URL del Repositorio del Informe: https://github.com/QRustOrg/ReportTB1.git <br>
+URL del Repositorio de Landing Page: https://github.com/QRustOrg/LandingPage.git <br>
+URL del Repositorio del Frontend:  <br>
+URL del Repositorio del Backend:  <br>
 
-URL del repositorio de Landing Page: 
+### Reporte de Colaboración Entrega TB1
 
-URL del repositorio del Frontend: 
+En esta entrega se redactó el informe abarcando la **definición inicial del producto, el modelado UX y hasta la sección de Tactical Level Domain-Driven Design de la Arquitectura de Software**. Las tareas más relevantes fueron el desarrollo del **Event Storming**, los diseños de **historias de usuario, perfiles de usuario** y el modelado de experiencia. Además, se definieron el **Diagrama de Componentes, Diagrama de Clases y Diagrama de Base de Datos** para cada **Bounded Context** identificado mediante el **Event Storming**.
 
-URL del repositorio del Backend: 
+Para evidenciar nuestros avances y demostrar que todos los miembros del equipo participaron en la redacción del informe, se presentan a continuación las capturas obtenidas de los analíticos de colaboración en el repositorio de GitHub del Informe:
 
-#
+**Contributors**
+
+*En el analítico de Contributors se evidencian las contribuciones que hizo cada integrante del equipo para la redacción del informe durante el periodo de esta primera entrega. Se puede observar la cantidad de commits que realizó cada integrante, así como la cantidad de adiciones y eliminaciones que se realizaron en el repositorio.
+
+*(captura contributors)*
+
+**Pulse**
+
+En el analítico de Pulse se evidencian los commits que realizó cada integrante del equipo durante el periodo definido para esta primera entrega.
+
+*(captura pulse)*
+
+---
 
 **TB1**
 
@@ -182,23 +195,23 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
   <tbody>
     <tr>
       <th> Bonifacio Jaramillo, Samuel Jesus</th>
-      <th> Capitulos I,II y Bibliografías </th>
+      <th> Diseño de arquitectura y Bounded Contexts, diagramas de base de datos, Event Storming y estructuración general (Capítulos 1 y 2).</th>
     </tr>
     <tr>
       <th> Castro Pariona, Jefferson Ernesto</th>
-      <th> </th>
+      <th> Definición de perfiles de la startup, análisis competitivo e inicialización del documento (Capítulo 1).</th>
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
-      <th> </th>
+      <th> Redacción de estrategias de marketing, análisis comparativo y estructuración de la visión del producto.</th>
     </tr>
     <tr>
       <th> Ponce Perales, Alberto Alejandro</th>
-      <th> </th>
+      <th> Elaboración de User Stories, Technical Stories, Landing Stories, Spike Stories y criterios de aceptación (Capítulo 2).</th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
-      <th> </th>
+      <th> Galindo Montero, Alejandro Manuel</th>
+      <th> Elaboración del Lean UX Canvas, User Personas, User Task Matrix, Empathy Mapping y User Journey (Capítulos 1 y 2).</th>
     </tr>
   </tbody>
 </table>
@@ -238,7 +251,7 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -278,7 +291,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB2, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -444,23 +457,23 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
       <td><b>7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software</b></td>
       <td>
         <b>TB1: Bonifacio Jaramillo, Samuel Jesus:</b><br> Al desarrollar el Tactical-Level Domain-Driven Design del Bounded Context IAM, el desarrollo del Bounded Context Profile, el Keynote y las Ideas de User Stories, aprendí más acerca de los conceptos de arquitectura de software y metodologías ágiles, actualizando mis conocimientos en patrones de diseño y gestión de identidades para aplicarlos en soluciones reales.<br> 
-        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
-        <b>Guillen Galindo, Julio Adolfo</b><br><br>
-        <b>Ponce Perales, Alberto Alejandro</b><br><br>
-        <b>Alejandro Manuel Galindo Montero</b>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>Al realizar la redacción de los Capítulos I y II del informe, participar en la evaluación del Product Backlog y elaborar los diagramas de Bounded Context utilizando el C4 model, actualicé significativamente mis conocimientos en arquitectura de software, modelado de contextos de negocio y herramientas de visualización arquitectónica. Esta experiencia me permitió comprender la importancia de una sólida estructura arquitectónica en la definición de soluciones de ingeniería de software.<br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>En el desarrollo del Capítulo II, participé en la estructuración de requisitos, análisis competitivo y estrategias de marketing para la solución. Esto me permitió actualizar mis conocimientos en metodologías ágiles, técnicas de recopilación de requisitos y estrategias empresariales aplicadas al desarrollo de software, consolidando una visión integral del desarrollo de productos tecnológicos.<br>
+        <b>Ponce Perales, Alberto Alejandro</b><br>Al desarrollar la especificación de requisitos incluyendo User Stories, Technical Stories y criterios de aceptación, actualizacé mis conocimientos en técnicas de especificación de requisitos y metodologías ágiles. Esta experiencia me permitió comprender mejor cómo traducir necesidades del usuario en requisitos técnicos claros y verificables.<br>
+        <b>Alejandro Manuel Galindo Montero</b><br> Al desarrollar el AV1, apoyé en la etapa de needfinding, contribuyendo a la identificación de necesidades del usuario y la definición del problema. Asimismo, participé en la elaboración de los Bounded Contexts, especialmente en Settings y Analytics, incluyendo el diseño de sus diagramas de dominio, modelos de base de datos y documentación en Clean Architecture. Además, desarrollé los diagramas de contexto y contenedores utilizando el C4 model para representar la arquitectura del sistema.<br>
       </td>
       <td><b>TB1:</b> Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.</td>
     </tr>
     <tr>
       <td><b>7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software</b></td>
       <td>
-        <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
-        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
-        <b>Guillen Galindo, Julio Adolfo</b><br><br>
-        <b>Ponce Perales, Alberto Alejandro</b><br><br>
-        <b>Alejandro Manuel Galindo Montero</b>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>Al asumir el desarrollo de los Capítulos I y II del informe, incluyendo el diseño de User Stories, el análisis competitivo, el Lean UX Process y la arquitectura de software orientada a Domain-Driven Design, reconocí que las tecnologías y metodologías aplicadas en ingeniería de software evolucionan constantemente. Esta experiencia me motivó a profundizar en nuevos conceptos como EventStorming y Bounded Contexts, reforzando mi compromiso con el aprendizaje continuo como pilar fundamental para el desarrollo profesional y la entrega de soluciones de calidad.<br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>Durante el desarrollo del Capítulo I y II, así como en la evaluación del Product Backlog y elaboración de diagramas de Bounded Context C4, reconocí la necesidad del aprendizaje permanente en metodologías de modelado arquitectónico y técnicas de validación de requisitos. La actualización continua de conocimientos en herramientas como C4 model y Domain-Driven Design es fundamental para diseñar soluciones de software robustas y escalables que se adapten a los cambios del mercado tecnológico.<br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>En la redacción del Capítulo II, reconocí la importancia del aprendizaje permanente en estrategias de marketing, análisis competitivo y técnicas de especificación de requisitos. El contexto dinámico de la ingeniería de software requiere una actualización constante de habilidades para comprender tanto aspectos técnicos como empresariales, lo que es esencial para desarrollar soluciones competitivas y alineadas con las necesidades del mercado.<br>
+        <b>Ponce Perales, Alberto Alejandro</b><br>En la elaboración de User Stories, Technical Stories y criterios de aceptación, reconocí que el aprendizaje permanente es fundamental para mantenerme actualizado en metodologías ágiles y técnicas de especificación de requisitos. La capacidad de adaptarse a nuevas herramientas y procesos es clave para el desempeño profesional en ingeniería de software y para garantizar la entrega de soluciones de calidad.<br>
+        <b>Alejandro Manuel Galindo Montero</b><br>Durante el desarrollo del AV1, reconocí la importancia del aprendizaje permanente para el desempeño profesional en ingeniería de software. Al apoyar en la etapa de needfinding y participar en la construcción de los Bounded Contexts, especialmente en Settings y Analytics, identifiqué la necesidad de reforzar conocimientos en arquitectura de software, Domain-Driven Design y Clean Architecture. Asimismo, al desarrollar los diagramas de dominio, modelos de base de datos y diagramas de contexto y contenedores, comprendí que la actualización continua de habilidades es clave para diseñar soluciones tecnológicas sólidas y aplicables en entornos reales.</br>
       </td>
-      <td></td>
+      <td><b>TB1:</b> El equipo reconoció exitosamente la necesidad del aprendizaje permanente a través de la aplicación práctica de metodologías emergentes como Domain-Driven Design, C4 model y Clean Architecture. Cada integrante identificó áreas de crecimiento profesional y comprendió que la actualización continua de conocimientos es esencial para adaptarse a la evolución constante de las tecnologías de ingeniería de software y mantener la competitividad en el desarrollo de soluciones innovadoras.</td>
     </tr>
   </tbody>
 </table>
