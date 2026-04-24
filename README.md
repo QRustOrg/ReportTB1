@@ -448,7 +448,6 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
         <b>Ponce Perales, Alberto Alejandro</b><br><br>
         <b>Galindo Montero, Alejandro Manuel</b><br> Al desarrollar el AV1, apoyé en la etapa de needfinding, contribuyendo a la identificación de necesidades del usuario y la definición del problema. Asimismo, participé en la elaboración de los Bounded Contexts, especialmente en Settings y Analytics, incluyendo el diseño de sus diagramas de dominio, modelos de base de datos y documentación en Clean Architecture. Además, desarrollé los diagramas de contexto y contenedores para representar la arquitectura del sistema. <br>
-
       </td>
       <td><b>TB1:</b> Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.</td>
     </tr>
