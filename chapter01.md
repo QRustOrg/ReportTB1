@@ -87,7 +87,7 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
     <tr>
       <td>Guillen Galindo, Julio Adolfo<br>(U20241A352)</td>
       <td align="center">
-        <img src="assets/Integrantes/julio.png" width="150">
+        <img src="assets/Integrantes/julio.jpg" width="150">
       </td>
       <td></td>
     </tr>
