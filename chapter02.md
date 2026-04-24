@@ -261,41 +261,47 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td><strong>Nombre:</strong></td>
-    <td></td>
+    <td>Matias Flores</td>
   </tr>
 
   <tr>
     <td><strong>Edad:</strong></td>
-    <td></td>
+    <td>19 años</td>
   </tr>
 
   <tr>
     <td><strong>Distrito:</strong></td>
-    <td></td>
+    <td>Comas</td>
   </tr>
 
   <tr>
     <td><strong>URL del video:</strong></td>
     <td>
+    https://upcedupe-my.sharepoint.com/:v:/g/personal/u201822823_upc_edu_pe/IQAdyVDZ2_ILS5z6JYOxOEmWAen_dqYLvB3uLf90INsKNSc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tLIThZ
        <br>
+       Timing: 02:00
        <br>
+       Duracion: 06:07
     </td>
   </tr>
 
   <tr>
     <td><strong>Screenshot del video:</strong></td>
     <td>
-      <img src="">
+      <img src="assets/chapter02/entrevistas/entr3-seg1.png">
     </td>
   </tr>
 
   <tr>
-    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td> 
   </tr>
-
+  
   <tr>
     <td colspan="2">
-      
+      Matias comentó que suele tener dificultades al momento de aplicar a descuentos en la tienda, ya que en muchas ocasiones no logra visualizar claramente los precios actualizados o las promociones disponibles, lo que genera confusión y desconfianza durante la compra. Asimismo, señaló que le gustaría contar con una aplicación donde pueda ver de forma rápida y clara los descuentos, cupones y precios finales, facilitando así su decisión de compra y mejorando su experiencia como cliente.    
+    </td>
+  </tr>
+
 </table>
 
 #### Segmento 2: Empresas afiliadas
@@ -1347,16 +1353,14 @@ El Impact Map de Klippr alinea objetivos de negocio (reducir fraude, construir d
 <br>
 
 <p align="center">
-    <img src="assets/chapter02/impact-map/Segmento 1_ Usuarios.png" width="300" alt="Users">
+    <img src="assets/chapter02/impact-map/Segmento 1_ Usuarios.png">
 </p>
 
 <br>
 
 #### Segmento 2: Empresas afiliadas(B2B)
 
-<p align="center">
-    <img src="assets/chapter02/impact-map/Segmento 2_ Empresas afiliadas (1).png" width="300" alt="Companies">
-</p>
+<img src="assets/chapter02/impact-map/Segmento 2_ Empresas afiliadas (1).png">
 
 ### 2.4.3. Product Backlog
 
@@ -2014,7 +2018,7 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 <p align="center">
-    <img src="assets/chapter02/BCIAM/codeDiag-iam.png">
+    <img src="assets/chapter02/BCIAM/cd-iam1.png">
 </p>
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
@@ -2022,4 +2026,597 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 <p align="center">
     <img src="assets/chapter02/BCIAM/diagbd-iam.png">
 </p>
+
+### 2.6.2. Bounded Context: Profile
+
+Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context Profile de Klippr gestiona los perfiles de usuario (consumidor y negocio afiliado), incluyendo datos personales, información verificada, calificaciones y reseñas. Este contexto interactúa directamente con IAM para acceder a datos de identidad y con Community para la gestión de reseñas. A continuación se detallan las capas del Bounded Context.
+
+#### 2.6.2.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>ConsumerProfile</td>
+    <td>Perfil de usuario consumidor que compra/canjea descuentos en la plataforma.</td>
+    <td>Mantener la integridad de datos personales, preferencias, información de ahorro y historial de canjes del usuario consumidor.</td>
+    <td>Relacionado con IAM para obtener identidad del usuario; con Community para reseñas que realiza; con Analytics para estadísticas de ahorro.</td>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>BusinessProfile</td>
+    <td>Perfil de negocio afiliado que publica promociones en la plataforma.</td>
+    <td>Mantener la integridad de datos comerciales, estado de verificación, calificación agregada y disponibilidad del negocio.</td>
+    <td>Relacionado con IAM para obtener identidad del negocio; con Community para reseñas recibidas; con Promotions para control de descuentos publicados.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Commands:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreateConsumerProfileCommand</td>
+    <td>Comando para crear el perfil inicial de un consumidor post-registro.</td>
+    <td>Representar la intención de crear un perfil de consumidor básico con datos mínimos requeridos (nombre, ubicación, preferencias).</td>
+    <td>Desencadenado por el evento UserCreatedAsConsumer desde IAM.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>UpdateConsumerProfileCommand</td>
+    <td>Comando para actualizar información del perfil consumidor.</td>
+    <td>Representar la intención de modificar datos personales, preferencias de categoría, ubicación o foto de perfil.</td>
+    <td>Usado en el servicio de gestión de perfiles desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreateBusinessProfileCommand</td>
+    <td>Comando para crear el perfil inicial de un negocio post-registro.</td>
+    <td>Representar la intención de crear un perfil de negocio con datos iniciales: nombre comercial, RUC, categoría, ubicación.</td>
+    <td>Desencadenado por el evento UserCreatedAsBusiness desde IAM; inicia flujo de verificación.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>UpdateBusinessProfileCommand</td>
+    <td>Comando para actualizar información del perfil de negocio.</td>
+    <td>Representar la intención de modificar datos comerciales: nombre, categoría, descripción, ubicación, horarios.</td>
+    <td>Usado en el servicio de gestión de negocios desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>SubmitBusinessVerificationCommand</td>
+    <td>Comando para iniciar el proceso de verificación de un negocio.</td>
+    <td>Representar la intención de enviar documentación verificable (RUC, credencial comercial, foto de local) para validación.</td>
+    <td>Desencadena eventos VerificationDocumentSubmitted hacia servicio de verificación en Infrastructure.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>ApproveBusinessVerificationCommand</td>
+    <td>Comando para aprobar la verificación de un negocio (admin).</td>
+    <td>Representar la intención de validar y aprobar documentación del negocio, otorgando badge de verificado.</td>
+    <td>Usado por panel administrativo; genera evento ReputationBadgeGranted hacia Community context.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Queries:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetConsumerProfileByUserIdQuery</td>
+    <td>Consulta para obtener perfil completo de consumidor por su user ID.</td>
+    <td>Representar la intención de recuperar todos los datos del perfil consumidor: nombre, ubicación, preferencias, estadísticas de ahorro.</td>
+    <td>Usado por la aplicación móvil para mostrar perfil del usuario.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetBusinessProfileByUserIdQuery</td>
+    <td>Consulta para obtener perfil completo de negocio por su user ID.</td>
+    <td>Representar la intención de recuperar todos los datos del perfil de negocio: información comercial, estado verificación, calificación, badge.</td>
+    <td>Usado por dashboard B2B para mostrar información del negocio.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetVerificationStatusQuery</td>
+    <td>Consulta para obtener estado de verificación de un negocio.</td>
+    <td>Representar la intención de verificar si un negocio está verificado o en proceso de verificación.</td>
+    <td>Usado en Application Layer para autorización de operaciones sensibles (crear promociones).</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetBusinessRatingQuery</td>
+    <td>Consulta para obtener calificación promedio agregada de un negocio.</td>
+    <td>Representar la intención de calcular el rating promedio basado en reseñas de Community context.</td>
+    <td>Usado en Interface Layer para mostrar calificación en feed de descuentos.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetProfilesWithVerificationPendingQuery</td>
+    <td>Consulta para obtener listado de perfiles pendientes de verificación (admin).</td>
+    <td>Representar la intención de obtener cola de verificación para procesamiento manual.</td>
+    <td>Usado en panel administrativo para gestión de verificaciones.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Value Objects:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>VerificationStatus</td>
+    <td>Estado de verificación de un negocio en la plataforma.</td>
+    <td>Representar los estados posibles: PENDING, UNDER_REVIEW, VERIFIED, REJECTED, SUSPENDED.</td>
+    <td>Usado en BusinessProfile para determinar si puede operar en la plataforma.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Location</td>
+    <td>Ubicación geográfica del consumidor o negocio (latitud, longitud, dirección).</td>
+    <td>Encapsular datos de geolocalización con validación de formato y precisión.</td>
+    <td>Usado en ConsumerProfile y BusinessProfile para búsqueda por proximidad.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>BusinessCategory</td>
+    <td>Categoría del negocio afiliado (gastronomía, retail, servicios, etc).</td>
+    <td>Encapsular la categoría como taxonomía controlada para filtrado y análisis.</td>
+    <td>Usado en BusinessProfile para segmentación de negocios.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Rating</td>
+    <td>Calificación promedio de un negocio (0-5 estrellas).</td>
+    <td>Encapsular el rating calculado con número de reseñas, median, varianza.</td>
+    <td>Agregado desde Community context; mostrado en móvil.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>SavingsStatistics</td>
+    <td>Estadísticas de ahorro acumulado del consumidor.</td>
+    <td>Encapsular total ahorrado, número de canjes, promedio por canje, últimas compras.</td>
+    <td>Calculado desde Redemption context; mostrado en perfil B2C.</td>
+  </tr>
+</table>
+
+**Sub-capa Services:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IConsumerProfileCommandService</td>
+    <td>Interfaz del servicio de comandos para perfiles de consumidor.</td>
+    <td>Estipular contratos para crear y actualizar perfiles de consumidor.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IBusinessProfileCommandService</td>
+    <td>Interfaz del servicio de comandos para perfiles de negocio.</td>
+    <td>Estipular contratos para crear, actualizar y verificar perfiles de negocio.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IProfileQueryService</td>
+    <td>Interfaz del servicio de consultas para perfiles.</td>
+    <td>Estipular contratos para obtener perfiles, verificación, ratings.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Repositories:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IConsumerProfileRepository</td>
+    <td>Repositorio para operaciones de persistencia de ConsumerProfile.</td>
+    <td>Definir contratos para operaciones CRUD y búsquedas especializadas por ubicación.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IBusinessProfileRepository</td>
+    <td>Repositorio para operaciones de persistencia de BusinessProfile.</td>
+    <td>Definir contratos para operaciones CRUD, búsquedas por verificación, categoría, ubicación.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.2.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>ConsumerProfileResource</td>
+    <td>Estructura de respuesta con datos del perfil consumidor.</td>
+    <td>Representar perfil de consumidor: nombre, avatar, ubicación, preferencias, estadísticas de ahorro.</td>
+    <td>Usado en ProfileController para respuestas GET perfil.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>UpdateConsumerProfileResource</td>
+    <td>Estructura de petición para actualizar perfil consumidor.</td>
+    <td>Representar y validar campos editables: nombre, ubicación, preferencias de categoría, avatar.</td>
+    <td>Usado en ProfileController para recibir peticiones PUT.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>BusinessProfileResource</td>
+    <td>Estructura de respuesta con datos del perfil de negocio.</td>
+    <td>Representar perfil de negocio: nombre comercial, categoría, ubicación, horarios, verificación, rating, badge.</td>
+    <td>Usado en ProfileController y en feeds de descuentos para mostrar información verificada.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>UpdateBusinessProfileResource</td>
+    <td>Estructura de petición para actualizar perfil de negocio.</td>
+    <td>Representar y validar campos editables: nombre, descripción, categoría, ubicación, horarios.</td>
+    <td>Usado en ProfileController para recibir peticiones PUT desde dashboard B2B.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>VerificationDocumentResource</td>
+    <td>Estructura para envío de documentos de verificación.</td>
+    <td>Representar documentación verificable: RUC, credencial comercial, foto de local, certificados.</td>
+    <td>Usado en VerificationController para proceso de verificación B2B.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Transform:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>ConsumerProfileResourceFromEntityAssembler</td>
+    <td>Transforma entidad ConsumerProfile a ConsumerProfileResource.</td>
+    <td>Convertir entidad del dominio a REST incluyendo estadísticas de ahorro agregadas.</td>
+    <td>Usado en ProfileController para respuestas GET.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>CreateConsumerProfileCommandFromResourceAssembler</td>
+    <td>Transforma ConsumerProfileResource a CreateConsumerProfileCommand.</td>
+    <td>Convertir petición REST al comando del dominio para creación.</td>
+    <td>Usado en ProfileController para recibir datos de creación.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>BusinessProfileResourceFromEntityAssembler</td>
+    <td>Transforma entidad BusinessProfile a BusinessProfileResource.</td>
+    <td>Convertir entidad del dominio a REST incluyendo badge de verificación y rating agregado.</td>
+    <td>Usado en ProfileController y feeds para mostrar negocio verificado.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>VerificationDocumentCommandFromResourceAssembler</td>
+    <td>Transforma VerificationDocumentResource a SubmitBusinessVerificationCommand.</td>
+    <td>Convertir petición REST con documentos al comando de verificación.</td>
+    <td>Usado en VerificationController para iniciar flujo de verificación.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Controllers:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>ProfileController</td>
+    <td>Controlador para operaciones de gestión de perfiles (consumidor y negocio).</td>
+    <td>Manejar peticiones HTTP GET/PUT de obtener y actualizar perfiles de usuarios.</td>
+    <td>Usa command/query services de Application Layer; requiere autorización desde IAM context.</td>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>VerificationController</td>
+    <td>Controlador para flujo de verificación de negocios.</td>
+    <td>Manejar peticiones POST de envío de documentación y GET de estado de verificación.</td>
+    <td>Usa business profile services; genera eventos hacia servicio de verificación en Infrastructure.</td>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>AdminProfileController</td>
+    <td>Controlador para operaciones administrativas en perfiles.</td>
+    <td>Manejar aprobación/rechazo de verificaciones, gestión de perfiles suspendidos (admin only).</td>
+    <td>Requiere rol ADMIN desde IAM context; usa profile command services.</td>
+  </tr>
+</table>
+
+**Sub-capa ACL:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>ProfileContextFacade</td>
+    <td>Servicio de fachada para el contexto Profile.</td>
+    <td>Proporcionar interfaz simplificada para que otros bounded contexts (Promotions, Community, Redemption, Analytics) accedan a información de perfil sin acceso directo al dominio.</td>
+    <td>Relacionado con Promotions (verificación antes de crear oferta), Community (reseñas), Analytics (datos para dashboard).</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.2.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>ConsumerProfileCommandService</td>
+    <td>Implementación de comandos para perfiles de consumidor.</td>
+    <td>Implementar creación y actualización de ConsumerProfile, coordinando persistencia y eventos de cambio de preferencias.</td>
+    <td>Implementa IConsumerProfileCommandService del Domain;</td>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>BusinessProfileCommandService</td>
+    <td>Implementación de comandos para perfiles de negocio.</td>
+    <td>Implementar creación, actualización y verificación de BusinessProfile, coordinando con servicio de verificación externo.</td>
+    <td>Implementa IBusinessProfileCommandService del Domain; coordina con servicio de verificación.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - OutboundServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IVerificationService</td>
+    <td>Interfaz para servicio de verificación de negocios.</td>
+    <td>Definir contratos para envío de documentación, validación OCR/manual, y notificación de resultados.</td>
+    <td>Implementado en Infrastructure; usuario por BusinessProfileCommandService.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IEventPublisher</td>
+    <td>Interfaz para publicar eventos de cambios en contexto Profile.</td>
+    <td>Definir contratos para eventos: VerificationDocumentSubmitted, ProfileUpdated, ReputationBadgeGranted.</td>
+    <td>Implementado en Infrastructure; usado para comunicación inter-contexto (Community, Analytics).</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IRatingAggregator</td>
+    <td>Interfaz para agregar ratings desde Community context.</td>
+    <td>Definir contrato para obtener rating promedio, número de reseñas, tendencia de un negocio.</td>
+    <td>Consulta datos desde Community context; usado en queries de perfil de negocio.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - QueryServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>ProfileQueryService</td>
+    <td>Implementación de queries para obtener perfiles y datos verificados.</td>
+    <td>Implementar búsquedas por usuario ID, ubicación, categoría, verificación, ratings agregados desde Community.</td>
+    <td>Implementa IProfileQueryService del Domain; coordina con IRatingAggregator para datos de reseñas.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.2.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>ConsumerProfileRepository</td>
+    <td>Repositorio concreto para ConsumerProfile persistidos en BD.</td>
+    <td>Acceder y manipular datos de perfiles de consumidor, con índices en ubicación para búsquedas geoespaciales.</td>
+    <td>Usado en Application Layer para crear/actualizar/consultar perfiles consumidor.</td>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>BusinessProfileRepository</td>
+    <td>Repositorio concreto para BusinessProfile persistidos en BD.</td>
+    <td>Acceder y manipular datos de perfiles de negocio, con índices en categoría, ubicación, estado de verificación.</td>
+    <td>Usado en Application Layer para operaciones CRUD y búsquedas especializadas de negocios.</td>
+  </tr>
+</table>
+
+**Sub-capa Verification:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>VerificationService</td>
+    <td>Servicio de verificación de documentación de negocios.</td>
+    <td>Coordinar validación de RUC/credenciales, almacenamiento de documentos, notificación de resultados y cambio de VerificationStatus.</td>
+    <td>Implementa IVerificationService de Application Layer; persiste en repositorio BusinessProfile.</td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>DocumentStorageService</td>
+    <td>Servicio para almacenamiento seguro de documentos de verificación.</td>
+    <td>Guardar documentos en storage distribuido (S3/Azure Blob), con encriptación y retención según políticas.</td>
+    <td>Usado por VerificationService; integración con proveedor de almacenamiento en la nube.</td>
+  </tr>
+</table>
+
+**Sub-capa Pipeline (Middleware):**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Component</td>
+    <td>ProfileEnrichmentMiddleware</td>
+    <td>Middleware que enriquece contexto de peticiones con datos de perfil verificado.</td>
+    <td>Inyectar información de BusinessVerificationStatus en contexto para autorización de operaciones sensibles (crear promoción).</td>
+    <td>Parte del pipeline de autenticación; requerido por Promotions context.</td>
+  </tr>
+  <tr>
+    <td>Component</td>
+    <td>LocationCachingMiddleware</td>
+    <td>Middleware para cachear datos de ubicación de perfiles.</td>
+    <td>Mantener cache de ubicaciones para optimizar búsquedas geoespaciales frecuentes.</td>
+    <td>Integración con Redis; mejora performance de búsquedas por proximidad.</td>
+  </tr>
+</table>
+
+**Sub-capa Event Publishing:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>ProfileEventPublisher</td>
+    <td>Servicio para publicación de eventos de dominio en message broker.</td>
+    <td>Publicar eventos: ProfileCreated, ProfileUpdated, VerificationDocumentSubmitted, ReputationBadgeGranted a través de RabbitMQ/Kafka.</td>
+    <td>Implementa IEventPublisher de Application Layer; integración con message broker.</td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>RatingAggregatorService</td>
+    <td>Servicio que agrega ratings desde Community context.</td>
+    <td>Consultar reseñas de un negocio desde Community boundary, calcular rating promedio, mediana, tendencia.</td>
+    <td>Implementa IRatingAggregator de Application Layer; comunicación inter-contexto con Community.</td>
+  </tr>
+</table>
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/com-Profile.jpeg">
+</p>
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCProf/dcProf.png">
+</p>
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+    <img src="assets/chapter02/BCProf/bdProf.png">
+</p>
+
 
