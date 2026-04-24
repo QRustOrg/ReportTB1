@@ -366,11 +366,11 @@ Este proceso permitió identificar los eventos clave, los actores involucrados, 
 
 ![KlipprContextDiagram](assets/chapter02/KlipprContextDiagram.png)
 
-### 2.5.3.1. Software Architecture Container Level Diagrams
+### 2.5.3.2. Software Architecture Container Level Diagrams
 
 ![KlipprContainerDiagram](assets/chapter02/KlipprContainerDiagram.png)
 
-### 2.5.3.1. Software Architecture Deployment Level Diagrams
+### 2.5.3.3. Software Architecture Deployment Level Diagrams
 
 ### 2.6.3. Bounded Context: Analytics
 
@@ -523,7 +523,7 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context Analy
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 <p align="center">
-    <img src="assets/chapter02/comps-diagr/comp-Iam.jpeg">
+    <img src="assets/chapter02/comps-diagr/comp-Analytics.jpeg">
 </p>
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
