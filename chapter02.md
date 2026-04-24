@@ -167,11 +167,11 @@ En esta sección se presentan las fichas de User Personas construidas a partir d
 
 ## Segmento Objetivo 1: Usuario consumidor (B2C)
 
-![UserPersona-Segmento1](assets/chapter02/UserPersona-Segmento1.png)
+![UserPersona-Segmento1](assets/chapter02/user-alexander.png)
 
 ## Segmento Objetivo 2: Empresas afiliadas (B2B)
 
-![UserPersona-Segmento2](assets/chapter02/UserPersona-Segmento2.png)
+![UserPersona-Segmento2](assets/chapter02/user-lizbeth.png)
 
 ### 2.3.2. User Task Matrix
 
