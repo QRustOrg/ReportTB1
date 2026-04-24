@@ -92,11 +92,11 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
       <td></td>
     </tr>
     <tr>
-      <td>Alejandro Manuel Galindo Montero<br>(U202321264)</td>
+      <td>Galindo Montero, Alejandro Manuel<br>(U202321264)</td>
       <td align="center">
         <img src="assets/Integrantes/alejandro.png" width="150">
       </td>
-      <td>Mi nombre es Alejandro Manuel Galindo Montero, tengo 21 años y curso la carrera de Ingeniería de Software. Me considero una persona creativa y responsable. En mis tiempos libres me gusta aprender cosas nuevas. En este proyecto apoyaré con todos los conocimientos que he adquirido en los últimos años.</td>
+      <td>Mi nombre es Galindo Montero, Alejandro Manuel, tengo 21 años y curso la carrera de Ingeniería de Software. Me considero una persona creativa y responsable. En mis tiempos libres me gusta aprender cosas nuevas. En este proyecto apoyaré con todos los conocimientos que he adquirido en los últimos años.</td>
     </tr>
   </tbody>
 </table>

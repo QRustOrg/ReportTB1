@@ -54,7 +54,7 @@
 | Bonifacio Jaramillo, Samuel Jesus | U202317269 |
 | Castro Pariona, Jefferson Ernesto | U201822823 |
 | Guillen Galindo, Julio Adolfo  | U20241A352 |
-| Alejandro Manuel, Galindo Montero| U202321264 |
+| Galindo Montero, Alejandro Manuel| U202321264 |
 | Ponce Perales Alberto Alejandro | U2023206804 |
 
 
@@ -197,7 +197,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
       <th> Capitulos I,II y Bibliografías</th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> Capitulos I,II y Bibliografías</th>
     </tr>
   </tbody>
@@ -238,7 +238,7 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -278,7 +278,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB2, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>

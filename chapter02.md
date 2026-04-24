@@ -2369,10 +2369,391 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context **Ana
     <img src="assets/chapter02/BCAnalytics/analytics-database-diagram.png">
 </p>
 
+### 2.6.4. Bounded Context: Redemption
 
-### 2.6.5. Bounded Context: Settings
+Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Redemption de Klippr** gestiona el **proceso de canje de promociones** por parte de los consumidores en los negocios afiliados. Asegura que los códigos de promoción sean válidos, no estén expirados y que se respeten los límites de uso. Este contexto interactúa con **Promotions** para validar la oferta y con **Profile** para identificar al consumidor y al negocio.
+
+#### 2.6.4.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>Redemption</td>
+    <td>Transacción de canje de una promoción por un usuario.</td>
+    <td>Registrar el intento de canje, validar el código y mantener el estado final de la transacción.</td>
+    <td>Relacionado con Promotion (oferta canjeada) y ConsumerProfile (usuario que canjea).</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Commands:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>RedeemPromotionCommand</td>
+    <td>Comando para iniciar el canje de una promoción.</td>
+    <td>Representar la intención de un consumidor de utilizar un código de promoción en un negocio.</td>
+    <td>Usado en Application Layer. Inicia la validación con Promotions context.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>ConfirmRedemptionCommand</td>
+    <td>Comando para confirmar un canje exitoso por parte del negocio.</td>
+    <td>Representar la validación física o finalización del uso del descuento en tienda.</td>
+    <td>Actualiza el estado de Redemption a COMPLETED.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Queries:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetRedemptionByIdQuery</td>
+    <td>Consulta para obtener los detalles de un canje específico.</td>
+    <td>Recuperar la información del recibo o comprobante digital del canje.</td>
+    <td>Usado para mostrar detalles al consumidor o negocio.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetRedemptionsByConsumerIdQuery</td>
+    <td>Consulta el historial de canjes de un consumidor.</td>
+    <td>Listar todas las promociones que ha utilizado un usuario a lo largo del tiempo.</td>
+    <td>Usado en la sección de historial de la app móvil.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetRedemptionsByBusinessIdQuery</td>
+    <td>Consulta los canjes realizados en un negocio.</td>
+    <td>Proporcionar datos operativos de las promociones reclamadas en una sucursal o negocio.</td>
+    <td>Usado en el dashboard operativo B2B.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Value Objects:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>RedemptionStatus</td>
+    <td>Estado actual del canje.</td>
+    <td>Representar estados: PENDING, COMPLETED, FAILED, CANCELLED.</td>
+    <td>Usado en Redemption para flujo de estado.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>RedemptionCode</td>
+    <td>Código único generado para el canje.</td>
+    <td>Encapsular la lógica de generación y formato del código alfanumérico o QR.</td>
+    <td>Usado para validar presencialmente o digitalmente.</td>
+  </tr>
+</table>
+
+**Sub-capa Services:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IRedemptionCommandService</td>
+    <td>Interfaz del servicio de comandos de canjes.</td>
+    <td>Definir operaciones para registrar, validar y confirmar canjes.</td>
+    <td>Implementado en capa Application.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IRedemptionQueryService</td>
+    <td>Interfaz del servicio de consultas de canjes.</td>
+    <td>Definir operaciones para historiales y detalles de canjes.</td>
+    <td>Implementado en capa Application.</td>
+  </tr>
+</table>
+
+**Sub-capa Repositories:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IRedemptionRepository</td>
+    <td>Repositorio para persistencia de Redemption.</td>
+    <td>Definir operaciones CRUD y búsquedas de canjes.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+</table>
 
 ---
+
+#### 2.6.4.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>RedemptionResource</td>
+    <td>Representación del canje para el cliente.</td>
+    <td>Exponer detalles como fecha, estado, código y descuento aplicado.</td>
+    <td>Usado en RedemptionController.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>RedeemPromotionResource</td>
+    <td>Estructura de petición para canjear.</td>
+    <td>Recibir datos necesarios como promotionId para iniciar proceso.</td>
+    <td>Usado en RedemptionController.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Transform:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>RedemptionResourceFromEntityAssembler</td>
+    <td>Transforma entidad Redemption a recurso.</td>
+    <td>Convertir datos de dominio a formato REST.</td>
+    <td>Usado en RedemptionController.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>RedeemPromotionCommandFromResourceAssembler</td>
+    <td>Transforma petición a comando.</td>
+    <td>Convertir datos REST al comando del dominio.</td>
+    <td>Usado en RedemptionController.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Controllers:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>RedemptionController</td>
+    <td>Controlador de operaciones de canjes.</td>
+    <td>Manejar endpoints para realizar y consultar canjes.</td>
+    <td>Usa command/query services de Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa ACL:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>RedemptionContextFacade</td>
+    <td>Servicio de fachada de Redemption.</td>
+    <td>Proporcionar resumen de canjes para otros contextos sin acceso directo al repositorio.</td>
+    <td>Relacionado con Analytics context.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.4.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>RedemptionCommandService</td>
+    <td>Implementación de comandos de canjes.</td>
+    <td>Ejecutar validación de disponibilidad contactando a PromotionsContextFacade, y registrar el canje.</td>
+    <td>Implementa IRedemptionCommandService.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - QueryServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>RedemptionQueryService</td>
+    <td>Implementación de consultas de canjes.</td>
+    <td>Recuperar historiales de canjes por usuario o negocio desde DB.</td>
+    <td>Implementa IRedemptionQueryService.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.4.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>RedemptionRepository</td>
+    <td>Implementación de persistencia de Redemption.</td>
+    <td>Manejar operaciones en base de datos para entidades de canje.</td>
+    <td>Usado en Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Event Publishing:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>RedemptionEventPublisher</td>
+    <td>Publicador de eventos de canjes.</td>
+    <td>Emitir eventos como PromotionRedeemed para que Analytics actualice métricas de campaña.</td>
+    <td>Notifica a Analytics context.</td>
+  </tr>
+</table>
+
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-Redemption.jpeg">
+</p>
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.4.6.1 Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCRedemption/redemption-class-diagram.png">
+</p>
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagrams
+
+| Tipo     | Campo             | Key    | Descripción                                 |
+| -------- | ----------------- | ------ | ------------------------------------------- |
+| int      | id                | PK     | Identificador único del registro del canje  |
+| datetime | created_at        |        | Fecha y hora en que se creó el registro     |
+| datetime | updated_at        |        | Fecha y hora de la última actualización     |
+| UUID     | user_id           | FK     | Identificador del usuario consumidor        |
+| string   | promotion_id      | FK     | Identificador de la promoción asociada      |
+| UUID     | qr_code           | UNIQUE | Código QR generado para el canje            |
+| UUID     | unique_token      | UNIQUE | Token interno irrepetible anti-fraude       |
+| string   | status            |        | Estado actual del canje                     |
+| datetime | generated_at      |        | Fecha y hora de generación del QR           |
+| datetime | redeemed_at       |        | Fecha y hora en que fue canjeado            |
+| datetime | blocked_at        |        | Fecha y hora en que fue bloqueado           |
+| datetime | expires_at        |        | Fecha y hora de expiración                  |
+| string   | validation_method |        | Método de validación: QR_SCAN o MANUAL_CODE |
+
+| Nombre            | Descripción                                               |
+| ----------------- | --------------------------------------------------------- |
+| id                | Identificador único del registro del canje.               |
+| created_at        | Fecha y hora en que se creó el registro.                  |
+| updated_at        | Fecha y hora de la última actualización del registro.     |
+| user_id           | Usuario que generó el código QR.                          |
+| promotion_id      | Promoción vinculada al canje.                             |
+| qr_code           | Código QR mostrado al usuario para validar el descuento.  |
+| unique_token      | Token interno único para prevenir reutilización o fraude. |
+| status            | Estado del canje: GENERATED, REDEEMED, BLOCKED, EXPIRED.  |
+| generated_at      | Fecha y hora en que se generó el QR.                      |
+| redeemed_at       | Fecha y hora en que se utilizó exitosamente.              |
+| blocked_at        | Fecha y hora en que fue invalidado después del uso.       |
+| expires_at        | Fecha límite de uso del QR.                               |
+| validation_method | Método usado para validar: escaneo o código manual.       |
+
+
+
+
+### 2.6.5. Bounded Context: Settings
 
 #### 2.6.5.1. Domain Layer
 
@@ -2896,3 +3277,377 @@ Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Pro
 <p align="center">
     <img src="assets/chapter02/BCPromotions/promotions-database-diagram.png">
 </p>
+
+### 2.6.7. Bounded Context: Community
+
+Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Community de Klippr** gestiona las **interacciones sociales, reseñas y calificaciones** que los consumidores dejan sobre los negocios afiliados y sus promociones. Fomenta la confianza en la plataforma y provee retroalimentación valiosa, interactuando estrechamente con **Profile** para agregar la reputación y con **Analytics** para detectar y gestionar reportes de abuso en las opiniones.
+
+#### 2.6.7.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>Review</td>
+    <td>Reseña y calificación dejada por un consumidor.</td>
+    <td>Mantener la integridad del contenido de la opinión, la calificación otorgada y su estado de moderación.</td>
+    <td>Relacionado con BusinessProfile (negocio evaluado) y ConsumerProfile (autor).</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Commands:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreateReviewCommand</td>
+    <td>Comando para publicar una nueva reseña.</td>
+    <td>Representar la intención del usuario de calificar y comentar su experiencia.</td>
+    <td>Usado en Application Layer. Genera evento ReviewCreated.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>ModerateReviewCommand</td>
+    <td>Comando para moderar u ocultar una reseña inapropiada.</td>
+    <td>Representar la decisión administrativa de cambiar la visibilidad de una opinión.</td>
+    <td>Usado por administradores a partir de reportes en Analytics.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Queries:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetReviewsByBusinessIdQuery</td>
+    <td>Consulta de reseñas para un negocio.</td>
+    <td>Listar todas las opiniones visibles asociadas a un comercio específico.</td>
+    <td>Usado en la pantalla de perfil del negocio.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetReviewsByConsumerIdQuery</td>
+    <td>Consulta de reseñas de un usuario.</td>
+    <td>Listar el historial de opiniones escritas por un consumidor.</td>
+    <td>Usado en el perfil personal del usuario.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Value Objects:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Rating</td>
+    <td>Puntuación cuantitativa.</td>
+    <td>Asegurar que el valor esté en el rango permitido (ej. 1 a 5 estrellas).</td>
+    <td>Usado dentro de Review.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>ReviewContent</td>
+    <td>Texto y contenido multimedia de la opinión.</td>
+    <td>Almacenar el texto de retroalimentación con límites de longitud y reglas de formato.</td>
+    <td>Usado dentro de Review.</td>
+  </tr>
+</table>
+
+**Sub-capa Services:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IReviewCommandService</td>
+    <td>Interfaz del servicio de comandos de reseñas.</td>
+    <td>Definir contratos para crear y moderar reseñas.</td>
+    <td>Implementado en capa Application.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IReviewQueryService</td>
+    <td>Interfaz del servicio de consultas de reseñas.</td>
+    <td>Definir contratos para obtener listas de reseñas.</td>
+    <td>Implementado en capa Application.</td>
+  </tr>
+</table>
+
+**Sub-capa Repositories:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IReviewRepository</td>
+    <td>Repositorio para persistencia de Review.</td>
+    <td>Definir operaciones CRUD y búsquedas de reseñas en la base de datos.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.7.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>ReviewResource</td>
+    <td>Representación de la reseña para el cliente.</td>
+    <td>Exponer puntuación, texto, autor y fecha.</td>
+    <td>Usado en ReviewController.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>CreateReviewResource</td>
+    <td>Estructura para enviar una nueva reseña.</td>
+    <td>Recibir los datos introducidos por el usuario para calificar un negocio.</td>
+    <td>Usado en ReviewController.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Transform:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>ReviewResourceFromEntityAssembler</td>
+    <td>Transforma entidad Review a recurso.</td>
+    <td>Convertir datos de dominio a REST.</td>
+    <td>Usado en ReviewController.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>CreateReviewCommandFromResourceAssembler</td>
+    <td>Transforma petición a comando.</td>
+    <td>Convertir JSON de creación al comando del dominio.</td>
+    <td>Usado en ReviewController.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Controllers:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>ReviewController</td>
+    <td>Controlador de reseñas.</td>
+    <td>Manejar endpoints para publicar y visualizar opiniones.</td>
+    <td>Usa servicios de Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa ACL:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>CommunityContextFacade</td>
+    <td>Fachada del contexto Community.</td>
+    <td>Proveer acceso controlado a datos agregados de reseñas para otros módulos.</td>
+    <td>Usado por Profile para calcular promedio de calificaciones.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.7.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>ReviewCommandService</td>
+    <td>Implementación de comandos de reseñas.</td>
+    <td>Procesar la creación de opiniones y asegurar su validación inicial.</td>
+    <td>Implementa IReviewCommandService.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - QueryServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>ReviewQueryService</td>
+    <td>Implementación de consultas de reseñas.</td>
+    <td>Recuperar listas paginadas de opiniones.</td>
+    <td>Implementa IReviewQueryService.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.7.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>ReviewRepository</td>
+    <td>Implementación de persistencia de Review.</td>
+    <td>Interactuar con la base de datos para almacenar y leer opiniones.</td>
+    <td>Usado en Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Event Publishing:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>CommunityEventPublisher</td>
+    <td>Publicador de eventos de comunidad.</td>
+    <td>Emitir eventos de ReviewCreated para actualizar estadísticas en otros módulos.</td>
+    <td>Notifica al Profile context para recálculo de Rating.</td>
+  </tr>
+</table>
+
+#### 2.6.7.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-Community.jpeg">
+</p>
+
+#### 2.6.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.7.6.1 Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCCommunity/community-class-diagram.png">
+</p>
+
+##### 2.6.7.6.2. Bounded Context Database Design Diagrams
+
+| Tipo     | Campo         | Key | Descripción                                              |
+| -------- | ------------- | --- | -------------------------------------------------------- |
+| int      | id            | PK  | Identificador único de la reseña.                        |
+| datetime | created_at    |     | Fecha y hora en que se creó la reseña.                   |
+| datetime | updated_at    |     | Fecha y hora de la última actualización.                 |
+| string   | user_id       | FK  | Identificador del usuario que publicó la reseña.         |
+| string   | promotion_id  | FK  | Identificador de la promoción reseñada.                  |
+| string   | redemption_id | FK  | Identificador del canje completado asociado a la reseña. |
+| int      | rating        |     | Calificación otorgada por el usuario, de 1 a 5.          |
+| text     | comment       |     | Comentario escrito por el usuario sobre la promoción.    |
+| varchar  | status        |     | Estado de la reseña: PUBLISHED, HIDDEN o REPORTED.       |
+| varchar  | review_id     | FK  | Identificador de la reseña comentada.                    |
+| text     | content       |     | Contenido del comentario.                                |
+| varchar  | business_id   | FK  | Identificador del negocio que responde.                  |
+
+| Nombre           | Descripción                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| id               | Identificador único de la reseña registrada en el sistema.                                 |
+| reviews          | Almacena las reseñas y calificaciones realizadas por usuarios después de un canje exitoso. |
+| comments         | Almacena comentarios de usuarios sobre reseñas publicadas.                                 |
+| business_replies | Almacena respuestas de negocios afiliados a reseñas de usuarios.                           |
+| likes            | Registra los likes realizados por usuarios sobre reseñas.                                  |
+| created_at       | Fecha y hora en que la reseña fue creada.                                                  |
+| updated_at       | Fecha y hora de la última modificación de la reseña.                                       |
+| user_id          | Usuario consumidor autor de la reseña.                                                     |
+| promotion_id     | Promoción evaluada por el usuario.                                                         |
+| redemption_id    | Canje exitoso que habilitó la reseña.                                                      |
+| rating           | Calificación numérica otorgada entre 1 y 5 estrellas.                                      |
+| status           | Estado actual de la reseña (publicada, reportada, oculta).                                 |
+| content          | Texto del comentario publicado.                                                            |
+| business_id      | Negocio afiliado que responde.                                                             |
