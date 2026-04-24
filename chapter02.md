@@ -261,42 +261,44 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td><strong>Nombre:</strong></td>
-    <td></td>
+    <td>Matias Flores</td>
   </tr>
 
   <tr>
     <td><strong>Edad:</strong></td>
-    <td></td>
+    <td>19 años</td>
   </tr>
 
   <tr>
     <td><strong>Distrito:</strong></td>
-    <td></td>
+    <td>Comas</td>
   </tr>
 
   <tr>
     <td><strong>URL del video:</strong></td>
     <td>
-      [Pegar URL aquí] <br>
-      Timing: <br>
-      Duración:
+    https://upcedupe-my.sharepoint.com/:v:/g/personal/u201822823_upc_edu_pe/IQAdyVDZ2_ILS5z6JYOxOEmWAen_dqYLvB3uLf90INsKNSc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tLIThZ
+       <br>
+       Timing: 02:00
+       <br>
+       Duracion: 06:07
     </td>
   </tr>
 
   <tr>
     <td><strong>Screenshot del video:</strong></td>
     <td>
-      <img src="">
+      <img src="assets/chapter02/entrevistas/entr3-seg1.png">
     </td>
   </tr>
 
   <tr>
-    <td colspan="2"><strong>Resumen de la entrevista:</strong></td>
+    <td colspan="2"><strong>Resumen de la entrevista:</strong></td> 
   </tr>
-
+  
   <tr>
     <td colspan="2">
-      <!-- Escribe aquí el resumen -->
+      Matias comentó que suele tener dificultades al momento de aplicar a descuentos en la tienda, ya que en muchas ocasiones no logra visualizar claramente los precios actualizados o las promociones disponibles, lo que genera confusión y desconfianza durante la compra. Asimismo, señaló que le gustaría contar con una aplicación donde pueda ver de forma rápida y clara los descuentos, cupones y precios finales, facilitando así su decisión de compra y mejorando su experiencia como cliente.    
     </td>
   </tr>
 
@@ -401,32 +403,32 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td><strong>Nombre:</strong></td>
-    <td></td>
+    <td>Sonia Galindo</td>
   </tr>
 
   <tr>
     <td><strong>Edad:</strong></td>
-    <td></td>
+    <td>58 años</td>
   </tr>
 
   <tr>
     <td><strong>Distrito:</strong></td>
-    <td></td>
+    <td>Jesus Maria</td>
   </tr>
 
   <tr>
     <td><strong>URL del video:</strong></td>
     <td>
-      [Pegar URL aquí] <br>
-      Timing: <br>
-      Duración:
+      https://upcedupe-my.sharepoint.com/:v:/g/personal/u201822823_upc_edu_pe/IQCyNoWHm-rmRIhlqX64BFGGAYzS70GNYrlMcyYnh344q-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GVZ2FI <br>
+      Timing: 01:30 <br>
+      Duración: 03:24
     </td>
   </tr>
 
   <tr>
     <td><strong>Screenshot del video:</strong></td>
     <td>
-      <img src="">
+      <img src="assets/chapter02/entrevistas/Entrevista-seg2.png">
     </td>
   </tr>
 
@@ -436,7 +438,7 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
   <tr>
     <td colspan="2">
-      <!-- Escribe aquí el resumen -->
+      Sonia Galindo quien es dueña de la tienda y responsable de la gestión operativa, explicó que se encarga de planificar, implementar y supervisar las estrategias de descuentos y cupones con el objetivo de atraer clientes y aumentar las ventas. Señaló que estas promociones se definen según temporadas, niveles de inventario y comportamiento del cliente, y que actualmente su control se realiza de forma manual o con herramientas básicas, lo que dificulta el seguimiento y la medición de resultados. Además, destacó la importancia de equilibrar las ofertas para no afectar la rentabilidad del negocio y manifestó interés en implementar soluciones tecnológicas que permitan automatizar la gestión y mejorar la toma de decisiones mediante análisis en tiempo real.
     </td>
   </tr>
 
@@ -446,6 +448,336 @@ Para mitigar amenazas como la competencia de **superapps** con módulos promocio
 
 ### 2.2.3. Análisis de entrevistas
 
+En esta sección se presentan los hallazgos de las entrevistas realizadas a ambos segmentos objetivo, basados en evidencia empírica. Se ha realizado un análisis de características objetivas (demográficas, operacionales) y subjetivas (necesidades, comportamientos, expectativas) identificadas en las entrevistas, respaldadas con datos cuantitativos que sustentan los arquetipos de usuario.
+
+#### **Análisis Segmento 1: Usuarios Consumidores (B2C)**
+
+**Perfil Demográfico:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Datos</th>
+  </tr>
+  <tr>
+    <td>Número de entrevistados</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Edad promedio</td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td>Rango de edad</td>
+    <td>22 - 24 años</td>
+  </tr>
+  <tr>
+    <td>Distritos representados</td>
+    <td>Callao (50%), Pueblo Libre (50%)</td>
+  </tr>
+  <tr>
+    <td>Género</td>
+    <td>Mixto</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Entrevista 1 (Andrés Rodríguez, 22 años) y Entrevista 2 (Lewis Alexis Rengifo, 24 años).
+
+---
+
+**Características Objetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Frecuencia</th>
+    <th>Porcentaje</th>
+    <th>Evidencia en Entrevistas</th>
+  </tr>
+  <tr>
+    <td>Busca activamente descuentos en redes sociales</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "Busca descuentos en redes sociales"</td>
+  </tr>
+  <tr>
+    <td>Realiza compras/entretenimiento con alta frecuencia</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Ambos mencionan salidas frecuentes para compras y entretenimiento</td>
+  </tr>
+  <tr>
+    <td>Ha experimentado problemas con cupones inválidos</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Andrés: "experiencias negativas con cupones inválidos"; Lewis: "fallos al pagar"</td>
+  </tr>
+  <tr>
+    <td>Valora facilidad y rapidez de uso</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Andrés: "rápida y sencilla"; Lewis: "rápida, fácil de usar"</td>
+  </tr>
+  <tr>
+    <td>Utiliza reseñas como criterio de confianza</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "Valora mucho las reseñas reales"; Ambos consideran importante leer reseñas</td>
+  </tr>
+  <tr>
+    <td>Demanda transparencia en condiciones de promociones</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "falta de claridad en las condiciones"</td>
+  </tr>
+  <tr>
+    <td>Prioriza seguridad y verificación</td>
+    <td>2 de 2</td>
+    <td>100%</td>
+    <td>Lewis: "promociones verificadas"; Andrés valora "confiabilidad"</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Análisis de resúmenes de Entrevista 1 y 2, Segmento 1.
+
+---
+
+**Características Subjetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Necesidad/Comportamiento</th>
+    <th>Descripción</th>
+    <th>Evidencia</th>
+    <th>Impacto en Requisitos</th>
+  </tr>
+  <tr>
+    <td><strong>Confianza en la plataforma</strong></td>
+    <td>Necesidad crítica de validar la autenticidad de descuentos antes de aplicarlos. Desconfianza derivada de experiencias negativas previas</td>
+    <td>Andrés: "experiencias negativas"; Lewis: "confía en promociones verificadas"</td>
+    <td>Requerimiento: Sistema de verificación de empresas, badges de validación, historial de ratings</td>
+  </tr>
+  <tr>
+    <td><strong>Experiencia sin fricción</strong></td>
+    <td>Expectativa de que el proceso de búsqueda, canje e integración sea inmediato y sin pasos innecesarios</td>
+    <td>Andrés: "experiencia rápida"; Lewis: "fácil de usar"</td>
+    <td>Requerimiento: UX optimizada, canje con QR de un clic, confirmación inmediata</td>
+  </tr>
+  <tr>
+    <td><strong>Prueba social como validador</strong></td>
+    <td>Los usuarios consultan reseñas y ratings de otros usuarios antes de canjear promociones; esto reduce incertidumbre</td>
+    <td>Lewis: "reseñas reales y promociones verificadas"; Ambos valoran reseñas</td>
+    <td>Requerimiento: Sistema de comentarios integrado, ratings visibles previo al canje</td>
+  </tr>
+  <tr>
+    <td><strong>Optimización de gasto</strong></td>
+    <td>Motivación principal: ahorrar dinero en actividades cotidianas de entretenimiento y alimentación</td>
+    <td>Ambos buscan activamente descuentos</td>
+    <td>Requerimiento: Recomendaciones personalizadas, notificaciones de ofertas cercanas</td>
+  </tr>
+  <tr>
+    <td><strong>Transparencia operacional</strong></td>
+    <td>Demanda de claridad en términos, condiciones y aplicación de descuentos al momento de pago</td>
+    <td>Lewis: "falta de claridad en condiciones"; Andrés menciona "fallos al pagar"</td>
+    <td>Requerimiento: Visualización clara de términos, comparación de precios aplicados, confirmación pre-canje</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Síntesis de resúmenes de entrevistas, Segmento 1.
+
+---
+
+#### **Análisis Segmento 2: Empresas Afiliadas (B2B)**
+
+**Perfil Operacional:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Datos</th>
+  </tr>
+  <tr>
+    <td>Número de entrevistados</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Edad promedio</td>
+    <td>39 años</td>
+  </tr>
+  <tr>
+    <td>Rango de edad</td>
+    <td>29 - 58 años</td>
+  </tr>
+  <tr>
+    <td>Distritos representados</td>
+    <td>Chorrillos (33%), Tarapoto (33%), Jesús María (33%)</td>
+  </tr>
+  <tr>
+    <td>Rol predominante</td>
+    <td>Dueños/gestores operacionales</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Entrevista 1 (Camila Huamani, 30 años), Entrevista 2 (Jesus Alexander Ponce, 29 años), Entrevista 3 (Sonia Galindo, 58 años).
+
+---
+
+**Características Objetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Característica</th>
+    <th>Frecuencia</th>
+    <th>Porcentaje</th>
+    <th>Evidencia en Entrevistas</th>
+  </tr>
+  <tr>
+    <td>Utiliza promociones como herramienta de marketing/competencia</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Todos mencionan uso activo: Camila (estrategias de lealtad), Jesus (competencia), Sonia (atraer clientes)</td>
+  </tr>
+  <tr>
+    <td>Enfrenta problemas significativos de fraude/reutilización de cupones</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Camila: "fraude y reutilización"; Jesus: "riesgo de fraude"; Sonia (implícito en control manual)</td>
+  </tr>
+  <tr>
+    <td>Carece de métricas claras de ROI/éxito de promociones</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Camila: "dificultades para medir impacto real"; Jesus: "falta de métricas"; Sonia: "dificulta seguimiento"</td>
+  </tr>
+  <tr>
+    <td>Realiza control manual/básico de descuentos</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Camila/Sonia: "herramientas básicas"; Jesus: interés en "validación QR" implica esto</td>
+  </tr>
+  <tr>
+    <td>Gestiona alto volumen de clientes</td>
+    <td>2 de 3</td>
+    <td>67%</td>
+    <td>Jesus: "alto flujo"; Implícito en Sonia (tienda física); Camila (empresaria con cartera)</td>
+  </tr>
+  <tr>
+    <td>Demanda soluciones de fácil integración operativa</td>
+    <td>3 de 3</td>
+    <td>100%</td>
+    <td>Sonia: "no retrase la atención"; Camila: "fácil de implementar"; Jesus: "ágil"</td>
+  </tr>
+  <tr>
+    <td>Valora retroalimentación de clientes (reseñas)</td>
+    <td>2 de 3</td>
+    <td>67%</td>
+    <td>Camila: "retroalimentación de clientes mediante reseñas"; Jesus: "generar confianza"</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Análisis de resúmenes de Entrevistas 1-3, Segmento 2.
+
+---
+
+**Características Subjetivas Identificadas:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Necesidad/Comportamiento</th>
+    <th>Descripción</th>
+    <th>Evidencia</th>
+    <th>Impacto en Requisitos</th>
+  </tr>
+  <tr>
+    <td><strong>Control contra fraude</strong></td>
+    <td>Preocupación crítica sobre pérdidas económicas por mal uso de cupones; ausencia de mecanismos robustos de validación</td>
+    <td>Camila: "pérdidas económicas", "mayor control"; Jesus: "evitar pérdidas"</td>
+    <td>Requerimiento: QR único irrepetible, bloqueo post-canje automático, auditoría de canjes</td>
+  </tr>
+  <tr>
+    <td><strong>Visibilidad analítica en tiempo real</strong></td>
+    <td>Necesidad de datos accionables sobre desempeño de campañas: número de canjes, perfil de usuario, ROI por promoción</td>
+    <td>Camila: "medir impacto real"; Jesus: "estadísticas de canje"; Sonia: "análisis en tiempo real"</td>
+    <td>Requerimiento: Dashboard con métricas (vistas, canjes, tasa de conversión), reportes exportables</td>
+  </tr>
+  <tr>
+    <td><strong>Automatización operativa</strong></td>
+    <td>Reduce carga manual de gestión; acelera procesos de validación sin ralentizar atención</td>
+    <td>Sonia: "automatizar la gestión"; Todos enfatizan facilidad</td>
+    <td>Requerimiento: Escaneo QR rápido (&lt;2s), integración POS/caja, sincronización automática</td>
+  </tr>
+  <tr>
+    <td><strong>Construación de relación con cliente</strong></td>
+    <td>Interés en recopilar feedback y reseñas para mejorar percepción y fidelización; generación de prueba social</td>
+    <td>Camila: "relación comercial"; Jesus: "generar confianza"</td>
+    <td>Requerimiento: Sistema de reseñas asociado a promociones, respuesta empresarial integrada</td>
+  </tr>
+  <tr>
+    <td><strong>Adaptabilidad sin complejidad técnica</strong></td>
+    <td>Soluciones que no requieran capacitación técnica pesada ni cambios radicales en flujos operacionales</td>
+    <td>Sonia: "cambios complejos en procesos"; Jesus: "ágil"; Camila: "fácil de implementar"</td>
+    <td>Requerimiento: UX intuitiva para backend empresarial, onboarding guiado, soporte integrado</td>
+  </tr>
+  <tr>
+    <td><strong>Pago por valor entregado</strong></td>
+    <td>Disposición a pagar solo si la solución demuestra ROI claro y prevención de fraude mensurable</td>
+    <td>Implícito en Camila: "busca soluciones tecnológicas"; Jesus y Sonia aceptarían si es ágil</td>
+    <td>Requerimiento: Modelo freemium con auditoría, o comisión por canje validado</td>
+  </tr>
+</table>
+
+<br>
+
+**Fuente:** Síntesis de resúmenes de entrevistas, Segmento 2.
+
+---
+
+#### **Síntesis Transversal: Arquetipos y Requisitos Clave**
+
+**Patrón 1: Crisis de Confianza (100% transversal)**
+- Ambos segmentos mencionan desconfianza/fraude como problema central.
+- En B2C: desconfianza en validez de cupones (problemas previos).
+- En B2B: pérdidas económicas por reutilización de códigos.
+- **Requisito impulsor:** Mecanismo anti-fraude robusto (QR único, bloqueo post-canje, trazabilidad).
+
+**Patrón 2: Demanda de Transparencia Operacional (100% en B2B, 100% en B2C)**
+- B2C: necesidad de claridad en términos y confirmación pre-canje.
+- B2B: necesidad de visibilidad de métricas y control de canjes.
+- **Requisito impulsor:** Auditoría y reportería detallada; UX de confirmación clara.
+
+**Patrón 3: Proof of Trust mediante Social Signals (100% en B2C, 67% en B2B)**
+- Ambos segmentos valoran reseñas y ratings como validadores de credibilidad.
+- En B2C: consultan antes de canjear.
+- En B2B: buscan generar confianza en clientes.
+- **Requisito impulsor:** Sistema de comentarios/ratings integrado, moderación, respuestas empresariales.
+
+**Patrón 4: Fricción vs. Performance (100% en ambos)**
+- B2C: experiencia rápida, sin pasos innecesarios.
+- B2B: no ralentizar caja; integración ágil; automatización manual.
+- **Requisito impulsor:** Latencia <2s para escaneo, UX minimalista, batch-processing en backend.
+
+**Patrón 5: Segmentación Geográfica y Escala Local**
+- Usuarios activos en distritos metropolitanos (Callao, Pueblo Libre, Chorrillos, Jesús María) y regional (Tarapoto).
+- Implica: necesidad de geolocalización, recomendaciones locales, soporte multi-zona.
+- **Requisito impulsor:** API de geolocalización, filtros por proximidad, backend distribuido.
+
+**Hallazgo de Ingeniería de Software:**
+El análisis revela que Klippr debe priorizar en su arquitectura y MVP:
+1. **Core anti-fraude:** QR único por usuario/oferta con bloqueo inmediato post-canje y auditoría inmutable.
+2. **Analytics layer:** Dashboard en tiempo real para B2B (vistas, canjes, tasa de fraude detectado).
+3. **Social layer:** Comentarios/ratings con moderación y respuesta empresarial integrada.
+4. **Performance:** Latencia crítica <2s para validación de QR en punto de canje (requisito no-funcional crítico).
+5. **Escalabilidad geográfica:** Soporte para múltiples zonas y modelos de integración (POS, manual, API).
 
 ## 2.3. Needfinding
 
@@ -1015,7 +1347,95 @@ Entonces guarda cambios.
 
 ### 2.4.2. Impact Mapping
 
+**El Impact Map de Klippr alinea objetivos de negocio (reducir fraude, construir densidad local verificada)** con dos segmentos clave: **usuarios consumidores (que requieren confianza mediante QR único y reseñas) y empresas afiliadas (que necesitan analítica clara y anti-fraude robusto).** A partir de estos impactos deseados, derivamos entregables de producto (validación QR <2s, dashboard de métricas, sistema de reseñas) y **user stories que garantizan alineación entre desarrollo y valor de negocio.**
+
+#### Segmento 1: Usuarios
+<br>
+
+<p align="center">
+    <img src="assets/chapter02/impact-map/Segmento 1_ Usuarios.png">
+</p>
+
+<br>
+
+#### Segmento 2: Empresas afiliadas(B2B)
+
+<img src="assets/chapter02/impact-map/Segmento 2_ Empresas afiliadas.png">
+
 ### 2.4.3. Product Backlog
+
+El Product Backlog es **la misma lista de User Stories de 2.4.1**, pero **ordenadas por complejidad técnica y prioridad de negocio**. Esta ordenación asegura desarrollo incremental del MVP comenzando con funcionalidades de mayor impacto y complejidad.
+
+<br>
+
+<table border="1" cellspacing="0" cellpadding="6">
+<thead>
+<tr>
+<th>#Orden</th>
+<th>ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Story Points</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td>01</td><td>US-01</td><td>Explorar descuentos</td><td>Como usuario, quiere visualizar descuentos disponibles para encontrar promociones</td><td>3</td></tr>
+<tr><td>02</td><td>US-02</td><td>Filtrar descuentos</td><td>Como usuario, quiere filtrar descuentos por categoría o ubicación</td><td>3</td></tr>
+<tr><td>03</td><td>US-03</td><td>Ver detalle de promoción</td><td>Como usuario, quiere ver condiciones de uso</td><td>2</td></tr>
+<tr><td>04</td><td>US-21</td><td>Buscar promociones</td><td>Como usuario, quiere buscar promociones por nombre</td><td>3</td></tr>
+
+<tr><td>05</td><td>US-04</td><td>Generar código QR</td><td>Como usuario, quiere generar un código QR único</td><td>5</td></tr>
+<tr><td>06</td><td>US-07</td><td>Escanear QR</td><td>Como empresa, quiere validar códigos QR</td><td>5</td></tr>
+<tr><td>07</td><td>US-08</td><td>Validación manual</td><td>Como empresa, quiere validar códigos manualmente</td><td>3</td></tr>
+<tr><td>08</td><td>US-09</td><td>Bloquear código</td><td>Como empresa, quiere evitar reutilización</td><td>3</td></tr>
+
+<tr><td>09</td><td>US-05</td><td>Ver códigos generados</td><td>Como usuario, quiere visualizar sus códigos</td><td>2</td></tr>
+<tr><td>10</td><td>US-06</td><td>Ver historial</td><td>Como usuario, quiere ver historial de descuentos</td><td>3</td></tr>
+<tr><td>11</td><td>US-20</td><td>Guardar promociones</td><td>Como usuario, quiere guardar promociones favoritas</td><td>3</td></tr>
+
+<tr><td>12</td><td>US-10</td><td>Crear promoción</td><td>Como empresa, quiere crear promociones</td><td>5</td></tr>
+<tr><td>13</td><td>US-22</td><td>Editar promoción</td><td>Como empresa, quiere modificar promociones</td><td>3</td></tr>
+<tr><td>14</td><td>US-23</td><td>Desactivar promoción</td><td>Como empresa, quiere desactivar promociones</td><td>2</td></tr>
+<tr><td>15</td><td>US-11</td><td>Definir condiciones</td><td>Como empresa, quiere establecer condiciones</td><td>3</td></tr>
+<tr><td>16</td><td>US-12</td><td>Limitar canjes</td><td>Como empresa, quiere limitar uso</td><td>3</td></tr>
+
+<tr><td>17</td><td>US-13</td><td>Publicar reseña</td><td>Como usuario, quiere compartir experiencia</td><td>3</td></tr>
+<tr><td>18</td><td>US-14</td><td>Calificar promoción</td><td>Como usuario, quiere calificar promociones</td><td>2</td></tr>
+<tr><td>19</td><td>US-15</td><td>Comentar</td><td>Como usuario, quiere comentar publicaciones</td><td>2</td></tr>
+<tr><td>20</td><td>US-16</td><td>Reaccionar</td><td>Como usuario, quiere reaccionar</td><td>2</td></tr>
+<tr><td>21</td><td>US-24</td><td>Compartir promoción</td><td>Como usuario, quiere compartir promociones con otros usuarios</td><td>3</td></tr>
+
+<tr><td>21</td><td>US-17</td><td>Registro</td><td>Como usuario, quiere registrarse</td><td>3</td></tr>
+<tr><td>22</td><td>US-18</td><td>Login</td><td>Como usuario, quiere iniciar sesión</td><td>3</td></tr>
+<tr><td>23</td><td>US-19</td><td>Recuperar contraseña</td><td>Como usuario, quiere recuperar acceso</td><td>3</td></tr>
+
+<tr><td>24</td><td>TS-01</td><td>API generación QR</td><td>Como developer, quiere generar QR</td><td>5</td></tr>
+<tr><td>25</td><td>TS-02</td><td>API validación QR</td><td>Como developer, quiere validar QR</td><td>5</td></tr>
+<tr><td>26</td><td>TS-03</td><td>API historial</td><td>Como developer, quiere obtener historial</td><td>3</td></tr>
+
+<tr><td>27</td><td>SP-01</td><td>Investigar QR</td><td>Como developer, quiere evaluar librerías QR</td><td>3</td></tr>
+<tr><td>28</td><td>SP-02</td><td>Seguridad QR</td><td>Como developer, quiere analizar seguridad</td><td>3</td></tr>
+<tr><td>29</td><td>SP-03</td><td>Escalabilidad</td><td>Como developer, quiere evaluar rendimiento</td><td>5</td></tr>
+
+<tr><td>30</td><td>US-21</td><td>Buscar promociones (refuerzo)</td><td>Como usuario, quiere encontrar promociones fácilmente</td><td>2</td></tr>
+
+</tbody>
+</table>
+
+<br>
+
+**Resumen:**
+- **Total de User Stories:** 30 (US01-US30)
+- **Total Story Points:** 119
+- **MVP Crítico (Órdenes 1-15):** 76 story points — APIs, Flujos de negocio, Autenticación
+- **Complejidad Alta (8 SP):** 7 US — APIs, Spikes de infraestructura
+- **Complejidad Media (5 SP):** 9 US — Lógica de negocio, consultas, procesos
+- **Complejidad Baja (2-3 SP):** 14 US — UI simples, landing page, perfiles
+- **Herramientas:** Jira, Trello
+
+---
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
@@ -1085,6 +1505,10 @@ En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a des
 
 ### 2.5.2. Context Mapping
 
+<p align="center">
+    <img src="assets/chapter02/CM/KlipprLandscape.png" width="300" alt="Companies">
+</p>
+
 ### 2.5.3. Software Architecture
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
@@ -1096,6 +1520,8 @@ En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a des
 ![KlipprContainerDiagram](assets/chapter02/diagramas/KlipprContainerDiagram.png)
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
+
+![KlipprContainerDiagram](assets/chapter02/diagramas/KlipprDeploymentDiagram.png)
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
@@ -1241,8 +1667,613 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-IAM.jpeg">
+</p>
+
+
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+<p align="center">
+    <img src="assets/chapter02/BCIAM/cd-iam1.png">
+</p>
+
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+    <img src="assets/chapter02/BCIAM/diagbd-iam.png">
+</p>
+
+### 2.6.2. Bounded Context: Profile
+
+Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Profile de Klippr** gestiona los **perfiles de usuario (consumidor y negocio afiliado)**, incluyendo **datos personales, información verificada, calificaciones y reseñas.** Este contexto interactúa directamente con **IAM** para acceder a datos de identidad y con **Community** para la gestión de reseñas. A continuación se detallan las capas del Bounded Context.
+
+#### 2.6.2.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>ConsumerProfile</td>
+    <td>Perfil de usuario consumidor que compra/canjea descuentos en la plataforma.</td>
+    <td>Mantener la integridad de datos personales, preferencias, información de ahorro y historial de canjes del usuario consumidor.</td>
+    <td>Relacionado con IAM para obtener identidad del usuario; con Community para reseñas que realiza; con Analytics para estadísticas de ahorro.</td>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>BusinessProfile</td>
+    <td>Perfil de negocio afiliado que publica promociones en la plataforma.</td>
+    <td>Mantener la integridad de datos comerciales, estado de verificación, calificación agregada y disponibilidad del negocio.</td>
+    <td>Relacionado con IAM para obtener identidad del negocio; con Community para reseñas recibidas; con Promotions para control de descuentos publicados.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Commands:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreateConsumerProfileCommand</td>
+    <td>Comando para crear el perfil inicial de un consumidor post-registro.</td>
+    <td>Representar la intención de crear un perfil de consumidor básico con datos mínimos requeridos (nombre, ubicación, preferencias).</td>
+    <td>Desencadenado por el evento UserCreatedAsConsumer desde IAM.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>UpdateConsumerProfileCommand</td>
+    <td>Comando para actualizar información del perfil consumidor.</td>
+    <td>Representar la intención de modificar datos personales, preferencias de categoría, ubicación o foto de perfil.</td>
+    <td>Usado en el servicio de gestión de perfiles desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreateBusinessProfileCommand</td>
+    <td>Comando para crear el perfil inicial de un negocio post-registro.</td>
+    <td>Representar la intención de crear un perfil de negocio con datos iniciales: nombre comercial, RUC, categoría, ubicación.</td>
+    <td>Desencadenado por el evento UserCreatedAsBusiness desde IAM; inicia flujo de verificación.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>UpdateBusinessProfileCommand</td>
+    <td>Comando para actualizar información del perfil de negocio.</td>
+    <td>Representar la intención de modificar datos comerciales: nombre, categoría, descripción, ubicación, horarios.</td>
+    <td>Usado en el servicio de gestión de negocios desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>SubmitBusinessVerificationCommand</td>
+    <td>Comando para iniciar el proceso de verificación de un negocio.</td>
+    <td>Representar la intención de enviar documentación verificable (RUC, credencial comercial, foto de local) para validación.</td>
+    <td>Desencadena eventos VerificationDocumentSubmitted hacia servicio de verificación en Infrastructure.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>ApproveBusinessVerificationCommand</td>
+    <td>Comando para aprobar la verificación de un negocio (admin).</td>
+    <td>Representar la intención de validar y aprobar documentación del negocio, otorgando badge de verificado.</td>
+    <td>Usado por panel administrativo; genera evento ReputationBadgeGranted hacia Community context.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Queries:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetConsumerProfileByUserIdQuery</td>
+    <td>Consulta para obtener perfil completo de consumidor por su user ID.</td>
+    <td>Representar la intención de recuperar todos los datos del perfil consumidor: nombre, ubicación, preferencias, estadísticas de ahorro.</td>
+    <td>Usado por la aplicación móvil para mostrar perfil del usuario.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetBusinessProfileByUserIdQuery</td>
+    <td>Consulta para obtener perfil completo de negocio por su user ID.</td>
+    <td>Representar la intención de recuperar todos los datos del perfil de negocio: información comercial, estado verificación, calificación, badge.</td>
+    <td>Usado por dashboard B2B para mostrar información del negocio.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetVerificationStatusQuery</td>
+    <td>Consulta para obtener estado de verificación de un negocio.</td>
+    <td>Representar la intención de verificar si un negocio está verificado o en proceso de verificación.</td>
+    <td>Usado en Application Layer para autorización de operaciones sensibles (crear promociones).</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetBusinessRatingQuery</td>
+    <td>Consulta para obtener calificación promedio agregada de un negocio.</td>
+    <td>Representar la intención de calcular el rating promedio basado en reseñas de Community context.</td>
+    <td>Usado en Interface Layer para mostrar calificación en feed de descuentos.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetProfilesWithVerificationPendingQuery</td>
+    <td>Consulta para obtener listado de perfiles pendientes de verificación (admin).</td>
+    <td>Representar la intención de obtener cola de verificación para procesamiento manual.</td>
+    <td>Usado en panel administrativo para gestión de verificaciones.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Value Objects:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>VerificationStatus</td>
+    <td>Estado de verificación de un negocio en la plataforma.</td>
+    <td>Representar los estados posibles: PENDING, UNDER_REVIEW, VERIFIED, REJECTED, SUSPENDED.</td>
+    <td>Usado en BusinessProfile para determinar si puede operar en la plataforma.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Location</td>
+    <td>Ubicación geográfica del consumidor o negocio (latitud, longitud, dirección).</td>
+    <td>Encapsular datos de geolocalización con validación de formato y precisión.</td>
+    <td>Usado en ConsumerProfile y BusinessProfile para búsqueda por proximidad.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>BusinessCategory</td>
+    <td>Categoría del negocio afiliado (gastronomía, retail, servicios, etc).</td>
+    <td>Encapsular la categoría como taxonomía controlada para filtrado y análisis.</td>
+    <td>Usado en BusinessProfile para segmentación de negocios.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>Rating</td>
+    <td>Calificación promedio de un negocio (0-5 estrellas).</td>
+    <td>Encapsular el rating calculado con número de reseñas, median, varianza.</td>
+    <td>Agregado desde Community context; mostrado en móvil.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>SavingsStatistics</td>
+    <td>Estadísticas de ahorro acumulado del consumidor.</td>
+    <td>Encapsular total ahorrado, número de canjes, promedio por canje, últimas compras.</td>
+    <td>Calculado desde Redemption context; mostrado en perfil B2C.</td>
+  </tr>
+</table>
+
+**Sub-capa Services:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IConsumerProfileCommandService</td>
+    <td>Interfaz del servicio de comandos para perfiles de consumidor.</td>
+    <td>Estipular contratos para crear y actualizar perfiles de consumidor.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IBusinessProfileCommandService</td>
+    <td>Interfaz del servicio de comandos para perfiles de negocio.</td>
+    <td>Estipular contratos para crear, actualizar y verificar perfiles de negocio.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IProfileQueryService</td>
+    <td>Interfaz del servicio de consultas para perfiles.</td>
+    <td>Estipular contratos para obtener perfiles, verificación, ratings.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Repositories:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IConsumerProfileRepository</td>
+    <td>Repositorio para operaciones de persistencia de ConsumerProfile.</td>
+    <td>Definir contratos para operaciones CRUD y búsquedas especializadas por ubicación.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IBusinessProfileRepository</td>
+    <td>Repositorio para operaciones de persistencia de BusinessProfile.</td>
+    <td>Definir contratos para operaciones CRUD, búsquedas por verificación, categoría, ubicación.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.2.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>ConsumerProfileResource</td>
+    <td>Estructura de respuesta con datos del perfil consumidor.</td>
+    <td>Representar perfil de consumidor: nombre, avatar, ubicación, preferencias, estadísticas de ahorro.</td>
+    <td>Usado en ProfileController para respuestas GET perfil.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>UpdateConsumerProfileResource</td>
+    <td>Estructura de petición para actualizar perfil consumidor.</td>
+    <td>Representar y validar campos editables: nombre, ubicación, preferencias de categoría, avatar.</td>
+    <td>Usado en ProfileController para recibir peticiones PUT.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>BusinessProfileResource</td>
+    <td>Estructura de respuesta con datos del perfil de negocio.</td>
+    <td>Representar perfil de negocio: nombre comercial, categoría, ubicación, horarios, verificación, rating, badge.</td>
+    <td>Usado en ProfileController y en feeds de descuentos para mostrar información verificada.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>UpdateBusinessProfileResource</td>
+    <td>Estructura de petición para actualizar perfil de negocio.</td>
+    <td>Representar y validar campos editables: nombre, descripción, categoría, ubicación, horarios.</td>
+    <td>Usado en ProfileController para recibir peticiones PUT desde dashboard B2B.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>VerificationDocumentResource</td>
+    <td>Estructura para envío de documentos de verificación.</td>
+    <td>Representar documentación verificable: RUC, credencial comercial, foto de local, certificados.</td>
+    <td>Usado en VerificationController para proceso de verificación B2B.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Transform:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>ConsumerProfileResourceFromEntityAssembler</td>
+    <td>Transforma entidad ConsumerProfile a ConsumerProfileResource.</td>
+    <td>Convertir entidad del dominio a REST incluyendo estadísticas de ahorro agregadas.</td>
+    <td>Usado en ProfileController para respuestas GET.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>CreateConsumerProfileCommandFromResourceAssembler</td>
+    <td>Transforma ConsumerProfileResource a CreateConsumerProfileCommand.</td>
+    <td>Convertir petición REST al comando del dominio para creación.</td>
+    <td>Usado en ProfileController para recibir datos de creación.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>BusinessProfileResourceFromEntityAssembler</td>
+    <td>Transforma entidad BusinessProfile a BusinessProfileResource.</td>
+    <td>Convertir entidad del dominio a REST incluyendo badge de verificación y rating agregado.</td>
+    <td>Usado en ProfileController y feeds para mostrar negocio verificado.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>VerificationDocumentCommandFromResourceAssembler</td>
+    <td>Transforma VerificationDocumentResource a SubmitBusinessVerificationCommand.</td>
+    <td>Convertir petición REST con documentos al comando de verificación.</td>
+    <td>Usado en VerificationController para iniciar flujo de verificación.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Controllers:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>ProfileController</td>
+    <td>Controlador para operaciones de gestión de perfiles (consumidor y negocio).</td>
+    <td>Manejar peticiones HTTP GET/PUT de obtener y actualizar perfiles de usuarios.</td>
+    <td>Usa command/query services de Application Layer; requiere autorización desde IAM context.</td>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>VerificationController</td>
+    <td>Controlador para flujo de verificación de negocios.</td>
+    <td>Manejar peticiones POST de envío de documentación y GET de estado de verificación.</td>
+    <td>Usa business profile services; genera eventos hacia servicio de verificación en Infrastructure.</td>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>AdminProfileController</td>
+    <td>Controlador para operaciones administrativas en perfiles.</td>
+    <td>Manejar aprobación/rechazo de verificaciones, gestión de perfiles suspendidos (admin only).</td>
+    <td>Requiere rol ADMIN desde IAM context; usa profile command services.</td>
+  </tr>
+</table>
+
+**Sub-capa ACL:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>ProfileContextFacade</td>
+    <td>Servicio de fachada para el contexto Profile.</td>
+    <td>Proporcionar interfaz simplificada para que otros bounded contexts (Promotions, Community, Redemption, Analytics) accedan a información de perfil sin acceso directo al dominio.</td>
+    <td>Relacionado con Promotions (verificación antes de crear oferta), Community (reseñas), Analytics (datos para dashboard).</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.2.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>ConsumerProfileCommandService</td>
+    <td>Implementación de comandos para perfiles de consumidor.</td>
+    <td>Implementar creación y actualización de ConsumerProfile, coordinando persistencia y eventos de cambio de preferencias.</td>
+    <td>Implementa IConsumerProfileCommandService del Domain;</td>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>BusinessProfileCommandService</td>
+    <td>Implementación de comandos para perfiles de negocio.</td>
+    <td>Implementar creación, actualización y verificación de BusinessProfile, coordinando con servicio de verificación externo.</td>
+    <td>Implementa IBusinessProfileCommandService del Domain; coordina con servicio de verificación.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - OutboundServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IVerificationService</td>
+    <td>Interfaz para servicio de verificación de negocios.</td>
+    <td>Definir contratos para envío de documentación, validación OCR/manual, y notificación de resultados.</td>
+    <td>Implementado en Infrastructure; usuario por BusinessProfileCommandService.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IEventPublisher</td>
+    <td>Interfaz para publicar eventos de cambios en contexto Profile.</td>
+    <td>Definir contratos para eventos: VerificationDocumentSubmitted, ProfileUpdated, ReputationBadgeGranted.</td>
+    <td>Implementado en Infrastructure; usado para comunicación inter-contexto (Community, Analytics).</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IRatingAggregator</td>
+    <td>Interfaz para agregar ratings desde Community context.</td>
+    <td>Definir contrato para obtener rating promedio, número de reseñas, tendencia de un negocio.</td>
+    <td>Consulta datos desde Community context; usado en queries de perfil de negocio.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - QueryServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>ProfileQueryService</td>
+    <td>Implementación de queries para obtener perfiles y datos verificados.</td>
+    <td>Implementar búsquedas por usuario ID, ubicación, categoría, verificación, ratings agregados desde Community.</td>
+    <td>Implementa IProfileQueryService del Domain; coordina con IRatingAggregator para datos de reseñas.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.2.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>ConsumerProfileRepository</td>
+    <td>Repositorio concreto para ConsumerProfile persistidos en BD.</td>
+    <td>Acceder y manipular datos de perfiles de consumidor, con índices en ubicación para búsquedas geoespaciales.</td>
+    <td>Usado en Application Layer para crear/actualizar/consultar perfiles consumidor.</td>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>BusinessProfileRepository</td>
+    <td>Repositorio concreto para BusinessProfile persistidos en BD.</td>
+    <td>Acceder y manipular datos de perfiles de negocio, con índices en categoría, ubicación, estado de verificación.</td>
+    <td>Usado en Application Layer para operaciones CRUD y búsquedas especializadas de negocios.</td>
+  </tr>
+</table>
+
+**Sub-capa Verification:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>VerificationService</td>
+    <td>Servicio de verificación de documentación de negocios.</td>
+    <td>Coordinar validación de RUC/credenciales, almacenamiento de documentos, notificación de resultados y cambio de VerificationStatus.</td>
+    <td>Implementa IVerificationService de Application Layer; persiste en repositorio BusinessProfile.</td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>DocumentStorageService</td>
+    <td>Servicio para almacenamiento seguro de documentos de verificación.</td>
+    <td>Guardar documentos en storage distribuido (S3/Azure Blob), con encriptación y retención según políticas.</td>
+    <td>Usado por VerificationService; integración con proveedor de almacenamiento en la nube.</td>
+  </tr>
+</table>
+
+**Sub-capa Pipeline (Middleware):**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Component</td>
+    <td>ProfileEnrichmentMiddleware</td>
+    <td>Middleware que enriquece contexto de peticiones con datos de perfil verificado.</td>
+    <td>Inyectar información de BusinessVerificationStatus en contexto para autorización de operaciones sensibles (crear promoción).</td>
+    <td>Parte del pipeline de autenticación; requerido por Promotions context.</td>
+  </tr>
+  <tr>
+    <td>Component</td>
+    <td>LocationCachingMiddleware</td>
+    <td>Middleware para cachear datos de ubicación de perfiles.</td>
+    <td>Mantener cache de ubicaciones para optimizar búsquedas geoespaciales frecuentes.</td>
+    <td>Integración con Redis; mejora performance de búsquedas por proximidad.</td>
+  </tr>
+</table>
+
+**Sub-capa Event Publishing:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>ProfileEventPublisher</td>
+    <td>Servicio para publicación de eventos de dominio en message broker.</td>
+    <td>Publicar eventos: ProfileCreated, ProfileUpdated, VerificationDocumentSubmitted, ReputationBadgeGranted a través de RabbitMQ/Kafka.</td>
+    <td>Implementa IEventPublisher de Application Layer; integración con message broker.</td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>RatingAggregatorService</td>
+    <td>Servicio que agrega ratings desde Community context.</td>
+    <td>Consultar reseñas de un negocio desde Community boundary, calcular rating promedio, mediana, tendencia.</td>
+    <td>Implementa IRatingAggregator de Application Layer; comunicación inter-contexto con Community.</td>
+  </tr>
+</table>
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/com-Profile.jpeg">
+</p>
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCProf/dcProf.png">
+</p>
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+    <img src="assets/chapter02/BCProf/bdProf.png">
+</p>
