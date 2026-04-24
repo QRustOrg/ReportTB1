@@ -156,7 +156,7 @@
 # Project Report Collaboration Insights
 
 
-URL del repositorio para el proyecto: https://github.com/OnTimeRide/ReportTB1.git
+URL del repositorio para el proyecto: https://github.com/QRustOrg/ReportTB1.git
 
 URL del repositorio de Landing Page: 
 
@@ -454,7 +454,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
     <tr>
       <td><b>7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software</b></td>
       <td>
-        <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>Al asumir el desarrollo de los Capítulos I y II del informe, incluyendo el diseño de User Stories, el análisis competitivo, el Lean UX Process y la arquitectura de software orientada a Domain-Driven Design, reconocí que las tecnologías y metodologías aplicadas en ingeniería de software evolucionan constantemente. Esta experiencia me motivó a profundizar en nuevos conceptos como EventStorming y Bounded Contexts, reforzando mi compromiso con el aprendizaje continuo como pilar fundamental para el desarrollo profesional y la entrega de soluciones de calidad.<br>
         <b>Castro Pariona, Jefferson Ernesto</b><br><br>
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
         <b>Ponce Perales, Alberto Alejandro</b><br><br>
@@ -466,13 +466,3 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
 </table>
 
 <br>
-
-# Conclusiones
-
-### Conclusiones y recomendaciones.
-### Video App Validation
-### Video About the product
-### Video About the team
-### Glosario
-### Bibliografía
-### Anexos
