@@ -901,8 +901,86 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-##### 2.6.1.6.2. Bounded Context Database Design Diagram
+<p align="center">
+    <img src="assets/chapter02/bounded-context-software-architecture-code-level-diagrams-5.png" alt="bcsacld5"/> 
+</p>
+
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+| Tipo     | Campo             | Key    | Descripción                                 |
+| -------- | ----------------- | ------ | ------------------------------------------- |
+| int      | id                | PK     | Identificador único del registro del canje  |
+| datetime | created_at        |        | Fecha y hora en que se creó el registro     |
+| datetime | updated_at        |        | Fecha y hora de la última actualización     |
+| UUID     | user_id           | FK     | Identificador del usuario consumidor        |
+| string   | promotion_id      | FK     | Identificador de la promoción asociada      |
+| UUID     | qr_code           | UNIQUE | Código QR generado para el canje            |
+| UUID     | unique_token      | UNIQUE | Token interno irrepetible anti-fraude       |
+| string   | status            |        | Estado actual del canje                     |
+| datetime | generated_at      |        | Fecha y hora de generación del QR           |
+| datetime | redeemed_at       |        | Fecha y hora en que fue canjeado            |
+| datetime | blocked_at        |        | Fecha y hora en que fue bloqueado           |
+| datetime | expires_at        |        | Fecha y hora de expiración                  |
+| string   | validation_method |        | Método de validación: QR_SCAN o MANUAL_CODE |
+
+| Nombre            | Descripción                                               |
+| ----------------- | --------------------------------------------------------- |
+| id                | Identificador único del registro del canje.               |
+| created_at        | Fecha y hora en que se creó el registro.                  |
+| updated_at        | Fecha y hora de la última actualización del registro.     |
+| user_id           | Usuario que generó el código QR.                          |
+| promotion_id      | Promoción vinculada al canje.                             |
+| qr_code           | Código QR mostrado al usuario para validar el descuento.  |
+| unique_token      | Token interno único para prevenir reutilización o fraude. |
+| status            | Estado del canje: GENERATED, REDEEMED, BLOCKED, EXPIRED.  |
+| generated_at      | Fecha y hora en que se generó el QR.                      |
+| redeemed_at       | Fecha y hora en que se utilizó exitosamente.              |
+| blocked_at        | Fecha y hora en que fue invalidado después del uso.       |
+| expires_at        | Fecha límite de uso del QR.                               |
+| validation_method | Método usado para validar: escaneo o código manual.       |
+
+#### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/bounded-context-software-architecture-code-level-diagrams-6.png" alt="bcsacld6"/> 
+</p>
+
+##### 2.6.6.6.2. Bounded Context Database Design Diagram
+
+| Tipo     | Campo         | Key | Descripción                                              |
+| -------- | ------------- | --- | -------------------------------------------------------- |
+| int      | id            | PK  | Identificador único de la reseña.                        |
+| datetime | created_at    |     | Fecha y hora en que se creó la reseña.                   |
+| datetime | updated_at    |     | Fecha y hora de la última actualización.                 |
+| string   | user_id       | FK  | Identificador del usuario que publicó la reseña.         |
+| string   | promotion_id  | FK  | Identificador de la promoción reseñada.                  |
+| string   | redemption_id | FK  | Identificador del canje completado asociado a la reseña. |
+| int      | rating        |     | Calificación otorgada por el usuario, de 1 a 5.          |
+| text     | comment       |     | Comentario escrito por el usuario sobre la promoción.    |
+| varchar  | status        |     | Estado de la reseña: PUBLISHED, HIDDEN o REPORTED.       |
+| varchar  | review_id     | FK  | Identificador de la reseña comentada.                    |
+| text     | content       |     | Contenido del comentario.                                |
+| varchar  | business_id   | FK  | Identificador del negocio que responde.                  |
+
+| Nombre           | Descripción                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| id               | Identificador único de la reseña registrada en el sistema.                                 |
+| reviews          | Almacena las reseñas y calificaciones realizadas por usuarios después de un canje exitoso. |
+| comments         | Almacena comentarios de usuarios sobre reseñas publicadas.                                 |
+| business_replies | Almacena respuestas de negocios afiliados a reseñas de usuarios.                           |
+| likes            | Registra los likes realizados por usuarios sobre reseñas.                                  |
+| created_at       | Fecha y hora en que la reseña fue creada.                                                  |
+| updated_at       | Fecha y hora de la última modificación de la reseña.                                       |
+| user_id          | Usuario consumidor autor de la reseña.                                                     |
+| promotion_id     | Promoción evaluada por el usuario.                                                         |
+| redemption_id    | Canje exitoso que habilitó la reseña.                                                      |
+| rating           | Calificación numérica otorgada entre 1 y 5 estrellas.                                      |
+| status           | Estado actual de la reseña (publicada, reportada, oculta).                                 |
+| content          | Texto del comentario publicado.                                                            |
+| business_id      | Negocio afiliado que responde.                                                             |
