@@ -49,14 +49,13 @@
 
 <br>
 
-| Apellidos y Nombres | Código |
-|---------------------|--------|
-| Bonifacio Jaramillo, Samuel Jesus | U202317269 |
-| Castro Pariona, Jefferson Ernesto | U201822823 |
-| Guillen Galindo, Julio Adolfo  | U20241A352 |
-| Alejandro Manuel, Galindo Montero| U202321264 |
-| Ponce Perales Alberto Alejandro | U2023206804 |
-
+| Apellidos y Nombres               | Código      |
+| --------------------------------- | ----------- |
+| Bonifacio Jaramillo, Samuel Jesus | U202317269  |
+| Castro Pariona, Jefferson Ernesto | U201822823  |
+| Guillen Galindo, Julio Adolfo     | U20241A352  |
+| Alejandro Manuel, Galindo Montero | U202321264  |
+| Ponce Perales Alberto Alejandro   | U2023206804 |
 
 <br><br>
 
@@ -155,7 +154,6 @@
 
 # Project Report Collaboration Insights
 
-
 URL del repositorio para el proyecto: https://github.com/OnTimeRide/ReportTB1.git
 
 URL del repositorio de Landing Page: 
@@ -190,7 +188,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
-      <th> </th>
+      <th> Capitulos II </th>
     </tr>
     <tr>
       <th> Ponce Perales, Alberto Alejandro</th>
@@ -445,7 +443,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
       <td>
         <b>TB1: Bonifacio Jaramillo, Samuel Jesus:</b><br> Al desarrollar el Tactical-Level Domain-Driven Design del Bounded Context IAM, el desarrollo del Bounded Context Profile, el Keynote y las Ideas de User Stories, aprendí más acerca de los conceptos de arquitectura de software y metodologías ágiles, actualizando mis conocimientos en patrones de diseño y gestión de identidades para aplicarlos en soluciones reales.<br> 
         <b>Castro Pariona, Jefferson Ernesto</b><br><br>
-        <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br> Participé activamente en el desarrollo del EventStorming de todos los Bounded Contexts, la elaboración del Keynote y la construcción de Diagrama de Clases. Estas actividades me permitieron consolidar mis conocimientos para la implementación de soluciones prácticas dentro del proyecto. <br>
         <b>Ponce Perales, Alberto Alejandro</b><br><br>
         <b>Alejandro Manuel Galindo Montero</b>
       </td>
@@ -455,7 +453,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
       <td><b>7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software</b></td>
       <td>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
-        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br> Durante el desarrollo del proyecto, identifiqué la importancia de mantener un aprendizaje continuo, enfoques y buenas prácticas. La experiencia adquirida reforzó mi compromiso con la mejora constante, permitiéndome enfrentar retos reales y aportar soluciones tecnológicas de calidad. <br>
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
         <b>Ponce Perales, Alberto Alejandro</b><br><br>
         <b>Alejandro Manuel Galindo Montero</b>
