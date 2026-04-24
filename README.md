@@ -54,7 +54,7 @@
 | Bonifacio Jaramillo, Samuel Jesus | U202317269 |
 | Castro Pariona, Jefferson Ernesto | U201822823 |
 | Guillen Galindo, Julio Adolfo  | U20241A352 |
-| Alejandro Manuel, Galindo Montero| U202321264 |
+| Galindo Montero, Alejandro Manuel | U202321264 |
 | Ponce Perales Alberto Alejandro | U2023206804 |
 
 
@@ -186,7 +186,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
     </tr>
     <tr>
       <th> Castro Pariona, Jefferson Ernesto</th>
-      <th> </th>
+      <th>  </th>
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
@@ -197,8 +197,8 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
-      <th> </th>
+      <th> Galindo Montero, Alejandro Manuel</th>
+      <th> Capitulo II </th>
     </tr>
   </tbody>
 </table>
@@ -238,7 +238,7 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -278,7 +278,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB2, se dividió l
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel, Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -317,7 +317,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -447,7 +447,8 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>Castro Pariona, Jefferson Ernesto</b><br><br>
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
         <b>Ponce Perales, Alberto Alejandro</b><br><br>
-        <b>Alejandro Manuel Galindo Montero</b>
+        <b>Galindo Montero, Alejandro Manuel</b><br> Al desarrollar el AV1, apoyé en la etapa de needfinding, contribuyendo a la identificación de necesidades del usuario y la definición del problema. Asimismo, participé en la elaboración de los Bounded Contexts, especialmente en Settings y Analytics, incluyendo el diseño de sus diagramas de dominio, modelos de base de datos y documentación en Clean Architecture. Además, desarrollé los diagramas de contexto y contenedores para representar la arquitectura del sistema. <br>
+
       </td>
       <td><b>TB1:</b> Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.</td>
     </tr>
@@ -458,7 +459,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>Castro Pariona, Jefferson Ernesto</b><br><br>
         <b>Guillen Galindo, Julio Adolfo</b><br><br>
         <b>Ponce Perales, Alberto Alejandro</b><br><br>
-        <b>Alejandro Manuel Galindo Montero</b>
+        <b>Galindo Montero, Alejandro Manuel</b> <br> Durante el desarrollo del AV1, reconocí la importancia del aprendizaje permanente para el desempeño profesional en ingeniería de software. Al apoyar en la etapa de needfinding y participar en la construcción de los Bounded Contexts, especialmente en Settings y Analytics, identifiqué la necesidad de reforzar conocimientos en arquitectura de software, Domain-Driven Design y Clean Architecture. Asimismo, al desarrollar los diagramas de dominio, modelos de base de datos y diagramas de contexto y contenedores, comprendí que la actualización continua de habilidades es clave para diseñar soluciones tecnológicas sólidas y aplicables en entornos reales. <br> 
       </td>
       <td></td>
     </tr>
