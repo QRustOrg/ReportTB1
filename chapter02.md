@@ -372,3 +372,154 @@ Este proceso permitió identificar los eventos clave, los actores involucrados, 
 
 ### 2.5.3.1. Software Architecture Deployment Level Diagrams
 
+### 2.6.2. Bounded Context: Analytics
+
+Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context Analytics de Klippr gestiona la generación, procesamiento y consulta de métricas relacionadas con campañas, interacciones de usuarios y reportes de abuso. Este contexto permite a los negocios afiliados visualizar el rendimiento de sus promociones y al administrador monitorear el comportamiento de la plataforma.
+
+---
+
+#### 2.6.2.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Aggregate | CampaignMetrics | Representa las métricas agregadas de una campaña. | Consolidar datos como vistas, canjes y calificaciones, asegurando su consistencia. | Relacionado con Promotions y Redemption para obtener eventos de interacción. |
+| Aggregate | AbuseReport | Representa un reporte de abuso dentro de la plataforma. | Registrar y mantener información sobre comportamientos indebidos reportados. | Relacionado con Community y Profile para identificar usuarios involucrados. |
+
+---
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Command | UpdateMetricsCommand | Comando para actualizar métricas de una campaña. | Representar la intención de registrar nuevas vistas, canjes o ratings. | Disparado por eventos provenientes de Promotions y Redemption. |
+| Command | RegisterAbuseReportCommand | Comando para registrar un reporte de abuso. | Representar la intención de reportar contenido o comportamiento inapropiado. | Usado en Community y accesible por administradores. |
+
+---
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Query | GetCampaignMetricsQuery | Consulta para obtener métricas de una campaña. | Recuperar estadísticas como vistas, canjes y rating promedio. | Usado en dashboards de negocios. |
+| Query | GetBusinessDashboardQuery | Consulta para obtener métricas globales de un negocio. | Agrupar métricas de todas las campañas de un negocio. | Usado en el panel B2B. |
+| Query | GetAbuseReportsQuery | Consulta para obtener reportes de abuso. | Listar reportes registrados para moderación. | Usado en el panel de administración. |
+
+---
+
+**Sub-capa Model - Events:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Domain Event | MetricaActualizada | Evento emitido al actualizar métricas. | Notificar cambios en estadísticas de campañas. | Consumido internamente para recalcular dashboards. |
+| Domain Event | DashboardConsultado | Evento emitido al consultar métricas. | Registrar accesos al dashboard para auditoría o análisis. | Usado en análisis de uso. |
+| Domain Event | ReporteDeAbusoRegistrado | Evento emitido al registrar un reporte. | Notificar a sistemas de moderación. | Consumido por administración. |
+
+---
+
+**Sub-capa Model - Value Objects:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Value Object | MetricType | Tipo de métrica. | Representar tipos como VIEWS, REDEMPTIONS, RATINGS. | Usado en CampaignMetrics. |
+| Value Object | TimeRange | Rango de tiempo para métricas. | Encapsular periodos de consulta (diario, semanal, mensual). | Usado en queries de analytics. |
+
+---
+
+**Sub-capa Services:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Interface | IAnalyticsCommandService | Interfaz del servicio de comandos de analytics. | Definir operaciones para actualización de métricas y reportes. | Implementado en Application. |
+| Interface | IAnalyticsQueryService | Interfaz del servicio de consultas de analytics. | Definir operaciones para obtención de métricas y dashboards. | Implementado en Application. |
+
+---
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Interface | ICampaignMetricsRepository | Repositorio de métricas de campañas. | Definir operaciones de persistencia de métricas. | Implementado en Infrastructure. |
+| Interface | IAbuseReportRepository | Repositorio de reportes de abuso. | Definir operaciones de persistencia de reportes. | Implementado en Infrastructure. |
+
+---
+
+#### 2.6.2.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Resource | CampaignMetricsResource | Representación de métricas de campaña. | Exponer vistas, canjes y rating al cliente. | Usado en AnalyticsController. |
+| Resource | BusinessDashboardResource | Representación del dashboard de negocio. | Exponer métricas agregadas de todas las campañas. | Usado en AnalyticsController. |
+| Resource | AbuseReportResource | Representación de reporte de abuso. | Exponer información relevante para moderación. | Usado en AdminAnalyticsController. |
+
+---
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Assembler | CampaignMetricsResourceFromEntityAssembler | Convierte métricas a recurso REST. | Transformar datos del dominio a formato API. | Usado en AnalyticsController. |
+| Assembler | AbuseReportResourceFromEntityAssembler | Convierte reportes a recurso REST. | Transformar entidad a respuesta API. | Usado en AdminAnalyticsController. |
+
+---
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Controller | AnalyticsController | Controlador para métricas de negocio. | Manejar consultas de métricas y dashboards. | Usa query services. |
+| Controller | AdminAnalyticsController | Controlador para administración. | Manejar reportes de abuso y métricas globales. | Usa query services. |
+
+---
+
+**Sub-capa ACL:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Service | AnalyticsContextFacade | Fachada del contexto Analytics. | Permitir a otros contextos consultar métricas sin acoplamiento directo. | Relacionado con Promotions y Profile. |
+
+---
+
+#### 2.6.2.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| CommandHandler | AnalyticsCommandService | Implementación de comandos de analytics. | Procesar actualización de métricas y registro de abusos. | Implementa IAnalyticsCommandService. |
+
+---
+
+**Sub-capa Internal - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| QueryHandler | AnalyticsQueryService | Implementación de consultas de analytics. | Recuperar métricas y dashboards. | Implementa IAnalyticsQueryService. |
+
+---
+
+#### 2.6.2.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Repository | CampaignMetricsRepository | Implementación del repositorio de métricas. | Persistir y recuperar métricas. | Usado en Application. |
+| Repository | AbuseReportRepository | Implementación del repositorio de reportes. | Persistir reportes de abuso. | Usado en Application. |
+
+---
+
+**Sub-capa Pipeline (Middleware):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Attribute | AuthorizeAttribute | Control de acceso por rol. | Restringir acceso a dashboards y reportes. | Usado en controladores. |
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-analytics.png">
+</p>

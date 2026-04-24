@@ -78,6 +78,13 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
       <td>Soy estudiante de Ingeniería de Software. Me caracterizo por ser una persona motivadora dentro de los equipos y por tener una fuerte orientación al trabajo colaborativo.</td>
     </tr>
     <tr>
+      <td>Ponce Perales, Alberto Alejandro<br>(U202320684)</td>
+      <td align="center">
+        <img src="assets/Integrantes/FotoAlberto.jpg" width="150">
+      </td>
+      <td>Actualmente estudiante de la carrera profesional de Ingeniería de Software y explorando el mundo de la programación con Java, C++ y C#. Estoy iniciando mi camino en el desarrollo de apps móviles y me entusiasma encontrar formas de hacer los flujos de trabajo más eficientes. Con ganas de aprender y aportar en proyectos de software.</td>
+    </tr>
+    <tr>
       <td>Guillen Galindo, Julio Adolfo<br>(U20241A352)</td>
       <td align="center">
         <img src="assets/Integrantes/julio.png" width="150">
@@ -98,7 +105,7 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
 
 ### 1.2.1. Antecedentes y problemática
 
-El comercio digital en América Latina ha crecido de forma sostenida, lo que aumenta la demanda de herramientas que conecten la experiencia física de compra con la conveniencia digital. Aun así, muchas soluciones de cupones y promociones siguen presentando fallas estructurales: **códigos compartidos en redes sociales**, **impresiones o duplicados** y **poca retroalimentación real** del consumidor.
+El comercio digital en Lima, Perú ha crecido de forma exponencial, casos como el de Yape y Plin lo demuestra. Producto de esto, se genera un aumento en demanda de herramientas que conecten la experiencia física de compra con la conveniencia digital. Aun así, muchas soluciones de cupones y promociones siguen presentando fallas estructurales: **códigos compartidos en redes sociales**, **impresiones o duplicados** y **poca retroalimentación real** del consumidor.
 
 En este contexto, **QRust** plantea **Klippr** como un sistema móvil donde las empresas publican promociones y descuentos, los usuarios los redimen con un **código QR único e irrepetible** y la **comunidad** valida y amplifica las mejores ofertas mediante reseñas, calificaciones y recomendaciones en tiempo real. 
 
@@ -167,14 +174,13 @@ La ausencia de una plataforma que combine **gestión de descuentos seguros**, **
 
 ## 1.2.2. Lean UX Process
 
-En esta sección aplicamos el **Lean UX Process** (Gothelf & Seiden, 3rd Edition).  
-Se presenta: **Problem Statement**, **Assumptions**, **Hypothesis Statements** y el **Lean UX Canvas**, adaptados al proyecto **WeTech** (micromovilidad eléctrica compartida + IoT).
+En esta sección aplicamos el **Lean UX Process** a través de **Problem Statement**, **Assumptions**, **Hypothesis Statements** y el **Lean UX Canvas**.
 
 ---
 ### 1.2.2.1. Lean UX Problem Statements
 
 **Context (Contexto)**  
-En América Latina crece la demanda de herramientas que conecten compra física y conveniencia digital. Las soluciones de cupones suelen sufrir **códigos compartidos**, **duplicidad** y **poca retroalimentación real**, lo que erosiona márgenes y confianza.
+En Lima, Perú crece la demanda de herramientas que conecten compra física y digital. Las soluciones de cupones suelen sufrir **códigos compartidos**, **duplicidad** y **poca retroalimentación real**, lo que erosiona márgenes y confianza.
 
 **Problem (Problema)**  
 No hay una solución integrada, simple para PYMEs y robusta para usuarios que combine: **publicación de campañas**, **QR único por usuario/oferta**, **validación en tiempo real**, **bloqueo post-canje**, **reseñas y comunidad**, y **analítica por campaña** en un mismo producto.
@@ -183,7 +189,7 @@ No hay una solución integrada, simple para PYMEs y robusta para usuarios que co
 Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Con **Klippr** se espera aumentar canjes exitosos, mejorar confianza mediante prueba social y dar visibilidad operativa (canjes, vistas, ratings) a empresas y administración.
 
 **Measure of success (Criterios de éxito)**  
-- Disponibilidad media de la flota ≥ 85% en zonas objetivo.  
+- Disponibilidad media de ≥ 85% en zonas objetivo.  
 - Incremento de la utilización por vehículo ≥ 20% en 12 semanas.  
 - Reducción de incidentes operativos (robos/fallas) ≥ 30% tras despliegue de IoT y procesos.  
 - Satisfacción de usuarios (NPS o encuesta) ≥ 60.
@@ -192,7 +198,7 @@ Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Co
 
 ### 1.2.2.2. Lean UX Assumptions
 
-> Las assumptions se agrupan en: Business, User, Value, Feature.
+Las assumptions se agrupan en: **Business, User, Value, Feature.**
 
 **a) Business Assumptions**  
 - PYMEs y negocios locales adoptarán el canal si pueden **autogestionar** campañas desde la app con costo de implementación bajo.  
@@ -218,23 +224,27 @@ Sin integración: fraude/reuso, desconfianza y campañas difíciles de medir. Co
 
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
-> Cada hipótesis sigue el patrón: *We believe... / We will know this is true when...*
+Cada hipótesis sigue el patrón: **Creemos que... / Sabremos que hemos tenido éxito cuando...**
 
 **a) Business Hypothesis**  
-We believe that **QRust** logrará retención de negocios si las campañas muestran analítica accionable (canjes, vistas, ratings) y reducen fraude vs. cupones tradicionales.  
-**We will know this is true when:** empresas activas publican **≥ 2** campañas en promedio en las primeras semanas y reportan **menos disputas** por reuso vs. métodos previos (entrevista + datos).
+
+**Creemos que** **QRust** logrará retención de negocios si las campañas muestran analítica accionable (canjes, vistas, calificaciones) y reducen fraude frente a cupones tradicionales.  
+**Sabremos que hemos tenido éxito cuando** las empresas activas publiquen **≥ 2** campañas en promedio en las primeras semanas y reporten **menos disputas** por reuso.
 
 **b) User Hypothesis**  
-We believe that users will complete redemption if **QR validation** feels instant and the “Mis descuentos” section is trustworthy.  
-**We will know this is true when:** **más del 95%** de canjes exitosos, tiempo de validación **menor a 3 segundos** en condiciones de prueba, y tasa de abandono post-activación QR baja semana a semana.
+
+**Creemos que** los usuarios completarán el canje si la **validación QR** se percibe instantánea y la sección **Mis descuentos** transmite confianza.  
+**Sabremos que hemos tenido éxito cuando** se logre **más del 95%** de canjes exitosos, el tiempo de validación sea **menor a 3 segundos** en condiciones de prueba.
 
 **c) Value Hypothesis**  
-We believe that social proof (reviews + comments + likes) increases conversion from view “Obtener descuento”.  
-**We will know this is true when:** ofertas con reseñas muestran mayor tasa de generación de QR vs. ofertas sin reseñas, manteniendo vigencia comparable.
+
+**Creemos que** la prueba social (reseñas + comentarios + likes) incrementa la conversión desde la vista **Obtener descuento**.  
+**Sabremos que hemos tenido éxito cuando** las ofertas con reseñas muestren mayor tasa de generación de QR frente a ofertas sin reseñas.
 
 **d) Feature Hypothesis**  
-We believe that building the **core loop** (publicar, generar QR, escanear/validar, bloquear y reseñar) + **dashboard empresa/admin** is sufficient for a 12-week MVP.  
-**We will know this is true when:** usuarios y empresas completan el flujo extremo a extremo en pruebas beta sin pasos alternativos “fuera de la app” críticos.
+
+**Creemos que** construir el **bucle central** (publicar, generar QR, escanear/validar, bloquear y reseñar) junto con el **dashboard de empresa/admin** es suficiente.  
+**Sabremos que hemos tenido éxito cuando** usuarios y empresas completen el flujo en pruebas beta sin pasos críticos fuera de la app.
 
 ---
 
@@ -246,7 +256,7 @@ El Lean UX Canvas integra negocio, usuario, hipótesis y experimentos para valid
 <figure style="page-break-inside: avoid; text-align: center;">
   <img src="assets/chapter01/leanux-canvas.png"
        alt="Lean UX Canvas:"
-       style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
+       style="height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
     <strong>Figura 1:</strong> Lean UX Canvas.
   </figcaption>
@@ -259,7 +269,7 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 
 ---
 
-#### 2. Users / Customers (Initial Segment)
+#### 2. Users / Customers (Segmento inicial)
 - **B2C — Usuario consumidor:** 18–45 años, uso intensivo de smartphone, interés en restaurantes, retail, servicios y entretenimiento.  
 - **B2B — Empresa afiliada:** PYMEs y negocios locales (incl. retail y servicios) que buscan atraer clientes con campañas trazables.  
 - **Admin de plataforma:** verificación, categorías, reportes de abuso/fraude y parámetros globales.
@@ -297,7 +307,7 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 
 ---
 
-#### 7. Experiments / MVP Plan
+#### 7. MVP
 - Construir MVP con **18 funcionalidades core** del documento (registro/login, perfiles, feed, promoción, QR, escaneo/manual, bloqueo, historial, dashboard, reseñas, likes/comentarios, push, geo, filtros, panel admin, respuesta a reseñas).  
 - Dejar expansiones explícitas para versiones posteriores (p. ej., compartir oferta, premium, API pública, gamificación, analytics avanzado, chat).  
 - Beta con primeros usuarios y negocios; entrevistas + pruebas de usabilidad en punto de venta simulado.
@@ -312,7 +322,7 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 
 ---
 
-#### 9. Risks & Mitigations
+#### 9. Riesgos & Mitigaciones
 - **Riesgo:** intentos de reuso o suplantación de códigos.  
   **Mitigación:** UUID + firma HMAC server-side, rechazo de doble uso, alertas a admin, expiración configurable del QR.  
 - **Riesgo:** reseñas falsas / abuso.  
@@ -396,15 +406,9 @@ Las promociones digitales y físicas frecuentemente carecen de **unicidad**, **c
 </table>
 
 
-## 1.3. Segmentos objetivo.
+## 1.3. Segmentos objetivo
 
-### Segmentación de Usuarios — QRust 
-
-El MVP de **Klippr** se enfoca en dos segmentos complementarios del documento de producto: **usuarios finales** que descubren y canjean descuentos desde el móvil, y **empresas afiliadas** que publican campañas con condiciones y límites de canje. Esta segmentación permite validar el ciclo **publicar, generar QR, canjear y reseñar** y priorizar confianza (anti-fraude + comunidad).
-
----
-
-### 1. Jóvenes y adultos
+### - Jóvenes y adultos
 
 Conformado por **personas de 18 a 45 años** que buscan **aprovechar descuentos** en **restaurantes, tiendas, servicios y entretenimiento** desde su **smartphone**, con alta probabilidad de uso de apps, notificaciones y geolocalización para descubrir ofertas cercanas.
 
@@ -418,16 +422,9 @@ Conformado por **personas de 18 a 45 años** que buscan **aprovechar descuentos*
 - Obtener un **QR único** por promoción, con claridad de vigencia y estado (pendiente / utilizado).
 - Después del canje, participar del **módulo social** (calificación 1–5, texto, likes/comentarios) y recibir **notificaciones** de actividad relevante.
 
-### **Sustento (según el MVP)**
-- El comercio digital en **América Latina** impulsa la expectativa de experiencias físicas conectadas a apps.  
-- La **prueba social** (reseñas y ratings visibles) es un diferenciador frente a cupones “no verificados” por la comunidad.  
-- El MVP define **KPIs** orientadores (usuarios activos, canjes, reseñas, tasa de éxito de canje, tiempo de validación).
-
-Este segmento permite validar descubrimiento, generación de QR, canje en punto de venta y retroalimentación comunitaria.
-
 ---
 
-### 2. Empresas afiliadas 
+### - Empresas afiliadas 
 
 Compuesto por **PYMEs, restaurantes, cadenas retail, servicios locales y negocios** que desean **atraer clientes** con **campañas medibles** y **menor riesgo de fraude**, publicando promociones con **porcentaje o monto**, **fechas**, **condiciones** y **límite de canjes**.
 
@@ -440,12 +437,5 @@ Compuesto por **PYMEs, restaurantes, cadenas retail, servicios locales y negocio
 - Verificación/registro de empresa y **perfil** con **logo**, **categoría** y datos que habiliten confianza (incluye flujo de **aprobación por administrador** en el MVP).
 - Creación de campañas con reglas claras para el usuario y trazabilidad para la empresa.
 - Uso del **panel de validación** en tienda como parte operativa del día a día.
-
-### **Sustento**
-- Motivación explícita del MVP: **pérdida de márgenes** por canjes no controlados y **falta de retroalimentación** real del consumidor en soluciones tradicionales.  
-- La propuesta de valor incluye **trazabilidad total** del canje y **simplicidad de adopción** (autogestión desde la app).  
-- Las empresas con múltiples promociones simultáneas se benefician de un **repositorio único** de métricas por campaña.
-
-Este segmento es clave para asegurar inventario de ofertas, calidad del marketplace y aprendizaje continuo sobre qué campañas funcionan.
 
 ---
