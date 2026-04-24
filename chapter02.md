@@ -2524,3 +2524,375 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context **Ana
 </p>
 
 ### 2.6.6. Bounded Context: Promotions
+
+Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Promotions de Klippr** gestiona el **ciclo de vida de las promociones y descuentos**, permitiendo a los negocios afiliados crear, publicar y administrar ofertas, mientras que a los consumidores les permite descubrirlas y explorarlas. Este contexto interactúa con **Profile** para verificar el estado del negocio y con **Redemption** para el control de canjes. A continuación se detallan las capas del Bounded Context.
+
+#### 2.6.6.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>Promotion</td>
+    <td>Oferta o descuento creado por un negocio afiliado.</td>
+    <td>Mantener las reglas de negocio de la promoción, vigencia, stock de canjes y su estado (activa, expirada, cancelada).</td>
+    <td>Relacionado con Profile (negocio creador) y Redemption (cuando un consumidor la canjea).</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Commands:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreatePromotionCommand</td>
+    <td>Comando para crear el borrador de una promoción.</td>
+    <td>Representar la intención de un negocio de registrar una nueva oferta con detalles iniciales.</td>
+    <td>Usado en el servicio de promociones desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>UpdatePromotionCommand</td>
+    <td>Comando para actualizar información de una promoción.</td>
+    <td>Representar la intención de modificar condiciones, fechas o descripción de la oferta antes de publicarla.</td>
+    <td>Usado en el servicio de promociones desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>PublishPromotionCommand</td>
+    <td>Comando para publicar y hacer visible la promoción.</td>
+    <td>Representar la intención de cambiar el estado de la promoción a PUBLISHED, validando que el negocio esté verificado.</td>
+    <td>Genera evento PromotionPublished. Valida estado usando ProfileContextFacade.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CancelPromotionCommand</td>
+    <td>Comando para cancelar una promoción en curso.</td>
+    <td>Representar la intención de detener anticipadamente una promoción y evitar futuros canjes.</td>
+    <td>Genera evento PromotionCancelled hacia Redemption context.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Queries:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetPromotionByIdQuery</td>
+    <td>Consulta para obtener los detalles de una promoción específica.</td>
+    <td>Representar la intención de recuperar toda la información y condiciones de una promoción.</td>
+    <td>Usado por la aplicación móvil al ver detalles de la oferta.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetActivePromotionsQuery</td>
+    <td>Consulta para obtener todas las promociones activas.</td>
+    <td>Representar la intención de obtener el listado de promociones disponibles, con filtros por categoría o ubicación.</td>
+    <td>Usado en el feed principal de consumidores.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetPromotionsByBusinessIdQuery</td>
+    <td>Consulta para obtener las promociones de un negocio.</td>
+    <td>Representar la intención de listar el historial de promociones creadas por un negocio específico.</td>
+    <td>Usado en el dashboard B2B del negocio afiliado.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Value Objects:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>PromotionStatus</td>
+    <td>Estado actual de la promoción.</td>
+    <td>Representar los estados posibles: DRAFT, PUBLISHED, EXPIRED, CANCELLED.</td>
+    <td>Usado en Promotion para control de ciclo de vida.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>DiscountValue</td>
+    <td>Valor y tipo del descuento ofrecido.</td>
+    <td>Encapsular el monto o porcentaje de descuento con reglas de validación (ej. no negativo).</td>
+    <td>Usado en Promotion para definir el beneficio.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>TimeFrame</td>
+    <td>Periodo de validez de la promoción.</td>
+    <td>Encapsular fecha de inicio y fin, asegurando coherencia temporal.</td>
+    <td>Usado en Promotion para determinar si está vigente.</td>
+  </tr>
+</table>
+
+**Sub-capa Services:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IPromotionCommandService</td>
+    <td>Interfaz del servicio de comandos de promociones.</td>
+    <td>Estipular contratos para crear, modificar, publicar y cancelar promociones.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IPromotionQueryService</td>
+    <td>Interfaz del servicio de consultas de promociones.</td>
+    <td>Estipular contratos para obtener promociones activas y por negocio.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Repositories:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IPromotionRepository</td>
+    <td>Repositorio para persistencia de Promotion.</td>
+    <td>Definir contratos para operaciones CRUD y búsquedas por estado, negocio o vigencia.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.6.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>PromotionResource</td>
+    <td>Estructura de respuesta con datos de la promoción.</td>
+    <td>Representar visualmente la promoción: título, descuento, fechas y negocio.</td>
+    <td>Usado en PromotionController para respuestas GET.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>CreatePromotionResource</td>
+    <td>Estructura de petición para crear una promoción.</td>
+    <td>Representar y validar datos de entrada para nueva oferta.</td>
+    <td>Usado en PromotionController para recibir peticiones POST.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Transform:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>PromotionResourceFromEntityAssembler</td>
+    <td>Transforma entidad Promotion a PromotionResource.</td>
+    <td>Convertir entidad del dominio a REST.</td>
+    <td>Usado en PromotionController.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>CreatePromotionCommandFromResourceAssembler</td>
+    <td>Transforma CreatePromotionResource a CreatePromotionCommand.</td>
+    <td>Convertir petición REST al comando del dominio.</td>
+    <td>Usado en PromotionController.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Controllers:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>PromotionController</td>
+    <td>Controlador para operaciones con promociones.</td>
+    <td>Manejar endpoints para crear, listar, consultar y gestionar promociones.</td>
+    <td>Usa command/query services de Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa ACL:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>PromotionsContextFacade</td>
+    <td>Servicio de fachada para el contexto Promotions.</td>
+    <td>Proporcionar interfaz para que otros contextos validen disponibilidad de promociones.</td>
+    <td>Relacionado con Redemption context (validar promoción antes de canjear).</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.6.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>PromotionCommandService</td>
+    <td>Implementación de comandos de promociones.</td>
+    <td>Ejecutar reglas de negocio para creación y publicación, validando estado de verificación con Profile.</td>
+    <td>Implementa IPromotionCommandService. Consulta ProfileContextFacade.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - QueryServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>PromotionQueryService</td>
+    <td>Implementación de consultas de promociones.</td>
+    <td>Recuperar promociones activas o filtradas desde infraestructura.</td>
+    <td>Implementa IPromotionQueryService.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.6.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>PromotionRepository</td>
+    <td>Implementación concreta para persistencia de Promotion.</td>
+    <td>Manejar base de datos para operaciones CRUD y búsquedas de ofertas.</td>
+    <td>Usado en Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Event Publishing:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>PromotionEventPublisher</td>
+    <td>Servicio para publicación de eventos de promociones.</td>
+    <td>Emitir eventos como PromotionPublished a través del message broker.</td>
+    <td>Notifica a Analytics y Redemption context.</td>
+  </tr>
+</table>
+
+#### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-Promotions.jpeg">
+</p>
+
+#### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.6.6.1 Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCPromotions/promotions-class-diagram.png">
+</p>
+
+##### 2.6.6.6.2. Bounded Context Database Design Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCPromotions/promotions-database-diagram.png">
+</p>
