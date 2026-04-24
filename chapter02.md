@@ -3607,7 +3607,7 @@ Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Com
 #### 2.6.7.5. Bounded Context Software Architecture Component Level Diagrams
 
 <p align="center">
-    <img src="assets/chapter02/comps-diagr/comp-Community.jpeg">
+    <img src="assets/chapter02/comps-diagr/comp-Commun.jpeg">
 </p>
 
 #### 2.6.7.6. Bounded Context Software Architecture Code Level Diagrams
