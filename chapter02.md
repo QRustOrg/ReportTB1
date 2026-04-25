@@ -937,6 +937,7 @@ En esta sección se presenta el trabajo realizado durante la sesión de Big Pict
 Este proceso permitió identificar los eventos clave, los actores involucrados, las interacciones dentro del sistema y las principales oportunidades de mejora, lo cual resulta fundamental para el diseño y desarrollo de la solución propuesta.
 
 ![BigPictureEventStorming-Klippr](assets/chapter02/BigPictureEventStorming-Klippr.jpg)
+**Figura 1:** Ideas para que la aplicacion interactue 
 
 ### 2.3.6. Ubiquitous Language
 
@@ -1371,15 +1372,48 @@ Para llevar a cabo el proceso de EventStorming empleamos la herramienta **Miro**
 
 <p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-1.jpg" alt="es1"/>
+</p>
+    **Figura 1:** EventStorming del Bounded Context IAM
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-2.jpg" alt="es2"/>
+</p>
+    **Figura 2:** EventStorming del Bounded Context Profile
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-3.jpg" alt="es3"/>
+</p>
+    **Figura 3:** EventStorming del Bounded Context Promotions
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-4.jpg" alt="es4"/>
+</p>
+    **Figura 4:** EventStorming del Bounded Context Favorites
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-5.jpg" alt="es5"/>
+</p>
+    **Figura 5:** EventStorming del Bounded Context Redemption
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-6.jpg" alt="es6"/>
+</p>
+    **Figura 6:** EventStorming del Bounded Context Community
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-7.jpg" alt="es7"/>
+</p>
+    **Figura 7:** EventStorming del Bounded Context Analytics
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-8.jpg" alt="es8"/>
+</p>
+    **Figura 8:** EventStorming del Bounded Context Notifications
+
+<p align="center">
     <img src="assets/chapter02/eventStorming/eventstorming-9.jpg" alt="es9"/>
 </p>
+    **Figura 9:** EventStorming del Bounded Context Settings
 
 #### 2.5.1.1. Candidate Context Discovery
 
@@ -1401,16 +1435,44 @@ Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilus
 
 <p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-1.jpg" alt="dmfm1"/> 
+</p>
+    **Figura 1:** Domain Message Flows Modeling cuando se crea una promocion
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-2.jpg" alt="dmfm2"/> 
+</p>
+    **Figura 2:** Domain Message Flows Modeling cuando se edita una proocion
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-3.jpg" alt="dmfm3"/> 
+</p>
+    **Figura 3:** Domain Message Flows Modeling cuando se elimina una promocion
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-4.jpg" alt="dmfm4"/> 
+</p>
+    **Figura 4:** Domain Message Flows Modeling cuando se guarda promocion a favorito
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-5.jpg" alt="dmfm5"/> 
+</p>
+    **Figura 5:** Domain Message Flows Modeling cuando se elimina la promocion a favorito
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-6.jpg" alt="dmfm6"/> 
+</p>
+    **Figura 6:** Domain Message Flows Modeling cuando el usuario ve todos sus favoritos
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-7.jpg" alt="dmfm7"/> 
+</p>
+    **Figura 7:** Domain Message Flows Modeling cuando deja una resena
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-8.jpg" alt="dmfm8"/> 
+</p>
+    **Figura 8:** Domain Message Flows Modeling cuando se elimina una resena
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-9.jpg" alt="dmfm9"/> 
+</p>
+    **Figura 9:** Domain Message Flows Modeling cuando se comenta una resena
+<p align="center">
     <img src="assets/chapter02/DMFM/domain-message-flows-modeling-10.jpg" alt="dmfm10"/> 
 </p>
+    **Figura 10:** Domain Message Flows Modeling cuando se quiere ver las metricas de las promociones
 
 #### 2.5.1.3. Bounded Context Canvases
 
