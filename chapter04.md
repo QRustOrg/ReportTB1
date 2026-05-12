@@ -14,7 +14,7 @@
 **Requirement Management**
 | Plataforma | Descripción | Enlace |
 | :--- | :--- | :--- |
-| UXPressia | Creación y validación de wireframes, mockups y prototipos interactivos. | https://uxpressia.com |
+| UXPressia | Diseño de User Personas, User Journey Mapping y Empathy Mapping | https://uxpressia.com |
 | Miro | Visualización y desarrollo de escenarios As-Is y To-Be. | https://miro.com |
 
 **Product UX/UI Design**
@@ -53,10 +53,10 @@ Se utiliza la estrategia **GitHub Flow** con las siguientes ramas principales:
 | Corrección urgente | `hotfix/` | `hotfix/x.y.z-descripcion` | `hotfix/1.0.1-fix-auth` |
 
 **Repositorios:**
-- Organización: https://github.com/ColdTech-Peru
-- Mobile App (Kotlin/Compose): https://github.com/ColdTech-Peru/Mobile-App
-- Flutter App: https://github.com/ColdTech-Peru/Flutter-App
-- Informe: https://github.com/ColdTech-Peru/Report
+- Organización: https://github.com/QRustOrg
+- Backend: https://github.com/QRustOrg/Klippr-Backend
+- Landing Page: https://github.com/QRustOrg/Klippr-LandingPage
+- Informe: https://github.com/QRustOrg/ReportTB1
 
 ### 4.1.3 Source Code Style Guide & Conventions
 
