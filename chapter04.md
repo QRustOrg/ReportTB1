@@ -39,9 +39,61 @@ Para la documentación del proyecto se usaron las siguientes herramientas:
 
 #### 4.1.2. Source Code Management
 
-La gestión del código fuente es una parte fundamental del proceso de desarrollo colaborativo de software, ya que permite un control eficiente de los cambios y versiones del código fuente. En esta sección se describe el sistema de control de versiones implementado por **Klippr**
+La gestión del código fuente es una parte fundamental del proceso de desarrollo colaborativo de software, ya que permite un control eficiente de los cambios y versiones del código fuente. En esta sección se describe el sistema de control de versiones implementado por **Klippr**, utilizando GitHub como plataforma de alojamiento de repositorios. Además se detallan las convenciones de trabajo, como el modelo GitFlow y versionado semántico (Conventional Commits).
+
+<br>
+
+**URL de los Repositorios**: 
+
+* Organización: https://github.com/QRustOrg/ReportTB1
+* Reporte: https://github.com/QRustOrg/ReportTB1
+* Landing Page: https://github.com/QRustOrg/LandingPage
+* Aplicación Movil: https://github.com/QRustOrg/Klippr-MobileApp
+* Backend: https://github.com/QRustOrg/Klippr-Backend
+
+**Estructura de Ramas**: 
+
+Para mantener un flujo organizado en el desarrollo, se ha implementado el modelo GitFlow a través de las siguientes ramas:
+
+* Main Branch: Rama principal (main) que contiene las versiones estables del proyecto. Todas las demás ramas derivan de esta.
+* Develop Branch: Rama de desarrollo (develop) que contiene las características en desarrollo y se fusiona con la Main Branch al final de cada sprint.
+* Feature Branches: Ramas de características (feature) que se crean para desarrollar nuevas funcionalidades y se fusionan con la Develop Branch al finalizar.
+
+**Convenciones de commits**: 
+
+Para mantener un flujo de trabajo consistente y claro, se han establecido las siguientes convenciones de commits:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+* Type: 
+  * feat: Agregar una nueva funcionalidad.
+  * fix: Corregir un bug.
+  * docs: Actualizar la documentación.
+  * refactor: Refactorizar el código.
+  * test: Agregar o corregir pruebas.
+  * chore: Tareas de mantenimiento.
+
+* Scope: Brinda información sobre el alcance del commit.
+```
+feat(update): redemption interface & infrastructure settings
+```
+
+**Ejemplos de commits**:
+
+```
+feat(update): redemption interface & infrastructure settings
+chore(db): delete db seed
+fix(endpoint): add swagger docs and fix promotion creation route
+```
 
 #### 4.1.3. Source Code Style Guide & Conventions
+
 #### 4.1.4. Software Deployment Configuration
 ### 4.2. Landing Page & Mobile Application Implementation
 #### 4.2.1. Sprint n
