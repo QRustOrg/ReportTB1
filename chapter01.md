@@ -68,7 +68,7 @@ Buscamos cerrar la brecha entre la experiencia física de compra y la convenienc
       <td align="center">
         <img src="assets/Integrantes/Samuel.png" width="150">
       </td>
-      <td>Estudiante de Ing.Software. Experiencia desarrollando aplicaciones móviles con Kotlin & Dart. Apasionado por AI Tooling, Prompt Engineering y Desarrollo de Workflows/Automatizaciones con Claude.</td>
+      <td>Estudiante de Ing.Software. Experiencia desarrollando aplicaciones móviles con Kotlin & Dart. Apasionado por AI Tooling, Prompt Engineering y Desarrollo de Workflows/Automatizaciones con Claude & Hermes Agent.</td>
     </tr>
     <tr>
       <td>Castro Pariona, Jefferson Ernesto<br>(U201822823)</td>
