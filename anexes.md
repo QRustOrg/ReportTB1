@@ -19,7 +19,11 @@
 
 # Video About the product
 
+<pendiente>
+
 # Video About the team
+
+<pendiente>
 
 # Glosario
 

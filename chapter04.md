@@ -342,8 +342,34 @@ Finalmente, si todo ha ido bien, podremos acceder a la **Landing Page** desplega
 #### 4.2.1. Sprint 1
 ##### 4.2.1.1. Sprint Planning 1
 
-En este primer sprint
+En este primer sprint, el enfoque principal fue la implementación de historias de usuario en la **Landing Page** y el primer prototipo de **Klippr**, en resumen: implementar las principales vistas funcionales y establecer la navegación entre ellas.
+
+Las tareas se distribuyeron de esta forma:
+
+* **Samuel Bonifacio**: <br>
+* **Julio Guillen**: <br>
+* **Alberto Ponce**: <br>
+* **Alejandro Galindo**: <br>
+* **Jefferson Castro**: <br>
+
+También se añadió el **logo oficial** de la aplicación en todas las vistas principales para **unificar la identidad visual**.
+
 ##### 4.2.1.2. Sprint Backlog 1
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>ID</th>
+    <th>Historia de Usuario</th>
+    <th>Descripción</th>
+    <th>Prioridad</th>
+    <th>Responsable</th>
+    <th>Estado</th>
+  </tr>
+  <tr>
+    <td colspan="6">HU-01</td>
+  </tr>
+</table>
+
 ##### 4.2.1.3. Development Evidence for Sprint Review
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
 ##### 4.2.1.5. Execution Evidence for Sprint Review
