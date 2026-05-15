@@ -29,7 +29,7 @@
 
 <br>
 
-**INFORME DE TRABAJO TP1**
+**INFORME DE TRABAJO TB1**
 
 <br>
 
@@ -328,7 +328,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
