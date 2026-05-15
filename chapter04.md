@@ -530,7 +530,6 @@ Posteriormente el proyecto fue desplegado en **Railway** para su publicación, p
   </tr>
 </table>
 
-
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
 ##### 4.2.1.5. Execution Evidence for Sprint Review
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
