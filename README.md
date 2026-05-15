@@ -462,7 +462,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>TB1</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>Durante la ejecución del Sprint 1, actualicé mis conocimientos en desarrollo Backend con C# y ASP.NET Core mediante la implementación de los Bounded Contexts de Promotion y Redemption. Además, adquirí experiencia en el despliegue de aplicaciones web utilizando plataformas cloud como Railway y Vercel, consolidando mi comprensión de Clean Architecture y la integración de APIs.<br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>Colaboracion diseño de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile.<br>
-        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br> Durante el desarrollo del Sprint 1 participé en el diseño de la landing page y en la elaboración de wireframes y mock-ups en Figma para representar visualmente las funcionalidades principales de la plataforma. Asimismo, colaboré en la definición visual de historias de usuario y en la organización de la experiencia de usuario de la aplicación. Estas actividades me permitieron fortalecer y actualizar mis conocimientos en diseño UX/UI, prototipado interactivo y diseño centrado en el usuario, comprendiendo la importancia de desarrollar interfaces intuitivas, atractivas y alineadas con los requerimientos funcionales del proyecto.<br>
         <b>Ponce Perales, Alberto Alejandro</b><br>
         <b>Alejandro Manuel Galindo Montero</b><br>
         <b>AV2</b><br>
@@ -492,7 +492,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>TB1</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>A partir del desarrollo de los módulos transaccionales del backend y el despliegue de nuestra infraestructura, reconocí la necesidad del aprendizaje continuo frente a la rápida evolución de servicios en la nube como Vercel y Railway. Afrontar los desafíos técnicos en la creación de los Endpoints de promociones y canjes me enseñó que la actualización constante es esencial para diseñar arquitecturas de software robustas.<br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>Reuniones periodicas para definir el alcance de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile<br>
-        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br> Durante el proceso de diseño de la landing page y la creación de wireframes y mock-ups en Figma, reconocí la necesidad del aprendizaje permanente en herramientas de diseño UX/UI y metodologías de experiencia de usuario. La constante evolución de tendencias, patrones visuales y tecnologías de diseño me permitió comprender que la actualización continua es fundamental para desarrollar interfaces modernas, funcionales y alineadas con las necesidades de los usuarios y del mercado tecnológico.<br>
         <b>Ponce Perales, Alberto Alejandro</b><br>
         <b>Alejandro Manuel Galindo Montero</b><br>
         <b>AV2</b><br>
