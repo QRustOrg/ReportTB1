@@ -441,46 +441,52 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
   </thead>
   <tbody>
     <tr>
-      <td><b>7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software</b></td>
-  <td>
-  <b>TB1: Bonifacio Jaramillo, Samuel Jesus:</b><br>
-  Al desarrollar el Tactical-Level Domain-Driven Design del Bounded Context IAM, el desarrollo del Bounded Context Profile, el Keynote y las Ideas de User Stories, aprendí más acerca de los conceptos de arquitectura de software y metodologías ágiles, actualizando mis conocimientos en patrones de diseño y gestión de identidades para aplicarlos en soluciones reales.<br><br>
-
-  <b>Castro Pariona, Jefferson Ernesto</b><br><br>
-
-  <b>Guillen Galindo, Julio Adolfo</b><br><br>
-
-  <b>Ponce Perales, Alberto Alejandro</b><br><br>
-
-  <b>Galindo Montero, Alejandro Manuel</b><br>
-  <b>AV1:</b> Al desarrollar el AV1, apoyé en la etapa de needfinding, contribuyendo a la identificación de necesidades del usuario y la definición del problema. Asimismo, participé en la elaboración de los Bounded Contexts, especialmente en Settings y Analytics, incluyendo el diseño de sus diagramas de dominio, modelos de base de datos y documentación en Clean Architecture. Además, desarrollé los diagramas de contexto y contenedores para representar la arquitectura del sistema.<br><br>
-
-  <b>TB1:</b> En el TB1 participé en el diseño de mockups y wireframes del sistema, contribuyendo a la definición de la experiencia de usuario y la estructura visual de la plataforma. Asimismo, apoyé en el desarrollo del backend y del prototipo funcional, fortaleciendo mis conocimientos en desarrollo de software, arquitectura backend e integración de componentes dentro de una solución tecnológica real.
-</td>
-<td>
-  <b>TB1:</b> Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.
-</td>
-</tr>
-
-<tr>
-<td><b>7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software</b></td>
-<td>
-  <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
-
-  <b>Castro Pariona, Jefferson Ernesto</b><br><br>
-
-  <b>Guillen Galindo, Julio Adolfo</b><br><br>
-
-  <b>Ponce Perales, Alberto Alejandro</b><br><br>
-
-  <b>Galindo Montero, Alejandro Manuel</b><br>
-
-  <b>AV1:</b> Durante el desarrollo del AV1, reconocí la importancia del aprendizaje permanente para el desempeño profesional en ingeniería de software. Al apoyar en la etapa de needfinding y participar en la construcción de los Bounded Contexts, especialmente en Settings y Analytics, identifiqué la necesidad de reforzar conocimientos en arquitectura de software, Domain-Driven Design y Clean Architecture. Asimismo, al desarrollar los diagramas de dominio, modelos de base de datos y diagramas de contexto y contenedores, comprendí que la actualización continua de habilidades es clave para diseñar soluciones tecnológicas sólidas y aplicables en entornos reales.<br><br>
-
-  <b>TB1:</b> En el TB1 participé en el diseño de mockups, wireframes, el desarrollo del backend y la construcción del prototipo, reconocí la necesidad de mantener un aprendizaje constante en herramientas de diseño UX/UI, tecnologías backend y metodologías de desarrollo modernas. Estas actividades me permitieron comprender que la evolución continua de conocimientos técnicos y prácticos es fundamental para adaptarse a las demandas de proyectos reales de ingeniería de software.
-</td>
+      <td>
+        <b>
+          7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software
+        </b>
       </td>
-      <td></td>
+      <td>
+        <b>TB1: Bonifacio Jaramillo, Samuel Jesus</b><br>
+        Al desarrollar el Tactical-Level Domain-Driven Design del Bounded Context IAM, el desarrollo del Bounded Context Profile, el Keynote y las Ideas de User Stories, aprendí más acerca de los conceptos de arquitectura de software y metodologías ágiles, actualizando mis conocimientos en patrones de diseño y gestión de identidades para aplicarlos en soluciones reales.
+        <br><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br><br>
+        <b>Galindo Montero, Alejandro Manuel</b><br>
+        <b>AV1</b><br>
+        Al desarrollar el AV1, apoyé en la etapa de needfinding, contribuyendo a la identificación de necesidades del usuario y la definición del problema. Asimismo, participé en la elaboración de los Bounded Contexts, especialmente en Settings y Analytics, incluyendo el diseño de sus diagramas de dominio, modelos de base de datos y documentación en Clean Architecture. Además, desarrollé los diagramas de contexto y contenedores para representar la arquitectura del sistema.
+        <br><br>
+        <b>TB1</b><br>
+        En el TB1 participé en el diseño de mockups y wireframes del sistema, contribuyendo a la definición de la experiencia de usuario y la estructura visual de la plataforma. Asimismo, apoyé en el desarrollo del backend y del prototipo funcional, fortaleciendo mis conocimientos en desarrollo de software, arquitectura backend e integración de componentes dentro de una solución tecnológica real.
+      </td>
+      <td>
+        <b>TB1</b><br>
+        Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>
+          7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software
+        </b>
+      </td>
+      <td>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br><br>
+        <b>Galindo Montero, Alejandro Manuel</b><br>
+        <b>AV1</b><br>
+        Durante el desarrollo del AV1, reconocí la importancia del aprendizaje permanente para el desempeño profesional en ingeniería de software. Al apoyar en la etapa de needfinding y participar en la construcción de los Bounded Contexts, especialmente en Settings y Analytics, identifiqué la necesidad de reforzar conocimientos en arquitectura de software, Domain-Driven Design y Clean Architecture. Asimismo, al desarrollar los diagramas de dominio, modelos de base de datos y diagramas de contexto y contenedores, comprendí que la actualización continua de habilidades es clave para diseñar soluciones tecnológicas sólidas y aplicables en entornos reales.
+        <br><br>
+        <b>TB1</b><br>
+        En el TB1 participé en el diseño de mockups, wireframes, el desarrollo del backend y la construcción del prototipo, reconociendo la necesidad de mantener un aprendizaje constante en herramientas de diseño UX/UI, tecnologías backend y metodologías de desarrollo modernas. Estas actividades me permitieron comprender que la evolución continua de conocimientos técnicos y prácticos es fundamental para adaptarse a las demandas de proyectos reales de ingeniería de software.
+      </td>
+      <td>
+        <b>TB1</b><br>
+        Los estudiantes reconocieron la importancia del aprendizaje permanente como parte fundamental del desempeño profesional en ingeniería de software. La participación en actividades relacionadas con arquitectura de software, diseño UX/UI, desarrollo backend y construcción de prototipos permitió fortalecer competencias técnicas y evidenciar la necesidad de actualizar continuamente conocimientos y habilidades para afrontar los desafíos de proyectos tecnológicos reales.
+      </td>
     </tr>
   </tbody>
 </table>
