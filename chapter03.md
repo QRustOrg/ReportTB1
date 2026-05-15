@@ -211,6 +211,12 @@ En esta sección, se presentaran los wireframes de los mobile applications de am
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
+En esta seccion presentaremos nuestro wireflow diagram que representa el flujo que siguen de nuestros wireframes:
+
+<p align="center">
+    <img src="assets/chapter03/wireflow-diagram.png">
+</p>
+
 #### 3.1.4.3. Mobile Applications Mock-ups
 
 En esta sección, se presentaran los mockups de los mobile applications de ambos segmentos objetivo:
@@ -245,6 +251,12 @@ En esta sección, se presentaran los mockups de los mobile applications de ambos
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+En esta seccion presentaremos nuestro User Flow Diagram que representa el flujo que siguen de nuestros mockups junto con User Goals:
+
+<p align="center">
+    <img src="assets/chapter03/userflow-diagram.png">
+</p>
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
