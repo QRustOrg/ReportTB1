@@ -661,7 +661,6 @@ El controlador de **Promotion** expone las funcionalidades críticas para el cic
 
 ![promotion-evidence-7](/assets/chapter04/execution-evidence/backend/promotion-redemption/klippr-promotion-7.png)
 
-
 ## Redemption Bounded Context
 
 Como parte del desarrollo del backend en **C#**, se ha consolidado el Bounded Context de **Redemption**. Este módulo actúa como el motor transaccional para la adquisición y canje de promociones, vinculando directamente a los consumidores con las ofertas de los negocios.
@@ -734,7 +733,6 @@ El controlador de **Authentication** expone las funcionalidades criticas para el
 * **POST `/api/Authentication/sign-up/consumer`**: Proceso de registro optimizado para el usuario final (Consumer), vinculando la identidad con su perfil correspondiente.
 * **POST `/api/Authentication/sign-up/business`**: Registro especializado para entidades de negocio, activando las reglas de validacion propias de este sector.
 
-
 - **Validacion parametro Post** 
 
 ![iam-profile](/assets/chapter04/vercel-deploy/evidences-sprint/iam/pro2.png)
@@ -779,6 +777,100 @@ Se han expuesto los endpoints necesarios para la creación (**POST**), actualiza
 - **User Profile** 
 
 ![sw-bcprofile](/assets/chapter04/vercel-deploy/evidences-sprint/profile/userlog.png)
+
+## Community Bounded Context
+
+Como parte del desarrollo del backend en **C#**, se ha consolidado el Bounded Context de **Community**. Este módulo actúa como el espacio de interacción social entre los consumidores y los dueños de negocio, permitiendo fortalecer la comunicación, la participación y la retroalimentación dentro de la plataforma.
+
+### Implementacion Tecnica de Community
+Se ha diseñado un flujo robusto y escalable para garantizar una interacción dinámica y segura entre los usuarios y los negocios. Los logros principales incluyen:
+
+* **Sistema de Comentarios:** Implementación de funcionalidades para que los usuarios puedan publicar comentarios y opiniones sobre los negocios y promociones.
+* **Calificaciones y Reseñas:** Integración de un sistema de puntuación que permite valorar la experiencia del consumidor con el negocio.
+* **Interacción con el Dueño del Negocio:** Desarrollo de mecanismos que facilitan la comunicación entre la comunidad y los propietarios de los establecimientos.
+
+---
+
+## Evidencias de Ejecucion: Módulo Community
+
+A continuacion se presentan los endpoints desarrollados y testeados a traves de la interfaz de Swagger:
+
+![communityn-evidence-1](/assets/chapter04/execution-evidence/backend/community/klippr-community-1.png)
+
+### 1. Gestion de Comunidad (Community)
+
+El controlador de **Community** expone las funcionalidades esenciales para la interacción entre consumidores y negocios:
+
+* **Endpoints de Comunidad**: Facilitan la interacción segura entre usuarios y dueños de negocio dentro de la plataforma.
+
+- **Publicación de Comentarios (Community Process)** 
+
+![communityn-evidence-2](/assets/chapter04/execution-evidence/backend/community/klippr-community-2.png)
+
+- **Validación de Contenido**
+
+![community-evidence-3](/assets/chapter04/execution-evidence/backend/community/klippr-community-3.png)
+
+- **Gestión de Calificaciones y Reseñas**
+
+![community-evidence-4](/assets/chapter04/execution-evidence/backend/community/klippr-community-4.png)
+
+- **Editar Contenido**
+
+![community-evidence-5](/assets/chapter04/execution-evidence/backend/community/klippr-community-5.png)
+
+![community-evidence-6](/assets/chapter04/execution-evidence/backend/community/klippr-community-6.png)
+
+- **Eliminar Calificaciones y Reseñas**
+
+![community-evidence-6](/assets/chapter04/execution-evidence/backend/community/klippr-community-7.png)
+
+## Setting Bounded Context
+
+Como parte del desarrollo del backend en **C#**, se ha consolidado el Bounded Context de **Settings**. Este módulo actúa como el núcleo de configuración de la plataforma, permitiendo la administración y personalización de preferencias tanto para consumidores como para dueños de negocio.
+
+### Implementacion Tecnica de Setting
+Se ha diseñado un flujo robusto y flexible para garantizar una gestión segura y centralizada de las configuraciones del sistema. Los logros principales incluyen:
+
+* **Gestión de Preferencias de Usuario:** Implementación de funcionalidades para personalizar configuraciones relacionadas con la cuenta, notificaciones y experiencia de uso.
+* **Persistencia Segura de Configuraciones:** Desarrollo de mecanismos que aseguran el almacenamiento confiable y consistente de las preferencias definidas por los usuarios.
+* **Actualización Dinámica de Ajustes:** Implementación de procesos que permiten modificar configuraciones en tiempo real sin afectar la estabilidad del sistema.
+
+---
+
+## Evidencias de Ejecucion: Módulo Setting
+
+A continuación se presentan los endpoints desarrollados y testeados a través de la interfaz de Swagger:
+
+![setting-evidence-1](/assets/chapter04/execution-evidence/backend/setting/klippr-setting-1.png)
+
+### 1. Gestion de Comunidad (Settings)
+
+El controlador de **Settings** expone las funcionalidades esenciales para la administración de preferencias y parámetros de la plataforma:
+
+* **Endpoints de Settings**: Facilitan la actualización y consulta segura de ajustes relacionados con usuarios y negocios.
+
+- **Creacion de comentarios (Settings Process)** 
+
+![setting-evidence-2](/assets/chapter04/execution-evidence/backend/setting/klippr-setting-2.png)
+
+- **Validación de Configuraciones**
+
+![setting-evidence-3](/assets/chapter04/execution-evidence/backend/community/klippr-community-3.png)
+
+- **Gestión de Parámetros de Negocio**
+
+![setting-evidence-4](/assets/chapter04/execution-evidence/backend/community/klippr-community-4.png)
+
+- **Actualización de Preferencias**
+
+![setting-evidence-5](/assets/chapter04/execution-evidence/backend/community/klippr-community-5.png)
+
+![setting-evidence-6](/assets/chapter04/execution-evidence/backend/community/klippr-community-6.png)
+
+- **Eliminar Configuracion**
+
+![setting-evidence-6](/assets/chapter04/execution-evidence/backend/community/klippr-community-7.png)
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
