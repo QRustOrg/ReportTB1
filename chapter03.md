@@ -170,9 +170,19 @@ Sistema de búsqueda implementado en:
 
 ### 3.1.3. Landing Page UI Design
 
+El link del diseño de **Figma** donde se desarrollaron los Mockups y Wireframes para la **Landing Page** es el siguiente: https://www.figma.com/design/qrrjkC1ZwEIkvVBVWlxXn1/Aplicaciones-Moviles-2026-1?node-id=26-4&t=BWWBciObsKb10zXn-0
+
 #### 3.1.3.1. Landing Page Wireframe
 
+Vista del Wireframe de **Landing Page** completo:
+
+![Klippr-Wireframe](/assets/chapter03/landing-wireframes/Klippr%20-%20Wireframe.png)
+
 #### 3.1.3.2. Landing Page Mock-up
+
+Vista del Mockup de **Landing Page** completo:
+
+![Klippr-Mockup](/assets/chapter03/landing-mockups/Klippr%20-%20Mockup.png)
 
 <h2> Hero Section </h2>
 
