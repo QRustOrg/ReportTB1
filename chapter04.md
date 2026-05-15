@@ -532,6 +532,80 @@ Posteriormente el proyecto fue desplegado en **Railway** para su publicación, p
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
 ##### 4.2.1.5. Execution Evidence for Sprint Review
+
+
+**IAM**
+
+Como parte del desarrollo del backend en **C#**, se ha consolidado el Bounded Context de **IAM (Identity and Access Management)**. Este modulo es el pilar de seguridad de la aplicacion, encargado de gestionar la identidad de los usuarios, la autenticacion y la autorizacion basada en roles para los perfiles de Consumer y Business.
+
+### Implementacion Tecnica de IAM
+Se ha utilizado **ASP.NET Core Identity** junto con **JWT (JSON Web Tokens)** para garantizar comunicaciones seguras entre la aplicacion movil y el servidor. Los logros principales incluyen:
+
+* **Registro Segregado:** Implementacion de flujos de inscripcion diferenciados para asegurar que cada tipo de usuario sea categorizado correctamente desde su creacion.
+* **Autenticacion Centralizada:** Un servicio de inicio de sesion unico que valida credenciales y emite tokens de acceso de corta duracion.
+* **Seguridad de Datos:** Aplicacion de algoritmos de hashing para la proteccion de contraseñas en la base de datos.
+
+---
+
+## Evidencias de Ejecucion: Modulo Authentication
+
+A continuacion se presentan los endpoints desarrollados y testeados a traves de la interfaz de Swagger:
+
+### 1. Gestion de Identidad y Acceso (IAM)
+
+El controlador de **Authentication** expone las funcionalidades criticas para el ciclo de vida del usuario:
+
+* **POST `/api/Authentication/sign-in`**: Permite a los usuarios existentes obtener un token de acceso mediante sus credenciales.
+* **POST `/api/Authentication/sign-up/consumer`**: Proceso de registro optimizado para el usuario final (Consumer), vinculando la identidad con su perfil correspondiente.
+* **POST `/api/Authentication/sign-up/business`**: Registro especializado para entidades de negocio, activando las reglas de validacion propias de este sector.
+
+![iam-profile](/assets/chapter04/vercel-deploy/evidences-sprint/iam/iambc.png)
+
+- **Validacion parametro Post** 
+
+![iam-profile](/assets/chapter04/vercel-deploy/evidences-sprint/iam/pro2.png)
+
+- **Registration Process**
+
+![iam-profile](/assets/chapter04/vercel-deploy/evidences-sprint/iam/iaproc.png)
+
+### Notas de Integracion
+Los tokens generados por este modulo son requeridos como cabecera `Authorization: Bearer {token}` para interactuar con los Bounded Contexts de **Profile** y **Verification**, asegurando que solo usuarios autenticados puedan gestionar su informacion personal o empresarial.
+
+### 2. Profile
+
+Se han expuesto los endpoints necesarios para la creación (**POST**), actualización (**PUT**) y consulta (**GET**) de perfiles tanto para consumidores finales como para cuentas de negocio.
+
+- **Endpoint `/api/profiles/consumer`**  
+  Gestiona la información personal y preferencias del usuario final.
+
+- **Endpoint `/api/profiles/business`**  
+  Maneja los datos operativos y comerciales de las empresas registradas.
+
+- **Módulo de Verificación y Administración**
+
+  Se implementó la lógica de negocio para el filtrado de perfiles pendientes de validación, permitiendo a los administradores del sistema aprobar o rechazar solicitudes de acceso.
+
+  - **AdminProfile**  
+  Consultas especializadas para la búsqueda de usuarios y perfiles que requieren atención.
+
+  - **Verification**  
+  Flujo de trabajo para el envío (**submit**) y aprobación (**approve**) de documentos o datos de identidad.
+
+![sw-bcprofile](/assets/chapter04/vercel-deploy/evidences-sprint/profile/bcpro.png)
+
+- **Validacion parametro Post** 
+
+![sw-bcprofile](/assets/chapter04/vercel-deploy/evidences-sprint/profile/post-parameter.png)
+
+- **Company Profile** 
+
+![sw-bcprofile](/assets/chapter04/vercel-deploy/evidences-sprint/profile/emplog.png)
+
+- **User Profile** 
+
+![sw-bcprofile](/assets/chapter04/vercel-deploy/evidences-sprint/profile/userlog.png)
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
 ##### 4.2.1.8. Team Collaboration Insights during Sprint
