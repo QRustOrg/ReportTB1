@@ -2,7 +2,7 @@
 
 <br>
 
-![upc-logo](/assets/Integrantes/logo-UPC.png)
+<img src="/assets/Integrantes/logo-UPC.png" alt="upc-logo" width="200"/>
 
 <br>
 
