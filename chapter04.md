@@ -346,7 +346,7 @@ En este primer sprint, el enfoque principal fue la implementación de historias 
 
 Las tareas se distribuyeron de esta forma:
 
-* **Samuel Bonifacio**: <br>
+* **Samuel Bonifacio**: Despliegue de **Landing Page & Backend**(Creación de BCS: Promotion & Redemption), además de la documentación de estos procesos.<br>
 * **Julio Guillen**: <br>
 * **Alberto Ponce**: <br>
 * **Alejandro Galindo**: <br>
