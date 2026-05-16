@@ -242,7 +242,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
-      <th> </th>
+      <th> Creación de los Bounded Contexts de Community y Setting para el Backend, además de la documentación de estos procesos.</th>
     </tr>
     <tr>
       <th> Ponce Perales, Alberto Alejandro</th>
@@ -250,7 +250,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
     </tr>
     <tr>
       <th> Galindo Montero, Alejandro Manuel</th>
-      <th> </th>
+      <th> Creación del Bounded Context de Analytics para el Backend, además del desarrollo de las secciones Social Proof y Comparison para la Landing Page.</th>
     </tr>
   </tbody>
 </table>
@@ -461,9 +461,9 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>TB1</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>Durante la ejecución del Sprint 1, actualicé mis conocimientos en desarrollo Backend con C# y ASP.NET Core mediante la implementación de los Bounded Contexts de Promotion y Redemption. Además, adquirí experiencia en el despliegue de aplicaciones web utilizando plataformas cloud como Railway y Vercel, consolidando mi comprensión de Clean Architecture y la integración de APIs.<br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>Colaboracion diseño de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile.<br>
-        <b>Guillen Galindo, Julio Adolfo</b><br>
-        <b>Ponce Perales, Alberto Alejandro</b><br> Durante este Sprint 1, desarrolle y fortaleci mis conocimientos en C# y .NET, mediante el desarrollo del bounded context de Favorites, ademas colabore en el diseño de landing page, historias de usuario, por ultimo responsable de las validation interviews.
-        <b>Alejandro Manuel Galindo Montero</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>Durante el Sprint 1, actualicé mis conocimientos en el desarrollo Backend con C# y .NET mediante la creación de los Bounded Contexts de Community y Setting. Además, fortalecí mis habilidades en la documentación técnica de procesos, consolidando mi comprensión sobre Clean Architecture e interacciones sociales dentro de la plataforma.<br>
+        <b>Ponce Perales, Alberto Alejandro</b><br> Durante este Sprint 1, desarrolle y fortaleci mis conocimientos en C# y .NET, mediante el desarrollo del bounded context de Favorites, ademas colabore en el diseño de landing page, historias de usuario, por ultimo responsable de las validation interviews.<br>
+        <b>Alejandro Manuel Galindo Montero</b><br>Durante el Sprint 1, actualicé mis conocimientos tanto en el desarrollo de interfaces web como en el Backend. En la Landing Page, desarrollé las secciones de Social Proof y Comparison. En el Backend, implementé el Bounded Context de Analytics en C#, consolidando mis habilidades en Clean Architecture y el desarrollo de componentes modernos.<br>
         <b>AV2</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>
@@ -495,9 +495,9 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
         <b>TB1</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>A partir del desarrollo de los módulos transaccionales del backend y el despliegue de nuestra infraestructura, reconocí la necesidad del aprendizaje continuo frente a la rápida evolución de servicios en la nube como Vercel y Railway. Afrontar los desafíos técnicos en la creación de los Endpoints de promociones y canjes me enseñó que la actualización constante es esencial para diseñar arquitecturas de software robustas.<br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>Reuniones periodicas para definir el alcance de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile<br>
-        <b>Guillen Galindo, Julio Adolfo</b><br>
-        <b>Ponce Perales, Alberto Alejandro</b><br> Del desarrollo del backend obtuve los desafíos técnicos en la creación de los Endpoints de este módulo me enseñó que la actualización constante es esencial para diseñar arquitecturas de software robustas. .Asimismo, complementé este proceso técnico asumiendo el diseño y la estructuración de las historias de usuario directamente en Figma. Por último, lideré de manera integral la fase de validation interviews, siendo completamente responsable de ejecutar la evaluación por heurísticas para garantizar la usabilidad y calidad de la solución antes de su implementación.
-        <b>Alejandro Manuel Galindo Montero</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>Al desarrollar los Bounded Contexts de Community y Setting, reconocí que el aprendizaje permanente es clave para implementar arquitecturas limpias y sistemas de interacción escalables. La necesidad de documentar estos procesos técnicos me demostró que mantenerse actualizado en estándares de desarrollo es esencial para asegurar la calidad y mantenibilidad del software en un entorno profesional.<br>
+        <b>Ponce Perales, Alberto Alejandro</b><br> Del desarrollo del backend obtuve los desafíos técnicos en la creación de los Endpoints de este módulo me enseñó que la actualización constante es esencial para diseñar arquitecturas de software robustas. .Asimismo, complementé este proceso técnico asumiendo el diseño y la estructuración de las historias de usuario directamente en Figma. Por último, lideré de manera integral la fase de validation interviews, siendo completamente responsable de ejecutar la evaluación por heurísticas para garantizar la usabilidad y calidad de la solución antes de su implementación.<br>
+        <b>Alejandro Manuel Galindo Montero</b><br>Al participar en el desarrollo del Bounded Context de Analytics y de secciones clave en la Landing Page, reconocí la importancia del aprendizaje continuo para integrar diferentes tecnologías. Adaptarme a los requerimientos de análisis de datos en el backend y al diseño de interfaces de usuario atractivas me enseñó que la constante actualización es fundamental para mi desempeño como desarrollador de software.<br>
         <b>AV2</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>
