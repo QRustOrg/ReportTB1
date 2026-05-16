@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="200"/>
+<img src="/assets/Integrantes/logo-UPC.png" alt="upc-logo" width="200"/>
 
 <br>
 
@@ -86,16 +86,16 @@
       <td>Desarrollo de los capitulos I,II & Anexos</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>2.0</td>
+      <td>11 de mayo</td>
+      <td>QRust</td>
+      <td>Despliegue de Landing Page, avance de Backend y desarrollo de capítulos III & IV</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>3.0</td>
+      <td>15 de mayo</td>
+      <td>QRust</td>
+      <td>Validaciones y tests sobre la Landing Page, avance de Backend y desarrollo de capítulos III & IV</td>
     </tr>
     <tr>
       <td></td>
@@ -152,12 +152,12 @@
 
 Analiza cómo la colaboración y la gestión de tareas influyeron en los resultados del proyecto, destacando fortalezas y áreas de mejora para optimizar futuras estrategias.
 
-URL del Repositorio del Informe: https://github.com/QRustOrg/ReportTB1.git <br>
-URL del Repositorio de Landing Page: https://github.com/QRustOrg/LandingPage.git <br>
+URL del Repositorio del Informe: https://github.com/QRustOrg/ReportTB1 <br>
+URL del Repositorio de Landing Page: https://github.com/QRustOrg/LandingPage <br>
 URL del Repositorio del Frontend:  <br>
-URL del Repositorio del Backend:  <br>
+URL del Repositorio del Backend: https://github.com/QRustOrg/Klippr-Backend  <br>
 
-### Reporte de Colaboración Entrega TB1
+### Reporte de Colaboración Entrega AV1
 
 En esta entrega se redactó el informe abarcando la **definición inicial del producto, el modelado UX y hasta la sección de Tactical Level Domain-Driven Design de la Arquitectura de Software**. Las tareas más relevantes fueron el desarrollo del **Event Storming**, los diseños de **historias de usuario, perfiles de usuario** y el modelado de experiencia. Además, se definieron el **Diagrama de Componentes, Diagrama de Clases y Diagrama de Base de Datos** para cada **Bounded Context** identificado mediante el **Event Storming**.
 
@@ -177,9 +177,9 @@ En el analítico de Pulse se evidencian los commits que realizó cada integrante
 
 ---
 
-**TB1**
+**AV1**
 
-Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
+Para el desarrollo del informe perteneciente a la entrega del AV1, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
 <br>
 
@@ -193,7 +193,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
   <tbody>
     <tr>
       <th> Bonifacio Jaramillo, Samuel Jesus</th>
-      <th> Diseño de arquitectura y Bounded Contexts, diagramas de base de datos, Event Storming y estructuración general (Capítulos 1 y 2).</th>
+      <th> Diseño de arquitectura y Bounded Contexts, diagramas de base de datos, Event Storming y estructuración general (Capítulos I y II).</th>
     </tr>
     <tr>
       <th> Castro Pariona, Jefferson Ernesto</th>
@@ -216,9 +216,9 @@ Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió l
 
 <br>
 
-**TP1**
+**TB1**
 
-Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
+Para el desarrollo del informe perteneciente a la entrega del TB1, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
 <br>
 
@@ -234,11 +234,11 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
   <tbody>
     <tr>
       <th> Bonifacio Jaramillo, Samuel Jesus</th>
-      <th> </th>
+      <th> Despliegue de Landing Page & Backend, diseño de US (Mockups y Wireframes) y estructuración general (Capítulos III & IV)</th>
     </tr>
     <tr>
       <th> Castro Pariona, Jefferson Ernesto</th>
-      <th> </th>
+      <th> Colaboracion diseño de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile</th>
     </tr>
     <tr>
       <th> Guillen Galindo, Julio Adolfo</th>
@@ -246,7 +246,7 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
     </tr>
     <tr>
       <th> Ponce Perales, Alberto Alejandro</th>
-      <th> </th>
+      <th> Colaboracion de diseño de la landing page ademas de historias de usuario en Figma, encargado de las validation interviews.</th>
     </tr>
     <tr>
       <th> Galindo Montero, Alejandro Manuel</th>
@@ -258,7 +258,7 @@ Para el desarrollo del informe perteneciente a la entrega del TP1, se dividió l
 <br>
 
 
-**TB2**
+**AV2**
 
 Para el desarrollo del informe perteneciente a la entrega del TB2, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
@@ -297,7 +297,7 @@ Para el desarrollo del informe perteneciente a la entrega del TB2, se dividió l
 
 <br>
 
-**TF**
+**TB2**
 
 Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
@@ -328,7 +328,7 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
       <th> </th>
     </tr>
     <tr>
-      <th> Alejandro Manuel Galindo Montero</th>
+      <th> Galindo Montero, Alejandro Manuel</th>
       <th> </th>
     </tr>
   </tbody>
@@ -452,26 +452,66 @@ Para el desarrollo del informe perteneciente a la entrega del TF, se dividió la
   </thead>
   <tbody>
     <tr>
-      <td><b>7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software</b></td>
       <td>
-        <b>TB1: Bonifacio Jaramillo, Samuel Jesus:</b><br> Al desarrollar el Tactical-Level Domain-Driven Design del Bounded Context IAM, el desarrollo del Bounded Context Profile, el Keynote y las Ideas de User Stories, aprendí más acerca de los conceptos de arquitectura de software y metodologías ágiles, actualizando mis conocimientos en patrones de diseño y gestión de identidades para aplicarlos en soluciones reales.<br> 
+        <b>AV1: Bonifacio Jaramillo, Samuel Jesus:</b><br> Al desarrollar el Tactical-Level Domain-Driven Design del Bounded Context IAM, el desarrollo del Bounded Context Profile, el Keynote y las Ideas de User Stories, aprendí más acerca de los conceptos de arquitectura de software y metodologías ágiles, actualizando mis conocimientos en patrones de diseño y gestión de identidades para aplicarlos en soluciones reales.<br> 
         <b>Castro Pariona, Jefferson Ernesto</b><br>Al realizar la redacción de los Capítulos I y II del informe, participar en la evaluación del Product Backlog y elaborar los diagramas de Bounded Context utilizando el C4 model, actualicé significativamente mis conocimientos en arquitectura de software, modelado de contextos de negocio y herramientas de visualización arquitectónica. Esta experiencia me permitió comprender la importancia de una sólida estructura arquitectónica en la definición de soluciones de ingeniería de software.<br>
         <b>Guillen Galindo, Julio Adolfo</b><br>En el desarrollo del Capítulo II, participé en la estructuración de requisitos, análisis competitivo y estrategias de marketing para la solución. Esto me permitió actualizar mis conocimientos en metodologías ágiles, técnicas de recopilación de requisitos y estrategias empresariales aplicadas al desarrollo de software, consolidando una visión integral del desarrollo de productos tecnológicos.<br>
         <b>Ponce Perales, Alberto Alejandro</b><br>Al desarrollar la especificación de requisitos incluyendo User Stories, Technical Stories y criterios de aceptación, actualicé mis conocimientos en técnicas de especificación de requisitos y metodologías ágiles. Esta experiencia me permitió comprender mejor cómo traducir necesidades del usuario en requisitos técnicos claros y verificables.<br>
         <b>Alejandro Manuel Galindo Montero</b><br>Al desarrollar el Capítulo II con la elaboración de diagramas de Bounded Context utilizando el C4 model, actualicé mis conocimientos en arquitectura de software y modelado de contextos. Además, participé activamente en la etapa de needfinding y en la construcción de Bounded Contexts, incluyendo el diseño de sus diagramas de dominio, modelos de base de datos y documentación en Clean Architecture, permitiéndome consolidar una comprensión integral de la arquitectura de software moderna.<br>
+        <b>TB1</b><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>Durante la ejecución del Sprint 1, actualicé mis conocimientos en desarrollo Backend con C# y ASP.NET Core mediante la implementación de los Bounded Contexts de Promotion y Redemption. Además, adquirí experiencia en el despliegue de aplicaciones web utilizando plataformas cloud como Railway y Vercel, consolidando mi comprensión de Clean Architecture y la integración de APIs.<br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>Colaboracion diseño de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile.<br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br> Durante este Sprint 1, desarrolle y fortaleci mis conocimientos en C# y .NET, mediante el desarrollo del bounded context de Favorites, ademas colabore en el diseño de landing page, historias de usuario, por ultimo responsable de las validation interviews.
+        <b>Alejandro Manuel Galindo Montero</b><br>
+        <b>AV2</b><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br>
+        <b>Alejandro Manuel Galindo Montero</b><br>
+        <b>TB2</b><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br>
+        <b>Alejandro Manuel Galindo Montero</b><br>
       </td>
-      <td><b>TB1:</b> Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.</td>
+      <td><b>AV1:</b> Los estudiantes lograron actualizar exitosamente sus conocimientos profesionales mediante la aplicación de metodologías de Domain-Driven Design, análisis competitivo y arquitectura de software. El manejo de responsabilidades asignadas permitió que cada miembro brinde su aporte en cada área específica mientras contribuía al desarrollo del proyecto, demostrando la capacidad de adquirir y aplicar nuevos conocimientos de manera efectiva en un contexto real de desarrollo de software.<br><br><b>TB1:</b> El equipo logró actualizar exitosamente sus conocimientos técnicos a través del desarrollo del Backend y la Landing Page en el Sprint 1. Mediante la implementación práctica de Bounded Contexts, el diseño de la interfaz de usuario interactiva y la configuración de entornos de despliegue en la nube, cada miembro consolidó habilidades clave para la ingeniería de software moderna en un entorno real de trabajo ágil.</td>
     </tr>
     <tr>
-      <td><b>7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software</b></td>
       <td>
+        <b>
+          7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software
+        </b>
+      </td>
+      <td>
+        <b>AV1</b><br>
         <b>Bonifacio Jaramillo, Samuel Jesus</b><br>Al asumir el desarrollo de los Capítulos I y II del informe, incluyendo el diseño de User Stories, el análisis competitivo, el Lean UX Process y la arquitectura de software orientada a Domain-Driven Design, reconocí que las tecnologías y metodologías aplicadas en ingeniería de software evolucionan constantemente. Esta experiencia me motivó a profundizar en nuevos conceptos como EventStorming y Bounded Contexts, reforzando mi compromiso con el aprendizaje continuo como pilar fundamental para el desarrollo profesional y la entrega de soluciones de calidad.<br>
         <b>Castro Pariona, Jefferson Ernesto</b><br>Durante el desarrollo del Capítulo I y II, así como en la evaluación del Product Backlog y elaboración de diagramas de Bounded Context con C4 model, reconocí la necesidad del aprendizaje permanente en metodologías de modelado arquitectónico y técnicas de validación de requisitos. La actualización continua de conocimientos en herramientas como C4 model y Domain-Driven Design es fundamental para diseñar soluciones de software robustas y escalables que se adapten a los cambios del mercado tecnológico.<br>
         <b>Guillen Galindo, Julio Adolfo</b><br>En la redacción del Capítulo II, reconocí la importancia del aprendizaje permanente en estrategias de marketing, análisis competitivo y técnicas de especificación de requisitos. El contexto dinámico de la ingeniería de software requiere una actualización constante de habilidades para comprender tanto aspectos técnicos como empresariales, lo que es esencial para desarrollar soluciones competitivas y alineadas con las necesidades del mercado.<br>
         <b>Ponce Perales, Alberto Alejandro</b><br>En la elaboración de User Stories, Technical Stories y criterios de aceptación, reconocí que el aprendizaje permanente es fundamental para mantenerme actualizado en metodologías ágiles y técnicas de especificación de requisitos. La capacidad de adaptarse a nuevas herramientas y procesos es clave para el desempeño profesional en ingeniería de software y para garantizar la entrega de soluciones de calidad.<br>
         <b>Alejandro Manuel Galindo Montero</b><br>Al desarrollar el Capítulo II incluyendo la elaboración de diagramas de Bounded Context con C4 model y participar en el needfinding, reconocí la importancia del aprendizaje permanente para el desempeño profesional. La participación en la construcción de Bounded Contexts y el desarrollo de diagramas de dominio, modelos de base de datos y documentación en Clean Architecture me permitió identificar la necesidad de reforzar continuamente conocimientos en arquitectura de software y comprender que la actualización constante es clave para diseñar soluciones tecnológicas sólidas.<br>
+        <b>TB1</b><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>A partir del desarrollo de los módulos transaccionales del backend y el despliegue de nuestra infraestructura, reconocí la necesidad del aprendizaje continuo frente a la rápida evolución de servicios en la nube como Vercel y Railway. Afrontar los desafíos técnicos en la creación de los Endpoints de promociones y canjes me enseñó que la actualización constante es esencial para diseñar arquitecturas de software robustas.<br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>Reuniones periodicas para definir el alcance de la landing page, diseño de historias de usuario en Figma, elaboracion del Evidences for Sprint 1 de BC Iam y Profile<br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br> Del desarrollo del backend obtuve los desafíos técnicos en la creación de los Endpoints de este módulo me enseñó que la actualización constante es esencial para diseñar arquitecturas de software robustas. .Asimismo, complementé este proceso técnico asumiendo el diseño y la estructuración de las historias de usuario directamente en Figma. Por último, lideré de manera integral la fase de validation interviews, siendo completamente responsable de ejecutar la evaluación por heurísticas para garantizar la usabilidad y calidad de la solución antes de su implementación.
+        <b>Alejandro Manuel Galindo Montero</b><br>
+        <b>AV2</b><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br>
+        <b>Alejandro Manuel Galindo Montero</b><br>
+        <b>TB2</b><br>
+        <b>Bonifacio Jaramillo, Samuel Jesus</b><br>
+        <b>Castro Pariona, Jefferson Ernesto</b><br>
+        <b>Guillen Galindo, Julio Adolfo</b><br>
+        <b>Ponce Perales, Alberto Alejandro</b><br>
+        <b>Alejandro Manuel Galindo Montero</b><br>
       </td>
-      <td><b>TB1:</b> El equipo reconoció exitosamente la necesidad del aprendizaje permanente a través de la aplicación práctica de metodologías emergentes como Domain-Driven Design, C4 model y Clean Architecture. Cada integrante identificó áreas de crecimiento profesional y comprendió que la actualización continua de conocimientos es esencial para adaptarse a la evolución constante de las tecnologías de ingeniería de software y mantener la competitividad en el desarrollo de soluciones innovadoras.</td>
+      <td><b>AV1:</b> El equipo reconoció exitosamente la necesidad del aprendizaje permanente a través de la aplicación práctica de metodologías emergentes como Domain-Driven Design, C4 model y Clean Architecture. Cada integrante identificó áreas de crecimiento profesional y comprendió que la actualización continua de conocimientos es esencial para adaptarse a la evolución constante de las tecnologías de ingeniería de software y mantener la competitividad en el desarrollo de soluciones innovadoras.<br><br><b>TB1:</b> El equipo reconoció de manera efectiva la importancia del aprendizaje permanente al enfrentar diversos desafíos técnicos durante el primer Sprint, como el despliegue en plataformas cloud y la integración de arquitecturas limpias. Esta etapa evidenció que la investigación constante y la adopción proactiva de nuevas herramientas son fundamentales para desarrollar soluciones competitivas y escalables.</td>
     </tr>
   </tbody>
 </table>

@@ -170,18 +170,151 @@ Sistema de búsqueda implementado en:
 
 ### 3.1.3. Landing Page UI Design
 
+El link del diseño de **Figma** donde se desarrollaron los Mockups y Wireframes para la **Landing Page** es el siguiente: https://www.figma.com/design/qrrjkC1ZwEIkvVBVWlxXn1/Aplicaciones-Moviles-2026-1?node-id=26-4&t=BWWBciObsKb10zXn-0
+
 #### 3.1.3.1. Landing Page Wireframe
 
+Vista del Wireframe de **Landing Page** completo:
+
+![Klippr-Wireframe](/assets/chapter03/landing-wireframes/Klippr%20-%20Wireframe.png)
+
 #### 3.1.3.2. Landing Page Mock-up
+
+Vista del Mockup de **Landing Page** completo:
+
+![Klippr-Mockup](/assets/chapter03/landing-mockups/Klippr%20-%20Mockup.png)
+
+<h2> Hero Section </h2>
+
+![Klippr-Hero](/assets/chapter03/landing-mockups/klippr-hero.png)
+
+<h2> Problem Section </h2>
+
+![Klippr-Problem-1](/assets/chapter03/landing-mockups/klippr-problem-1.png)
+
+![Klippr-Problem-2](/assets/chapter03/landing-mockups/klippr-problem-2.png)
+
+![Klippr-Problem-3](/assets/chapter03/landing-mockups/klippr-problem-3.png)
+
+<h2> Features Section </h2>
+
+![Klippr-Features-1](/assets/chapter03/landing-mockups/klippr-features-1.png)
+
+![Klippr-Features-2](/assets/chapter03/landing-mockups/klippr-features-2.png)
+
+![Klippr-Features-3](/assets/chapter03/landing-mockups/klippr-features-3.png)
+
+![Klippr-Features-4](/assets/chapter03/landing-mockups/klippr-features-4.png)
+
+<h2> Benefits Section </h2>
+
+![Klippr-Benefits-ForYou](/assets/chapter03/landing-mockups/klippr-benefits-foryou.png)
+
+![Klippr-Benefits-ForBusiness](/assets/chapter03/landing-mockups/klippr-benefits-forbusiness.png)
+
+<h2> Testimonies Section </h2>
+
+![Klippr-Testimonies](/assets/chapter03/landing-mockups/klippr--testimonies.png)
+
+<h2> Comparison Section </h2>
+
+![Klippr-Comparison](/assets/chapter03/landing-mockups/klippr-comparison.png)
+
+<h2> Footer Section </h2>
+
+![Klippr-Footer](/assets/chapter03/landing-mockups/klippr-footer.png)
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
 #### 3.1.4.1. Mobile Applications Wireframes
 
+En esta sección, se presentaran los wireframes de los mobile applications de ambos segmentos objetivo:
+
+**Segmento Objetivo 1: Consumidores**
+
+<p align="center">
+    <img src="assets/chapter03/wireframes-login.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/wireframes-consumer1.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/wireframes-consumer2.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/wireframes-consumer3.png">
+</p>
+
+**Segmento Objetivo 2: Empresas**
+
+<p align="center">
+    <img src="assets/chapter03/wireframes-business1.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/wireframes-business2.png">
+</p>
+
+
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+En esta seccion presentaremos nuestro wireflow diagram que representa el flujo que siguen de nuestros wireframes:
+
+<p align="center">
+  <img src="./assets/chapter03/wireflow-diagram.png" width="900"/>
+</p>
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
+En esta sección, se presentaran los mockups de los mobile applications de ambos segmentos objetivo:
+
+**Segmento Objetivo 1: Consumidores**
+
+<p align="center">
+    <img src="assets/chapter03/mockups-consumer1.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/mockups-consumer2.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/mockups-consumer3.png">
+</p>
+
+**Segmento Objetivo 2: Empresas**
+
+<p align="center">
+    <img src="assets/chapter03/mockups-business1.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/mockups-consumer2.png">
+</p>
+
+<p align="center">
+    <img src="assets/chapter03/mockups-consumer3.png">
+</p>
+
+
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
+En esta seccion presentaremos nuestro User Flow Diagram que representa el flujo que siguen de nuestros mockups junto con User Goals:
+
+<p align="center">
+    <img src="assets/chapter03/userflow-diagram.png">
+</p>
+
 #### 3.1.4.5. Mobile Applications Prototyping
+
+Para nuestro prototipo, lo dividimos en dos flows como se muestra a continuación:
+
+<p align="center">
+    <img src="assets/chapter03/prototype-klippr.png">
+</p>
+
+Link del prototipo: https://www.figma.com/proto/qrrjkC1ZwEIkvVBVWlxXn1/Aplicaciones-Moviles-2026-1?node-id=298-4778&p=f&viewport=423%2C98%2C0.11&t=4VHF9n7J6Ik5nvdC-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=298%3A4778&show-proto-sidebar=1&page-id=25%3A2
+

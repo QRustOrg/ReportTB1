@@ -983,7 +983,7 @@ Este proceso permitió identificar los eventos clave, los actores involucrados, 
 
 ## 2.4. Requirements specification
 
-### 2.4.1. User Stories 
+En esta sección se presenta el trabajo realizado durante la sesión de Big Picture Event Storming, enfocada en comprender el dominio general del negocio de promociones digitales. Para ello se utilizaron post-its en Miro para mapear los eventos significativos que ocurren en el flujo operativo actual, desde la creación y publicación de promociones hasta su redención mediante códigos QR y la posterior evaluación por parte de los usuarios.
 
 <table border="1" width="100%" cellspacing="0" cellpadding="6">
 
@@ -1429,7 +1429,7 @@ En esta sección se aplica la técnica de Candidate Context Discovery para ident
 | **Analytics** | Provee métricas por campaña para negocios (vistas, canjes, ratings) y datos de moderación y abuso para el administrador de plataforma. | `MetricaActualizada`, `DashboardConsultado`, `ReporteDeAbusoRegistrado` |
 
 
-#### 2.5.1.2. Domain Message Flows Modeling
+### 2.5.3.3. Software Architecture Deployment Level Diagrams
 
 Esta sección utilizará el Domain Message Flow Modelling, una técnica que ilustra cómo fluyen los mensajes de dominio, como comandos, eventos y consultas, entre los distintos contextos delimitados del sistema. Esto permite clarificar las interacciones y responsabilidades de cada contexto.
 
@@ -1499,11 +1499,15 @@ En esta parte, el Bounded Context Canvas delimitara cada parte del sistema a des
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-![KlipprContextDiagram](assets/chapter02/diagramas/KlipprContextDiagram.png)
+<p align="center">
+    <img src="assets/chapter02/klipprsystem-context.png">
+</p>
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 
-![KlipprContainerDiagram](assets/chapter02/diagramas/KlipprContainerDiagram.png)
+<p align="center">
+    <img src="assets/chapter02/klipprsystem-containers.png">
+</p>
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
@@ -1521,137 +1525,535 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Aggregate | User | Clase que representa a cualquier cuenta registrada en Klippr, independientemente de su rol. | Ser el punto de entrada para crear y mantener la integridad de la entidad de identidad, incluyendo validación de credenciales y asignación de rol. | Relacionado con los bounded contexts Profile, Promotions y Community, que requieren la identidad del usuario para operar. |
+| Aggregate | CampaignMetrics | Representa las métricas agregadas de una campaña. | Consolidar datos como vistas, canjes y calificaciones, asegurando su consistencia. | Relacionado con Promotions y Redemption para obtener eventos de interacción. |
+| Aggregate | AbuseReport | Representa un reporte de abuso dentro de la plataforma. | Registrar y mantener información sobre comportamientos indebidos reportados. | Relacionado con Community y Profile para identificar usuarios involucrados. |
+
+---
 
 **Sub-capa Model - Commands:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Command | SignInCommand | Comando para el inicio de sesión de cualquier tipo de cuenta. | Representar la intención de autenticar a un usuario y retornar un token de acceso válido. | Usado en la implementación del servicio de autenticación. |
-| Command | SignUpConsumerCommand | Comando para el registro de un usuario consumidor. | Representar la intención de crear una cuenta de tipo consumidor con los datos mínimos requeridos. | Usado en la implementación del servicio de autenticación. |
-| Command | SignUpBusinessCommand | Comando para el registro de un negocio afiliado. | Representar la intención de crear una cuenta de tipo negocio, sujeta a aprobación por el administrador. | Usado en el servicio de autenticación y desencadena evento hacia el bounded context Profile para iniciar el flujo de verificación. |
+| Command | UpdateMetricsCommand | Comando para actualizar métricas de una campaña. | Representar la intención de registrar nuevas vistas, canjes o ratings. | Disparado por eventos provenientes de Promotions y Redemption. |
+| Command | RegisterAbuseReportCommand | Comando para registrar un reporte de abuso. | Representar la intención de reportar contenido o comportamiento inapropiado. | Usado en Community y accesible por administradores. |
+
+---
 
 **Sub-capa Model - Queries:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Query | GetAllUsersQuery | Consulta para obtener todos los usuarios registrados. | Representar la intención de obtener la lista completa de cuentas, usada por el administrador de plataforma. | Usado en la implementación del servicio de consultas. |
-| Query | GetUserByEmailQuery | Consulta para obtener un usuario por dirección de email. | Representar la intención de buscar una cuenta específica por su email, utilizada en el flujo de autenticación. | Usado en la implementación del servicio de consultas. |
-| Query | GetUserByIdQuery | Consulta para obtener un usuario por su identificador único. | Representar la intención de recuperar una cuenta por su ID, usada inter-contexto para validar identidad. | Usado en la implementación del servicio de consultas. |
-| Query | GetUsersByRoleQuery | Consulta para obtener usuarios filtrados por rol. | Representar la intención de listar cuentas de un tipo específico (CONSUMER, BUSINESS, ADMIN). | Usado en el panel de administración para gestión de cuentas. |
+| Query | GetCampaignMetricsQuery | Consulta para obtener métricas de una campaña. | Recuperar estadísticas como vistas, canjes y rating promedio. | Usado en dashboards de negocios. |
+| Query | GetBusinessDashboardQuery | Consulta para obtener métricas globales de un negocio. | Agrupar métricas de todas las campañas de un negocio. | Usado en el panel B2B. |
+| Query | GetAbuseReportsQuery | Consulta para obtener reportes de abuso. | Listar reportes registrados para moderación. | Usado en el panel de administración. |
+
+---
+
+**Sub-capa Model - Events:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+|---|---|---|---|---|
+| Domain Event | MetricaActualizada | Evento emitido al actualizar métricas. | Notificar cambios en estadísticas de campañas. | Consumido internamente para recalcular dashboards. |
+| Domain Event | DashboardConsultado | Evento emitido al consultar métricas. | Registrar accesos al dashboard para auditoría o análisis. | Usado en análisis de uso. |
+| Domain Event | ReporteDeAbusoRegistrado | Evento emitido al registrar un reporte. | Notificar a sistemas de moderación. | Consumido por administración. |
+
+---
 
 **Sub-capa Model - Value Objects:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Value Object | Role | Rol de la cuenta dentro de la plataforma. | Representar los tres roles posibles: CONSUMER, BUSINESS y ADMIN, determinando las pantallas y funciones accesibles. | Usado en el Aggregate User y evaluado en el middleware de autorización. |
-| Value Object | Email | Dirección de correo electrónico de la cuenta. | Encapsular la validación de formato y unicidad del email como identificador de acceso. | Usado en el Aggregate User y en los comandos de registro. |
+| Value Object | MetricType | Tipo de métrica. | Representar tipos como VIEWS, REDEMPTIONS, RATINGS. | Usado en CampaignMetrics. |
+| Value Object | TimeRange | Rango de tiempo para métricas. | Encapsular periodos de consulta (diario, semanal, mensual). | Usado en queries de analytics. |
+
+---
 
 **Sub-capa Services:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Interface | IUserCommandService | Interfaz del servicio de comandos de autenticación. | Estipular los contratos para operaciones de registro e inicio de sesión. | Implementado en la capa Application; consumido desde la capa Interface. |
-| Interface | IUserQueryService | Interfaz del servicio de consultas de usuarios. | Estipular los contratos para operaciones de búsqueda y listado de cuentas. | Implementado en la capa Infrastructure; consumido desde la capa Interface. |
+| Interface | IAnalyticsCommandService | Interfaz del servicio de comandos de analytics. | Definir operaciones para actualización de métricas y reportes. | Implementado en Application. |
+| Interface | IAnalyticsQueryService | Interfaz del servicio de consultas de analytics. | Definir operaciones para obtención de métricas y dashboards. | Implementado en Application. |
+
+---
 
 **Sub-capa Repositories:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Interface | IUserRepository | Repositorio para operaciones de persistencia del modelo User. | Definir contratos para operaciones CRUD de cuentas de usuario. | Implementado en la capa Infrastructure. |
+| Interface | ICampaignMetricsRepository | Repositorio de métricas de campañas. | Definir operaciones de persistencia de métricas. | Implementado en Infrastructure. |
+| Interface | IAbuseReportRepository | Repositorio de reportes de abuso. | Definir operaciones de persistencia de reportes. | Implementado en Infrastructure. |
 
 ---
 
-#### 2.6.1.2. Interface Layer
+#### 2.6.3.2. Interface Layer
 
 **Sub-capa REST - Resources:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Resource | AuthenticatedUserResource | Estructura de respuesta para usuario autenticado. | Representar los datos de la cuenta autenticada (id, email, rol, token) de forma estructurada para el cliente móvil. | Usado en AuthenticationController para respuestas de autenticación exitosa. |
-| Resource | SignInResource | Estructura de una petición para iniciar sesión. | Representar y exponer los campos requeridos para autenticación (email, contraseña) de forma predeterminada. | Usado en AuthenticationController para recibir peticiones de login. |
-| Resource | SignUpConsumerResource | Estructura de una petición para registrar un usuario consumidor. | Representar los campos requeridos para crear una cuenta de tipo consumidor. | Usado en AuthenticationController para el flujo de registro B2C. |
-| Resource | SignUpBusinessResource | Estructura de una petición para registrar un negocio afiliado. | Representar los campos requeridos para crear una cuenta de tipo negocio (incluye nombre comercial, categoría y RUC/identificador fiscal). | Usado en AuthenticationController para el flujo de registro B2B, que inicia el proceso de verificación. |
-| Resource | UserResource | Estructura de datos de una cuenta de usuario. | Representar y exponer los datos de perfil de identidad de forma estructurada para operaciones de consulta. | Usado en UsersController para emitir datos de cuentas. |
+| Resource | CampaignMetricsResource | Representación de métricas de campaña. | Exponer vistas, canjes y rating al cliente. | Usado en AnalyticsController. |
+| Resource | BusinessDashboardResource | Representación del dashboard de negocio. | Exponer métricas agregadas de todas las campañas. | Usado en AnalyticsController. |
+| Resource | AbuseReportResource | Representación de reporte de abuso. | Exponer información relevante para moderación. | Usado en AdminAnalyticsController. |
+
+---
 
 **Sub-capa REST - Transform:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Assembler | AuthenticatedUserResourceFromEntityAssembler | Transforma la entidad User a AuthenticatedUserResource. | Convertir la entidad del dominio a su representación REST incluyendo el token JWT y el rol para que el cliente móvil determine la navegación inicial. | Usado en AuthenticationController para transformar respuestas de login. |
-| Assembler | SignInCommandFromResourceAssembler | Transforma SignInResource a SignInCommand. | Convertir la petición REST al comando del dominio correspondiente. | Usado en AuthenticationController para procesar peticiones de inicio de sesión. |
-| Assembler | SignUpConsumerCommandFromResourceAssembler | Transforma SignUpConsumerResource a SignUpConsumerCommand. | Convertir la petición REST al comando de registro de consumidor. | Usado en AuthenticationController para el flujo de registro B2C. |
-| Assembler | SignUpBusinessCommandFromResourceAssembler | Transforma SignUpBusinessResource a SignUpBusinessCommand. | Convertir la petición REST al comando de registro de negocio. | Usado en AuthenticationController para el flujo de registro B2B. |
-| Assembler | UserResourceFromEntityAssembler | Transforma la entidad User a UserResource. | Convertir la entidad del dominio a su representación REST para operaciones de consulta. | Usado en UsersController para transformar respuestas. |
+| Assembler | CampaignMetricsResourceFromEntityAssembler | Convierte métricas a recurso REST. | Transformar datos del dominio a formato API. | Usado en AnalyticsController. |
+| Assembler | AbuseReportResourceFromEntityAssembler | Convierte reportes a recurso REST. | Transformar entidad a respuesta API. | Usado en AdminAnalyticsController. |
+
+---
 
 **Sub-capa REST - Controllers:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Controller | AuthenticationController | Controlador para operaciones de autenticación y registro. | Manejar las peticiones HTTP de inicio de sesión y registro de todos los tipos de cuenta. | Usa los command services de la capa Application y los assemblers para procesar peticiones. |
-| Controller | UsersController | Controlador para operaciones de gestión de cuentas. | Manejar las peticiones HTTP de consulta y administración de usuarios, accesibles principalmente desde el panel de administración. | Usa los query services y assemblers para procesar peticiones. |
+| Controller | AnalyticsController | Controlador para métricas de negocio. | Manejar consultas de métricas y dashboards. | Usa query services. |
+| Controller | AdminAnalyticsController | Controlador para administración. | Manejar reportes de abuso y métricas globales. | Usa query services. |
+
+---
 
 **Sub-capa ACL:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Service | IamContextFacade | Servicio de fachada para el contexto IAM. | Proporcionar una interfaz simplificada para que otros bounded contexts (Profile, Promotions, Redemption, Community, Analytics) verifiquen identidad y rol de una cuenta sin acceder directamente al dominio IAM. | Relacionado con todos los bounded contexts que requieren validación de identidad. |
+| Service | AnalyticsContextFacade | Fachada del contexto Analytics. | Permitir a otros contextos consultar métricas sin acoplamiento directo. | Relacionado con Promotions y Profile. |
 
 ---
 
-#### 2.6.1.3. Application Layer
+#### 2.6.3.3. Application Layer
 
 **Sub-capa Internal - CommandServices:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| CommandHandler | UserCommandService | Implementación de los comandos de autenticación y registro. | Implementar los métodos de SignIn, SignUpConsumer y SignUpBusiness, coordinando hashing de contraseñas, generación de token y asignación de rol. | Implementa los métodos de IUserCommandService definidos en la capa Domain. |
+| CommandHandler | AnalyticsCommandService | Implementación de comandos de analytics. | Procesar actualización de métricas y registro de abusos. | Implementa IAnalyticsCommandService. |
 
-**Sub-capa Internal - OutboundServices:**
-
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Service | IHashingService | Interfaz para el servicio de hashing de contraseñas. | Definir contratos para operaciones de hash y verificación de contraseñas antes de persistir o validar credenciales. | Implementado en la capa Infrastructure (BCrypt). |
-| Service | ITokenService | Interfaz para el servicio de gestión de tokens JWT. | Definir contratos para generación, validación y decodificación de tokens de acceso. El token incluye el claim de rol para que el cliente móvil determine la navegación inicial (feed B2C o dashboard B2B). | Implementado en la capa Infrastructure (JWT). |
+---
 
 **Sub-capa Internal - QueryServices:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| QueryHandler | UserQueryService | Implementación de las consultas de cuentas de usuario. | Implementar los métodos de búsqueda por email, ID y rol, coordinando la recuperación desde el repositorio. | Implementa los métodos de IUserQueryService definidos en la capa Domain. |
+| QueryHandler | AnalyticsQueryService | Implementación de consultas de analytics. | Recuperar métricas y dashboards. | Implementa IAnalyticsQueryService. |
 
 ---
 
-#### 2.6.1.4. Infrastructure Layer
-
-**Sub-capa Hashing (BCrypt):**
-
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-|---|---|---|---|---|
-| Service | HashingService | Servicio para el hash de contraseñas usando BCrypt. | Proporcionar métodos para hashear contraseñas en el registro y verificarlas en el inicio de sesión de forma segura. | Relacionado con UserCommandService en la capa Application. |
+#### 2.6.3.4. Infrastructure Layer
 
 **Sub-capa Persistence:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Repository | UserRepository | Repositorio concreto para el modelo User. | Acceder y manipular datos de cuentas persistidos en la base de datos, implementando los contratos de IUserRepository. | Usado en la capa Application para registro, autenticación y consulta de usuarios. |
+| Repository | CampaignMetricsRepository | Implementación del repositorio de métricas. | Persistir y recuperar métricas. | Usado en Application. |
+| Repository | AbuseReportRepository | Implementación del repositorio de reportes. | Persistir reportes de abuso. | Usado en Application. |
+
+---
 
 **Sub-capa Pipeline (Middleware):**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Attribute | AllowAnonymousAttribute | Atributo para permitir acceso anónimo. | Marcar los endpoints de registro e inicio de sesión que no requieren token de autenticación. | Usado en AuthenticationController para los endpoints públicos. |
-| Attribute | AuthorizeAttribute | Atributo para requerir autorización. | Marcar los endpoints que requieren token válido y, opcionalmente, un rol específico (CONSUMER, BUSINESS, ADMIN). | Usado en UsersController y en los controladores de otros bounded contexts para proteger operaciones sensibles. |
-| Component | RequestAuthorizationMiddleware | Middleware para autorización de peticiones. | Interceptar cada petición HTTP, validar el token JWT y extraer el claim de rol para autorizar o rechazar el acceso. | Relacionado con el pipeline de la aplicación móvil y con el servicio ITokenService. |
+| Attribute | AuthorizeAttribute | Control de acceso por rol. | Restringir acceso a dashboards y reportes. | Usado en controladores. |
 
-**Sub-capa Tokens (JWT):**
+---
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/comp-Analytics.jpeg">
+</p>
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.3.6.1 Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCAnalytics/analytics-class-diagram.png">
+</p>
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/BCAnalytics/analytics-database-diagram.png">
+</p>
+
+### 2.6.6. Bounded Context: Promotions
+
+Siguiendo el modelo de arquitectura Clean Architecture, **el Bounded Context Promotions de Klippr** gestiona el **ciclo de vida de las promociones y descuentos**, permitiendo a los negocios afiliados crear, publicar y administrar ofertas, mientras que a los consumidores les permite descubrirlas y explorarlas. Este contexto interactúa con **Profile** para verificar el estado del negocio y con **Redemption** para el control de canjes. A continuación se detallan las capas del Bounded Context.
+
+#### 2.6.6.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Aggregate</td>
+    <td>Promotion</td>
+    <td>Oferta o descuento creado por un negocio afiliado.</td>
+    <td>Mantener las reglas de negocio de la promoción, vigencia, stock de canjes y su estado (activa, expirada, cancelada).</td>
+    <td>Relacionado con Profile (negocio creador) y Redemption (cuando un consumidor la canjea).</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Commands:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CreatePromotionCommand</td>
+    <td>Comando para crear el borrador de una promoción.</td>
+    <td>Representar la intención de un negocio de registrar una nueva oferta con detalles iniciales.</td>
+    <td>Usado en el servicio de promociones desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>UpdatePromotionCommand</td>
+    <td>Comando para actualizar información de una promoción.</td>
+    <td>Representar la intención de modificar condiciones, fechas o descripción de la oferta antes de publicarla.</td>
+    <td>Usado en el servicio de promociones desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>PublishPromotionCommand</td>
+    <td>Comando para publicar y hacer visible la promoción.</td>
+    <td>Representar la intención de cambiar el estado de la promoción a PUBLISHED, validando que el negocio esté verificado.</td>
+    <td>Genera evento PromotionPublished. Valida estado usando ProfileContextFacade.</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>CancelPromotionCommand</td>
+    <td>Comando para cancelar una promoción en curso.</td>
+    <td>Representar la intención de detener anticipadamente una promoción y evitar futuros canjes.</td>
+    <td>Genera evento PromotionCancelled hacia Redemption context.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Queries:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetPromotionByIdQuery</td>
+    <td>Consulta para obtener los detalles de una promoción específica.</td>
+    <td>Representar la intención de recuperar toda la información y condiciones de una promoción.</td>
+    <td>Usado por la aplicación móvil al ver detalles de la oferta.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetActivePromotionsQuery</td>
+    <td>Consulta para obtener todas las promociones activas.</td>
+    <td>Representar la intención de obtener el listado de promociones disponibles, con filtros por categoría o ubicación.</td>
+    <td>Usado en el feed principal de consumidores.</td>
+  </tr>
+  <tr>
+    <td>Query</td>
+    <td>GetPromotionsByBusinessIdQuery</td>
+    <td>Consulta para obtener las promociones de un negocio.</td>
+    <td>Representar la intención de listar el historial de promociones creadas por un negocio específico.</td>
+    <td>Usado en el dashboard B2B del negocio afiliado.</td>
+  </tr>
+</table>
+
+**Sub-capa Model - Value Objects:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>PromotionStatus</td>
+    <td>Estado actual de la promoción.</td>
+    <td>Representar los estados posibles: DRAFT, PUBLISHED, EXPIRED, CANCELLED.</td>
+    <td>Usado en Promotion para control de ciclo de vida.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>DiscountValue</td>
+    <td>Valor y tipo del descuento ofrecido.</td>
+    <td>Encapsular el monto o porcentaje de descuento con reglas de validación (ej. no negativo).</td>
+    <td>Usado en Promotion para definir el beneficio.</td>
+  </tr>
+  <tr>
+    <td>Value Object</td>
+    <td>TimeFrame</td>
+    <td>Periodo de validez de la promoción.</td>
+    <td>Encapsular fecha de inicio y fin, asegurando coherencia temporal.</td>
+    <td>Usado en Promotion para determinar si está vigente.</td>
+  </tr>
+</table>
+
+**Sub-capa Services:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IPromotionCommandService</td>
+    <td>Interfaz del servicio de comandos de promociones.</td>
+    <td>Estipular contratos para crear, modificar, publicar y cancelar promociones.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IPromotionQueryService</td>
+    <td>Interfaz del servicio de consultas de promociones.</td>
+    <td>Estipular contratos para obtener promociones activas y por negocio.</td>
+    <td>Implementado en capa Application; consumido desde Interface Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Repositories:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>IPromotionRepository</td>
+    <td>Repositorio para persistencia de Promotion.</td>
+    <td>Definir contratos para operaciones CRUD y búsquedas por estado, negocio o vigencia.</td>
+    <td>Implementado en capa Infrastructure.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.6.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>PromotionResource</td>
+    <td>Estructura de respuesta con datos de la promoción.</td>
+    <td>Representar visualmente la promoción: título, descuento, fechas y negocio.</td>
+    <td>Usado en PromotionController para respuestas GET.</td>
+  </tr>
+  <tr>
+    <td>Resource</td>
+    <td>CreatePromotionResource</td>
+    <td>Estructura de petición para crear una promoción.</td>
+    <td>Representar y validar datos de entrada para nueva oferta.</td>
+    <td>Usado en PromotionController para recibir peticiones POST.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Transform:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>PromotionResourceFromEntityAssembler</td>
+    <td>Transforma entidad Promotion a PromotionResource.</td>
+    <td>Convertir entidad del dominio a REST.</td>
+    <td>Usado en PromotionController.</td>
+  </tr>
+  <tr>
+    <td>Assembler</td>
+    <td>CreatePromotionCommandFromResourceAssembler</td>
+    <td>Transforma CreatePromotionResource a CreatePromotionCommand.</td>
+    <td>Convertir petición REST al comando del dominio.</td>
+    <td>Usado en PromotionController.</td>
+  </tr>
+</table>
+
+**Sub-capa REST - Controllers:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Controller</td>
+    <td>PromotionController</td>
+    <td>Controlador para operaciones con promociones.</td>
+    <td>Manejar endpoints para crear, listar, consultar y gestionar promociones.</td>
+    <td>Usa command/query services de Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa ACL:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>PromotionsContextFacade</td>
+    <td>Servicio de fachada para el contexto Promotions.</td>
+    <td>Proporcionar interfaz para que otros contextos validen disponibilidad de promociones.</td>
+    <td>Relacionado con Redemption context (validar promoción antes de canjear).</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.6.3. Application Layer
+
+**Sub-capa Internal - CommandServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>CommandHandler</td>
+    <td>PromotionCommandService</td>
+    <td>Implementación de comandos de promociones.</td>
+    <td>Ejecutar reglas de negocio para creación y publicación, validando estado de verificación con Profile.</td>
+    <td>Implementa IPromotionCommandService. Consulta ProfileContextFacade.</td>
+  </tr>
+</table>
+
+**Sub-capa Internal - QueryServices:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>QueryHandler</td>
+    <td>PromotionQueryService</td>
+    <td>Implementación de consultas de promociones.</td>
+    <td>Recuperar promociones activas o filtradas desde infraestructura.</td>
+    <td>Implementa IPromotionQueryService.</td>
+  </tr>
+</table>
+
+---
+
+#### 2.6.6.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Repository</td>
+    <td>PromotionRepository</td>
+    <td>Implementación concreta para persistencia de Promotion.</td>
+    <td>Manejar base de datos para operaciones CRUD y búsquedas de ofertas.</td>
+    <td>Usado en Application Layer.</td>
+  </tr>
+</table>
+
+**Sub-capa Event Publishing:**
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#2c3e50; color:white;">
+    <th>Tipo</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Responsabilidad Principal</th>
+    <th>Relación con otros elementos</th>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td>PromotionEventPublisher</td>
+    <td>Servicio para publicación de eventos de promociones.</td>
+    <td>Emitir eventos como PromotionPublished a través del message broker.</td>
+    <td>Notifica a Analytics y Redemption context.</td>
+  </tr>
+</table>
+
+#### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+    <img src="assets/chapter02/comps-diagr/promotions-component.png">
+</p>
+
+### 2.6.5. Bounded Context: Settings
+
+---
+
+#### 2.6.5.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 |---|---|---|---|---|
-| Config | TokenSettings | Configuración de tokens JWT. | Almacenar los parámetros de generación y validación de tokens: clave secreta, emisor, audiencia y tiempo de expiración. | Usado por TokenService para configurar la generación de JWT. |
-| Service | TokenService | Servicio para el manejo de tokens JWT. | Encapsular toda la lógica de generación, validación y decodificación de tokens, incluyendo la inserción del claim de rol (CONSUMER, BUSINESS, ADMIN) que determina la experiencia de navegación en la app móvil. | Implementa ITokenService de la capa Application; relacionado con UserCommandService. |
+| Aggregate | UserSettings | Representa la configuración personalizada de un usuario. | Gestionar preferencias como notificaciones, tema, idioma y privacidad, asegurando consistencia. | Relacionado con IAM mediante UserId. |
 
-#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+---
 
 <p align="center">
     <img src="assets/chapter02/comps-diagr/comp-IAM.jpeg">
@@ -1660,7 +2062,6 @@ Siguiendo el modelo de arquitectura Clean Architecture, el Bounded Context IAM d
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 <p align="center">
     <img src="assets/chapter02/BCIAM/cd-iam1.png">

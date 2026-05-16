@@ -1,27 +1,23 @@
 
 # Conclusiones
 
-- El fraude por reutilización de cupones, la desconfianza del consumidor y la falta de trazabilidad son fricciones sistémicas confirmadas en el 100% de los entrevistados de ambos segmentos. El análisis 5W2H evidenció que estos problemas coexisten de forma estructural en el mercado peruano de promociones digitales, validando la necesidad de una solución integral.
+- El desarrollo del Sprint 1 comprobó la viabilidad técnica del diseño arquitectónico propuesto inicialmente. La adopción de Clean Architecture y Domain-Driven Design facilitó la implementación exitosa y el despliegue en la nube (Railway) de los Bounded Contexts centrales del Backend: IAM, Profile, Promotion y Redemption, garantizando un acoplamiento bajo y alta escalabilidad.
 
-- Rappi, PedidosYa y Cuponatic no ofrecen de forma integrada QR único anti-fraude, comunidad de reseñas vinculada al canje y analítica de campaña accesible para PYMEs. Esta brecha representa la principal ventaja competitiva de Klippr, que puede capitalizarse con pilotos verticales en gastronomía y retail de proximidad.
+- La implementación del módulo de Identity and Access Management (IAM) con JWT sentó bases sólidas para combatir el fraude por reutilización de cupones —una de las principales fricciones del mercado identificadas en el Needfinding— asegurando que las transacciones de canje cuenten con una capa de autorización robusta desde las primeras iteraciones.
 
-- Las entrevistas a seis informantes validaron cuatro patrones transversales: desconfianza, demanda de transparencia, valoración de prueba social y expectativa de fluidez en el canje. Estos hallazgos se tradujeron en requisitos concretos: validación QR en menos de 2 segundos, ratings previos al canje y dashboard de métricas para negocios.
+- El despliegue exitoso de la Landing Page mediante Vercel no solo materializa el canal principal de captación de usuarios y negocios, sino que consolida la identidad visual y la comunicación de la ventaja competitiva de Klippr frente a alternativas tradicionales, permitiendo validar la propuesta de valor en un entorno real.
 
-- El proceso de EventStorming y Candidate Context Discovery derivó en seis Bounded Contexts bien delimitados: IAM, Profile, Promotions, Redemption, Community y Analytics. La adopción de Clean Architecture garantiza que cada módulo evolucione de forma independiente, reduciendo el acoplamiento y facilitando la escalabilidad futura del MVP.
+- En el entorno móvil, el uso de Kotlin y Jetpack Compose para la estructuración inicial de las interfaces permitió validar la viabilidad de una navegación fluida, alineada con las expectativas de los usuarios que demandan un proceso de canje de códigos QR ágil e intuitivo, sentando la base para las integraciones con el Backend.
 
-- El Lean UX Process permitió formular hipótesis verificables: tasa de canjes exitosos superior al 95%, validación QR menor a 3 segundos y rating de app mayor o igual a 4.0. Estos criterios orientan el desarrollo iterativo y aseguran que las decisiones de diseño se basen en datos reales y no en supuestos del equipo.
+- El uso estricto de convenciones de control de versiones (GitFlow y Conventional Commits) y herramientas de integración continua permitió gestionar con éxito el trabajo colaborativo. Estas buenas prácticas han minimizado conflictos, organizado el código de forma estandarizada y agilizado las pruebas de los endpoints documentados en Swagger.
 
-- El Product Backlog de 30 user stories y 119 story points prioriza el ciclo central de valor (explorar, generar QR, validar, bloquear, reseñar) antes que funcionalidades sociales o avanzadas. Esta ordenación permite entregar valor real al usuario desde las primeras iteraciones y reducir el riesgo técnico temprano.
-
-- La combinación de problemática validada, brecha competitiva identificada, arquitectura fundamentada en DDD y métricas de éxito definidas posiciona a Klippr como una solución viable técnica y comercialmente. El equipo QRust cuenta con las bases necesarias para avanzar hacia la implementación y validación del MVP con usuarios y negocios reales.
+- En base a los resultados de este primer Sprint, la combinación de una problemática comercial clara con una base tecnológica implementada exitosamente y desplegada en la nube, reafirma que el equipo cuenta con la capacidad técnica y metodológica para avanzar hacia la integración final del MVP y su posterior validación con usuarios reales.
 
 # Video App Validation
 
 # Video About the product
 
 # Video About the team
-
-# Glosario
 
 # Bibliografía
 
@@ -74,10 +70,16 @@ Instituto Nacional de Estadística e Informática. (2024). *Estadísticas de tec
   <tbody>
     <tr>
       <td>ReportTB1</td>
-      <td>https://github.com/QRustOrg/ReportTB1.git</td>
+      <td>https://github.com/QRustOrg/ReportTB1</td>
+    </tr>
+    <tr>
+      <td>Landing Page</td>
+      <td>https://github.com/QRustOrg/Landing-Page</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>https://github.com/QRustOrg/Klippr-Backend</td>
     </tr>
   </tbody>
-  <td>Landing Page</td>
-  <td>https://github.com/QRustOrg/Landing-Page</td>
-  
+
 </table>
